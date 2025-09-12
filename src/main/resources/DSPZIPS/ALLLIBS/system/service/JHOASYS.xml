@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>JHOASYS</serviceSystemName>
+		<serviceSystemDesc>金九OA平台</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>JHOASYS_JhoaPcDMReqApplyAdd</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>JhoaPcDMReqApplyAdd</serivcename>
+			<protocol>JHOASYS_JhoaPcDMReqApplyAdd</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

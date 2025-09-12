@@ -1,0 +1,35 @@
+CREATE TABLE
+	`dwi_eqp_mf_route` (
+		`id` string COMMENT '系统索引值',
+		`route_no` string COMMENT '点检路线编号',
+		`route_name` string COMMENT '点检路线名称',
+		`factory_id` string COMMENT '所属厂',
+		`workshop_id` string COMMENT '所属车间',
+		`check_role_id` string COMMENT '点检角色',
+		`route_stus` string COMMENT '点检路线状态',
+		`stop_beg_time` string COMMENT '禁用开始时间',
+		`stop_end_time` string COMMENT '禁用结束时间',
+		`stop_reason` string COMMENT '禁用原因',
+		`last_plan_date` string COMMENT '上次排程时间',
+		`memo` string COMMENT '备注',
+		`approve_status` string COMMENT '审批状态',
+		`create_user_no` string COMMENT '创建人',
+		`create_date_time` string COMMENT '创建时间',
+		`update_user_no` string COMMENT '修改人',
+		`update_date_time` string COMMENT '修改时间',
+		`company_id` string COMMENT '公司ID',
+		`i_level` string COMMENT '等级',
+		`status` string COMMENT '状态',
+		`resp_post_no` string COMMENT '责任岗位',
+		`resp_emp_no` string COMMENT '责任人',
+		`is_order` string COMMENT '是否强制顺序',
+		`chk_is_holiday` string COMMENT '节假日是否点检',
+		`is_card` string COMMENT '是否采用点检卡检查,0:启用点检卡，1：禁用点检卡',
+		`route_type` string COMMENT '点检路线类型,1:操作点检类型    2：维修点检类型',
+		`factory_no` string COMMENT '所属厂的区域位置编码NO',
+		`ext_etl_dt` timestamp COMMENT 'ETL时间',
+		`ext_src_sys_id` string COMMENT '源系统'
+	) COMMENT '由用户建立，存放点检路线基础信息，包含所属车间，节假日是否点检，负责角色等信息' ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.columnar.ColumnarSerDe' STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.RCFileInputFormat' OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.RCFileOutputFormat' LOCATION 'hdfs://hacluster/user/hive/warehouse/dwi_eqp.db/dwi_eqp_mf_route' TBLPROPERTIES (
+		'bucketing_version' = '2',
+		'transient_lastDdlTime' = '1757012971'
+	)

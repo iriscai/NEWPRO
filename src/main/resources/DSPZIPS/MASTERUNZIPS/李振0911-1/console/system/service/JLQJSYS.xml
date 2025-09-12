@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>JLQJSYS</serviceSystemName>
+		<serviceSystemDesc>计量器具系统</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>JLQJSYS_ShGetAdd</protocol>
+						<protocol>JLQJSYS_ZsGetAdd</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>ShGetAdd</serivcename>
+			<protocol>JLQJSYS_ShGetAdd</protocol>
+			</service>
+						<service>
+			<serivcename>ZsGetAdd</serivcename>
+			<protocol>JLQJSYS_ZsGetAdd</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

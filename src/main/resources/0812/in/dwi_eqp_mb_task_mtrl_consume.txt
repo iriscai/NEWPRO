@@ -1,0 +1,28 @@
+CREATE TABLE
+	`dwi_eqp_mb_task_mtrl_consume` (
+		`id` string COMMENT '系统索引值',
+		`task_mtrl_id` string COMMENT '工单物料ID',
+		`mtrl_id` string COMMENT '物料ID',
+		`mtrl_qty` decimal(8, 2) COMMENT '消耗的数量',
+		`price` decimal(20, 2) COMMENT '单价',
+		`total_price` decimal(20, 2) COMMENT '总价',
+		`storage` string COMMENT '出库储位',
+		`batch_no` string COMMENT '批号',
+		`supplier` string COMMENT '供应商',
+		`order_id` string COMMENT '出库单号',
+		`side_stock_id` string COMMENT '机旁库库存id',
+		`remark` string COMMENT '备注',
+		`create_user_no` string COMMENT '创建人',
+		`create_date_time` string COMMENT '创建时间',
+		`update_user_no` string COMMENT '修改人',
+		`update_date_time` string COMMENT '修改时间',
+		`company_id` string COMMENT '公司别',
+		`status` decimal(1, 0) COMMENT '状态',
+		`i_level` string COMMENT '排序',
+		`ext_etl_dt` timestamp COMMENT 'ETL时间',
+		`ext_src_sys_id` string COMMENT '源系统'
+	) COMMENT '存放工单执行实际耗用物料信息，包括工单id、物料id、数量等，数据来源于工单完工时填写的物料信息，数据用于记录物料消耗情况，查看物料生命周期。' ROW FORMAT SERDE 'org.apache.hadoop.hive.ql.io.orc.OrcSerde' STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.orc.OrcInputFormat' OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat' LOCATION 'hdfs://hacluster/user/hive/warehouse/dwi_eqp.db/dwi_eqp_mb_task_mtrl_consume' TBLPROPERTIES (
+		'bucketing_version' = '2',
+		'orc.compress' = 'ZLIB',
+		'transient_lastDdlTime' = '1709793028'
+	)

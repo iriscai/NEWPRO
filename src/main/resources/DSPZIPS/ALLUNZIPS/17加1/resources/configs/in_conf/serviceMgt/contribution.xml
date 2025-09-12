@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<contributions xmlns="http://com/dc/esb/xmlbean/deployment">  
+ <contribution name="CloneResHeader" location="./uploadservice/CloneResHeader.jar" version="0" serviceType="BASE"> 
+  <service serviceid="CloneResHeader"></service> 
+ </contribution>  
+ <contribution name="DetectBaseService" location="./uploadservice/DetectBaseService.jar" version="0" serviceType="BASE"> 
+  <service serviceid="DetectBaseService"></service> 
+ </contribution>  
+ <contribution name="ExceptionPackService" location="./uploadservice/ExceptionPackService.jar" version="0" serviceType="BASE"> 
+  <service serviceid="ExceptionPackService"></service> 
+ </contribution>  
+ <contribution name="CIdentifyByUrl" location="./uploadservice/CIdentifyByUrl.jar" version="0" serviceType="BASE"> 
+  <service serviceid="CIdentifyByUrl"></service> 
+ </contribution> 
+</contributions>

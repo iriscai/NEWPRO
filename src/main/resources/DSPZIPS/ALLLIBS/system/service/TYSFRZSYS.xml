@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>TYSFRZSYS</serviceSystemName>
+		<serviceSystemDesc>统一身份认证系统</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>TYSFRZSYS_SsoCommonLogin</protocol>
+						<protocol>TYSFRZSYS_SsoCommonLogin2</protocol>
+						<protocol>TYSFRZSYS_SsoResetPassword</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>SsoCommonLogin</serivcename>
+			<protocol>TYSFRZSYS_SsoCommonLogin</protocol>
+			</service>
+						<service>
+			<serivcename>SsoCommonLogin2</serivcename>
+			<protocol>TYSFRZSYS_SsoCommonLogin2</protocol>
+			</service>
+						<service>
+			<serivcename>SsoResetPassword</serivcename>
+			<protocol>TYSFRZSYS_SsoResetPassword</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

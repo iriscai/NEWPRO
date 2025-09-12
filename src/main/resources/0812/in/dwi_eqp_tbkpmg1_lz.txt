@@ -1,0 +1,34 @@
+CREATE TABLE
+	`dwi_eqp_tbkpmg1_lz` (
+		`kpmg1id` string,
+		`compid` string,
+		`kpmg1no` string,
+		`kpmg1noa` string,
+		`kpmg1nob` string,
+		`cimp2no` string,
+		`chgexplain` string,
+		`chgetype` string,
+		`approvestatus` string,
+		`chgdept` string,
+		`chgamt` string,
+		`applicationemp` string,
+		`applicationdate` string,
+		`applicationtime` string,
+		`approveemp` string,
+		`approvedate` string,
+		`approvetime` string,
+		`updemp` string,
+		`upddate` string,
+		`updtime` string,
+		`version` string,
+		`taxamt` string,
+		`beftaxamt` string,
+		`isnewplan` string,
+		`extkpmd1no` string
+	) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe' STORED AS INPUTFORMAT 'org.apache.hadoop.mapred.TextInputFormat' OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat' LOCATION 'hdfs://hacluster/user/hive/warehouse/dwi_eqp.db/dwi_eqp_tbkpmg1_lz' TBLPROPERTIES (
+		'bucketing_version' = '2',
+		'spark.sql.create.version' = '3.1.1-h0.cbu.mrs.320.r33',
+		'spark.sql.sources.schema.numParts' = '1',
+		'spark.sql.sources.schema.part.0' = '{"type":"struct","fields":[{"name":"KPMG1ID","type":"string","nullable":true,"metadata":{}},{"name":"COMPID","type":"string","nullable":true,"metadata":{}},{"name":"KPMG1NO","type":"string","nullable":true,"metadata":{}},{"name":"KPMG1NOA","type":"string","nullable":true,"metadata":{}},{"name":"KPMG1NOB","type":"string","nullable":true,"metadata":{}},{"name":"CIMP2NO","type":"string","nullable":true,"metadata":{}},{"name":"CHGEXPLAIN","type":"string","nullable":true,"metadata":{}},{"name":"CHGETYPE","type":"string","nullable":true,"metadata":{}},{"name":"APPROVESTATUS","type":"string","nullable":true,"metadata":{}},{"name":"CHGDEPT","type":"string","nullable":true,"metadata":{}},{"name":"CHGAMT","type":"string","nullable":true,"metadata":{}},{"name":"APPLICATIONEMP","type":"string","nullable":true,"metadata":{}},{"name":"APPLICATIONDATE","type":"string","nullable":true,"metadata":{}},{"name":"APPLICATIONTIME","type":"string","nullable":true,"metadata":{}},{"name":"APPROVEEMP","type":"string","nullable":true,"metadata":{}},{"name":"APPROVEDATE","type":"string","nullable":true,"metadata":{}},{"name":"APPROVETIME","type":"string","nullable":true,"metadata":{}},{"name":"UPDEMP","type":"string","nullable":true,"metadata":{}},{"name":"UPDDATE","type":"string","nullable":true,"metadata":{}},{"name":"UPDTIME","type":"string","nullable":true,"metadata":{}},{"name":"VERSION","type":"string","nullable":true,"metadata":{}},{"name":"TAXAMT","type":"string","nullable":true,"metadata":{}},{"name":"BEFTAXAMT","type":"string","nullable":true,"metadata":{}},{"name":"ISNEWPLAN","type":"string","nullable":true,"metadata":{}},{"name":"EXTKPMD1NO","type":"string","nullable":true,"metadata":{}}]}',
+		'transient_lastDdlTime' = '1753427052'
+	)

@@ -1,0 +1,11 @@
+{
+	"configuration":{},
+	"connectionName":"MRS_Spark_Agent",
+	"content":"-- ******************************************************************** --\n-- author: jh_caiyi\n-- create time: 2025-07-15\n-- descr:智慧运营中心部分数据概览-仓储分析_tbinvc28\n-- sls_storage_tbinvc28\n-- ******************************************************************** --\n-- DROP TABLE IF EXISTS dwi_log.dwi_log_lz_sls_storage_tbinvc28;\n-- CREATE TABLE\n-- dwi_log.dwi_log_lz_sls_storage_tbinvc28 (\n-- compid string COMMENT '公司别,',\n-- yearmo string COMMENT '库存年月,',\n-- matrlno string COMMENT '料号,',\n-- matrlgrade string COMMENT '品级,',\n-- lotno string COMMENT '批号,',\n-- locno string COMMENT '储位,',\n-- inventorytype string COMMENT '品别,',\n-- routeqty double COMMENT '在途量,',\n-- routeamt double COMMENT '在途量金额,',\n-- endqty double COMMENT '期末库存量,',\n-- endamt double COMMENT '期末库存金额,',\n-- yrbeginqty double COMMENT '年初库存量,',\n-- yrbeginamt double COMMENT '年初库存金额,',\n-- yraccurecvqty double COMMENT '年累积入库量,',\n-- yraccurecvamt double COMMENT '年累积入库金额,',\n-- yraccuissuqty double COMMENT '年累积出库量,',\n-- yraccuissuamt double COMMENT '年累积出库金额,',\n-- mobeginqty double COMMENT '月初库存量,',\n-- mobeginamt double COMMENT '月初库存金额,',\n-- moaccurecvqty double COMMENT '月累积入库量,',\n-- moaccurecvamt double COMMENT '月累积入库金额,',\n-- moaccuissuqty double COMMENT '月累积出库量,',\n-- moaccuissuamt double COMMENT '月累积出库金额,',\n-- acctcode string COMMENT '会计科目,',\n-- etl_date DATE COMMENT 'ETL时间'\n-- )\n-- COMMENT '廉政八项-智慧运营中心-仓储分析_tbinvc28'\n-- STORED AS ORC;\n\nINSERT OVERWRITE TABLE\ndwi_log.dwi_log_lz_sls_storage_tbinvc28\nSELECT \n    compid,\n    yearmo,\n    matrlno,\n    matrlgrade,\n    lotno,\n    locno,\n    inventorytype,\n    routeqty,\n    routeamt,\n    endqty,\n    endamt,\n    yrbeginqty,\n    yrbeginamt,\n    yraccurecvqty,\n    yraccurecvamt,\n    yraccuissuqty,\n    yraccuissuamt,\n    mobeginqty,\n    mobeginamt,\n    moaccurecvqty,\n    moaccurecvamt,\n    moaccuissuqty,\n    moaccuissuamt,\n    acctcode,\n    CURRENT_DATE() AS etl_date\nFROM \n    dwi_log.dwi_log_tbinvc28;\n",
+	"currentDatabase":"dwi_log",
+	"description":"",
+	"directory":"/廉政专项/智慧物流/明细表",
+	"name":"etl_dwi_lz_sls_storage_tbinvc28",
+	"templateVersion":"1.0",
+	"type":"SparkSQL"
+}

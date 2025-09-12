@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>XDYSYS</serviceSystemName>
+		<serviceSystemDesc>新大洋船运一体化平台</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>XDYSYS_SaveFdBaseMassageAdd</protocol>
+						<protocol>XDYSYS_SaveProjectBaseMassageAdd</protocol>
+						<protocol>XDYSYS_SaveTpBaseMassageAdd</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>SaveFdBaseMassageAdd</serivcename>
+			<protocol>XDYSYS_SaveFdBaseMassageAdd</protocol>
+			</service>
+						<service>
+			<serivcename>SaveProjectBaseMassageAdd</serivcename>
+			<protocol>XDYSYS_SaveProjectBaseMassageAdd</protocol>
+			</service>
+						<service>
+			<serivcename>SaveTpBaseMassageAdd</serivcename>
+			<protocol>XDYSYS_SaveTpBaseMassageAdd</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

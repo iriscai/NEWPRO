@@ -1,0 +1,20 @@
+   CREATE TABLE IF NOT EXISTS dwi_sal.dwi_sal_tbscnjpodbatchimpl03( 
+  custno   VARCHAR(30) COMMENT '客户编号',
+  orderno   VARCHAR(11) COMMENT '订单号',
+  tradeno   VARCHAR(60) COMMENT '牌号',
+  salelabel   VARCHAR(14) COMMENT '回抛流水号',
+  creempno   VARCHAR(8) COMMENT '新增人员',
+  displistno   VARCHAR(15) COMMENT '发货通知单号',
+  updempno   VARCHAR(8) COMMENT '修改人员',
+  itemno   VARCHAR(3) COMMENT '项次',
+  credate   VARCHAR(8) COMMENT '新增日期',
+  diffrevision   VARCHAR(13) COMMENT '退差版次',
+  unitprice   DECIMAL(16,2) COMMENT '退差总量',
+  upddate   VARCHAR(8) COMMENT '修改日期',
+  procate   VARCHAR(2) COMMENT '品种大类',
+  compid   VARCHAR(1) COMMENT '公司别',
+  price   DECIMAL(10,2) COMMENT '单价',
+  totalwgt   DECIMAL(13,2) COMMENT '退差吨位',
+  senddate   VARCHAR(8) COMMENT '抛送日期',
+  prodtype   VARCHAR(10) COMMENT '产品形态'
+    ) COMMENT '批量退差结果明细';

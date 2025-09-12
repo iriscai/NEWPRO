@@ -1,0 +1,31 @@
+CREATE TABLE dwi_eqp.dwi_eqp_tbmsf20_lz
+             (
+                          MAMV4ID STRING
+                        , YEARMO STRING
+                        , COMPID STRING
+                        , INSPNO STRING
+                        , PONO STRING
+                        , POITEMNO STRING
+                        , MATRLNO STRING
+                        , MATRLNAME STRING
+                        , MEMO STRING
+                        , CREATEEMP STRING
+                        , CREATEDATE STRING
+                        , CREATETIME STRING
+                        , MODIFYEMP STRING
+                        , MODIFYDATE STRING
+                        , MODIFYTIME STRING
+                        , STUS STRING
+                        , ISCHECK STRING
+                        , INOUT STRING
+                        , CHECKRLST STRING
+                        , CHECKDATE STRING
+                        , ENDDATE STRING
+                        , READYA STRING
+                        , READYB STRING
+                        , READYC STRING
+                        , READYD STRING
+                        , SPEC STRING
+             )
+             COMMENT '廉政八项-设备智维_tbmsf20' STORED AS ORC
+;

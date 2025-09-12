@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>XERP</serviceSystemName>
+		<serviceSystemDesc>销售子公司ERP</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>XERP_GxPaymentResultNotice</protocol>
+						<protocol>XERP_GxReimbursementNotice</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>GxPaymentResultNotice</serivcename>
+			<protocol>XERP_GxPaymentResultNotice</protocol>
+			</service>
+						<service>
+			<serivcename>GxReimbursementNotice</serivcename>
+			<protocol>XERP_GxReimbursementNotice</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

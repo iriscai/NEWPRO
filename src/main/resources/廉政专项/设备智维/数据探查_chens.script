@@ -1,0 +1,12 @@
+{
+	"configuration":{},
+	"connectionName":"MRS_Spark_Agent",
+	"content":"--机旁库\nselect  \n--a.id,\n--a.STATUS,\n--a.ORDER_STATUS,\na.*,b.* from dwi_eqp.DWI_EQP_MH_SIDE_IO_in a,dwi_eqp.DWI_EQP_MH_SIDE_IO_DETAIL_in b \nwhere a.id=b.io_order_id\nand substr(replace(a.create_date_time,'-',''),1,8)='20250103'\n--and substr(replace(b.create_date_time,'-',''),1,8)='20250103'\nand MATERIAL_NO='641030102190'\n;\n\nselect MATERIAL_NO,count(1) from dwi_eqp.DWI_EQP_MH_SIDE_IO_DETAIL_in a\nwhere substr(replace(a.create_date_time,'-',''),1,8)='20250103'\ngroup by MATERIAL_NO having count(1)>=2 ;\n\n\nselect * from dwi_eqp.DWI_EQP_MH_QUALITY_DISSENT;",
+	"currentDatabase":"dwi_eqp",
+	"description":"",
+	"directory":"/廉政专项/设备智维",
+	"name":"数据探查_chens",
+	"owner":"jh_chensheng",
+	"templateVersion":"1.0",
+	"type":"SparkSQL"
+}

@@ -1,0 +1,38 @@
+CREATE TABLE
+	`dwi_eqp_mo_oil_check_plan` (
+		`id` string COMMENT '主键',
+		`oil_check_plan_no` string COMMENT '油品检验计划编号',
+		`oil_box_id` string COMMENT '油箱ID',
+		`schedule_years` string COMMENT '排程年月',
+		`exp_samp_date_time` string COMMENT '预计检测日期',
+		`act_fin_date_time` string COMMENT '实际检测日期',
+		`oil_check_result` string COMMENT '检测结果',
+		`deal_type` string COMMENT '处理方式',
+		`deal_idea` string COMMENT '处理意见',
+		`oil_check_type` string COMMENT '油品检测计划来源',
+		`back_reason` string COMMENT '退回原因',
+		`receive_time` string COMMENT '接收时间',
+		`over_reason` string COMMENT '逾期未检原因',
+		`is_no_send_over_due` string COMMENT '是否逾期未检',
+		`send_time` string COMMENT '送审时间',
+		`schedule_time` string COMMENT '排程时间',
+		`oil_check_status` string COMMENT '检测计划状态',
+		`remark` string COMMENT '备注',
+		`create_user_no` string COMMENT '创建人工号',
+		`create_date_time` string COMMENT '创建日期',
+		`update_user_no` string COMMENT '修改人工号',
+		`update_date_time` string COMMENT '修改日期',
+		`company_id` string COMMENT '公司ID',
+		`status` string COMMENT '状态',
+		`i_level` string COMMENT '等级',
+		`old_plan_id` string COMMENT '旧检验计划id',
+		`check_user_no` string COMMENT '检测人工号',
+		`check_user_name` string COMMENT '检测人名',
+		`used` string COMMENT '用量',
+		`ext_etl_dt` timestamp COMMENT 'ETL时间',
+		`ext_src_sys_id` string COMMENT '源系统'
+	) COMMENT '通过油箱中检测排布的检测周期进行排程，形成检测任务，检测分厂进行任务检测，进行送审后检测部门进行审核' ROW FORMAT SERDE 'org.apache.hadoop.hive.ql.io.orc.OrcSerde' STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.orc.OrcInputFormat' OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat' LOCATION 'hdfs://hacluster/user/hive/warehouse/dwi_eqp.db/dwi_eqp_mo_oil_check_plan' TBLPROPERTIES (
+		'bucketing_version' = '2',
+		'orc.compress' = 'ZLIB',
+		'transient_lastDdlTime' = '1709793104'
+	)

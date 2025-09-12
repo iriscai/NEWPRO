@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>NGEJSYS</serviceSystemName>
+		<serviceSystemDesc>南钢e家系统</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>NGEJSYS_BackSystemAppRegisterFlow</protocol>
+						<protocol>NGEJSYS_ExpressUpdate</protocol>
+						<protocol>NGEJSYS_ThirdSideGetUerInfoQuery</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>BackSystemAppRegisterFlow</serivcename>
+			<protocol>NGEJSYS_BackSystemAppRegisterFlow</protocol>
+			</service>
+						<service>
+			<serivcename>ExpressUpdate</serivcename>
+			<protocol>NGEJSYS_ExpressUpdate</protocol>
+			</service>
+						<service>
+			<serivcename>ThirdSideGetUerInfoQuery</serivcename>
+			<protocol>NGEJSYS_ThirdSideGetUerInfoQuery</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>NC</serviceSystemName>
+		<serviceSystemDesc>南钢NC系统</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>NC_VoucherGFInfoAdd</protocol>
+						<protocol>NC_VoucherGFInfoAddTest</protocol>
+						<protocol>NC_VoucherInfoAdd</protocol>
+						<protocol>NC_VoucherInfoAddTest</protocol>
+						<protocol>NC_VoucherLHInfoAdd</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>VoucherGFInfoAdd</serivcename>
+			<protocol>NC_VoucherGFInfoAdd</protocol>
+			</service>
+						<service>
+			<serivcename>VoucherGFInfoAddTest</serivcename>
+			<protocol>NC_VoucherGFInfoAddTest</protocol>
+			</service>
+						<service>
+			<serivcename>VoucherInfoAdd</serivcename>
+			<protocol>NC_VoucherInfoAdd</protocol>
+			</service>
+						<service>
+			<serivcename>VoucherInfoAddTest</serivcename>
+			<protocol>NC_VoucherInfoAddTest</protocol>
+			</service>
+						<service>
+			<serivcename>VoucherLHInfoAdd</serivcename>
+			<protocol>NC_VoucherLHInfoAdd</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

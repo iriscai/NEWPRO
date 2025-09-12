@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>ZGEJMX</serviceSystemName>
+		<serviceSystemDesc>轧钢二级模型</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>ZGEJMX_MesReheatQuery</protocol>
+						<protocol>ZGEJMX_PlatePerformanceQuery</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>MesReheatQuery</serivcename>
+			<protocol>ZGEJMX_MesReheatQuery</protocol>
+			</service>
+						<service>
+			<serivcename>PlatePerformanceQuery</serivcename>
+			<protocol>ZGEJMX_PlatePerformanceQuery</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

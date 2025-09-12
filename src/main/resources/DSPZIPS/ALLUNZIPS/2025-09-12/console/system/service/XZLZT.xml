@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>XZLZT</serviceSystemName>
+		<serviceSystemDesc>鑫智链中台</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>XZLZT_NotifyStorageDataHashUpdateStorageHash</protocol>
+						<protocol>XZLZT_UpdateStorageHas</protocol>
+						<protocol>XZLZT_UpdateStorageHash</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>NotifyStorageDataHashUpdateStorageHash</serivcename>
+			<protocol>XZLZT_NotifyStorageDataHashUpdateStorageHash</protocol>
+			</service>
+						<service>
+			<serivcename>UpdateStorageHas</serivcename>
+			<protocol>XZLZT_UpdateStorageHas</protocol>
+			</service>
+						<service>
+			<serivcename>UpdateStorageHash</serivcename>
+			<protocol>XZLZT_UpdateStorageHash</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

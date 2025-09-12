@@ -1,0 +1,1312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<contributions xmlns="http://com/dc/esb/xmlbean/deployment">  
+ <contribution name="DuePaymentResultNotice" location="./uploadpj/DuePaymentResultNotice.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="DuePaymentResultNotice"></service> 
+ </contribution>  
+ <contribution name="DiscountStatusUpdate" location="./uploadpj/DiscountStatusUpdate.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="DiscountStatusUpdate"></service> 
+ </contribution>  
+ <contribution name="DiscountRegainNotice" location="./uploadpj/DiscountRegainNotice.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="DiscountRegainNotice"></service> 
+ </contribution>  
+ <contribution name="IdmsRoleSync" location="./uploadpj/IdmsRoleSync.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="IdmsRoleSync"></service> 
+ </contribution>  
+ <contribution name="IdmsClientSync" location="./uploadpj/IdmsClientSync.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="IdmsClientSync"></service> 
+ </contribution>  
+ <contribution name="DiscountRegainQuery" location="./uploadpj/DiscountRegainQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="DiscountRegainQuery"></service> 
+ </contribution>  
+ <contribution name="MarginFeeNoticeUpdate" location="./uploadpj/MarginFeeNoticeUpdate.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="MarginFeeNoticeUpdate"></service> 
+ </contribution>  
+ <contribution name="CancelNoticeUpdate" location="./uploadpj/CancelNoticeUpdate.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="CancelNoticeUpdate"></service> 
+ </contribution>  
+ <contribution name="DueTransfer" location="./uploadHX/DueTransfer.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="DueTransfer"></service> 
+ </contribution>  
+ <contribution name="TradeAcceptQuery" location="./uploadpj/TradeAcceptQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="TradeAcceptQuery"></service> 
+ </contribution>  
+ <contribution name="DuePayment" location="./uploadHX/DuePayment.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="DuePayment"></service> 
+ </contribution>  
+ <contribution name="BillDeductMoney" location="./uploadHX/BillDeductMoney.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="BillDeductMoney"></service> 
+ </contribution>  
+ <contribution name="BillPaymentGenerate" location="./uploadHX/BillPaymentGenerate.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="BillPaymentGenerate"></service> 
+ </contribution>  
+ <contribution name="BillDeductMoneyDel" location="./uploadHX/BillDeductMoneyDel.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="BillDeductMoneyDel"></service> 
+ </contribution>  
+ <contribution name="PledgeReceiveMoneyGen" location="./uploadHX/PledgeReceiveMoneyGen.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="PledgeReceiveMoneyGen"></service> 
+ </contribution>  
+ <contribution name="DiscountRegain" location="./uploadHX/DiscountRegain.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="DiscountRegain"></service> 
+ </contribution>  
+ <contribution name="BillReceiveMoney" location="./uploadHX/BillReceiveMoney.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="BillReceiveMoney"></service> 
+ </contribution>  
+ <contribution name="RediscountBuy" location="./uploadHX/RediscountBuy.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="RediscountBuy"></service> 
+ </contribution>  
+ <contribution name="RediscountSell" location="./uploadHX/RediscountSell.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="RediscountSell"></service> 
+ </contribution>  
+ <contribution name="RediscountRegain" location="./uploadHX/RediscountRegain.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="RediscountRegain"></service> 
+ </contribution>  
+ <contribution name="OutrightRepurchase" location="./uploadHX/OutrightRepurchase.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="OutrightRepurchase"></service> 
+ </contribution>  
+ <contribution name="OutrightRepurchaseRedeem" location="./uploadHX/OutrightRepurchaseRedeem.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="OutrightRepurchaseRedeem"></service> 
+ </contribution>  
+ <contribution name="PledgeRepurchase" location="./uploadHX/PledgeRepurchase.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="PledgeRepurchase"></service> 
+ </contribution>  
+ <contribution name="PledgeRepurchaseRedeem" location="./uploadHX/PledgeRepurchaseRedeem.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="PledgeRepurchaseRedeem"></service> 
+ </contribution>  
+ <contribution name="RediscountBuyOut" location="./uploadHX/RediscountBuyOut.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="RediscountBuyOut"></service> 
+ </contribution>  
+ <contribution name="RediscountPledgeRepurchase" location="./uploadHX/RediscountPledgeRepurchase.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="RediscountPledgeRepurchase"></service> 
+ </contribution>  
+ <contribution name="RediscountRepurchaseRedeem" location="./uploadHX/RediscountRepurchaseRedeem.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="RediscountRepurchaseRedeem"></service> 
+ </contribution>  
+ <contribution name="CapitalAccountAllocate" location="./uploadHX/CapitalAccountAllocate.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="CapitalAccountAllocate"></service> 
+ </contribution>  
+ <contribution name="TransPaymentBookkeep" location="./uploadHX/TransPaymentBookkeep.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="TransPaymentBookkeep"></service> 
+ </contribution>  
+ <contribution name="AcceptAgreementTransmit" location="./uploadHX/AcceptAgreementTransmit.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="AcceptAgreementTransmit"></service> 
+ </contribution>  
+ <contribution name="MarginFeeNoticeTransmit" location="./uploadHX/MarginFeeNoticeTransmit.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="MarginFeeNoticeTransmit"></service> 
+ </contribution>  
+ <contribution name="FeeNoticeTransmit" location="./uploadHX/FeeNoticeTransmit.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="FeeNoticeTransmit"></service> 
+ </contribution>  
+ <contribution name="DiscountCancelRollback" location="./uploadHX/DiscountCancelRollback.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="DiscountCancelRollback"></service> 
+ </contribution>  
+ <contribution name="AcceptAgreementCancel" location="./uploadHX/AcceptAgreementCancel.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="AcceptAgreementCancel"></service> 
+ </contribution>  
+ <contribution name="MarginFeeCancel" location="./uploadHX/MarginFeeCancel.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="MarginFeeCancel"></service> 
+ </contribution>  
+ <contribution name="AcceptAgreeCancelRollback" location="./uploadHX/AcceptAgreeCancelRollback.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="AcceptAgreeCancelRollback"></service> 
+ </contribution>  
+ <contribution name="MarginFeeCancelRollback" location="./uploadHX/MarginFeeCancelRollback.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="MarginFeeCancelRollback"></service> 
+ </contribution>  
+ <contribution name="CancelNoticeTransmit" location="./uploadHX/CancelNoticeTransmit.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="CancelNoticeTransmit"></service> 
+ </contribution>  
+ <contribution name="UnusedNoticeCancel" location="./uploadHX/UnusedNoticeCancel.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="UnusedNoticeCancel"></service> 
+ </contribution>  
+ <contribution name="UnusedNoticeRollback" location="./uploadHX/UnusedNoticeRollback.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="UnusedNoticeRollback"></service> 
+ </contribution>  
+ <contribution name="DiscountVoucherTransmit" location="./uploadHX/DiscountVoucherTransmit.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="DiscountVoucherTransmit"></service> 
+ </contribution>  
+ <contribution name="BillInfoTransmit" location="./uploadHX/BillInfoTransmit.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="BillInfoTransmit"></service> 
+ </contribution>  
+ <contribution name="DiscountVoucherCancel" location="./uploadHX/DiscountVoucherCancel.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="DiscountVoucherCancel"></service> 
+ </contribution>  
+ <contribution name="DiscountAccountVerify" location="./uploadHX/DiscountAccountVerify.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="DiscountAccountVerify"></service> 
+ </contribution>  
+ <contribution name="CreditBalanceVerify" location="./uploadHX/CreditBalanceVerify.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="CreditBalanceVerify"></service> 
+ </contribution>  
+ <contribution name="CreditOccupy" location="./uploadHX/CreditOccupy.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="CreditOccupy"></service> 
+ </contribution>  
+ <contribution name="CreditRelease" location="./uploadHX/CreditRelease.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="CreditRelease"></service> 
+ </contribution>  
+ <contribution name="CreditQuery" location="./uploadHX/CreditQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="CreditQuery"></service> 
+ </contribution>  
+ <contribution name="CurrentAccountQuery" location="./uploadHX/CurrentAccountQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="CurrentAccountQuery"></service> 
+ </contribution>  
+ <contribution name="MarginAccountQuery" location="./uploadHX/MarginAccountQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="MarginAccountQuery"></service> 
+ </contribution>  
+ <contribution name="AccountBalanceQuery" location="./uploadHX/AccountBalanceQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="AccountBalanceQuery"></service> 
+ </contribution>  
+ <contribution name="LoanCreditQuery" location="./uploadHX/LoanCreditQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="LoanCreditQuery"></service> 
+ </contribution>  
+ <contribution name="CreditGradeQuery" location="./uploadHX/CreditGradeQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="CreditGradeQuery"></service> 
+ </contribution>  
+ <contribution name="AcceptApplyStatusUpdate" location="./uploadpj/AcceptApplyStatusUpdate.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="AcceptApplyStatusUpdate"></service> 
+ </contribution>  
+ <contribution name="ShipArrival" location="./uploadERP/ShipArrival.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ShipArrival"></service> 
+ </contribution>  
+ <contribution name="DetectService_esb" location="./uploadservice/DetectService_esb.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="DetectService_esb"></service> 
+ </contribution>  
+ <contribution name="DspBaseService" location="./uploadservice/DspBaseService.jar" version="0" serviceType="BASE"> 
+  <service serviceid="DspBaseService"></service> 
+ </contribution>  
+ <contribution name="MRCommonGetInterface" location="./uploadBIGPURCHASESYS/MRCommonGetInterface.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="MRCommonGetInterface"></service> 
+ </contribution>  
+ <contribution name="MRCommonGetInterfaceCS" location="./uploadBIGPURCHASESYS/MRCommonGetInterfaceCS.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="MRCommonGetInterfaceCS"></service> 
+ </contribution>  
+ <contribution name="LMCommonGetInterface" location="./uploadBIGPURCHASESYS/LMCommonGetInterface.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="LMCommonGetInterface"></service> 
+ </contribution>  
+ <contribution name="LMCommonGetInterfaceCS" location="./uploadBIGPURCHASESYS/LMCommonGetInterfaceCS.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="LMCommonGetInterfaceCS"></service> 
+ </contribution>  
+ <contribution name="PoNoDlvyDueDateCSAdd" location="./uploadBIGPURCHASESYS/PoNoDlvyDueDateCSAdd.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="PoNoDlvyDueDateCSAdd"></service> 
+ </contribution>  
+ <contribution name="MRCommonPostInterfaceCS" location="./uploadBIGPURCHASESYS/MRCommonPostInterfaceCS.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="MRCommonPostInterfaceCS"></service> 
+ </contribution>  
+ <contribution name="MPVCommonPostInterfaceCS" location="./uploadBIGPURCHASESYS/MPVCommonPostInterfaceCS.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="MPVCommonPostInterfaceCS"></service> 
+ </contribution>  
+ <contribution name="MPVCommonPostInterface" location="./uploadBIGPURCHASESYS/MPVCommonPostInterface.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="MPVCommonPostInterface"></service> 
+ </contribution>  
+ <contribution name="MRCommonPostInterface" location="./uploadBIGPURCHASESYS/MRCommonPostInterface.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="MRCommonPostInterface"></service> 
+ </contribution>  
+ <contribution name="CTCommonPostInterfaceCS" location="./uploadBIGPURCHASESYS/CTCommonPostInterfaceCS.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="CTCommonPostInterfaceCS"></service> 
+ </contribution>  
+ <contribution name="CTCommonPostInterface" location="./uploadBIGPURCHASESYS/CTCommonPostInterface.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="CTCommonPostInterface"></service> 
+ </contribution>  
+ <contribution name="KPACommonPostInterfaceCS" location="./uploadBIGPURCHASESYS/KPACommonPostInterfaceCS.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="KPACommonPostInterfaceCS"></service> 
+ </contribution>  
+ <contribution name="KPACommonPostInterface" location="./uploadBIGPURCHASESYS/KPACommonPostInterface.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="KPACommonPostInterface"></service> 
+ </contribution>  
+ <contribution name="MQZAuthorizationCSAdd" location="./uploadBIGPURCHASESYS/MQZAuthorizationCSAdd.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="MQZAuthorizationCSAdd"></service> 
+ </contribution>  
+ <contribution name="MQZAuthorizationAdd" location="./uploadBIGPURCHASESYS/MQZAuthorizationAdd.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="MQZAuthorizationAdd"></service> 
+ </contribution>  
+ <contribution name="MQECommonGetInterfaceCS" location="./uploadBIGPURCHASESYS/MQECommonGetInterfaceCS.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="MQECommonGetInterfaceCS"></service> 
+ </contribution>  
+ <contribution name="MQECommonGetInterface" location="./uploadBIGPURCHASESYS/MQECommonGetInterface.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="MQECommonGetInterface"></service> 
+ </contribution>  
+ <contribution name="MQECommonPostInterfaceCS" location="./uploadBIGPURCHASESYS/MQECommonPostInterfaceCS.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="MQECommonPostInterfaceCS"></service> 
+ </contribution>  
+ <contribution name="MQECommonPostInterface" location="./uploadBIGPURCHASESYS/MQECommonPostInterface.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="MQECommonPostInterface"></service> 
+ </contribution>  
+ <contribution name="WFCommonGetInterfaceCS" location="./uploadBIGPURCHASESYS/WFCommonGetInterfaceCS.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WFCommonGetInterfaceCS"></service> 
+ </contribution>  
+ <contribution name="WFCommonGetInterface" location="./uploadBIGPURCHASESYS/WFCommonGetInterface.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WFCommonGetInterface"></service> 
+ </contribution>  
+ <contribution name="TokenGet" location="./uploadGYLJR/TokenGet.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="TokenGet"></service> 
+ </contribution>  
+ <contribution name="PaymentCheckStatus" location="./uploadGYLJR/PaymentCheckStatus.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="PaymentCheckStatus"></service> 
+ </contribution>  
+ <contribution name="PaymentUpdateStatus" location="./uploadGYLJR/PaymentUpdateStatus.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="PaymentUpdateStatus"></service> 
+ </contribution>  
+ <contribution name="PaymentGetStatus" location="./uploadGYLJR/PaymentGetStatus.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="PaymentGetStatus"></service> 
+ </contribution>  
+ <contribution name="PaymentGetInfoList" location="./uploadGYLJR/PaymentGetInfoList.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="PaymentGetInfoList"></service> 
+ </contribution>  
+ <contribution name="PaymentGetPaymentList" location="./uploadGYLJR/PaymentGetPaymentList.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="PaymentGetPaymentList"></service> 
+ </contribution>  
+ <contribution name="PaymentOtherApply" location="./uploadGYLJR/PaymentOtherApply.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="PaymentOtherApply"></service> 
+ </contribution>  
+ <contribution name="LetterEncryptBack" location="./uploadGYLJR/LetterEncryptBack.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="LetterEncryptBack"></service> 
+ </contribution>  
+ <contribution name="LetterDecryptBack" location="./uploadGYLJR/LetterDecryptBack.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="LetterDecryptBack"></service> 
+ </contribution>  
+ <contribution name="LetterUpdateStatus" location="./uploadGYLJR/LetterUpdateStatus.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="LetterUpdateStatus"></service> 
+ </contribution>  
+ <contribution name="LetterRollbackCheck" location="./uploadGYLJR/LetterRollbackCheck.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="LetterRollbackCheck"></service> 
+ </contribution>  
+ <contribution name="LoanGetTenderContractInfos" location="./uploadGYLJR/LoanGetTenderContractInfos.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="LoanGetTenderContractInfos"></service> 
+ </contribution>  
+ <contribution name="LoanGetSupplierHistoryTenderInfos" location="./uploadGYLJR/LoanGetSupplierHistoryTenderInfos.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="LoanGetSupplierHistoryTenderInfos"></service> 
+ </contribution>  
+ <contribution name="LoanCheckStatus" location="./uploadGYLJR/LoanCheckStatus.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="LoanCheckStatus"></service> 
+ </contribution>  
+ <contribution name="LoanUpdateStatus" location="./uploadGYLJR/LoanUpdateStatus.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="LoanUpdateStatus"></service> 
+ </contribution>  
+ <contribution name="LoanOtherApply" location="./uploadGYLJR/LoanOtherApply.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="LoanOtherApply"></service> 
+ </contribution>  
+ <contribution name="ZhyyLogZbOldCarDetailsQuery" location="./uploadDWSDB/ZhyyLogZbOldCarDetailsQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ZhyyLogZbOldCarDetailsQuery"></service> 
+ </contribution>  
+ <contribution name="ZhyyMasZbQualityClosedLoopQuery" location="./uploadERPZSDB/ZhyyMasZbQualityClosedLoopQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ZhyyMasZbQualityClosedLoopQuery"></service> 
+ </contribution>  
+ <contribution name="SendDriverWXTruckAdd" location="./uploadERP/SendDriverWXTruckAdd.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="SendDriverWXTruckAdd"></service> 
+ </contribution>  
+ <contribution name="SendDriverWXTruckQuery" location="./uploadERP/SendDriverWXTruckQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="SendDriverWXTruckQuery"></service> 
+ </contribution>  
+ <contribution name="GuomaoUserInfoQuery" location="./uploadERP/GuomaoUserInfoQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="GuomaoUserInfoQuery"></service> 
+ </contribution>  
+ <contribution name="GuomaoApproveInfoTestQuery" location="./uploadERP/GuomaoApproveInfoTestQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="GuomaoApproveInfoTestQuery"></service> 
+ </contribution>  
+ <contribution name="GuomaoAffectContranctInfoTestQuery" location="./uploadERP/GuomaoAffectContranctInfoTestQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="GuomaoAffectContranctInfoTestQuery"></service> 
+ </contribution>  
+ <contribution name="JinmaoBidingInfoDel" location="./uploadERP/JinmaoBidingInfoDel.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="JinmaoBidingInfoDel"></service> 
+ </contribution>  
+ <contribution name="JinmaoBidingInfoAdd" location="./uploadERP/JinmaoBidingInfoAdd.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="JinmaoBidingInfoAdd"></service> 
+ </contribution>  
+ <contribution name="GuomaoAffectContractMesQuery" location="./uploadERP/GuomaoAffectContractMesQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="GuomaoAffectContractMesQuery"></service> 
+ </contribution>  
+ <contribution name="ApproveCarLoadPointQuery" location="./uploadERP/ApproveCarLoadPointQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ApproveCarLoadPointQuery"></service> 
+ </contribution>  
+ <contribution name="FlatStockQuery" location="./uploadERP/FlatStockQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="FlatStockQuery"></service> 
+ </contribution>  
+ <contribution name="StockContractInfoQuery" location="./uploadERP/StockContractInfoQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="StockContractInfoQuery"></service> 
+ </contribution>  
+ <contribution name="ShipArrivaledInfoQuery" location="./uploadERP/ShipArrivaledInfoQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ShipArrivaledInfoQuery"></service> 
+ </contribution>  
+ <contribution name="CarArrivaledInfoQuery" location="./uploadERP/CarArrivaledInfoQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="CarArrivaledInfoQuery"></service> 
+ </contribution>  
+ <contribution name="RailArrivaledInfoQuery" location="./uploadERP/RailArrivaledInfoQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="RailArrivaledInfoQuery"></service> 
+ </contribution>  
+ <contribution name="SpareDrawMoveFlow" location="./uploadERP/SpareDrawMoveFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="SpareDrawMoveFlow"></service> 
+ </contribution>  
+ <contribution name="StockScanInfoQuery" location="./uploadERP/StockScanInfoQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="StockScanInfoQuery"></service> 
+ </contribution>  
+ <contribution name="StockSpareSendERPFlow" location="./uploadERP/StockSpareSendERPFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="StockSpareSendERPFlow"></service> 
+ </contribution>  
+ <contribution name="StockINScanInfoQuery" location="./uploadERP/StockINScanInfoQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="StockINScanInfoQuery"></service> 
+ </contribution>  
+ <contribution name="StockInFromXTFlow" location="./uploadERP/StockInFromXTFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="StockInFromXTFlow"></service> 
+ </contribution>  
+ <contribution name="StocksUnionReturnFlow" location="./uploadERP/StocksUnionReturnFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="StocksUnionReturnFlow"></service> 
+ </contribution>  
+ <contribution name="StockInnerReturnFlow" location="./uploadERP/StockInnerReturnFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="StockInnerReturnFlow"></service> 
+ </contribution>  
+ <contribution name="SolidStockTransQueery" location="./uploadERP/SolidStockTransQueery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="SolidStockTransQueery"></service> 
+ </contribution>  
+ <contribution name="GuomaoEntrustResReturnFlow" location="./uploadERP/GuomaoEntrustResReturnFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="GuomaoEntrustResReturnFlow"></service> 
+ </contribution>  
+ <contribution name="StockSteelINFlow" location="./uploadERP/StockSteelINFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="StockSteelINFlow"></service> 
+ </contribution>  
+ <contribution name="StockArrivedVerifyFlow" location="./uploadERP/StockArrivedVerifyFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="StockArrivedVerifyFlow"></service> 
+ </contribution>  
+ <contribution name="ShipS1ToNbSysQuery" location="./uploadERP/ShipS1ToNbSysQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ShipS1ToNbSysQuery"></service> 
+ </contribution>  
+ <contribution name="ShipInfoQuery" location="./uploadERP/ShipInfoQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ShipInfoQuery"></service> 
+ </contribution>  
+ <contribution name="GuomaoImportStuffContractFlow" location="./uploadERP/GuomaoImportStuffContractFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="GuomaoImportStuffContractFlow"></service> 
+ </contribution>  
+ <contribution name="StockSpareArrivedFlow" location="./uploadERP/StockSpareArrivedFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="StockSpareArrivedFlow"></service> 
+ </contribution>  
+ <contribution name="GuomaoUserMessInfoQuery" location="./uploadERP/GuomaoUserMessInfoQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="GuomaoUserMessInfoQuery"></service> 
+ </contribution>  
+ <contribution name="GuomaoEntrustResReturnGetFlow" location="./uploadERP/GuomaoEntrustResReturnGetFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="GuomaoEntrustResReturnGetFlow"></service> 
+ </contribution>  
+ <contribution name="SendPoNoMsgForNBFlow" location="./uploadERP/SendPoNoMsgForNBFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="SendPoNoMsgForNBFlow"></service> 
+ </contribution>  
+ <contribution name="ComfirmForEndFlow" location="./uploadERP/ComfirmForEndFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ComfirmForEndFlow"></service> 
+ </contribution>  
+ <contribution name="MatchedWorkflowListQuery" location="./uploadERP/MatchedWorkflowListQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="MatchedWorkflowListQuery"></service> 
+ </contribution>  
+ <contribution name="SentAppJsonMatchQuery" location="./uploadERP/SentAppJsonMatchQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="SentAppJsonMatchQuery"></service> 
+ </contribution>  
+ <contribution name="BtnListQuery" location="./uploadERP/BtnListQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="BtnListQuery"></service> 
+ </contribution>  
+ <contribution name="EmergencyCarListQuery" location="./uploadERP/EmergencyCarListQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="EmergencyCarListQuery"></service> 
+ </contribution>  
+ <contribution name="LogonMACSourceByConditionsQuery" location="./uploadERP/LogonMACSourceByConditionsQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="LogonMACSourceByConditionsQuery"></service> 
+ </contribution>  
+ <contribution name="SlabExportStockFlow" location="./uploadERP/SlabExportStockFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="SlabExportStockFlow"></service> 
+ </contribution>  
+ <contribution name="SlabExportStockListQuery" location="./uploadERP/SlabExportStockListQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="SlabExportStockListQuery"></service> 
+ </contribution>  
+ <contribution name="SlabGoodsListQuery" location="./uploadERP/SlabGoodsListQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="SlabGoodsListQuery"></service> 
+ </contribution>  
+ <contribution name="MonitorPicUpdate" location="./uploadERP/MonitorPicUpdate.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="MonitorPicUpdate"></service> 
+ </contribution>  
+ <contribution name="MonitorManageHistoryQuery" location="./uploadERP/MonitorManageHistoryQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="MonitorManageHistoryQuery"></service> 
+ </contribution>  
+ <contribution name="ConfirmEndFlow" location="./uploadERP/ConfirmEndFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ConfirmEndFlow"></service> 
+ </contribution>  
+ <contribution name="MonitorManageCancleVerfityFlow" location="./uploadERP/MonitorManageCancleVerfityFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="MonitorManageCancleVerfityFlow"></service> 
+ </contribution>  
+ <contribution name="MonitorManageVerifyFlow" location="./uploadERP/MonitorManageVerifyFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="MonitorManageVerifyFlow"></service> 
+ </contribution>  
+ <contribution name="MonitorManageDeleteFlow" location="./uploadERP/MonitorManageDeleteFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="MonitorManageDeleteFlow"></service> 
+ </contribution>  
+ <contribution name="MonitorManagerUpdateFlow" location="./uploadERP/MonitorManagerUpdateFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="MonitorManagerUpdateFlow"></service> 
+ </contribution>  
+ <contribution name="MonitorManageAddFlow" location="./uploadERP/MonitorManageAddFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="MonitorManageAddFlow"></service> 
+ </contribution>  
+ <contribution name="MonitorManageQuery" location="./uploadERP/MonitorManageQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="MonitorManageQuery"></service> 
+ </contribution>  
+ <contribution name="CredentialVisitRecordAdd" location="./uploadERP/CredentialVisitRecordAdd.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="CredentialVisitRecordAdd"></service> 
+ </contribution>  
+ <contribution name="SupplierContentMainteFlow" location="./uploadERP/SupplierContentMainteFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="SupplierContentMainteFlow"></service> 
+ </contribution>  
+ <contribution name="SupplierContentVerifyFlow" location="./uploadERP/SupplierContentVerifyFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="SupplierContentVerifyFlow"></service> 
+ </contribution>  
+ <contribution name="SupplierContentDeleteFlow" location="./uploadERP/SupplierContentDeleteFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="SupplierContentDeleteFlow"></service> 
+ </contribution>  
+ <contribution name="SupplierContentUpdate" location="./uploadERP/SupplierContentUpdate.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="SupplierContentUpdate"></service> 
+ </contribution>  
+ <contribution name="SupplierContentAdd" location="./uploadERP/SupplierContentAdd.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="SupplierContentAdd"></service> 
+ </contribution>  
+ <contribution name="SupplierContentListFlow" location="./uploadERP/SupplierContentListFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="SupplierContentListFlow"></service> 
+ </contribution>  
+ <contribution name="SuplierGeographMainteSaveFlow" location="./uploadERP/SuplierGeographMainteSaveFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="SuplierGeographMainteSaveFlow"></service> 
+ </contribution>  
+ <contribution name="SuplierGeographMainteQuery" location="./uploadERP/SuplierGeographMainteQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="SuplierGeographMainteQuery"></service> 
+ </contribution>  
+ <contribution name="SendMessageListQuery" location="./uploadERP/SendMessageListQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="SendMessageListQuery"></service> 
+ </contribution>  
+ <contribution name="LandlineQuery" location="./uploadERP/LandlineQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="LandlineQuery"></service> 
+ </contribution>  
+ <contribution name="GuomaoSpareTrustQuery" location="./uploadERP/GuomaoSpareTrustQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="GuomaoSpareTrustQuery"></service> 
+ </contribution>  
+ <contribution name="PurchaseGatekeeperQuery" location="./uploadERP/PurchaseGatekeeperQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="PurchaseGatekeeperQuery"></service> 
+ </contribution>  
+ <contribution name="PurchaseCarModelQuery" location="./uploadERP/PurchaseCarModelQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="PurchaseCarModelQuery"></service> 
+ </contribution>  
+ <contribution name="PurchaseCarCancel" location="./uploadERP/PurchaseCarCancel.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="PurchaseCarCancel"></service> 
+ </contribution>  
+ <contribution name="PurchaseCarVerifyFlow" location="./uploadERP/PurchaseCarVerifyFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="PurchaseCarVerifyFlow"></service> 
+ </contribution>  
+ <contribution name="PurchaseCarCUpdate" location="./uploadERP/PurchaseCarCUpdate.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="PurchaseCarCUpdate"></service> 
+ </contribution>  
+ <contribution name="PurchaseCarQuery" location="./uploadERP/PurchaseCarQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="PurchaseCarQuery"></service> 
+ </contribution>  
+ <contribution name="PurchaseCarCompanyTypeQuery" location="./uploadERP/PurchaseCarCompanyTypeQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="PurchaseCarCompanyTypeQuery"></service> 
+ </contribution>  
+ <contribution name="PurchaseCarApproveHistoryQuery" location="./uploadERP/PurchaseCarApproveHistoryQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="PurchaseCarApproveHistoryQuery"></service> 
+ </contribution>  
+ <contribution name="GuomaoInerfaceFlow" location="./uploadERP/GuomaoInerfaceFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="GuomaoInerfaceFlow"></service> 
+ </contribution>  
+ <contribution name="PreciseAcessInterfaceFlow" location="./uploadERP/PreciseAcessInterfaceFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="PreciseAcessInterfaceFlow"></service> 
+ </contribution>  
+ <contribution name="WXUserBaseInfoQuery" location="./uploadERP/WXUserBaseInfoQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WXUserBaseInfoQuery"></service> 
+ </contribution>  
+ <contribution name="ContractManageLedgeQuery" location="./uploadERP/ContractManageLedgeQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ContractManageLedgeQuery"></service> 
+ </contribution>  
+ <contribution name="ContractManageLedgeCodeQuery" location="./uploadERP/ContractManageLedgeCodeQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ContractManageLedgeCodeQuery"></service> 
+ </contribution>  
+ <contribution name="PurchaseCarDetailGetAdd" location="./uploadERP/PurchaseCarDetailGetAdd.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="PurchaseCarDetailGetAdd"></service> 
+ </contribution>  
+ <contribution name="PurchaseCarMainUpdate" location="./uploadERP/PurchaseCarMainUpdate.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="PurchaseCarMainUpdate"></service> 
+ </contribution>  
+ <contribution name="PurchaseCarTypeAdd" location="./uploadERP/PurchaseCarTypeAdd.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="PurchaseCarTypeAdd"></service> 
+ </contribution>  
+ <contribution name="PurchaseCarEnterQuery" location="./uploadERP/PurchaseCarEnterQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="PurchaseCarEnterQuery"></service> 
+ </contribution>  
+ <contribution name="PurchaseCarChooseContractFlow" location="./uploadERP/PurchaseCarChooseContractFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="PurchaseCarChooseContractFlow"></service> 
+ </contribution>  
+ <contribution name="PurchaseCarCancelVerifyFlow" location="./uploadERP/PurchaseCarCancelVerifyFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="PurchaseCarCancelVerifyFlow"></service> 
+ </contribution>  
+ <contribution name="PurchaseCarDispatchVerifyFlow" location="./uploadERP/PurchaseCarDispatchVerifyFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="PurchaseCarDispatchVerifyFlow"></service> 
+ </contribution>  
+ <contribution name="PurchaseCarMainDel" location="./uploadERP/PurchaseCarMainDel.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="PurchaseCarMainDel"></service> 
+ </contribution>  
+ <contribution name="PurchaseCarDetailDel" location="./uploadERP/PurchaseCarDetailDel.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="PurchaseCarDetailDel"></service> 
+ </contribution>  
+ <contribution name="PurchaseCarDetailListQuery" location="./uploadERP/PurchaseCarDetailListQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="PurchaseCarDetailListQuery"></service> 
+ </contribution>  
+ <contribution name="PurchaseCarMainListQuery" location="./uploadERP/PurchaseCarMainListQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="PurchaseCarMainListQuery"></service> 
+ </contribution>  
+ <contribution name="PurchaseCarDetailAdd" location="./uploadERP/PurchaseCarDetailAdd.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="PurchaseCarDetailAdd"></service> 
+ </contribution>  
+ <contribution name="PurchaseCarDetailUpdate" location="./uploadERP/PurchaseCarDetailUpdate.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="PurchaseCarDetailUpdate"></service> 
+ </contribution>  
+ <contribution name="PurchaseCarMainAdd" location="./uploadERP/PurchaseCarMainAdd.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="PurchaseCarMainAdd"></service> 
+ </contribution>  
+ <contribution name="LineCarGetStoreListQuery" location="./uploadERP/LineCarGetStoreListQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="LineCarGetStoreListQuery"></service> 
+ </contribution>  
+ <contribution name="LineCarListQuery" location="./uploadERP/LineCarListQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="LineCarListQuery"></service> 
+ </contribution>  
+ <contribution name="LogisticsNodeDetailQuery" location="./uploadERP/LogisticsNodeDetailQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="LogisticsNodeDetailQuery"></service> 
+ </contribution>  
+ <contribution name="LogisticsNodeQuery" location="./uploadERP/LogisticsNodeQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="LogisticsNodeQuery"></service> 
+ </contribution>  
+ <contribution name="TruckSelfGoodsTypeQuery" location="./uploadERP/TruckSelfGoodsTypeQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="TruckSelfGoodsTypeQuery"></service> 
+ </contribution>  
+ <contribution name="CredentialVerifyFlow" location="./uploadERP/CredentialVerifyFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="CredentialVerifyFlow"></service> 
+ </contribution>  
+ <contribution name="CredentialQuery" location="./uploadERP/CredentialQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="CredentialQuery"></service> 
+ </contribution>  
+ <contribution name="CommonQuery" location="./uploadENTRANCE/CommonQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="CommonQuery"></service> 
+ </contribution>  
+ <contribution name="TelMenuQuery" location="./uploadENTRANCE/TelMenuQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="TelMenuQuery"></service> 
+ </contribution>  
+ <contribution name="TotalPlanQuery" location="./uploadENTRANCE/TotalPlanQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="TotalPlanQuery"></service> 
+ </contribution>  
+ <contribution name="CommonQuery1" location="./uploadENTRANCE/CommonQuery1.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="CommonQuery1"></service> 
+ </contribution>  
+ <contribution name="CarPrecontractIdQuery" location="./uploadCCWLSYS/CarPrecontractIdQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="CarPrecontractIdQuery"></service> 
+ </contribution>  
+ <contribution name="CarrierInfoQuery" location="./uploadCCWLSYS/CarrierInfoQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="CarrierInfoQuery"></service> 
+ </contribution>  
+ <contribution name="CarrierPrecontractCancelVerfityFlow" location="./uploadCCWLSYS/CarrierPrecontractCancelVerfityFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="CarrierPrecontractCancelVerfityFlow"></service> 
+ </contribution>  
+ <contribution name="CarrierPrecontractVerfityFlow" location="./uploadCCWLSYS/CarrierPrecontractVerfityFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="CarrierPrecontractVerfityFlow"></service> 
+ </contribution>  
+ <contribution name="CarrierPrecontractDel" location="./uploadCCWLSYS/CarrierPrecontractDel.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="CarrierPrecontractDel"></service> 
+ </contribution>  
+ <contribution name="CarrierPrecontractUpdate" location="./uploadCCWLSYS/CarrierPrecontractUpdate.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="CarrierPrecontractUpdate"></service> 
+ </contribution>  
+ <contribution name="CarrierPrecontractAdd" location="./uploadCCWLSYS/CarrierPrecontractAdd.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="CarrierPrecontractAdd"></service> 
+ </contribution>  
+ <contribution name="CarrierPrecontractQuery" location="./uploadCCWLSYS/CarrierPrecontractQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="CarrierPrecontractQuery"></service> 
+ </contribution>  
+ <contribution name="CloseFlow" location="./uploadCCWLSYS/CloseFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="CloseFlow"></service> 
+ </contribution>  
+ <contribution name="FlowCancel" location="./uploadCCWLSYS/FlowCancel.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="FlowCancel"></service> 
+ </contribution>  
+ <contribution name="ApproveReturnFlow" location="./uploadCCWLSYS/ApproveReturnFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ApproveReturnFlow"></service> 
+ </contribution>  
+ <contribution name="ApproveVarrierSubmitFlow" location="./uploadCCWLSYS/ApproveVarrierSubmitFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ApproveVarrierSubmitFlow"></service> 
+ </contribution>  
+ <contribution name="ApproveCarrierFlow" location="./uploadCCWLSYS/ApproveCarrierFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ApproveCarrierFlow"></service> 
+ </contribution>  
+ <contribution name="SubmitAddAprroveFlow" location="./uploadCCWLSYS/SubmitAddAprroveFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="SubmitAddAprroveFlow"></service> 
+ </contribution>  
+ <contribution name="SubmitNormalApproveFlow" location="./uploadCCWLSYS/SubmitNormalApproveFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="SubmitNormalApproveFlow"></service> 
+ </contribution>  
+ <contribution name="FindUserInfoFlow" location="./uploadCCWLSYS/FindUserInfoFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="FindUserInfoFlow"></service> 
+ </contribution>  
+ <contribution name="ApproveListDetailQuery" location="./uploadCCWLSYS/ApproveListDetailQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ApproveListDetailQuery"></service> 
+ </contribution>  
+ <contribution name="ApproveAwaitListQuery" location="./uploadCCWLSYS/ApproveAwaitListQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ApproveAwaitListQuery"></service> 
+ </contribution>  
+ <contribution name="FlowSystemTypeQuery" location="./uploadCCWLSYS/FlowSystemTypeQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="FlowSystemTypeQuery"></service> 
+ </contribution>  
+ <contribution name="DomainSwitchFlow" location="./uploadCCWLSYS/DomainSwitchFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="DomainSwitchFlow"></service> 
+ </contribution>  
+ <contribution name="CarrierDel" location="./uploadCCWLSYS/CarrierDel.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="CarrierDel"></service> 
+ </contribution>  
+ <contribution name="ShipChooseListQuery" location="./uploadCCWLSYS/ShipChooseListQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ShipChooseListQuery"></service> 
+ </contribution>  
+ <contribution name="MainInfoAddSaveFlow" location="./uploadCCWLSYS/MainInfoAddSaveFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="MainInfoAddSaveFlow"></service> 
+ </contribution>  
+ <contribution name="DetailInfoDel" location="./uploadCCWLSYS/DetailInfoDel.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="DetailInfoDel"></service> 
+ </contribution>  
+ <contribution name="DetailInfoAdd" location="./uploadCCWLSYS/DetailInfoAdd.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="DetailInfoAdd"></service> 
+ </contribution>  
+ <contribution name="WareHouseDetailListQuery" location="./uploadCCWLSYS/WareHouseDetailListQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WareHouseDetailListQuery"></service> 
+ </contribution>  
+ <contribution name="ClientUserDetailQuery" location="./uploadCCWLSYS/ClientUserDetailQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ClientUserDetailQuery"></service> 
+ </contribution>  
+ <contribution name="DetailListQuery" location="./uploadCCWLSYS/DetailListQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="DetailListQuery"></service> 
+ </contribution>  
+ <contribution name="FinishCaseCancel" location="./uploadCCWLSYS/FinishCaseCancel.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="FinishCaseCancel"></service> 
+ </contribution>  
+ <contribution name="FinishCaseFlow" location="./uploadCCWLSYS/FinishCaseFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="FinishCaseFlow"></service> 
+ </contribution>  
+ <contribution name="FittingCancel" location="./uploadCCWLSYS/FittingCancel.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="FittingCancel"></service> 
+ </contribution>  
+ <contribution name="FittingFlow" location="./uploadCCWLSYS/FittingFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="FittingFlow"></service> 
+ </contribution>  
+ <contribution name="ManualCarCancel" location="./uploadCCWLSYS/ManualCarCancel.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ManualCarCancel"></service> 
+ </contribution>  
+ <contribution name="ManualCarListQuery" location="./uploadCCWLSYS/ManualCarListQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ManualCarListQuery"></service> 
+ </contribution>  
+ <contribution name="ManualCarFlow" location="./uploadCCWLSYS/ManualCarFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ManualCarFlow"></service> 
+ </contribution>  
+ <contribution name="TranSportViorec1Query" location="./uploadCCWLSYS/TranSportViorec1Query.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="TranSportViorec1Query"></service> 
+ </contribution>  
+ <contribution name="CarrierViorec1ChooseFlow" location="./uploadCCWLSYS/CarrierViorec1ChooseFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="CarrierViorec1ChooseFlow"></service> 
+ </contribution>  
+ <contribution name="DoorMachineDistributeCancel" location="./uploadCCWLSYS/DoorMachineDistributeCancel.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="DoorMachineDistributeCancel"></service> 
+ </contribution>  
+ <contribution name="DoorMachineDistributeFlow" location="./uploadCCWLSYS/DoorMachineDistributeFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="DoorMachineDistributeFlow"></service> 
+ </contribution>  
+ <contribution name="ManualReportPortCancel" location="./uploadCCWLSYS/ManualReportPortCancel.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ManualReportPortCancel"></service> 
+ </contribution>  
+ <contribution name="ManualReportPortFlow" location="./uploadCCWLSYS/ManualReportPortFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ManualReportPortFlow"></service> 
+ </contribution>  
+ <contribution name="ShipArrivalReportListQuery" location="./uploadCCWLSYS/ShipArrivalReportListQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ShipArrivalReportListQuery"></service> 
+ </contribution>  
+ <contribution name="AuthorityQuery" location="./uploadCCWLSYS/AuthorityQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="AuthorityQuery"></service> 
+ </contribution>  
+ <contribution name="ShipPretributeNoQuery" location="./uploadCCWLSYS/ShipPretributeNoQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ShipPretributeNoQuery"></service> 
+ </contribution>  
+ <contribution name="ShipNumberQuery" location="./uploadCCWLSYS/ShipNumberQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ShipNumberQuery"></service> 
+ </contribution>  
+ <contribution name="MarineReverseFinishCaseFlow" location="./uploadCCWLSYS/MarineReverseFinishCaseFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="MarineReverseFinishCaseFlow"></service> 
+ </contribution>  
+ <contribution name="MarineReverseQuery" location="./uploadCCWLSYS/MarineReverseQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="MarineReverseQuery"></service> 
+ </contribution>  
+ <contribution name="CodeScanFlow" location="./uploadCCWLSYS/CodeScanFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="CodeScanFlow"></service> 
+ </contribution>  
+ <contribution name="ShipTransportNoQuery" location="./uploadCCWLSYS/ShipTransportNoQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ShipTransportNoQuery"></service> 
+ </contribution>  
+ <contribution name="SpecialMachineQuery" location="./uploadCCWLSYS/SpecialMachineQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="SpecialMachineQuery"></service> 
+ </contribution>  
+ <contribution name="CarrierChooseFLow" location="./uploadCCWLSYS/CarrierChooseFLow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="CarrierChooseFLow"></service> 
+ </contribution>  
+ <contribution name="SpecialMachineCancelVerifyFlow" location="./uploadCCWLSYS/SpecialMachineCancelVerifyFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="SpecialMachineCancelVerifyFlow"></service> 
+ </contribution>  
+ <contribution name="SpecialMachineDetailDistributeVerifyFlow" location="./uploadCCWLSYS/SpecialMachineDetailDistributeVerifyFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="SpecialMachineDetailDistributeVerifyFlow"></service> 
+ </contribution>  
+ <contribution name="SpecialMachineDetailUpdate" location="./uploadCCWLSYS/SpecialMachineDetailUpdate.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="SpecialMachineDetailUpdate"></service> 
+ </contribution>  
+ <contribution name="SpecialMachineDetailQuery" location="./uploadCCWLSYS/SpecialMachineDetailQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="SpecialMachineDetailQuery"></service> 
+ </contribution>  
+ <contribution name="MainStatusChooseFlow" location="./uploadCCWLSYS/MainStatusChooseFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="MainStatusChooseFlow"></service> 
+ </contribution>  
+ <contribution name="SpecialMachineReturnFlow" location="./uploadCCWLSYS/SpecialMachineReturnFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="SpecialMachineReturnFlow"></service> 
+ </contribution>  
+ <contribution name="ChooseFlow" location="./uploadCCWLSYS/ChooseFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ChooseFlow"></service> 
+ </contribution>  
+ <contribution name="DriverDischargeFlow" location="./uploadCCWLSYS/DriverDischargeFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="DriverDischargeFlow"></service> 
+ </contribution>  
+ <contribution name="GatekeeperInfoQuery" location="./uploadCCWLSYS/GatekeeperInfoQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="GatekeeperInfoQuery"></service> 
+ </contribution>  
+ <contribution name="CCWLLoginFlow" location="./uploadCCWLSYS/CCWLLoginFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="CCWLLoginFlow"></service> 
+ </contribution>  
+ <contribution name="VehicleHistoryCarQuery" location="./uploadCLMJ/VehicleHistoryCarQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="VehicleHistoryCarQuery"></service> 
+ </contribution>  
+ <contribution name="VehicleWithPeopleQuery" location="./uploadCLMJ/VehicleWithPeopleQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="VehicleWithPeopleQuery"></service> 
+ </contribution>  
+ <contribution name="VehicleTemporaryCarDetailAdd" location="./uploadCLMJ/VehicleTemporaryCarDetailAdd.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="VehicleTemporaryCarDetailAdd"></service> 
+ </contribution>  
+ <contribution name="BidWebsiteAttachmentDownload" location="./uploadCLMJ/BidWebsiteAttachmentDownload.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="BidWebsiteAttachmentDownload"></service> 
+ </contribution>  
+ <contribution name="BidAttachmentDownload" location="./uploadCLMJ/BidAttachmentDownload.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="BidAttachmentDownload"></service> 
+ </contribution>  
+ <contribution name="BelongCompanyTypeQuery" location="./uploadCLMJ/BelongCompanyTypeQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="BelongCompanyTypeQuery"></service> 
+ </contribution>  
+ <contribution name="VehicleBlacklistQuery" location="./uploadCLMJ/VehicleBlacklistQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="VehicleBlacklistQuery"></service> 
+ </contribution>  
+ <contribution name="MROMollEntranceProgressQuery" location="./uploadCLMJ/MROMollEntranceProgressQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="MROMollEntranceProgressQuery"></service> 
+ </contribution>  
+ <contribution name="MROTemporaryCarMainAdd" location="./uploadCLMJ/MROTemporaryCarMainAdd.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="MROTemporaryCarMainAdd"></service> 
+ </contribution>  
+ <contribution name="VehicleTemporaryDetailUserInfoQuery" location="./uploadCLMJ/VehicleTemporaryDetailUserInfoQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="VehicleTemporaryDetailUserInfoQuery"></service> 
+ </contribution>  
+ <contribution name="VehicleSendERPFlow" location="./uploadCLMJ/VehicleSendERPFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="VehicleSendERPFlow"></service> 
+ </contribution>  
+ <contribution name="VehicleWithPeopleDel" location="./uploadCLMJ/VehicleWithPeopleDel.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="VehicleWithPeopleDel"></service> 
+ </contribution>  
+ <contribution name="VehicleWithPeopleUpdate" location="./uploadCLMJ/VehicleWithPeopleUpdate.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="VehicleWithPeopleUpdate"></service> 
+ </contribution>  
+ <contribution name="VehicleWithPeopleAdd" location="./uploadCLMJ/VehicleWithPeopleAdd.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="VehicleWithPeopleAdd"></service> 
+ </contribution>  
+ <contribution name="VehicleEmissionStandardsQuery" location="./uploadCLMJ/VehicleEmissionStandardsQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="VehicleEmissionStandardsQuery"></service> 
+ </contribution>  
+ <contribution name="VehicleCarDetailQuery" location="./uploadCLMJ/VehicleCarDetailQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="VehicleCarDetailQuery"></service> 
+ </contribution>  
+ <contribution name="VehicleTemporaryDetailArrivalFlow" location="./uploadCLMJ/VehicleTemporaryDetailArrivalFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="VehicleTemporaryDetailArrivalFlow"></service> 
+ </contribution>  
+ <contribution name="VehicleUserinfoQuery" location="./uploadCLMJ/VehicleUserinfoQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="VehicleUserinfoQuery"></service> 
+ </contribution>  
+ <contribution name="TemporaryDetailQuery" location="./uploadCLMJ/TemporaryDetailQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="TemporaryDetailQuery"></service> 
+ </contribution>  
+ <contribution name="TemporaryDetailDel" location="./uploadCLMJ/TemporaryDetailDel.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="TemporaryDetailDel"></service> 
+ </contribution>  
+ <contribution name="TemporaryDetailUpdate" location="./uploadCLMJ/TemporaryDetailUpdate.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="TemporaryDetailUpdate"></service> 
+ </contribution>  
+ <contribution name="TemporaryDetailAdd" location="./uploadCLMJ/TemporaryDetailAdd.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="TemporaryDetailAdd"></service> 
+ </contribution>  
+ <contribution name="TemporaryDetailListQuery" location="./uploadCLMJ/TemporaryDetailListQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="TemporaryDetailListQuery"></service> 
+ </contribution>  
+ <contribution name="VehicleEntranceFlow" location="./uploadCLMJ/VehicleEntranceFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="VehicleEntranceFlow"></service> 
+ </contribution>  
+ <contribution name="VehicleApproveCarDetailTypeFlow" location="./uploadCLMJ/VehicleApproveCarDetailTypeFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="VehicleApproveCarDetailTypeFlow"></service> 
+ </contribution>  
+ <contribution name="VehicleMainDel" location="./uploadCLMJ/VehicleMainDel.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="VehicleMainDel"></service> 
+ </contribution>  
+ <contribution name="VehicleMainUpdate" location="./uploadCLMJ/VehicleMainUpdate.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="VehicleMainUpdate"></service> 
+ </contribution>  
+ <contribution name="VehicleMainAdd" location="./uploadCLMJ/VehicleMainAdd.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="VehicleMainAdd"></service> 
+ </contribution>  
+ <contribution name="VehicleMainQuery" location="./uploadCLMJ/VehicleMainQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="VehicleMainQuery"></service> 
+ </contribution>  
+ <contribution name="VehicleMainListQuery" location="./uploadCLMJ/VehicleMainListQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="VehicleMainListQuery"></service> 
+ </contribution>  
+ <contribution name="GatekeeperStatisticsQuery" location="./uploadCLMJ/GatekeeperStatisticsQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="GatekeeperStatisticsQuery"></service> 
+ </contribution>  
+ <contribution name="GateFluxQuery" location="./uploadCLMJ/GateFluxQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="GateFluxQuery"></service> 
+ </contribution>  
+ <contribution name="FileDownloadFlow" location="./uploadENTRANCE/FileDownloadFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="FileDownloadFlow"></service> 
+ </contribution>  
+ <contribution name="ConstituentPeopleGateINfoQuery" location="./uploadENTRANCE/ConstituentPeopleGateINfoQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ConstituentPeopleGateINfoQuery"></service> 
+ </contribution>  
+ <contribution name="ApproveFlowInfoQuery" location="./uploadENTRANCE/ApproveFlowInfoQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ApproveFlowInfoQuery"></service> 
+ </contribution>  
+ <contribution name="RecheckNewCardQuery" location="./uploadENTRANCE/RecheckNewCardQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="RecheckNewCardQuery"></service> 
+ </contribution>  
+ <contribution name="MiniProgramRecheckQuery" location="./uploadENTRANCE/MiniProgramRecheckQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="MiniProgramRecheckQuery"></service> 
+ </contribution>  
+ <contribution name="MiniProgramVisitorQuery" location="./uploadENTRANCE/MiniProgramVisitorQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="MiniProgramVisitorQuery"></service> 
+ </contribution>  
+ <contribution name="MiniProgramVisitorUpdate" location="./uploadENTRANCE/MiniProgramVisitorUpdate.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="MiniProgramVisitorUpdate"></service> 
+ </contribution>  
+ <contribution name="MiniProgramVisitorApproveFlow" location="./uploadENTRANCE/MiniProgramVisitorApproveFlow.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="MiniProgramVisitorApproveFlow"></service> 
+ </contribution>  
+ <contribution name="DeptartmentQuery" location="./uploadENTRANCE/DeptartmentQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="DeptartmentQuery"></service> 
+ </contribution>  
+ <contribution name="UsersInfoQuery" location="./uploadENTRANCE/UsersInfoQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="UsersInfoQuery"></service> 
+ </contribution>  
+ <contribution name="VisitorUpdate" location="./uploadENTRANCE/VisitorUpdate.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="VisitorUpdate"></service> 
+ </contribution>  
+ <contribution name="ZhyyExtSsoReceiveUserRoleQuery" location="./uploadZHYY/ZhyyExtSsoReceiveUserRoleQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ZhyyExtSsoReceiveUserRoleQuery"></service> 
+ </contribution>  
+ <contribution name="ZhyyExtSsoReceivePageListQuery" location="./uploadZHYY/ZhyyExtSsoReceivePageListQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ZhyyExtSsoReceivePageListQuery"></service> 
+ </contribution>  
+ <contribution name="ZhyyExtSsoReceiveRolePageListQuery" location="./uploadZHYY/ZhyyExtSsoReceiveRolePageListQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ZhyyExtSsoReceiveRolePageListQuery"></service> 
+ </contribution>  
+ <contribution name="ZhyyExtSsoReceiveGetAdminQuery" location="./uploadZHYY/ZhyyExtSsoReceiveGetAdminQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ZhyyExtSsoReceiveGetAdminQuery"></service> 
+ </contribution>  
+ <contribution name="ZhyyExtSsoReceiveRoleQuery" location="./uploadZHYY/ZhyyExtSsoReceiveRoleQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ZhyyExtSsoReceiveRoleQuery"></service> 
+ </contribution>  
+ <contribution name="ZhyyExtSsoReceiveRoleAdd" location="./uploadZHYY/ZhyyExtSsoReceiveRoleAdd.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ZhyyExtSsoReceiveRoleAdd"></service> 
+ </contribution>  
+ <contribution name="ZhyyExtSsoReceiveRoleModifyUpdate" location="./uploadZHYY/ZhyyExtSsoReceiveRoleModifyUpdate.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ZhyyExtSsoReceiveRoleModifyUpdate"></service> 
+ </contribution>  
+ <contribution name="ZhyyExtSsoReceiveRoleAddUserAdd" location="./uploadZHYY/ZhyyExtSsoReceiveRoleAddUserAdd.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ZhyyExtSsoReceiveRoleAddUserAdd"></service> 
+ </contribution>  
+ <contribution name="ZhyyExtSsoReceiveRoleDisableUserDel" location="./uploadZHYY/ZhyyExtSsoReceiveRoleDisableUserDel.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ZhyyExtSsoReceiveRoleDisableUserDel"></service> 
+ </contribution>  
+ <contribution name="ZhyyYjymGqJqQuery" location="./uploadZHYYDB/ZhyyYjymGqJqQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ZhyyYjymGqJqQuery"></service> 
+ </contribution>  
+ <contribution name="ZhyyYjymZqQuery" location="./uploadZHYYDB/ZhyyYjymZqQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ZhyyYjymZqQuery"></service> 
+ </contribution>  
+ <contribution name="ZhyyYjymPhjgFdjzQuery" location="./uploadZHYYDB/ZhyyYjymPhjgFdjzQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ZhyyYjymPhjgFdjzQuery"></service> 
+ </contribution>  
+ <contribution name="ZhyyMqphFsdQuery" location="./uploadZHYYDB/ZhyyMqphFsdQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ZhyyMqphFsdQuery"></service> 
+ </contribution>  
+ <contribution name="ZhyyMqphXhdQuery" location="./uploadZHYYDB/ZhyyMqphXhdQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ZhyyMqphXhdQuery"></service> 
+ </contribution>  
+ <contribution name="ZhyyScMqphFsdQuery" location="./uploadZHYYDB/ZhyyScMqphFsdQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ZhyyScMqphFsdQuery"></service> 
+ </contribution>  
+ <contribution name="ZhyyScMqphXhdQuery" location="./uploadZHYYDB/ZhyyScMqphXhdQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ZhyyScMqphXhdQuery"></service> 
+ </contribution>  
+ <contribution name="WxUserCompanyTestQuery" location="./uploadSPMS/WxUserCompanyTestQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxUserCompanyTestQuery"></service> 
+ </contribution>  
+ <contribution name="WxDispatchListQuery" location="./uploadSPMS/WxDispatchListQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxDispatchListQuery"></service> 
+ </contribution>  
+ <contribution name="WxDispatchByIdTestQuery" location="./uploadSPMS/WxDispatchByIdTestQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxDispatchByIdTestQuery"></service> 
+ </contribution>  
+ <contribution name="WxDispatchCancelTestUpdate" location="./uploadSPMS/WxDispatchCancelTestUpdate.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxDispatchCancelTestUpdate"></service> 
+ </contribution>  
+ <contribution name="WxDispatchCompanyListTestQuery" location="./uploadSPMS/WxDispatchCompanyListTestQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxDispatchCompanyListTestQuery"></service> 
+ </contribution>  
+ <contribution name="WxDispatchCompleteTestUpdate" location="./uploadSPMS/WxDispatchCompleteTestUpdate.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxDispatchCompleteTestUpdate"></service> 
+ </contribution>  
+ <contribution name="WxDispatchInfoTestUpdate" location="./uploadSPMS/WxDispatchInfoTestUpdate.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxDispatchInfoTestUpdate"></service> 
+ </contribution>  
+ <contribution name="WxDispatchListTestQuery" location="./uploadSPMS/WxDispatchListTestQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxDispatchListTestQuery"></service> 
+ </contribution>  
+ <contribution name="WxDispatchSaveTestAdd" location="./uploadSPMS/WxDispatchSaveTestAdd.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxDispatchSaveTestAdd"></service> 
+ </contribution>  
+ <contribution name="WxDispatchSetArriveTestUpdate" location="./uploadSPMS/WxDispatchSetArriveTestUpdate.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxDispatchSetArriveTestUpdate"></service> 
+ </contribution>  
+ <contribution name="WxDispatchSetDepartTestUpdate" location="./uploadSPMS/WxDispatchSetDepartTestUpdate.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxDispatchSetDepartTestUpdate"></service> 
+ </contribution>  
+ <contribution name="WxDispatchShipByIdTestQuery" location="./uploadSPMS/WxDispatchShipByIdTestQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxDispatchShipByIdTestQuery"></service> 
+ </contribution>  
+ <contribution name="WxDispatchShipListTestQuery" location="./uploadSPMS/WxDispatchShipListTestQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxDispatchShipListTestQuery"></service> 
+ </contribution>  
+ <contribution name="WxDispatchShipLogTestQuery" location="./uploadSPMS/WxDispatchShipLogTestQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxDispatchShipLogTestQuery"></service> 
+ </contribution>  
+ <contribution name="WxDispatchStartTestUpdate" location="./uploadSPMS/WxDispatchStartTestUpdate.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxDispatchStartTestUpdate"></service> 
+ </contribution>  
+ <contribution name="WxEarlyMessageByUserNoQuery" location="./uploadSPMS/WxEarlyMessageByUserNoQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxEarlyMessageByUserNoQuery"></service> 
+ </contribution>  
+ <contribution name="WxEarlyMessageInfoByIdQuery" location="./uploadSPMS/WxEarlyMessageInfoByIdQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxEarlyMessageInfoByIdQuery"></service> 
+ </contribution>  
+ <contribution name="WxEarlyMessageStatusByIdUpdate" location="./uploadSPMS/WxEarlyMessageStatusByIdUpdate.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxEarlyMessageStatusByIdUpdate"></service> 
+ </contribution>  
+ <contribution name="WxLoginTokenTestQuery" location="./uploadSPMS/WxLoginTokenTestQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxLoginTokenTestQuery"></service> 
+ </contribution>  
+ <contribution name="WxMenuPermissTestQuery" location="./uploadSPMS/WxMenuPermissTestQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxMenuPermissTestQuery"></service> 
+ </contribution>  
+ <contribution name="WxShipCodeListQuery" location="./uploadSPMS/WxShipCodeListQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxShipCodeListQuery"></service> 
+ </contribution>  
+ <contribution name="WxTraceConfirmTestUpdate" location="./uploadSPMS/WxTraceConfirmTestUpdate.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxTraceConfirmTestUpdate"></service> 
+ </contribution>  
+ <contribution name="WxTraceListTestQuery" location="./uploadSPMS/WxTraceListTestQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxTraceListTestQuery"></service> 
+ </contribution>  
+ <contribution name="WxTraceShipInfoTestUpdate" location="./uploadSPMS/WxTraceShipInfoTestUpdate.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxTraceShipInfoTestUpdate"></service> 
+ </contribution>  
+ <contribution name="WxTraceShipListTestQuery" location="./uploadSPMS/WxTraceShipListTestQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxTraceShipListTestQuery"></service> 
+ </contribution>  
+ <contribution name="WxTraceShipTestAdd" location="./uploadSPMS/WxTraceShipTestAdd.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxTraceShipTestAdd"></service> 
+ </contribution>  
+ <contribution name="ShipCarStorageQuery" location="./uploadSPMS/ShipCarStorageQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ShipCarStorageQuery"></service> 
+ </contribution>  
+ <contribution name="TransportCompanyInfoQuery" location="./uploadSPMS/TransportCompanyInfoQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="TransportCompanyInfoQuery"></service> 
+ </contribution>  
+ <contribution name="SpmsCcOrderQuery" location="./uploadSPMS/SpmsCcOrderQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="SpmsCcOrderQuery"></service> 
+ </contribution>  
+ <contribution name="SpmsOnWayShipQuery" location="./uploadSPMS/SpmsOnWayShipQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="SpmsOnWayShipQuery"></service> 
+ </contribution>  
+ <contribution name="SpmsContractQuery" location="./uploadSPMS/SpmsContractQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="SpmsContractQuery"></service> 
+ </contribution>  
+ <contribution name="SpmsConItemQuery" location="./uploadSPMS/SpmsConItemQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="SpmsConItemQuery"></service> 
+ </contribution>  
+ <contribution name="SpmsStoreQuery" location="./uploadSPMS/SpmsStoreQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="SpmsStoreQuery"></service> 
+ </contribution>  
+ <contribution name="ZhgkOpenApiAuthTokenQuery" location="./uploadSPMS/ZhgkOpenApiAuthTokenQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ZhgkOpenApiAuthTokenQuery"></service> 
+ </contribution>  
+ <contribution name="ErpShipTranserInfoQuery" location="./uploadSPMS/ErpShipTranserInfoQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ErpShipTranserInfoQuery"></service> 
+ </contribution>  
+ <contribution name="ErpShipAriveQuery" location="./uploadSPMS/ErpShipAriveQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ErpShipAriveQuery"></service> 
+ </contribution>  
+ <contribution name="ErpPortalWorkQuery" location="./uploadSPMS/ErpPortalWorkQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ErpPortalWorkQuery"></service> 
+ </contribution>  
+ <contribution name="ErpShipAcceptQuery" location="./uploadSPMS/ErpShipAcceptQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ErpShipAcceptQuery"></service> 
+ </contribution>  
+ <contribution name="ErpShippingDivQuery" location="./uploadSPMS/ErpShippingDivQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ErpShippingDivQuery"></service> 
+ </contribution>  
+ <contribution name="SpmsShipRevnoQuery" location="./uploadSPMS/SpmsShipRevnoQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="SpmsShipRevnoQuery"></service> 
+ </contribution>  
+ <contribution name="BzgkOpenFileDownloadTestQuery" location="./uploadSPMS/BzgkOpenFileDownloadTestQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="BzgkOpenFileDownloadTestQuery"></service> 
+ </contribution>  
+ <contribution name="BzgkOpenFileDownloadQuery" location="./uploadSPMS/BzgkOpenFileDownloadQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="BzgkOpenFileDownloadQuery"></service> 
+ </contribution>  
+ <contribution name="WxUploadFileTestAdd" location="./uploadSPMS/WxUploadFileTestAdd.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxUploadFileTestAdd"></service> 
+ </contribution>  
+ <contribution name="WxFindMeberShipTestQuery" location="./uploadSPMS/WxFindMeberShipTestQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxFindMeberShipTestQuery"></service> 
+ </contribution>  
+ <contribution name="WxHgCargoListTestQuery" location="./uploadSPMS/WxHgCargoListTestQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxHgCargoListTestQuery"></service> 
+ </contribution>  
+ <contribution name="WxTraceCancelShipTestUpdate" location="./uploadSPMS/WxTraceCancelShipTestUpdate.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxTraceCancelShipTestUpdate"></service> 
+ </contribution>  
+ <contribution name="WxTraceFindShipTestQuery" location="./uploadSPMS/WxTraceFindShipTestQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxTraceFindShipTestQuery"></service> 
+ </contribution>  
+ <contribution name="WxTraceFindShipListTestQuery" location="./uploadSPMS/WxTraceFindShipListTestQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxTraceFindShipListTestQuery"></service> 
+ </contribution>  
+ <contribution name="WxCommonInfoTestQuery" location="./uploadSPMS/WxCommonInfoTestQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxCommonInfoTestQuery"></service> 
+ </contribution>  
+ <contribution name="WxTraceCancelShipUpdate" location="./uploadSPMS/WxTraceCancelShipUpdate.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxTraceCancelShipUpdate"></service> 
+ </contribution>  
+ <contribution name="WxTraceFindShipQuery" location="./uploadSPMS/WxTraceFindShipQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxTraceFindShipQuery"></service> 
+ </contribution>  
+ <contribution name="WxTraceFindShipListQuery" location="./uploadSPMS/WxTraceFindShipListQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxTraceFindShipListQuery"></service> 
+ </contribution>  
+ <contribution name="WxCommonInfoQuery" location="./uploadSPMS/WxCommonInfoQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxCommonInfoQuery"></service> 
+ </contribution>  
+ <contribution name="AutoCertTokenQuery" location="./uploadSPMS/AutoCertTokenQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="AutoCertTokenQuery"></service> 
+ </contribution>  
+ <contribution name="AutoCertSealUpdate" location="./uploadSPMS/AutoCertSealUpdate.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="AutoCertSealUpdate"></service> 
+ </contribution>  
+ <contribution name="AutoCertDownloadQuery" location="./uploadSPMS/AutoCertDownloadQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="AutoCertDownloadQuery"></service> 
+ </contribution>  
+ <contribution name="CostShareAdd" location="./uploadSPMS/CostShareAdd.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="CostShareAdd"></service> 
+ </contribution>  
+ <contribution name="CostShareUploadFileAdd" location="./uploadSPMS/CostShareUploadFileAdd.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="CostShareUploadFileAdd"></service> 
+ </contribution>  
+ <contribution name="ErpCommonQuery" location="./uploadSPMS/ErpCommonQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ErpCommonQuery"></service> 
+ </contribution>  
+ <contribution name="WxUserPhoneTestUpdate" location="./uploadSPMS/WxUserPhoneTestUpdate.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxUserPhoneTestUpdate"></service> 
+ </contribution>  
+ <contribution name="WxUserPhoneUpdate" location="./uploadSPMS/WxUserPhoneUpdate.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxUserPhoneUpdate"></service> 
+ </contribution>  
+ <contribution name="WxProductSalesListTestQuery" location="./uploadSPMS/WxProductSalesListTestQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxProductSalesListTestQuery"></service> 
+ </contribution>  
+ <contribution name="WxProductSalesListQuery" location="./uploadSPMS/WxProductSalesListQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxProductSalesListQuery"></service> 
+ </contribution>  
+ <contribution name="WxProductSalesEditTestAdd" location="./uploadSPMS/WxProductSalesEditTestAdd.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxProductSalesEditTestAdd"></service> 
+ </contribution>  
+ <contribution name="WxProductSalesEditAdd" location="./uploadSPMS/WxProductSalesEditAdd.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxProductSalesEditAdd"></service> 
+ </contribution>  
+ <contribution name="WxProductSalesTempTestQuery" location="./uploadSPMS/WxProductSalesTempTestQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxProductSalesTempTestQuery"></service> 
+ </contribution>  
+ <contribution name="WxProductSalesTempQuery" location="./uploadSPMS/WxProductSalesTempQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxProductSalesTempQuery"></service> 
+ </contribution>  
+ <contribution name="WxProductSalesImportTestAdd" location="./uploadSPMS/WxProductSalesImportTestAdd.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxProductSalesImportTestAdd"></service> 
+ </contribution>  
+ <contribution name="WxProductSalesImportAdd" location="./uploadSPMS/WxProductSalesImportAdd.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WxProductSalesImportAdd"></service> 
+ </contribution>  
+ <contribution name="CustStructureInfoQuery" location="./uploadDGCSALDB/CustStructureInfoQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="CustStructureInfoQuery"></service> 
+ </contribution>  
+ <contribution name="findQpNiscoChmcQuery" location="./uploadMES/findQpNiscoChmcQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="findQpNiscoChmcQuery"></service> 
+ </contribution>  
+ <contribution name="ZhyyProZbv2JrgzzdgzQuery" location="./uploadZHYYDB/ZhyyProZbv2JrgzzdgzQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ZhyyProZbv2JrgzzdgzQuery"></service> 
+ </contribution>  
+ <contribution name="WorkBlankQuery" location="./uploadMES/WorkBlankQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WorkBlankQuery"></service> 
+ </contribution>  
+ <contribution name="WorkInProgressQuery" location="./uploadMES/WorkInProgressQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WorkInProgressQuery"></service> 
+ </contribution>  
+ <contribution name="GradeTempQuery" location="./uploadMES/GradeTempQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="GradeTempQuery"></service> 
+ </contribution>  
+ <contribution name="GetWmsTokenQuery" location="./uploadWMS/GetWmsTokenQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="GetWmsTokenQuery"></service> 
+ </contribution>  
+ <contribution name="InAndOutStoreDispatchAdd" location="./uploadWMS/InAndOutStoreDispatchAdd.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="InAndOutStoreDispatchAdd"></service> 
+ </contribution>  
+ <contribution name="PmOrderSetFindAllQuery" location="./uploadWMS/PmOrderSetFindAllQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="PmOrderSetFindAllQuery"></service> 
+ </contribution>  
+ <contribution name="WorkOverdueDQuery" location="./uploadMES/WorkOverdueDQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="WorkOverdueDQuery"></service> 
+ </contribution>  
+ <contribution name="AlumTrackingQuery" location="./uploadMES/AlumTrackingQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="AlumTrackingQuery"></service> 
+ </contribution>  
+ <contribution name="ZhyyProZbv2JrgzxdsxQuery" location="./uploadZHYYDB/ZhyyProZbv2JrgzxdsxQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ZhyyProZbv2JrgzxdsxQuery"></service> 
+ </contribution>  
+ <contribution name="getErpDbProductionCostOff" location="./uploadERPZSDB/getErpDbProductionCostOff.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="getErpDbProductionCostOff"></service> 
+ </contribution>  
+ <contribution name="DbProductIndicatorStatisticDetailQuery" location="./uploadTGMESDB/DbProductIndicatorStatisticDetailQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="DbProductIndicatorStatisticDetailQuery"></service> 
+ </contribution>  
+ <contribution name="ZbEemsFinishingMillProductionDataQuery" location="./uploadTGMESDB/ZbEemsFinishingMillProductionDataQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ZbEemsFinishingMillProductionDataQuery"></service> 
+ </contribution>  
+ <contribution name="ZbAssociateRollingBilletHeatingData1" location="./uploadTGMESDB/ZbAssociateRollingBilletHeatingData1.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ZbAssociateRollingBilletHeatingData1"></service> 
+ </contribution>  
+ <contribution name="SteelBigType" location="./uploadERPZSDB/SteelBigType.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="SteelBigType"></service> 
+ </contribution>  
+ <contribution name="InputOutputNoInput" location="./uploadERPZSDB/InputOutputNoInput.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="InputOutputNoInput"></service> 
+ </contribution>  
+ <contribution name="MidPrice" location="./uploadERPZSDB/MidPrice.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="MidPrice"></service> 
+ </contribution>  
+ <contribution name="LotNoSemiFinishedStatus" location="./uploadERPZSDB/LotNoSemiFinishedStatus.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="LotNoSemiFinishedStatus"></service> 
+ </contribution>  
+ <contribution name="getErpZbProductionCostOff" location="./uploadERPZSDB/getErpZbProductionCostOff.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="getErpZbProductionCostOff"></service> 
+ </contribution>  
+ <contribution name="getElgCostManufacturingExpensesCost" location="./uploadERPZSDB/getElgCostManufacturingExpensesCost.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="getElgCostManufacturingExpensesCost"></service> 
+ </contribution>  
+ <contribution name="getSlgCostManufacturingExpensesCost" location="./uploadERPZSDB/getSlgCostManufacturingExpensesCost.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="getSlgCostManufacturingExpensesCost"></service> 
+ </contribution>  
+ <contribution name="getDbRollingMillPerformanceQuery" location="./uploadTGMESDB/getDbRollingMillPerformanceQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="getDbRollingMillPerformanceQuery"></service> 
+ </contribution>  
+ <contribution name="getTjxxhZbLongProduction" location="./uploadTJXXHSYS/getTjxxhZbLongProduction.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="getTjxxhZbLongProduction"></service> 
+ </contribution>  
+ <contribution name="getTjxxhDbLongProduction" location="./uploadTJXXHSYS/getTjxxhDbLongProduction.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="getTjxxhDbLongProduction"></service> 
+ </contribution>  
+ <contribution name="getTjxxhDbBloomLongProduction" location="./uploadTJXXHSYS/getTjxxhDbBloomLongProduction.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="getTjxxhDbBloomLongProduction"></service> 
+ </contribution>  
+ <contribution name="ZbInHeatDataQuery" location="./uploadTGMESDB/ZbInHeatDataQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ZbInHeatDataQuery"></service> 
+ </contribution>  
+ <contribution name="getDbIsBloomWeightNoteDataQuery" location="./uploadTGMESDB/getDbIsBloomWeightNoteDataQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="getDbIsBloomWeightNoteDataQuery"></service> 
+ </contribution>  
+ <contribution name="getErpZbFactoryProductionCostOff" location="./uploadERPZSDB/getErpZbFactoryProductionCostOff.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="getErpZbFactoryProductionCostOff"></service> 
+ </contribution>  
+ <contribution name="TgMesElgSteelAddFeQuery" location="./uploadTGMESDB/TgMesElgSteelAddFeQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="TgMesElgSteelAddFeQuery"></service> 
+ </contribution>  
+ <contribution name="ErpElgLfOperationDataQuery" location="./uploadERPZSDB/ErpElgLfOperationDataQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ErpElgLfOperationDataQuery"></service> 
+ </contribution>  
+ <contribution name="ErpElgSquareBilletOperationDataQuery" location="./uploadERPZSDB/ErpElgSquareBilletOperationDataQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ErpElgSquareBilletOperationDataQuery"></service> 
+ </contribution>  
+ <contribution name="ErpElgAlloyMaterialDataQuery" location="./uploadERPZSDB/ErpElgAlloyMaterialDataQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ErpElgAlloyMaterialDataQuery"></service> 
+ </contribution>  
+ <contribution name="ErpElgAlloyMaterialDataLfQuery" location="./uploadERPZSDB/ErpElgAlloyMaterialDataLfQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ErpElgAlloyMaterialDataLfQuery"></service> 
+ </contribution>  
+ <contribution name="ErpElgAlloyMaterialDataWsQuery" location="./uploadERPZSDB/ErpElgAlloyMaterialDataWsQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ErpElgAlloyMaterialDataWsQuery"></service> 
+ </contribution>  
+ <contribution name="getJzcThreeExpensesForSteelRollingQuery" location="./uploadERPZSDB/getJzcThreeExpensesForSteelRollingQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="getJzcThreeExpensesForSteelRollingQuery"></service> 
+ </contribution>  
+ <contribution name="getThreeExpensesForSteelRollingQuery" location="./uploadERPZSDB/getThreeExpensesForSteelRollingQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="getThreeExpensesForSteelRollingQuery"></service> 
+ </contribution>  
+ <contribution name="JlDbElgCarDataQuery" location="./uploadJLDB/JlDbElgCarDataQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="JlDbElgCarDataQuery"></service> 
+ </contribution>  
+ <contribution name="ErpElgAlloyMaterialDataRhQuery" location="./uploadERPZSDB/ErpElgAlloyMaterialDataRhQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ErpElgAlloyMaterialDataRhQuery"></service> 
+ </contribution>  
+ <contribution name="ErpElgAlloyMaterialDataRhWsQuery" location="./uploadERPZSDB/ErpElgAlloyMaterialDataRhWsQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ErpElgAlloyMaterialDataRhWsQuery"></service> 
+ </contribution>  
+ <contribution name="LgFeToQuery" location="./uploadERPZSDB/LgFeToQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="LgFeToQuery"></service> 
+ </contribution>  
+ <contribution name="ZgHeatNoQuery" location="./uploadERPZSDB/ZgHeatNoQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ZgHeatNoQuery"></service> 
+ </contribution>  
+ <contribution name="DbInHeatData" location="./uploadTGMESDB/DbInHeatData.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="DbInHeatData"></service> 
+ </contribution>  
+ <contribution name="ZgOriginalHeatNoQuery" location="./uploadTGMESDB/ZgOriginalHeatNoQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ZgOriginalHeatNoQuery"></service> 
+ </contribution>  
+ <contribution name="InputOutputNoOutputDb" location="./uploadERPZSDB/InputOutputNoOutputDb.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="InputOutputNoOutputDb"></service> 
+ </contribution>  
+ <contribution name="InputOutputNoOutputZb" location="./uploadERPZSDB/InputOutputNoOutputZb.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="InputOutputNoOutputZb"></service> 
+ </contribution>  
+ <contribution name="SlgActualCastQuery" location="./uploadTGMESDB/SlgActualCastQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="SlgActualCastQuery"></service> 
+ </contribution>  
+ <contribution name="ElgActualCastQuery" location="./uploadTGMESDB/ElgActualCastQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="ElgActualCastQuery"></service> 
+ </contribution>  
+ <contribution name="DbProductIndicatorStatisticQuery" location="./uploadTGMESDB/DbProductIndicatorStatisticQuery.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="DbProductIndicatorStatisticQuery"></service> 
+ </contribution>  
+ <contribution name="DbProcessQuery" location="./uploadTGMESDB/DbProcessQuery.jar" version="0" serviceType="BUSINESS">
+  <service serviceid="DbProcessQuery"></service>
+ </contribution>
+</contributions>

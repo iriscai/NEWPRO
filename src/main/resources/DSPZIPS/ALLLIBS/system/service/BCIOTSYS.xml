@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>BCIOTSYS</serviceSystemName>
+		<serviceSystemDesc>板材IOT</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>BCIOTSYS_BcGetListLastPointStatus</protocol>
+						<protocol>BCIOTSYS_BcGetPointInfoByDeviceId</protocol>
+						<protocol>BCIOTSYS_BcGetUserAccessToken</protocol>
+						<protocol>BCIOTSYS_BcIotValueByIntervalTime</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>BcGetListLastPointStatus</serivcename>
+			<protocol>BCIOTSYS_BcGetListLastPointStatus</protocol>
+			</service>
+						<service>
+			<serivcename>BcGetPointInfoByDeviceId</serivcename>
+			<protocol>BCIOTSYS_BcGetPointInfoByDeviceId</protocol>
+			</service>
+						<service>
+			<serivcename>BcGetUserAccessToken</serivcename>
+			<protocol>BCIOTSYS_BcGetUserAccessToken</protocol>
+			</service>
+						<service>
+			<serivcename>BcIotValueByIntervalTime</serivcename>
+			<protocol>BCIOTSYS_BcIotValueByIntervalTime</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

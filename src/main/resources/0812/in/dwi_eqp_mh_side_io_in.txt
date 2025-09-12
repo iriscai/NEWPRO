@@ -1,0 +1,31 @@
+CREATE TABLE
+	`dwi_eqp_mh_side_io_in` (
+		`id` string COMMENT '主键ID',
+		`rela_order_no` string COMMENT '关联单号',
+		`io_persion` string COMMENT '交易人',
+		`io_dept` string COMMENT '交易部门',
+		`remark` string COMMENT '备注',
+		`create_user_no` string COMMENT '创建人',
+		`create_date_time` string COMMENT '创建时间',
+		`update_user_no` string COMMENT '修改人',
+		`update_date_time` string COMMENT '修改时间',
+		`company_id` string COMMENT '公司ID',
+		`i_level` string COMMENT '优先级',
+		`status` decimal(22, 0) COMMENT '状态  0可用，1不可用',
+		`order_status` string COMMENT '单据状态:申请中、已入库、已出库',
+		`create_user_dept` string COMMENT '创建者部门',
+		`create_user_factory` string COMMENT '创建者生产厂',
+		`order_no` string COMMENT '单号',
+		`apply_dept` string COMMENT '申请单位',
+		`apply_persion` string COMMENT '申请人',
+		`name` string COMMENT '单据名称',
+		`io_type` string COMMENT '交易类型',
+		`io_type_detail` string COMMENT '出入库类型细项',
+		`side_id` string COMMENT '机旁库位ID',
+		`io_time` string COMMENT '交易时间',
+		`ext_etl_dt` timestamp COMMENT 'ETL时间',
+		`ext_src_sys_id` string COMMENT '源系统'
+	) COMMENT '机旁库库存出入单主档记录，包含交易人、交易部门、入库单号等，通过用户在智维平台手动入库、一级库自动入库（ERP过来的）和盘库盘亏产生，用于存档备件入库主档记录。' ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.columnar.ColumnarSerDe' STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.RCFileInputFormat' OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.RCFileOutputFormat' LOCATION 'hdfs://hacluster/user/hive/warehouse/dwi_eqp.db/dwi_eqp_mh_side_io_in' TBLPROPERTIES (
+		'bucketing_version' = '2',
+		'transient_lastDdlTime' = '1756919163'
+	)

@@ -1,0 +1,42 @@
+#Meta 
+------------------------------
+project	 :  合同系统
+table    :  db.tbctTemplate 
+package  :  com.icsc.ct.dao
+entity   :  ctjcTemplateVO
+class    :  ctjcTemplateDAO
+author   :  002143
+descript :  合同模板维护
+version  :  1.0 
+
+#Field
+#name		 dataType   isKey?(y/n) 	description   field width (db)   format       default
+---------------------------------------------------------------------------------------------
+templateNo        String      	Y    模板编号              30                  String   ""
+type              String        n      模板分类              3                  String   ""  
+memo              String        N      模板说明            1000                   String   ""  
+url               String        N      路径    100                 String   ""
+defA              String        N        自定义项1（业务类型）         50              String   ""
+defB              String        N        自定义项2         50              String   ""
+defC              String        N        自定义项3         50              String   ""
+defD              String        N        自定义项4         50              String   ""
+defE              String        N        自定义项5         50              String   ""
+stus	          String	    N	         范本生效状态(Y生效,N失效)	      10	          String	""
+Quno              String        N      质量记录编号                                      80            String   ""
+ConUnit           String        N      合同主要使单位                                   200           String   "" 
+ConType           String        N      合同文本类型                                       50            String   ""         
+Attribute         String        N      属性（新增、修订、废止）               20            String   ""
+ComDep            String        N      主管部门                                               100           String   ""
+SDate             String        N      启用日期                                                50            String   ""
+Rev               String        N      版次                                                        50            String   ""
+Advice            String        N      是否征求意见                                        50            String   ""
+Pub               String        N      是否公布                                                50            String   ""
+Open              String        N      是否开放                                                50            String   ""
+check             String        N      是否核对                                                50            String   ""
+Revision          String        N      修改记录                                                500           String   ""
+defF              String        N      自定义项6             50              String   ""
+defG              String        N      自定义项7             50              String   ""
+defH              String        N      自定义项8             50              String   ""
+ 
+
+

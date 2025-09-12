@@ -1,0 +1,43 @@
+#Meta
+------------------------------
+project	 :  合同管理系统(CT)-公用
+table    :  DB.TBCTWARNING
+package  :  com.icsc.ct.dao
+entity   :  ctjcWarningVO
+class    :  ctjcWarningDAO
+author   :  019735
+descript :  合同预警提示
+version  :  1.0 
+
+
+#Field
+#name		          dataType       isKey?(y/n)    	description       field width (db)     format         default
+-----------------------------------------------------------------------------------------------------------------                                                                                              
+Id                long              y            主键                            30              long             0
+contTypea         String            n            合同类型一级            50              String           ""      
+contTypeb         String            n            合同类型二级            50              String           "" 
+contTypec         String            n            合同类型三级            50              String           ""      
+contNo            String      	    n            合同号                        30              String           ""
+warnType          String            n            预警类型                    50              String           "" 
+warnTime          String            n            预警时间                    30              String           "" 
+warnDay           String            n            N天前预警                 30              String           ""
+warnMoney         BigDecimal        n            预警金额                    17,4            money            0
+prompt            String            n            提示内容                    500             String           ""
+desc              String            n            描述                            500             String           "" 
+state             String            n            状态                            30              String           ""
+receiver          String            n            接收者                        500             String           ""
+createEmpNo       String            n            新增者                        30              String           ""        
+createDate        String            n            新增日期                    30              String           ""         
+updateEmpNo       String            n            最后修改人员            30              String           ""  
+updateDate        String            n            最后修改日期            30              String           ""      
+ts                String            n            时间戳                        50              String           ""        
+dr                BigDecimal        n            删除标志                    17,4            money            0      
+compId            String            n            录入方                        30              String           ""
+defA              String            n            自定义项1     30              String           ""      
+defB              String            n            自定义项2     30              String           ""   
+defC              String            n            计划ID值                 30              String           ""      
+defD              String            n            预警罚值                    30              String           ""  
+defE              String            n            自定义项5     30              String           ""  
+defF              String            n            自定义项6     30              String           ""  
+defG              String            n            自定义项7     30              String           ""
+defH              String            n            自定义项8     30              String           ""

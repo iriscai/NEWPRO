@@ -1,0 +1,12 @@
+{
+	"configuration":{},
+	"connectionName":"DWS_NGDG",
+	"content":"-- DWS sql \n-- ******************************************************************** --\n-- author: jh_chensheng\n-- create time: 2025/02/28 16:00:05 GMT+08:00\n-- ******************************************************************** -- \nCREATE TABLE IF NOT EXISTS dwr_gem_ins.dwr_see_fc_alarm_pusher_jc_f\n (\n id VARCHAR,\nrole_name VARCHAR,\nrole_description VARCHAR,\npush_user_list VARCHAR,\nhandle_user_list VARCHAR,\ncreate_user_no VARCHAR,\ncreate_date_time VARCHAR,\nupdate_user_no VARCHAR,\nupdate_date_time VARCHAR,\ncompany_id VARCHAR,\nrole_status DECIMAL,\ndivision VARCHAR,\nfactory VARCHAR,\nrole_type DECIMAL,\next_src_sys_id VARCHAR,\next_etl_dt TIMESTAMP\n\n) WITH (ORIENTATION = COLUMN);\nCOMMENT ON TABLE dwr_gem_ins.dwr_see_fc_alarm_pusher_jc_f IS '报警推送角色';\n\nCOMMENT ON COLUMN dwr_gem_ins.dwr_see_fc_alarm_pusher_jc_f.id is '业务主键';\nCOMMENT ON COLUMN dwr_gem_ins.dwr_see_fc_alarm_pusher_jc_f.role_name is '角色名称';\nCOMMENT ON COLUMN dwr_gem_ins.dwr_see_fc_alarm_pusher_jc_f.role_description is '角色描述';\nCOMMENT ON COLUMN dwr_gem_ins.dwr_see_fc_alarm_pusher_jc_f.push_user_list is '推送用户工号_弃用';\nCOMMENT ON COLUMN dwr_gem_ins.dwr_see_fc_alarm_pusher_jc_f.handle_user_list is '处置用户工号_弃用';\nCOMMENT ON COLUMN dwr_gem_ins.dwr_see_fc_alarm_pusher_jc_f.create_user_no is '创建人员';\nCOMMENT ON COLUMN dwr_gem_ins.dwr_see_fc_alarm_pusher_jc_f.create_date_time is '创建时间';\nCOMMENT ON COLUMN dwr_gem_ins.dwr_see_fc_alarm_pusher_jc_f.update_user_no is '修改人员';\nCOMMENT ON COLUMN dwr_gem_ins.dwr_see_fc_alarm_pusher_jc_f.update_date_time is '修改时间';\nCOMMENT ON COLUMN dwr_gem_ins.dwr_see_fc_alarm_pusher_jc_f.company_id is '授权公司';\nCOMMENT ON COLUMN dwr_gem_ins.dwr_see_fc_alarm_pusher_jc_f.role_status is '状态1启用2删除';\nCOMMENT ON COLUMN dwr_gem_ins.dwr_see_fc_alarm_pusher_jc_f.division is '所属事业部ID';\nCOMMENT ON COLUMN dwr_gem_ins.dwr_see_fc_alarm_pusher_jc_f.factory is '所属分厂ID';\nCOMMENT ON COLUMN dwr_gem_ins.dwr_see_fc_alarm_pusher_jc_f.role_type is '角色类型1AI_2重大危险源_3十大禁令';\nCOMMENT ON COLUMN dwr_gem_ins.dwr_see_fc_alarm_pusher_jc_f.ext_src_sys_id is '源系统';\nCOMMENT ON COLUMN dwr_gem_ins.dwr_see_fc_alarm_pusher_jc_f.ext_etl_dt is 'ETL时间';\n",
+	"currentDatabase":"ngdg",
+	"description":"",
+	"directory":"/廉政专项/智慧运营/DDL",
+	"name":"ddl_dwr_see_fc_alarm_pusher_jc_f_gemins",
+	"owner":"jh_chensheng",
+	"templateVersion":"1.0",
+	"type":"DWSSQL"
+}

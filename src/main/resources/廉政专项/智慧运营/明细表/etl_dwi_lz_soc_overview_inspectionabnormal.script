@@ -1,0 +1,11 @@
+{
+	"configuration":{},
+	"connectionName":"MRS_Spark_Agent",
+	"content":"-- ******************************************************************** --\n-- author: jh_caiyi\n-- create time: 2025-07-15\n-- descr: （1）智慧运营中心部分数据概览-检验异常明细\n-- soc_overview_inspectionabnormal\n-- TX_JUDG_RECORD不合格记录\n-- ******************************************************************** --\n-- DROP TABLE IF EXISTS dwi_qlt.dwi_qlt_lz_soc_overview_inspectionabnormal;\n-- CREATE TABLE\n--     dwi_qlt.dwi_qlt_lz_soc_overview_inspectionabnormal (\n-- \t\tsmp_no varchar(60) COMMENT '试样号',\n-- \t\tsmp_type varchar(30) COMMENT '试样类型',\n-- \t\tsmp_item varchar(60) COMMENT '检验项目',\n-- \t\ttest_rst varchar(30) COMMENT '检验结果',\n-- \t\ttest_min varchar(30) COMMENT '下限',\n-- \t\ttest_max varchar(30) COMMENT '上限',\n-- \t\tins_date varchar(30) COMMENT '记录日期',\n-- \t\tins_time varchar(30) COMMENT '记录时间',\n-- \t\tstatid varchar(3) COMMENT '站点',\n-- \t\tflag varchar(3) COMMENT '标记',\n-- \t\tmtrl_no varchar(30) COMMENT '料号',\n-- \t\tprovid_no varchar(30) COMMENT '供应商',\n-- \t\tkind varchar(3) COMMENT '不合格种类',\n-- \t\tetl_date DATE COMMENT 'ETL时间'\n--     )\n-- COMMENT '廉政八项-智慧运营中心-检验异常明细'\n-- PARTITIONED BY (mt STRING COMMENT '分区月份')\n-- STORED AS ORC;\nINSERT OVERWRITE TABLE\n\tdwi_qlt.dwi_qlt_lz_soc_overview_inspectionabnormal PARTITION(mt= '202507')\nSELECT \n\t\tsmp_no --'试样号',\n\t\t,smp_type --'试样类型',\n\t\t,smp_item --'检验项目',\n\t\t,test_rst --'检验结果',\n\t\t,test_min --'下限',\n\t\t,test_max --'上限',\n\t\t,ins_date --'记录日期',\n\t\t,ins_time --'记录时间',\n\t\t,statid --'站点',\n\t\t,flag --'标记',\n\t\t,mtrl_no --'料号',\n\t\t,provid_no --'供应商',\n\t\t,kind --'不合格种类'\n    ,CURRENT_DATE()                -- 当前日期\nFROM \n    dwi_qlt.dwi_qlt_tx_judg_record_lz;         -- 表名",
+	"currentDatabase":"dwi_qlt",
+	"description":"",
+	"directory":"/廉政专项/智慧运营/明细表",
+	"name":"etl_dwi_lz_soc_overview_inspectionabnormal",
+	"templateVersion":"1.0",
+	"type":"SparkSQL"
+}

@@ -1,0 +1,24 @@
+CREATE TABLE
+	`dwi_hrm_reward_information` (
+		`number` string COMMENT '编号',
+		`name` string COMMENT '奖励名称',
+		`level` bigint COMMENT '奖励级别,3257821-国家级,3257826-省部级,3257820-市级,3257823-区级,3257822-公司级,3257824-二级机构,3365639-三级部门',
+		`obtain_date` string COMMENT '获奖时间',
+		`vote_unit` string COMMENT '评选单位',
+		`certificate_index` string COMMENT '证书扫描件',
+		`id` bigint COMMENT 'id',
+		`company_id` bigint COMMENT '企业ID',
+		`operate_time` string COMMENT '发生时间',
+		`operator_id` bigint COMMENT '操作人',
+		`create_time` string COMMENT '创建时间',
+		`creator_id` bigint COMMENT '创建人',
+		`employee_id` bigint COMMENT '人员',
+		`is_latest` string COMMENT '是否最新,0-是,1-否',
+		`reward_type` string COMMENT '奖励类别',
+		`ext_etl_dt` timestamp COMMENT 'ETL时间',
+		`ext_src_sys_id` string COMMENT '源系统'
+	) COMMENT '存储人员奖励子集数据' ROW FORMAT SERDE 'org.apache.hadoop.hive.ql.io.orc.OrcSerde' STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.orc.OrcInputFormat' OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat' LOCATION 'hdfs://hacluster/user/hive/warehouse/dwi_hrm.db/dwi_hrm_reward_information' TBLPROPERTIES (
+		'bucketing_version' = '2',
+		'orc.compress' = 'ZLIB',
+		'transient_lastDdlTime' = '1736926217'
+	)

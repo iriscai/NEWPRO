@@ -1,0 +1,11 @@
+{
+	"configuration":{},
+	"connectionName":"MRS_Spark_Agent",
+	"content":"-- ******************************************************************** --\n-- author: jh_caiyi\n-- create time: 2025-07-15\n-- descr: 智慧物流系统专线-出库数据明细\n-- sls_storage_outbound\n-- ******************************************************************** --\n-- DROP TABLE IF EXISTS dwi_log.dwi_log_lz_sls_storage_outbound;\n-- CREATE TABLE\n--     dwi_log.dwi_log_lz_sls_storage_outbound (\n-- \t\tcompid string COMMENT '公司别',\n-- \t\tmatrlno string COMMENT '料号',\n-- \t\tmatrlgrade string COMMENT '品级',\n-- \t\tlotno string COMMENT '批号',\n-- \t\tlocno string COMMENT '储位',\n-- \t\tinventorytype string COMMENT '品别',\n-- \t\trouteqty double COMMENT '在途量',\n-- \t\trouteamt double COMMENT '在途量金额',\n-- \t\tendqty double COMMENT '期末库存量',\n-- \t\tendamt double COMMENT '期末库存金额',\n-- \t\tsetmonth double COMMENT '转呆料天数',\n-- \t\tprewarnmonth double COMMENT '报警天数',\n-- \t\tdebtagedays double COMMENT '帐龄（天数）',\n-- \t\tdebtagetype string COMMENT '帐龄类别',\n-- \t\tlastindate string COMMENT '最后入库日期',\n-- \t\tsequenceno string COMMENT '序号',\n-- \t\tetl_date DATE COMMENT 'ETL时间'\n--     )\n-- COMMENT '廉政八项-智慧物流系统专线-出库数据明细'\n-- STORED AS ORC;\nINSERT OVERWRITE TABLE\n\tdwi_log.dwi_log_lz_sls_storage_outbound\nSELECT \n    compid,          -- 公司别\n    matrlno,        -- 料号\n    matrlgrade,     -- 品级\n    lotno,          -- 批号\n    locno,          -- 储位\n    inventorytype,  -- 品别\n    routeqty,       -- 在途量\n    routeamt,       -- 在途量金额\n    endqty,         -- 期末库存量\n    endamt,         -- 期末库存金额\n    setmonth,       -- 转呆料天数\n    prewarnmonth,   -- 报警天数\n    debtagedays,    -- 帐龄（天数）\n    debtagetype,    -- 帐龄类别\n    lastindate,     -- 最后入库日期\n    sequenceno,     -- 序号\n    CURRENT_DATE()    -- 当前日期\nFROM \n    dwi_log.dwi_log_tbinvi08; -- 表名\n",
+	"currentDatabase":"dwi_log",
+	"description":"",
+	"directory":"/廉政专项/智慧物流/明细表",
+	"name":"etl_dwi_lz_sls_storage_outbound",
+	"templateVersion":"1.0",
+	"type":"SparkSQL"
+}

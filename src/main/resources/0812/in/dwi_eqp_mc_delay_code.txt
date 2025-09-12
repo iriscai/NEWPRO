@@ -1,0 +1,24 @@
+CREATE TABLE
+	`dwi_eqp_mc_delay_code` (
+		`id` string COMMENT '系统索引值',
+		`delay_code` string COMMENT '延误专业代码',
+		`delay_name` string COMMENT '延误专业名称',
+		`parent_id` string COMMENT '父级节点',
+		`str_level` string COMMENT '层级',
+		`business_dept_id` string COMMENT '事业部ID',
+		`factory_ids` string COMMENT '生产厂ID集',
+		`business_dept_no` string COMMENT '事业部编号',
+		`factory_nos` string COMMENT '生产厂编号集',
+		`create_user_no` string COMMENT '创建人',
+		`create_date_time` string COMMENT '创建时间',
+		`update_user_no` string COMMENT '修改人',
+		`update_date_time` string COMMENT '修改时间',
+		`company_id` string COMMENT '公司别',
+		`status` decimal(1, 0) COMMENT '状态',
+		`i_level` string COMMENT '排序',
+		`ext_etl_dt` timestamp COMMENT 'ETL时间',
+		`ext_src_sys_id` string COMMENT '源系统'
+	) COMMENT '存放停机原因内容及代码编号包括是否计划、专业、具体原因类别等；数据源于期初用户配置的延误原因类别信息，数据用于延误判定时细分延误类别。' ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.columnar.ColumnarSerDe' STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.RCFileInputFormat' OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.RCFileOutputFormat' LOCATION 'hdfs://hacluster/user/hive/warehouse/dwi_eqp.db/dwi_eqp_mc_delay_code' TBLPROPERTIES (
+		'bucketing_version' = '2',
+		'transient_lastDdlTime' = '1756919295'
+	)

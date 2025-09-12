@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>MDM</serviceSystemName>
+		<serviceSystemDesc>主数据系统</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>MDM_CbjcComWFWQuery</protocol>
+						<protocol>MDM_GetDatasFromMDMQuery</protocol>
+						<protocol>MDM_SendDatasToMDM</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>CbjcComWFWQuery</serivcename>
+			<protocol>MDM_CbjcComWFWQuery</protocol>
+			</service>
+						<service>
+			<serivcename>GetDatasFromMDMQuery</serivcename>
+			<protocol>MDM_GetDatasFromMDMQuery</protocol>
+			</service>
+						<service>
+			<serivcename>SendDatasToMDM</serivcename>
+			<protocol>MDM_SendDatasToMDM</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

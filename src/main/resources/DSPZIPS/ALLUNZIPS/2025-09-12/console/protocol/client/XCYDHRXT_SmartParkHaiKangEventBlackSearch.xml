@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><protocol.http id="XCYDHRXT_SmartParkHaiKangEventBlackSearch" ioDirection="DataIn/DataOut" mode="synchronous" protocolName="HTTPServiceConnector" side="client">
+   <common serverType="jetty" uri="https://172.25.61.191:443/artemis/api/frs/v1/event/black/search"/>
+   <request action="toBytes" connectTimeout="10000" encoding="UTF-8" method="post">
+ 	   </request>
+   <response action="toBytes" encoding="UTF-8" readTimeout="10000"/>
+	<security bidirectional="false" protocol="SSL">
+      <keyStore keyMainPass="" keyPass="" path="" type=""/>
+      <trustStore keyPass="" path="" type=""/>
+   </security>
+	<advanced connPerHostCount="200" connectionTimeout="10000" maxConnCount="2000" readBufferSize="2048" readTimeout="58000" reuseAddress="true" soLinger="0" tcpNoDelay="true" threadCount="50" threshold="524288" truststoreDisable="true" writeBufferSize="2048"/>	
+</protocol.http>

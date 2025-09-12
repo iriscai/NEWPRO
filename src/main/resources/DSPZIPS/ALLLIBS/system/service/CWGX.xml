@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>CWGX</serviceSystemName>
+		<serviceSystemDesc>财务共享系统</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>CWGX_invoiceOpenResultBackCWGXNotice</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>invoiceOpenResultBackCWGXNotice</serivcename>
+			<protocol>CWGX_invoiceOpenResultBackCWGXNotice</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

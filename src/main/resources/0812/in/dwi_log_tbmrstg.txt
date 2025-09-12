@@ -1,0 +1,29 @@
+CREATE TABLE
+	`dwi_log_tbmrstg` (
+		`compid` string COMMENT '公司别',
+		`mtrlno` string COMMENT '原料料号',
+		`stgno` string COMMENT '储位代码',
+		`stgdesc` string COMMENT '储位说明',
+		`addrs` string COMMENT '储位起址',
+		`addre` string COMMENT '储位迄址',
+		`maxnum` double COMMENT '最大存量',
+		`cc` string COMMENT '成本中储位迄址',
+		`ownerdept` string COMMENT '保管单位',
+		`ownercompid` string COMMENT '物权公司',
+		`lastacptdate` string COMMENT '最近一次进料日期',
+		`lastacptchkno` string COMMENT '最近一次进料批号',
+		`onhdnum` double COMMENT '目前库存数量',
+		`cratno` string COMMENT '数据建立人',
+		`cratdate` string COMMENT '数据建立日期',
+		`lastrevsno` string COMMENT '上次资料更动人',
+		`lastrevsdate` string COMMENT '上次数据更动日期',
+		`porttype` string COMMENT '港口类型',
+		`sparea` string COMMENT '集群点位',
+		`spareb` string COMMENT '是否启用',
+		`ext_etl_dt` timestamp COMMENT 'ETL时间',
+		`ext_src_sys_id` string COMMENT '源系统'
+	) COMMENT '储位资料维护，记录了港口储位与原料对应的储位说明、港口类型、是否启用等储位基本信息' ROW FORMAT SERDE 'org.apache.hadoop.hive.ql.io.orc.OrcSerde' STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.orc.OrcInputFormat' OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat' LOCATION 'hdfs://hacluster/user/hive/warehouse/dwi_log.db/dwi_log_tbmrstg' TBLPROPERTIES (
+		'bucketing_version' = '2',
+		'orc.compress' = 'ZLIB',
+		'transient_lastDdlTime' = '1681716375'
+	)

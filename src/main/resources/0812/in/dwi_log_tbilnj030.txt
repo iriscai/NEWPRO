@@ -1,0 +1,35 @@
+CREATE TABLE
+	`dwi_log_tbilnj030` (
+		`compid` string COMMENT '公司别',
+		`rtnno` string COMMENT '退货单号',
+		`rtnstatus` string COMMENT '退货单状态',
+		`displistno` string COMMENT '通知单号',
+		`custno` string COMMENT '客户编号',
+		`saleclassno` string COMMENT '销售产品大类',
+		`closedate` string COMMENT '入库日期(销帐日期)',
+		`rtnreason` string COMMENT '退货原因',
+		`claimno` string COMMENT '客诉单号',
+		`rtnwgt` double COMMENT '退货重量',
+		`plateno` string COMMENT '车号',
+		`loadstation` string COMMENT '磅房',
+		`warehouseno` string COMMENT '退货库区',
+		`rtndes` string COMMENT '退货原因说明',
+		`createdate` string COMMENT '建档日期',
+		`createempid` string COMMENT '建档人员',
+		`modifydate` string COMMENT '异动日期',
+		`modifyempid` string COMMENT '异动人员',
+		`closeempid` string COMMENT '销帐人员',
+		`wgtlistno` string COMMENT '磅单号码',
+		`wgtlistnoversion` string COMMENT '磅单版次',
+		`ispound` string COMMENT '是否过磅',
+		`storesort` string COMMENT '库分类',
+		`acrossid` string COMMENT '跨',
+		`areaid` string COMMENT '区',
+		`locx` string COMMENT '排',
+		`ext_etl_dt` timestamp COMMENT 'ETL时间',
+		`ext_src_sys_id` string COMMENT '源系统'
+	) COMMENT '记录需退货的客户、产品、车号、库位等退货信息（一般是因质量异议、重开发票退货）' ROW FORMAT SERDE 'org.apache.hadoop.hive.ql.io.orc.OrcSerde' STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.orc.OrcInputFormat' OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat' LOCATION 'hdfs://hacluster/user/hive/warehouse/dwi_log.db/dwi_log_tbilnj030' TBLPROPERTIES (
+		'bucketing_version' = '2',
+		'orc.compress' = 'ZLIB',
+		'transient_lastDdlTime' = '1682418708'
+	)

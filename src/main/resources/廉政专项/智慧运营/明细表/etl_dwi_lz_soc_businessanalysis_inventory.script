@@ -1,0 +1,11 @@
+{
+	"configuration":{},
+	"connectionName":"MRS_Spark_Agent",
+	"content":"-- ******************************************************************** --\n-- author: jh_caiyi\n-- create time: 2025-07-15\n-- descr: 廉政八项-智慧运营中心-库存数据明细\n-- ******************************************************************** --\n-- DROP TABLE IF EXISTS dwi_prc.dwi_prc_lz_soc_businessanalysis_inventory;\n-- CREATE TABLE\n--     dwi_prc.dwi_prc_lz_soc_businessanalysis_inventory (\n-- \t\tplt string COMMENT '生产厂',\n-- \t\tmtrlno string COMMENT '料号',\n-- \t\tmonthday string COMMENT '日期',\n-- \t\tinventory decimal(32, 6) COMMENT '库存量(吨)',\n-- \t\tcreemp string COMMENT '建档人',\n-- \t\tcredatetime string COMMENT '建档日期',\n-- \t\tetl_date DATE \n--     )\n-- COMMENT '廉政八项-智慧运营中心-库存数据明细'\n-- PARTITIONED BY (mt STRING COMMENT '分区月份')\n-- STORED AS ORC;\nINSERT OVERWRITE TABLE\n\tdwi_prc.dwi_prc_lz_soc_businessanalysis_inventory PARTITION (mt = '202507')\nSELECT \n\t\tplt --'生产厂',\n\t\t,mtrlno --'料号',\n\t\t,monthday --'日期',\n\t\t,inventory --'库存量(吨)',\n\t\t,creemp --'建档人',\n\t\t,credatetime --'建档日期',\n\t\t,    CURRENT_DATE()                -- 当前日期\nFROM \n    dwi_prc.dwi_prc_tbmrlj26;                    -- 表名\n",
+	"currentDatabase":"dwi_qlt",
+	"description":"",
+	"directory":"/廉政专项/智慧运营/明细表",
+	"name":"etl_dwi_lz_soc_businessanalysis_inventory",
+	"templateVersion":"1.0",
+	"type":"SparkSQL"
+}

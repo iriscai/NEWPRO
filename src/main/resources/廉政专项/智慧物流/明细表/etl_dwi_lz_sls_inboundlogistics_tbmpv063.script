@@ -1,0 +1,12 @@
+{
+	"configuration":{},
+	"connectionName":"MRS_Spark_Agent",
+	"content":"-- ******************************************************************** --\n-- author: jh_caiyi\n-- create time: 2025-07-15\n-- descr:智慧物流系统专线-送货延期情况明细_tbmpv063\n-- sls_inboundlogistics_tbmpv063\n-- ******************************************************************** --\n-- DROP TABLE IF EXISTS dwi_log.dwi_log_lz_sls_inboundlogistics_tbmpv063;\n-- CREATE TABLE\n-- dwi_log.dwi_log_lz_sls_inboundlogistics_tbmpv063 (\n-- compid string COMMENT '公司别,',\n-- inspno string COMMENT '交付异议单号,',\n-- pono string COMMENT '合同号,',\n-- poitemno string COMMENT '合同项次,',\n-- matrlno string COMMENT '料号,',\n-- name string COMMENT '品名,',\n-- unitprice double COMMENT '单价,',\n-- qty double COMMENT '合同约定量,',\n-- dlvydueqty double COMMENT '已入库量,',\n-- rangeqty double COMMENT '缺货_超货数量,',\n-- dlvyduedate string COMMENT '预计交货期限,',\n-- qtyrate double COMMENT '缺货比例,',\n-- delayday string COMMENT '延期天数,',\n-- memo1 string COMMENT '合同版本号,',\n-- memo2 string COMMENT '备用字段2,',\n-- memo3 string COMMENT '备用字段3,',\n-- memo4 string COMMENT '备用字段4,',\n-- memd1 double COMMENT '项次扣款金额,',\n-- memd2 double COMMENT '项次约定总金额10百分比,',\n-- crtemplno string COMMENT '资料建立人员,',\n-- crtdate string COMMENT '资料异动日期,',\n-- crttime string COMMENT '资料异动时间,',\n-- updemplno string COMMENT '资料异动人员,',\n-- upddate string COMMENT '资料异动日期2,',\n-- updtime string COMMENT '资料异动时间2,',\n-- etl_date DATE COMMENT 'ETL时间'\n-- )\n-- COMMENT '廉政八项-智慧物流系统专线-送货延期情况明细_tbmpv063'\n-- STORED AS ORC;\n\nINSERT OVERWRITE TABLE\ndwi_log.dwi_log_lz_sls_inboundlogistics_tbmpv063\nSELECT \n    compid,\n    inspno,\n    pono,\n    poitemno,\n    matrlno,\n    name,\n    unitprice,\n    qty,\n    dlvydueqty,\n    rangeqty,\n    dlvyduedate,\n    qtyrate,\n    delayday,\n    memo1,\n    memo2,\n    memo3,\n    memo4,\n    memd1,\n    memd2,\n    crtemplno,\n    crtdate,\n    crttime,\n    updemplno,\n    upddate,\n    updtime,\n    CURRENT_DATE() AS etl_date\nFROM \n    dwi_mkt.dwi_mkt_tbmpv063;\n",
+	"currentDatabase":"dwi_log",
+	"description":"",
+	"directory":"/廉政专项/智慧物流/明细表",
+	"encrypt":false,
+	"name":"etl_dwi_lz_sls_inboundlogistics_tbmpv063",
+	"templateVersion":"1.0",
+	"type":"SparkSQL"
+}

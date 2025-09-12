@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>CLMJDB</serviceSystemName>
+		<serviceSystemDesc>车辆门禁数据库</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>CLMJDB_ZhyyAfZbAccessDataDetailCarQuery</protocol>
+						<protocol>CLMJDB_ZhyyAfZbAccessDataSumCarQuery</protocol>
+						<protocol>CLMJDB_ZhyyAfZbVisitorStatisticDetailCarQuery</protocol>
+						<protocol>CLMJDB_ZhyyAfZbVisitorStatisticSumCarQuery</protocol>
+						<protocol>CLMJDB_ZhyyAfzyCarInrecodDetailQuery</protocol>
+						<protocol>CLMJDB_ZhyyAfzyCarOutRecordDetail</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>ZhyyAfZbAccessDataDetailCarQuery</serivcename>
+			<protocol>CLMJDB_ZhyyAfZbAccessDataDetailCarQuery</protocol>
+			</service>
+						<service>
+			<serivcename>ZhyyAfZbAccessDataSumCarQuery</serivcename>
+			<protocol>CLMJDB_ZhyyAfZbAccessDataSumCarQuery</protocol>
+			</service>
+						<service>
+			<serivcename>ZhyyAfZbVisitorStatisticDetailCarQuery</serivcename>
+			<protocol>CLMJDB_ZhyyAfZbVisitorStatisticDetailCarQuery</protocol>
+			</service>
+						<service>
+			<serivcename>ZhyyAfZbVisitorStatisticSumCarQuery</serivcename>
+			<protocol>CLMJDB_ZhyyAfZbVisitorStatisticSumCarQuery</protocol>
+			</service>
+						<service>
+			<serivcename>ZhyyAfzyCarInrecodDetailQuery</serivcename>
+			<protocol>CLMJDB_ZhyyAfzyCarInrecodDetailQuery</protocol>
+			</service>
+						<service>
+			<serivcename>ZhyyAfzyCarOutRecordDetail</serivcename>
+			<protocol>CLMJDB_ZhyyAfzyCarOutRecordDetail</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

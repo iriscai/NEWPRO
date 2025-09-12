@@ -1,0 +1,41 @@
+#Meta 
+------------------------------
+project	 :  MS 设备管理系统
+table    :  db.tbmsf20
+package  :  com.icsc.ms.msf.dao
+entity   :  msfctb20VO
+class    :  msfctb20DAO
+author   :  022401
+descript :  新品油抽检
+version  :  1.0
+
+#Field
+#name		dataType	isKey?(y/n)	description	field width (db)	format		default
+-------------------------------------------------------------------------------------------
+mamv4id	String	Y	系统索引值	    32	String	""	Y
+yearMo  String  N   排程年月                   10  String  ""
+compid	String	N	公司简称编号	10	String	""	
+inspNo 	String	N	验收单号(结算单号) 	20	String	""
+poNo 	String	N	订购单号 	20	String	""
+poItemNo 	String	N	订购项次 	10	String	""
+matrlNo	    String	N	料号	20	String	""	
+matrlName	String	N	料名	100	String	""			
+memo	   String	N	           备注	100	     String	""	
+createemp	String	N	建档人员	10	String	""	
+createdate	String	N	建档日期	8	String	""
+createtime	String	N	建档时间(时分秒)	8	String	""		
+modifyemp	String	N	修改人员	10	String	""	
+modifydate	String	N	修改时间	8	String	""	
+modifytime	String	N	修改时间(时分秒)	8	String	""
+stus     	String	N	状态	        5	String	""	
+ischeck		String  N	是否检验	10	String	""
+inOut		String  N	内检外检	10	String	""
+checkRlst	String	N	检验结果	10	String	""
+checkDate	String	N	抽检日期     	8	String	""
+endDate     String  N   抽检结束日期  8  String  ""
+ReadyA      String   	 		N	      	预留字段A			40				String   ""  				""
+ReadyB      String   	 		N	      	预留字段B			20				String   "" 				""
+ReadyC      String   	 		N	      	预留字段C			20				String    ""				""
+ReadyD      String   	 		N	      	预留字段D			20				String     ""
+spec        String  N   型号规格    200  String  ""
+		

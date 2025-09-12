@@ -1,0 +1,33 @@
+CREATE TABLE
+	`dwi_eqp_tbkpmo1_lz` (
+		`kpmo1id` string,
+		`compid` string,
+		`kpmo1no` string,
+		`kpmo1noa` string,
+		`kpmo1nob` string,
+		`cimp2no` string,
+		`chgexplain` string,
+		`chgetype` string,
+		`approvestatus` string,
+		`chgdept` string,
+		`chgamt` string,
+		`applicationemp` string,
+		`applicationdate` string,
+		`applicationtime` string,
+		`approveemp` string,
+		`approvedate` string,
+		`approvetime` string,
+		`updemp` string,
+		`upddate` string,
+		`updtime` string,
+		`createdate` string,
+		`createtime` string,
+		`createemp` string,
+		`workflow_log_id` string
+	) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe' STORED AS INPUTFORMAT 'org.apache.hadoop.mapred.TextInputFormat' OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat' LOCATION 'hdfs://hacluster/user/hive/warehouse/dwi_eqp.db/dwi_eqp_tbkpmo1_lz' TBLPROPERTIES (
+		'bucketing_version' = '2',
+		'spark.sql.create.version' = '3.1.1-h0.cbu.mrs.320.r33',
+		'spark.sql.sources.schema.numParts' = '1',
+		'spark.sql.sources.schema.part.0' = '{"type":"struct","fields":[{"name":"KPMO1ID","type":"string","nullable":true,"metadata":{}},{"name":"COMPID","type":"string","nullable":true,"metadata":{}},{"name":"KPMO1NO","type":"string","nullable":true,"metadata":{}},{"name":"KPMO1NOA","type":"string","nullable":true,"metadata":{}},{"name":"KPMO1NOB","type":"string","nullable":true,"metadata":{}},{"name":"CIMP2NO","type":"string","nullable":true,"metadata":{}},{"name":"CHGEXPLAIN","type":"string","nullable":true,"metadata":{}},{"name":"CHGETYPE","type":"string","nullable":true,"metadata":{}},{"name":"APPROVESTATUS","type":"string","nullable":true,"metadata":{}},{"name":"CHGDEPT","type":"string","nullable":true,"metadata":{}},{"name":"CHGAMT","type":"string","nullable":true,"metadata":{}},{"name":"APPLICATIONEMP","type":"string","nullable":true,"metadata":{}},{"name":"APPLICATIONDATE","type":"string","nullable":true,"metadata":{}},{"name":"APPLICATIONTIME","type":"string","nullable":true,"metadata":{}},{"name":"APPROVEEMP","type":"string","nullable":true,"metadata":{}},{"name":"APPROVEDATE","type":"string","nullable":true,"metadata":{}},{"name":"APPROVETIME","type":"string","nullable":true,"metadata":{}},{"name":"UPDEMP","type":"string","nullable":true,"metadata":{}},{"name":"UPDDATE","type":"string","nullable":true,"metadata":{}},{"name":"UPDTIME","type":"string","nullable":true,"metadata":{}},{"name":"CREATEDATE","type":"string","nullable":true,"metadata":{}},{"name":"CREATETIME","type":"string","nullable":true,"metadata":{}},{"name":"CREATEEMP","type":"string","nullable":true,"metadata":{}},{"name":"WORKFLOW_LOG_ID","type":"string","nullable":true,"metadata":{}}]}',
+		'transient_lastDdlTime' = '1755506933'
+	)

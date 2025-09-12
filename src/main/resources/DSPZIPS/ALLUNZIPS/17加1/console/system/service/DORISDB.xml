@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>DORISDB</serviceSystemName>
+		<serviceSystemDesc>华为Doris</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>DORISDB_TgBilletInventoryDetailQuery</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>TgBilletInventoryDetailQuery</serivcename>
+			<protocol>DORISDB_TgBilletInventoryDetailQuery</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

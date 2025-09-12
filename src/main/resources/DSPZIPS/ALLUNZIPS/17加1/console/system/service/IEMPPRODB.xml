@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>IEMPPRODB</serviceSystemName>
+		<serviceSystemDesc>设备智维数据库</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>IEMPPRODB_IEMPBaseDataByNoQuery</protocol>
+						<protocol>IEMPPRODB_IempOnlinePreview</protocol>
+						<protocol>IEMPPRODB_IempProductionLineDownTimeQuery</protocol>
+						<protocol>IEMPPRODB_IempSpareGetFourAmount2Query</protocol>
+						<protocol>IEMPPRODB_LineLiveStatusForScreenQuery</protocol>
+						<protocol>IEMPPRODB_ZhyyGlTjQuery</protocol>
+						<protocol>IEMPPRODB_ZhyyTsfpShutdownQuery</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>IEMPBaseDataByNoQuery</serivcename>
+			<protocol>IEMPPRODB_IEMPBaseDataByNoQuery</protocol>
+			</service>
+						<service>
+			<serivcename>IempOnlinePreview</serivcename>
+			<protocol>IEMPPRODB_IempOnlinePreview</protocol>
+			</service>
+						<service>
+			<serivcename>IempProductionLineDownTimeQuery</serivcename>
+			<protocol>IEMPPRODB_IempProductionLineDownTimeQuery</protocol>
+			</service>
+						<service>
+			<serivcename>IempSpareGetFourAmount2Query</serivcename>
+			<protocol>IEMPPRODB_IempSpareGetFourAmount2Query</protocol>
+			</service>
+						<service>
+			<serivcename>LineLiveStatusForScreenQuery</serivcename>
+			<protocol>IEMPPRODB_LineLiveStatusForScreenQuery</protocol>
+			</service>
+						<service>
+			<serivcename>ZhyyGlTjQuery</serivcename>
+			<protocol>IEMPPRODB_ZhyyGlTjQuery</protocol>
+			</service>
+						<service>
+			<serivcename>ZhyyTsfpShutdownQuery</serivcename>
+			<protocol>IEMPPRODB_ZhyyTsfpShutdownQuery</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

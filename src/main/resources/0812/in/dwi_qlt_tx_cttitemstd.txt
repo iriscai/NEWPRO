@@ -1,0 +1,28 @@
+CREATE TABLE
+	`dwi_qlt_tx_cttitemstd` (
+		`a_submat` string COMMENT '原料站自分类',
+		`check_flag` string COMMENT '验收标志',
+		`rod_digit` double COMMENT '修约位数',
+		`rod_unit` double COMMENT '修约单位',
+		`c_submat` string COMMENT '新铁站自分类',
+		`s_mat_name` string COMMENT '小类名',
+		`s_mat` string COMMENT '小类',
+		`std` string COMMENT '试验标准',
+		`use_dept_no` string COMMENT '去向',
+		`judge_flag` string COMMENT '判级标志',
+		`b_submat` string COMMENT '焦化站自分类',
+		`item_unit` string COMMENT '检验项目单位',
+		`item` string COMMENT '检验项目',
+		`item_seq` double COMMENT '检验次序',
+		`ins_time` string COMMENT '记录时间',
+		`ins_date` string COMMENT '记录日期',
+		`emp` string COMMENT '记录人',
+		`ctrtno` string COMMENT '合同号',
+		`q_std` string COMMENT '产品标准',
+		`prd_area` string COMMENT '产地',
+		`ext_etl_dt` timestamp COMMENT 'ETL时间',
+		`ext_src_sys_id` string COMMENT '源系统'
+	) COMMENT '供应商合同标准主档' ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.columnar.ColumnarSerDe' STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.RCFileInputFormat' OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.RCFileOutputFormat' LOCATION 'hdfs://hacluster/user/hive/warehouse/dwi_qlt.db/dwi_qlt_tx_cttitemstd' TBLPROPERTIES (
+		'bucketing_version' = '2',
+		'transient_lastDdlTime' = '1755457592'
+	)

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>ZHZL</serviceSystemName>
+		<serviceSystemDesc>智慧质量</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>ZHZL_esbCommon</protocol>
+						<protocol>ZHZL_qmsUniappFeedbackGetById</protocol>
+						<protocol>ZHZL_qmsUniappFeedbackGetOpenId</protocol>
+						<protocol>ZHZL_qmsUniappFeedbackListByUser</protocol>
+						<protocol>ZHZL_qmsUniappFeedbackSave</protocol>
+						<protocol>ZHZL_qmsUniappFeedbackUpload</protocol>
+						<protocol>ZHZLqmsUniappFeedbackStarById</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>esbCommon</serivcename>
+			<protocol>ZHZL_esbCommon</protocol>
+			</service>
+						<service>
+			<serivcename>qmsUniappFeedbackGetById</serivcename>
+			<protocol>ZHZL_qmsUniappFeedbackGetById</protocol>
+			</service>
+						<service>
+			<serivcename>qmsUniappFeedbackGetOpenId</serivcename>
+			<protocol>ZHZL_qmsUniappFeedbackGetOpenId</protocol>
+			</service>
+						<service>
+			<serivcename>qmsUniappFeedbackListByUser</serivcename>
+			<protocol>ZHZL_qmsUniappFeedbackListByUser</protocol>
+			</service>
+						<service>
+			<serivcename>qmsUniappFeedbackSave</serivcename>
+			<protocol>ZHZL_qmsUniappFeedbackSave</protocol>
+			</service>
+						<service>
+			<serivcename>qmsUniappFeedbackStarById</serivcename>
+			<protocol>ZHZLqmsUniappFeedbackStarById</protocol>
+			</service>
+						<service>
+			<serivcename>qmsUniappFeedbackUpload</serivcename>
+			<protocol>ZHZL_qmsUniappFeedbackUpload</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

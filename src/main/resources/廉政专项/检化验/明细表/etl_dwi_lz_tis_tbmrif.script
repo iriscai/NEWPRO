@@ -1,0 +1,11 @@
+{
+	"configuration":{},
+	"connectionName":"MRS_Spark_Agent",
+	"content":"-- ******************************************************************** --\n-- author: jh_caiyi\n-- create time: 2025-07-15\n-- descr:智慧运营中心部分数据概览-检化验验收分析_tbmrif\n-- dwi_qlt_lz_tis_tbmrif\n-- ******************************************************************** --\n-- DROP TABLE IF EXISTS dwi_qlt.dwi_qlt_lz_tis_tbmrif;\n-- CREATE TABLE\n-- dwi_qlt.dwi_qlt_lz_tis_tbmrif (\n-- checkpeo string COMMENT '审核人,',\n-- chkno string COMMENT '检验批号,',\n-- comment string COMMENT '备注,',\n-- compid string COMMENT '公司别,',\n-- cratdate string COMMENT '数据建立日期,',\n-- cratno string COMMENT '数据建立人,',\n-- ctrtno string COMMENT '合同号,',\n-- factorybatchnum string COMMENT '生产厂批次信息,',\n-- factoryid string COMMENT '供应商代码,',\n-- fromdate string COMMENT '取样日期,',\n-- fromname string COMMENT '取样地点,',\n-- fromtime string COMMENT '取样时间,',\n-- impurityweight decimal(15, 3) COMMENT '扣杂质,',\n-- ismasacpt string COMMENT '是否已重量验收,',\n-- isqtyacpt string COMMENT '是否已品质验收,',\n-- lastrevsdate string COMMENT '上次数据更动日期,',\n-- lastrevsno string COMMENT '上次资料更动人,',\n-- manualchkno string COMMENT '手工批号,',\n-- mjtester string COMMENT '主检人,',\n-- mtrlno string COMMENT '原料料号,',\n-- qtyover string COMMENT '品质检验结果,',\n-- sendstation string COMMENT '发站,',\n-- sendstationdesc string COMMENT '发站说明,',\n-- supplyname string COMMENT '供应商,',\n-- testdate string COMMENT '检验日期,',\n-- tester string COMMENT '检验人,',\n-- testroom string COMMENT '化验室,',\n-- type string COMMENT '类别,',\n-- etl_date DATE COMMENT 'ETL时间'\n-- )\n-- COMMENT '廉政八项-智慧运营中心-检化验验收分析_tbmrif'\n-- STORED AS ORC;\n\nINSERT OVERWRITE TABLE\ndwi_qlt.dwi_qlt_lz_tis_tbmrif\nSELECT \n    checkpeo,\n    chkno,\n    comment,\n    compid,\n    cratdate,\n    cratno,\n    ctrtno,\n    factorybatchnum,\n    factoryid,\n    fromdate,\n    fromname,\n    fromtime,\n    impurityweight,\n    ismasacpt,\n    isqtyacpt,\n    lastrevsdate,\n    lastrevsno,\n    manualchkno,\n    mjtester,\n    mtrlno,\n    qtyover,\n    sendstation,\n    sendstationdesc,\n    supplyname,\n    testdate,\n    tester,\n    testroom,\n    type,\n    CURRENT_DATE() AS etl_date\nFROM \n    dwi_qlt.dwi_qlt_tbmrif;\n",
+	"currentDatabase":"dwi_qlt",
+	"description":"",
+	"directory":"/廉政专项/检化验/明细表",
+	"name":"etl_dwi_lz_tis_tbmrif",
+	"templateVersion":"1.0",
+	"type":"SparkSQL"
+}

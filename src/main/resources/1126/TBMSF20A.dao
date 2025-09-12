@@ -1,0 +1,44 @@
+#Meta 
+------------------------------
+project	 :  MS 设备管理系统
+table    :  db.tbmsf20A
+package  :  com.icsc.ms.msf.dao
+entity   :  msfctb20AVO
+class    :  msfctb20ADAO
+author   :  020898
+descript :  新品油抽检明细
+version  :  1.0
+
+#Field
+#name		dataType	isKey?(y/n)	description	field width (db)	format		default
+-------------------------------------------------------------------------------------------
+mamv5id	String	    Y	系统索引值	32	String	""	Y
+mamv4id	String	    N	关联主档的id	32	String	""	
+mamv4no	String	    N	检验项目编号	20	String	""	
+mamv4name	String	N	检验项目名称	100	String	""
+unit	    String	N	计量单位	    32	String	""	
+ischeck		String		N	是否检验	10	String	""
+uplimit		 BigDecimal	N	上限值	 	6,2	money	0
+upalert		 BigDecimal	N	上限警戒值	6,2	money	0
+factvalue	 BigDecimal	N	实际值	6,2	money	0
+vendorValue	 BigDecimal	N	供应商检测值	6,2	money	0	
+memo	String	N	备注	100	String	""		
+stus	String	N	标志	5	String	""	
+chkdate	String	N	检验日期	8	String	""	
+createtime	String	N	建档时间(时分秒)	8	String	""	
+modifytime	String	N	修改时间(时分秒)	8	String	""
+lowalert	BigDecimal	N	下限警戒值	6,2	money	0
+lowlimit	BigDecimal	N	下限值	 	6,2	money	0
+standard	BigDecimal	N	标准值		6,2	money	0
+prevalue	BigDecimal	N	上次检验数值	6,2	money	0
+validate	String	    N	检验日期	8	String	""	
+checkRlst	String		N	检验结果	10	String	""	
+createemp	String	N	建档人员	10	String	""	
+createdate	String	N	建档时间	8	String	""	
+modifyemp	String	N	修改人员	10	String	""	
+modifydate	String	N	修改时间	8	String	""
+ReadyA      String   	 		N	      	预留字段A			10				String   ""  				""
+ReadyB      String   	 		N	      	预留字段B			20				String   "" 				""
+ReadyC      String   	 		N	      	预留字段C			20				String    ""				""
+ReadyD      String   	 		N	      	预留字段D			20				String     ""
+alarm	String	N	报警类型   	10	String	""

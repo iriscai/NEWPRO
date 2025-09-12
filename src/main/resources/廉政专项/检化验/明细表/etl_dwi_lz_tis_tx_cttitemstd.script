@@ -1,0 +1,11 @@
+{
+	"configuration":{},
+	"connectionName":"MRS_Spark_Agent",
+	"content":"-- ******************************************************************** --\n-- author: jh_caiyi\n-- create time: 2025-07-15\n-- descr:智慧运营中心部分数据概览-检化验验收分析_tx_cttitemstd\n-- dwi_qlt_lz_tis_tx_cttitemstd\n-- ******************************************************************** --\n-- DROP TABLE IF EXISTS dwi_qlt.dwi_qlt_lz_tis_tx_cttitemstd;\n-- CREATE TABLE\n-- dwi_qlt.dwi_qlt_lz_tis_tx_cttitemstd (\n-- a_submat string COMMENT '原料站自分类,',\n-- check_flag string COMMENT '验收标志,',\n-- rod_digit double COMMENT '修约位数,',\n-- rod_unit double COMMENT '修约单位,',\n-- c_submat string COMMENT '新铁站自分类,',\n-- s_mat_name string COMMENT '小类名,',\n-- s_mat string COMMENT '小类,',\n-- std string COMMENT '试验标准,',\n-- use_dept_no string COMMENT '去向,',\n-- judge_flag string COMMENT '判级标志,',\n-- b_submat string COMMENT '焦化站自分类,',\n-- item_unit string COMMENT '检验项目单位,',\n-- item string COMMENT '检验项目,',\n-- item_seq double COMMENT '检验次序,',\n-- ins_time string COMMENT '记录时间,',\n-- ins_date string COMMENT '记录日期,',\n-- emp string COMMENT '记录人,',\n-- ctrtno string COMMENT '合同号,',\n-- q_std string COMMENT '产品标准,',\n-- prd_area string COMMENT '产地,',\n-- etl_date DATE COMMENT 'ETL时间'\n-- )\n-- COMMENT '廉政八项-智慧运营中心-检化验验收分析_tx_cttitemstd'\n-- STORED AS ORC;\n\nINSERT OVERWRITE TABLE\ndwi_qlt.dwi_qlt_lz_tis_tx_cttitemstd\nSELECT \n    a_submat,\n    check_flag,\n    rod_digit,\n    rod_unit,\n    c_submat,\n    s_mat_name,\n    s_mat,\n    std,\n    use_dept_no,\n    judge_flag,\n    b_submat,\n    item_unit,\n    item,\n    item_seq,\n    ins_time,\n    ins_date,\n    emp,\n    ctrtno,\n    q_std,\n    prd_area,\n    CURRENT_DATE() AS etl_date\nFROM \n    dwi_qlt.dwi_qlt_tx_cttitemstd;\n",
+	"currentDatabase":"dwi_qlt",
+	"description":"",
+	"directory":"/廉政专项/检化验/明细表",
+	"name":"etl_dwi_lz_tis_tx_cttitemstd",
+	"templateVersion":"1.0",
+	"type":"SparkSQL"
+}

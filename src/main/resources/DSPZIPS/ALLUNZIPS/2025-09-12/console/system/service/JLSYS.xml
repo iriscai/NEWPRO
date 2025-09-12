@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>JLSYS</serviceSystemName>
+		<serviceSystemDesc>计量系统</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>JLSYS_GetTruckMeasureInfoByType</protocol>
+						<protocol>JLSYS_TruckMeasureInfoQuery</protocol>
+						<protocol>JLSYS_TruckPlanInfoSync</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>GetTruckMeasureInfoByType</serivcename>
+			<protocol>JLSYS_GetTruckMeasureInfoByType</protocol>
+			</service>
+						<service>
+			<serivcename>TruckMeasureInfoQuery</serivcename>
+			<protocol>JLSYS_TruckMeasureInfoQuery</protocol>
+			</service>
+						<service>
+			<serivcename>TruckPlanInfoSync</serivcename>
+			<protocol>JLSYS_TruckPlanInfoSync</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

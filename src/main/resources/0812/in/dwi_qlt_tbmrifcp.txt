@@ -1,0 +1,38 @@
+CREATE TABLE
+	`dwi_qlt_tbmrifcp` (
+		`compid` string COMMENT '公司别',
+		`chkno` string COMMENT '检验批号',
+		`chktype` string COMMENT '检验种类',
+		`chkitem` string COMMENT '检验项目',
+		`chkver` string COMMENT '检验版本号',
+		`lv1up` decimal(8, 4) COMMENT '一级品上限',
+		`lv1down` decimal(8, 4) COMMENT '一级品下限',
+		`seqno` string COMMENT '项目序号',
+		`scale` decimal(1, 0) COMMENT '位数',
+		`supplyspec` decimal(8, 4) COMMENT '供货商规格',
+		`scalespec` decimal(8, 4) COMMENT '商检规格',
+		`cospec` decimal(8, 4) COMMENT '公司规格',
+		`co1spec` decimal(8, 4) COMMENT '公司初检规格',
+		`co2spec` decimal(8, 4) COMMENT '公司复检规格',
+		`co3spec` decimal(8, 4) COMMENT '仲裁规格',
+		`grade` string COMMENT '级别',
+		`subcoin` decimal(6, 2) COMMENT '扣款额度',
+		`qtyrslt` string COMMENT '检验结果',
+		`cratno` string COMMENT '数据建立人',
+		`cratdate` string COMMENT '数据建立日期',
+		`lastrevsno` string COMMENT '上次资料更动人',
+		`lastrevsdate` string COMMENT '上次数据更动日期',
+		`lastrevsnoa` string COMMENT '上次资料更动人A',
+		`lastrevsdatea` string COMMENT '上次数据更动日期A',
+		`lastrevsnob` string COMMENT '上次资料更动人B',
+		`lastrevsdateb` string COMMENT '上次数据更动日期B',
+		`lastrevsnoc` string COMMENT '上次资料更动人C',
+		`lastrevsdatec` string COMMENT '上次数据更动日期C',
+		`remark` string COMMENT '备注',
+		`isqualified` string COMMENT '是否合格',
+		`ext_etl_dt` timestamp COMMENT 'ETL时间',
+		`ext_src_sys_id` string COMMENT '源系统'
+	) COMMENT '验收批次化物性档' ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.columnar.ColumnarSerDe' STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.RCFileInputFormat' OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.RCFileOutputFormat' LOCATION 'hdfs://hacluster/user/hive/warehouse/dwi_qlt.db/dwi_qlt_tbmrifcp' TBLPROPERTIES (
+		'bucketing_version' = '2',
+		'transient_lastDdlTime' = '1755451238'
+	)

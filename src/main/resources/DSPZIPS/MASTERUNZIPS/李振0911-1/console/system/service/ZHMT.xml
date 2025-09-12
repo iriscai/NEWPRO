@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>ZHMT</serviceSystemName>
+		<serviceSystemDesc>智慧码头</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>ZHMT_ZhmtGetDustPointQuery</protocol>
+						<protocol>ZHMT_ZhmtGetWaterPointQuery</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>ZhmtGetDustPointQuery</serivcename>
+			<protocol>ZHMT_ZhmtGetDustPointQuery</protocol>
+			</service>
+						<service>
+			<serivcename>ZhmtGetWaterPointQuery</serivcename>
+			<protocol>ZHMT_ZhmtGetWaterPointQuery</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

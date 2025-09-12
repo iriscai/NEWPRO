@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>RLMJDB</serviceSystemName>
+		<serviceSystemDesc>人脸门禁数据库</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>RLMJDB_ZhyyAfZbVisitorStatisticDetailPeoQuery</protocol>
+						<protocol>RLMJDB_ZhyyAfZbVisitorStatisticSumPeoQuery</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>ZhyyAfZbVisitorStatisticDetailPeoQuery</serivcename>
+			<protocol>RLMJDB_ZhyyAfZbVisitorStatisticDetailPeoQuery</protocol>
+			</service>
+						<service>
+			<serivcename>ZhyyAfZbVisitorStatisticSumPeoQuery</serivcename>
+			<protocol>RLMJDB_ZhyyAfZbVisitorStatisticSumPeoQuery</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

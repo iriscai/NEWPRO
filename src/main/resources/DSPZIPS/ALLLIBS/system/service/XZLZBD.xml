@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>XZLZBD</serviceSystemName>
+		<serviceSystemDesc>鑫智链中标贷</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>XZLZBD_QueryByTxHash</protocol>
+						<protocol>XZLZBD_QueryFileEvidence</protocol>
+						<protocol>XZLZBD_QueryStoreResult</protocol>
+						<protocol>XZLZBD_StoreDataToBlockChain</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>QueryByTxHash</serivcename>
+			<protocol>XZLZBD_QueryByTxHash</protocol>
+			</service>
+						<service>
+			<serivcename>QueryFileEvidence</serivcename>
+			<protocol>XZLZBD_QueryFileEvidence</protocol>
+			</service>
+						<service>
+			<serivcename>QueryStoreResult</serivcename>
+			<protocol>XZLZBD_QueryStoreResult</protocol>
+			</service>
+						<service>
+			<serivcename>StoreDataToBlockChain</serivcename>
+			<protocol>XZLZBD_StoreDataToBlockChain</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

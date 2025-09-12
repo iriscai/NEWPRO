@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<id>XCYDHRXT_SmartParkHaiKangEventBlackSearch</id>
+	<nickName>XCYDHRXT_SmartParkHaiKangEventBlackSearch</nickName>
+	<type>protocol_server</type>
+	<subType>HTTPServiceConnector</subType>
+	<category>DEFAULT</category>
+	<communicateType>synchronous</communicateType>
+	<connectMode></connectMode>
+	<ioDirection>DataIn/DataOut</ioDirection>
+	<serviceSystem></serviceSystem>
+	<lastModified></lastModified>
+	<description><![CDATA[智慧园区海康考勤系统_考勤_获取海康平台无感考勤数据接口]]></description>
+	<resources>
+			</resources>
+</root>

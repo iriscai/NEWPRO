@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>NGITYWGLPT</serviceSystemName>
+		<serviceSystemDesc>南钢IT运维管理平台</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>NGITYWGLPT_AutoOpsGetHistoryList</protocol>
+						<protocol>NGITYWGLPT_ItsmEvent</protocol>
+						<protocol>NGITYWGLPT_ItsmGetServices</protocol>
+						<protocol>NGITYWGLPT_ItsmOverGetTickets</protocol>
+						<protocol>NGITYWGLPT_YwglptGetTicketComments</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>AutoOpsGetHistoryList</serivcename>
+			<protocol>NGITYWGLPT_AutoOpsGetHistoryList</protocol>
+			</service>
+						<service>
+			<serivcename>ItsmEvent</serivcename>
+			<protocol>NGITYWGLPT_ItsmEvent</protocol>
+			</service>
+						<service>
+			<serivcename>ItsmGetServices</serivcename>
+			<protocol>NGITYWGLPT_ItsmGetServices</protocol>
+			</service>
+						<service>
+			<serivcename>ItsmOverGetTickets</serivcename>
+			<protocol>NGITYWGLPT_ItsmOverGetTickets</protocol>
+			</service>
+						<service>
+			<serivcename>YwglptGetTicketComments</serivcename>
+			<protocol>NGITYWGLPT_YwglptGetTicketComments</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

@@ -1,0 +1,11 @@
+{
+	"configuration":{},
+	"connectionName":"MRS_Spark_Agent",
+	"content":"-- ******************************************************************** --\n-- author: jh_caiyi\n-- create time: 2025-07-15\n-- descr:智慧运营中心部分数据概览-智慧营销系统专线明细_tbsbnj02\n-- sms_orderdelivery_tbsbnj02\n-- ******************************************************************** --\n-- DROP TABLE IF EXISTS dwi_log.dwi_log_lz_sms_orderdelivery_tbsbnj02;\n-- CREATE TABLE dwi_log.dwi_log_lz_sms_orderdelivery_tbsbnj02 (\n--     compid string,\n--     displistno string,\n--     orderno string,\n--     orderitem string,\n--     plandeliqty double,\n--     realdeliqty double,\n--     plandeliwet double,\n--     realdeliwet double,\n--     cardeliqty double,\n--     cardeliwet double,\n--     unitprice double,\n--     transunitprice double,\n--     prodamt double,\n--     transamt double,\n--     planamt double,\n--     realamt double,\n--     lastshippdate string,\n--     uptempno string,\n--     uptdate string,\n--     status string,\n--     orginitem string,\n--     pricever string,\n--     otherprice double,\n--     otherpricex double,\n--     addpricereasonx string,\n--     rateprice double,\n--     rateamt double,\n--     transprice double,\n--     djprice double,\n--     stockprice double,\n--     isfd string,\n--     sizetype string,\n--     etl_date DATE COMMENT 'ETL时间'\n-- )\n-- COMMENT '廉政八项-智慧运营中心-智慧营销系统专线明细_tbsbnj02'\n-- STORED AS ORC;\n\nINSERT OVERWRITE TABLE dwi_log.dwi_log_lz_sms_orderdelivery_tbsbnj02\nSELECT \n    compid,\n    displistno,\n    orderno,\n    orderitem,\n    plandeliqty,\n    realdeliqty,\n    plandeliwet,\n    realdeliwet,\n    cardeliqty,\n    cardeliwet,\n    unitprice,\n    transunitprice,\n    prodamt,\n    transamt,\n    planamt,\n    realamt,\n    lastshippdate,\n    uptempno,\n    uptdate,\n    status,\n    orginitem,\n    pricever,\n    otherprice,\n    otherpricex,\n    addpricereasonx,\n    rateprice,\n    rateamt,\n    transprice,\n    djprice,\n    stockprice,\n    isfd,\n    sizetype,\n    CURRENT_DATE() AS etl_date\nFROM \n    dwi_log.dwi_log_tbsbnj02;\n",
+	"currentDatabase":"dwi_mkt",
+	"description":"",
+	"directory":"/廉政专项/智慧营销/宽表",
+	"name":"etl_dwi_log_lz_sms_orderdelivery_tbsbnj02",
+	"templateVersion":"1.0",
+	"type":"SparkSQL"
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>DSPTZSDB</serviceSystemName>
+		<serviceSystemDesc>电商平台正式机数据库</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>DSPTZSDB_ZhyySalEcosCorpGMSCustTargetQuery</protocol>
+						<protocol>DSPTZSDB_ZhyySalEcosCorpGMSProcessDetailQuery</protocol>
+						<protocol>DSPTZSDB_ZhyySalEcosCorpGMSProcessQuery</protocol>
+						<protocol>DSPTZSDB_ZhyySalEcosCorpGMSProcessTrailQuery</protocol>
+						<protocol>DSPTZSDB_ZhyySalEcosCorpMeatVisionAILogQuery</protocol>
+						<protocol>DSPTZSDB_ZhyySalEcosCorpPlanMateAnalyseQuery</protocol>
+						<protocol>DSPTZSDB_ZhyySalEcosCorpSCMTotalPeriodQuery</protocol>
+						<protocol>DSPTZSDB_ZhyySalEcosCorpUnifyMstsAgreeAssayQuery</protocol>
+						<protocol>DSPTZSDB_ZhyySalEcosCorpUnifyMstsRiskAssayQuery</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>ZhyySalEcosCorpGMSCustTargetQuery</serivcename>
+			<protocol>DSPTZSDB_ZhyySalEcosCorpGMSCustTargetQuery</protocol>
+			</service>
+						<service>
+			<serivcename>ZhyySalEcosCorpGMSProcessDetailQuery</serivcename>
+			<protocol>DSPTZSDB_ZhyySalEcosCorpGMSProcessDetailQuery</protocol>
+			</service>
+						<service>
+			<serivcename>ZhyySalEcosCorpGMSProcessQuery</serivcename>
+			<protocol>DSPTZSDB_ZhyySalEcosCorpGMSProcessQuery</protocol>
+			</service>
+						<service>
+			<serivcename>ZhyySalEcosCorpGMSProcessTrailQuery</serivcename>
+			<protocol>DSPTZSDB_ZhyySalEcosCorpGMSProcessTrailQuery</protocol>
+			</service>
+						<service>
+			<serivcename>ZhyySalEcosCorpMeatVisionAILogQuery</serivcename>
+			<protocol>DSPTZSDB_ZhyySalEcosCorpMeatVisionAILogQuery</protocol>
+			</service>
+						<service>
+			<serivcename>ZhyySalEcosCorpPlanMateAnalyseQuery</serivcename>
+			<protocol>DSPTZSDB_ZhyySalEcosCorpPlanMateAnalyseQuery</protocol>
+			</service>
+						<service>
+			<serivcename>ZhyySalEcosCorpSCMTotalPeriodQuery</serivcename>
+			<protocol>DSPTZSDB_ZhyySalEcosCorpSCMTotalPeriodQuery</protocol>
+			</service>
+						<service>
+			<serivcename>ZhyySalEcosCorpUnifyMstsAgreeAssayQuery</serivcename>
+			<protocol>DSPTZSDB_ZhyySalEcosCorpUnifyMstsAgreeAssayQuery</protocol>
+			</service>
+						<service>
+			<serivcename>ZhyySalEcosCorpUnifyMstsRiskAssayQuery</serivcename>
+			<protocol>DSPTZSDB_ZhyySalEcosCorpUnifyMstsRiskAssayQuery</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

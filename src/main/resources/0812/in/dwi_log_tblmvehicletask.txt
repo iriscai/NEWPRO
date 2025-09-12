@@ -1,0 +1,38 @@
+CREATE TABLE
+	`dwi_log_tblmvehicletask` (
+		`timestamp` string COMMENT '时间戳',
+		`plateno` string COMMENT '车号',
+		`displistno` string COMMENT '通知单号',
+		`id` string COMMENT 'ID',
+		`compid` string COMMENT '公司别',
+		`deliveryhouse` string COMMENT '发货库别',
+		`transcompid` string COMMENT '运输单位',
+		`loadno` string COMMENT '装车作业单',
+		`orderno` string COMMENT '订单号',
+		`orderitem` string COMMENT '订单项次',
+		`weight` double COMMENT '重量',
+		`to` string COMMENT '终到地点',
+		`enterdate` string COMMENT '进厂日期',
+		`entertime` string COMMENT '进厂时间',
+		`entergate` string COMMENT '进厂门岗号',
+		`outdate` string COMMENT '出厂日期',
+		`outtime` string COMMENT '出厂时间',
+		`outgate` string COMMENT '出厂门岗号',
+		`signdate` string COMMENT '客户签收日期',
+		`signtime` string COMMENT '客户签收时间',
+		`signempname` string COMMENT '客户签收人',
+		`dosingemp` string COMMENT '派货人',
+		`creempno` string COMMENT '新建人员',
+		`credate` string COMMENT '新建日期',
+		`cretime` string COMMENT '新建时间',
+		`updempno` string COMMENT '更新人',
+		`upddate` string COMMENT '更新日期',
+		`updtime` string COMMENT '更新时间',
+		`istransit` string COMMENT '是否过境',
+		`ext_etl_dt` timestamp COMMENT 'ETL时间',
+		`ext_src_sys_id` string COMMENT '源系统'
+	) COMMENT '记录提货派车任务下发门禁汇总表(旧表,物流中心提单查询派车页面在使用)，车辆进厂信息由该表统一批次处理下发门禁系统' ROW FORMAT SERDE 'org.apache.hadoop.hive.ql.io.orc.OrcSerde' STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.orc.OrcInputFormat' OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat' LOCATION 'hdfs://hacluster/user/hive/warehouse/dwi_log.db/dwi_log_tblmvehicletask' TBLPROPERTIES (
+		'bucketing_version' = '2',
+		'orc.compress' = 'ZLIB',
+		'transient_lastDdlTime' = '1728529032'
+	)

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<objs>
+  <obj>
+    <objType>protocol.client</objType>
+    <items>
+      <item cmd="add">XCYDHRXT_SmartParkHaiKangEventBlackSearch</item>
+    </items>
+  </obj>
+  <obj>
+    <objType>service.buss</objType>
+    <items>
+      <item cmd="add">SmartParkHaiKangEventBlackSearch</item>
+    </items>
+  </obj>
+  <obj>
+    <objType>service.definition</objType>
+    <items>
+      <item cmd="add">SmartParkHaiKangEventBlackSearch</item>
+    </items>
+  </obj>
+  <global>
+    <obj>
+      <objType>service.definition</objType>
+      <items>
+        <item>console/service/definition/service_SmartParkHaiKangEventBlackSearch.xml</item>
+      </items>
+    </obj>
+  </global>
+</objs>

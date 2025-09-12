@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Project>
+    <environment>
+        <item>
+            <key>default.module.name</key>
+            <value>DEFAULT</value>
+            <description/>
+        </item>
+        <item>            <key>version</key>
+            <value/>
+            <description/>
+        </item>
+        <item>            <key>biz.impl.prefix</key>
+            <value>com.dc.esb.busi.impls</value>
+            <description>业务服务实现类包路径前缀</description>
+        </item>
+        <item>            <key>base.impl.prefix</key>
+            <value>com.dc.esb.base.impls</value>
+            <description>基础服务实现类包路径前缀</description>
+        </item>
+        <item>            <key>proxy.impl.prefix</key>
+            <value>com.dc.esb.impls.proxy</value>
+            <description>代理服务实现类包路径前缀</description>
+        </item>
+        <item>            <key>regx.biz.id</key>
+            <value>^([A-Za-z]+)([A-Za-z0-9_]*)$</value>
+            <description>业务服务ID正则表达式</description>
+        </item>
+        <item>            <key>regx.base.id</key>
+            <value>^([A-Za-z]+)([A-Za-z0-9_]*)$</value>
+            <description>基础服务ID正则表达式</description>
+        </item>
+        <item>            <key>regx.proxy.id</key>
+            <value>^([A-Za-z]+)([A-Za-z0-9_]*)$</value>
+            <description>代理服务ID正则表达式</description>
+        </item>
+        <item>            <key>regx.protocolType.id</key>
+            <value>(([A-Za-z0-9_]+)ChannelConnector$)|(([A-Za-z0-9_]+)ServiceConnector$)</value>
+            <description>协议类型ID正则表达式</description>
+        </item>
+        <item>            <key>console.server.ip</key>
+            <value>http://127.0.0.1:6601/GCP</value>
+            <description>服务器地址</description>
+        </item>
+        <item>            <key>exportOrder</key>
+            <value>identifyparser,lib,config,mdt,metadatadict,dbresource,base,protocoltype,protocol_server,protocol_client,identifyservice,identifysystem,config.adaptor,channel,business,channelservicesystem.channel,channelservicesystem.serivce,proxy,exceptionprocess,exceptioncode,timertask</value>
+            <description>导出到控制台顺序</description>
+        </item>
+        <item>            <key>mock.jmx.server.ip</key>
+            <value>127.0.0.1</value>
+            <description>mock挡板IP地址</description>
+        </item>
+        <item>            <key>mock.jmx.server.port</key>
+            <value>65128</value>
+            <description>mock挡板管理端口</description>
+        </item>
+        <item>            <key>attachmentPublish.port</key>
+            <value>10200</value>
+            <description>资源发布端口</description>
+        </item>
+    </environment></Project>

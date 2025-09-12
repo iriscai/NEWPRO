@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>CWSJ</serviceSystemName>
+		<serviceSystemDesc>财务税金系统</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>CWSJ_invoiceAuthenticationNotice</protocol>
+						<protocol>CWSJ_invoiceInfoOpenNotice</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>invoiceAuthenticationNotice</serivcename>
+			<protocol>CWSJ_invoiceAuthenticationNotice</protocol>
+			</service>
+						<service>
+			<serivcename>invoiceInfoOpenNotice</serivcename>
+			<protocol>CWSJ_invoiceInfoOpenNotice</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

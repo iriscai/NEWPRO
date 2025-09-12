@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>ZXJTCGXT</serviceSystemName>
+		<serviceSystemDesc>中信集团采购系统</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>ZXJTCGXT_pushBulletinToZX</protocol>
+						<protocol>ZXJTCGXT_pushBulletinToZXtest</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>pushBulletinToZX</serivcename>
+			<protocol>ZXJTCGXT_pushBulletinToZX</protocol>
+			</service>
+						<service>
+			<serivcename>pushBulletinToZXtest</serivcename>
+			<protocol>ZXJTCGXT_pushBulletinToZXtest</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

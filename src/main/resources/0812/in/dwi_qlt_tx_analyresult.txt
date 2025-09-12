@@ -1,0 +1,32 @@
+CREATE TABLE
+	`dwi_qlt_tx_analyresult_lz` (
+		`smp_no` varchar(60) COMMENT '样品编号',
+		`heat_no` varchar(30) COMMENT '炉次号',
+		`smp_item` varchar(120) COMMENT '检验项目',
+		`test_rst` varchar(90) COMMENT '检验结果',
+		`test_std_no` varchar(60) COMMENT '试验标准编号',
+		`tester` varchar(24) COMMENT '检验员',
+		`test_eqt_no` varchar(90) COMMENT '检验设备',
+		`smp_date` varchar(24) COMMENT '检验日期',
+		`smp_time` varchar(18) COMMENT '检验时间',
+		`test_shift` varchar(30) COMMENT '班次',
+		`test_crew` varchar(30) COMMENT '班别',
+		`flag` char(3) COMMENT '完成标志',
+		`test_rst_rd` varchar(90) COMMENT '修约结果',
+		`smp_type` varchar(12) COMMENT '试样类型',
+		`test_std` varchar(60) COMMENT '操作规程',
+		`retest_flag` varchar(3) COMMENT '复样标识',
+		`test_min` varchar(60) COMMENT '最小值',
+		`test_max` varchar(60) COMMENT '最大值',
+		`mat_std` varchar(60) COMMENT '等级',
+		`smp_item_seq` decimal(38, 18) COMMENT '检验项目顺序',
+		`makeflag` varchar(3) COMMENT '防作弊系统制样物性数据录入界面完成标志',
+		`experiment` varchar(3) COMMENT '实验',
+		`sam_checkno` varchar(60) COMMENT '同检验批号',
+		`warranty_verify` varchar(3) COMMENT '质保书验证',
+		`spec_rulle` varchar(60) COMMENT '抽取、覆盖特殊规则'
+	) ROW FORMAT SERDE 'org.apache.hadoop.hive.ql.io.orc.OrcSerde' STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.orc.OrcInputFormat' OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat' LOCATION 'hdfs://hacluster/user/hive/warehouse/dwi_qlt.db/dwi_qlt_tx_analyresult_lz' TBLPROPERTIES (
+		'bucketing_version' = '2',
+		'orc.compress' = 'ZLIB',
+		'transient_lastDdlTime' = '1751964143'
+	)

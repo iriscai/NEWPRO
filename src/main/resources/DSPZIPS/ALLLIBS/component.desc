@@ -1,0 +1,2296 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<root project="NGESB">
+
+  <brobject>
+
+    <id><![CDATA[SmartParkHaiKangEventBlackSearch]]></id>
+
+    <category><![CDATA[XCYDHRXDT]]></category>
+
+    <description><![CDATA[智慧园区海康考勤系统_考勤_获取海康平台无感考勤数据接口]]></description>
+
+    <nickname><![CDATA[SmartParkHaiKangEventBlackSearch]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[XCYDHRXT_SmartParkHaiKangEventBlackSearch]]></id>
+
+    <category><![CDATA[DEFAULT]]></category>
+
+    <description><![CDATA[智慧园区海康考勤系统_考勤_获取海康平台无感考勤数据接口]]></description>
+
+    <nickname><![CDATA[XCYDHRXT_SmartParkHaiKangEventBlackSearch]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id/>
+
+    <category><![CDATA[DEFAULT]]></category>
+
+    <description/>
+
+    <nickname/>
+
+  </brobject>
+
+  <brobject>
+
+    <id/>
+
+    <category><![CDATA[DEFAULT]]></category>
+
+    <description/>
+
+    <nickname/>
+
+  </brobject>
+
+  <brobject>
+
+    <id/>
+
+    <category><![CDATA[DEFAULT]]></category>
+
+    <description/>
+
+    <nickname/>
+
+  </brobject>
+
+  <brobject>
+
+    <id/>
+
+    <category><![CDATA[DEFAULT]]></category>
+
+    <description/>
+
+    <nickname/>
+
+  </brobject>
+
+  <brobject>
+
+    <id/>
+
+    <category><![CDATA[DEFAULT]]></category>
+
+    <description/>
+
+    <nickname/>
+
+  </brobject>
+
+  <brobject>
+
+    <id/>
+
+    <category><![CDATA[DEFAULT]]></category>
+
+    <description/>
+
+    <nickname/>
+
+  </brobject>
+
+  <brobject>
+
+    <id/>
+
+    <category><![CDATA[DEFAULT]]></category>
+
+    <description/>
+
+    <nickname/>
+
+  </brobject>
+
+  <brobject>
+
+    <id/>
+
+    <category><![CDATA[DEFAULT]]></category>
+
+    <description/>
+
+    <nickname/>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[DEFAULT]]></id>
+
+    <category><![CDATA[DEFAULT]]></category>
+
+    <description><![CDATA[系统组件是一种内置组件,开发期间不允许被修改]]></description>
+
+    <nickname><![CDATA[系统组件]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[service]]></id>
+
+    <category><![CDATA[service]]></category>
+
+    <description><![CDATA[服务模块]]></description>
+
+    <nickname><![CDATA[服务模块]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[ERP]]></id>
+
+    <category><![CDATA[ERP]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[集团ERP]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[YJPTDB]]></id>
+
+    <category><![CDATA[YJPTDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[预警平台数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[GPDB]]></id>
+
+    <category><![CDATA[GPDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[GP数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[BCERP]]></id>
+
+    <category><![CDATA[BCERP]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[板材ERP]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[MES]]></id>
+
+    <category><![CDATA[MES]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[板材MES]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[ERPZSDB]]></id>
+
+    <category><![CDATA[ERPZSDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[ERP正式机数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[DSPDB]]></id>
+
+    <category><![CDATA[DSPDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[数据服务平台数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[BIGPURCHASESYS]]></id>
+
+    <category><![CDATA[BIGPURCHASESYS]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[BIGPURCHASESYS]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[SD]]></id>
+
+    <category><![CDATA[SD]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[赛迪]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[ESB]]></id>
+
+    <category><![CDATA[ESB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[数据服务系统]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[XERP]]></id>
+
+    <category><![CDATA[XERP]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[销售子公司ERP]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[ZHJTSYSTEM]]></id>
+
+    <category><![CDATA[ZHJTSYSTEM]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[治安保卫系统]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[XYSCSYS]]></id>
+
+    <category><![CDATA[XYSCSYS]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[鑫洋物流系统]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[ELT]]></id>
+
+    <category><![CDATA[ELT]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[电子摘挂牌]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[NGEMSDB]]></id>
+
+    <category><![CDATA[NGEMSDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[南钢EMS数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[MYSTEELSYS]]></id>
+
+    <category><![CDATA[MYSTEELSYS]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[黑色市场分析智慧管理系统]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[BCMESDB]]></id>
+
+    <category><![CDATA[BCMESDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[板材MES数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[ROMASYS]]></id>
+
+    <category><![CDATA[ROMASYS]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[ROMA系统]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[C2MSYS]]></id>
+
+    <category><![CDATA[C2MSYS]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[销售电子商务系统]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[TGMESDB]]></id>
+
+    <category><![CDATA[TGMESDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[特钢MES数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[JLSYS]]></id>
+
+    <category><![CDATA[JLSYS]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[计量系统]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[CLMJ]]></id>
+
+    <category><![CDATA[CLMJ]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[车辆门禁系统]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[OADB]]></id>
+
+    <category><![CDATA[OADB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[协同OA数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[DGCNGDB]]></id>
+
+    <category><![CDATA[DGCNGDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[数据治理中心DGC]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[DGCNG_SECDB]]></id>
+
+    <category><![CDATA[DGCNG_SECDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[保卫SEC数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[ENTRANCE]]></id>
+
+    <category><![CDATA[ENTRANCE]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[人脸门禁系统]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[NC]]></id>
+
+    <category><![CDATA[NC]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[南钢NC系统]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[JSDHMSSYS]]></id>
+
+    <category><![CDATA[JSDHMSSYS]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[金仕达HMS系统]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[DWSDB]]></id>
+
+    <category><![CDATA[DWSDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[DWS数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[FGQLCDB]]></id>
+
+    <category><![CDATA[FGQLCDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[废钢全流程数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[XCYSYS]]></id>
+
+    <category><![CDATA[XCYSYS]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[新产业投资集团信息化系统]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[JLDB]]></id>
+
+    <category><![CDATA[JLDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[计量数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[TQMESZBDB]]></id>
+
+    <category><![CDATA[TQMESZBDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[铁区MES灾备机数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[JHYDB]]></id>
+
+    <category><![CDATA[JHYDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[检化验数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[ZHYWDB]]></id>
+
+    <category><![CDATA[ZHYWDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[智慧运维数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[RLMJDB]]></id>
+
+    <category><![CDATA[RLMJDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[人脸门禁数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[YLGDGEJDB]]></id>
+
+    <category><![CDATA[YLGDGEJDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[一炼钢倒罐二级数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[NG_DGDB]]></id>
+
+    <category><![CDATA[NG_DGDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[特带厂中转数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[ICENTER]]></id>
+
+    <category><![CDATA[ICENTER]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[智慧中心看板]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[ZHYQYQDB]]></id>
+
+    <category><![CDATA[ZHYQYQDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[智慧园区一期数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[TQMESDB]]></id>
+
+    <category><![CDATA[TQMESDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[铁区MES正式机数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[CLMJDB]]></id>
+
+    <category><![CDATA[CLMJDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[车辆门禁数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[BCYXDB]]></id>
+
+    <category><![CDATA[BCYXDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[板材营销数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[GYLJR]]></id>
+
+    <category><![CDATA[GYLJR]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[供应链金融项目]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[XZLZBD]]></id>
+
+    <category><![CDATA[XZLZBD]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[鑫智链中标贷]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[XZLSDK]]></id>
+
+    <category><![CDATA[XZLSDK]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[鑫智链交易平台SDK]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[XZLZT]]></id>
+
+    <category><![CDATA[XZLZT]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[鑫智链中台]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[ZHYYDB]]></id>
+
+    <category><![CDATA[ZHYYDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[智慧运营数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[LJSDB]]></id>
+
+    <category><![CDATA[LJSDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[劳杰斯数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[CCWLSYS]]></id>
+
+    <category><![CDATA[CCWLSYS]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[长材物流系统]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[ZHYYIOCSYS]]></id>
+
+    <category><![CDATA[ZHYYIOCSYS]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[智慧运营PC端系统]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[ZHYY]]></id>
+
+    <category><![CDATA[ZHYY]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[智慧运营]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[CENTERIOTSYS]]></id>
+
+    <category><![CDATA[CENTERIOTSYS]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[中心loT]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[ZHLZ]]></id>
+
+    <category><![CDATA[ZHLZ]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[智慧廉政系统]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[XBWGSYS]]></id>
+
+    <category><![CDATA[XBWGSYS]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[小豹网关接口组]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[DSPTZSDB]]></id>
+
+    <category><![CDATA[DSPTZSDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[电商平台正式机数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[OA]]></id>
+
+    <category><![CDATA[OA]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[OA系统]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[MJSYS]]></id>
+
+    <category><![CDATA[MJSYS]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[黑烟门禁系统]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[NISCOSMS]]></id>
+
+    <category><![CDATA[NISCOSMS]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[南钢短信平台]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[ZHHBSYS]]></id>
+
+    <category><![CDATA[ZHHBSYS]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[智慧环保系统]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[板材数据湖]]></id>
+
+    <category><![CDATA[板材数据湖]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[板材数据湖]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[SAFEDB]]></id>
+
+    <category><![CDATA[SAFEDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[智慧运营安全数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[TGSYS]]></id>
+
+    <category><![CDATA[TGSYS]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[特钢相关系统]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[BTZJPT]]></id>
+
+    <category><![CDATA[BTZJPT]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[拜特资金平台]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[MDM]]></id>
+
+    <category><![CDATA[MDM]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[主数据系统]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[HKPT]]></id>
+
+    <category><![CDATA[HKPT]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[海康平台]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[IEMPPRODB]]></id>
+
+    <category><![CDATA[IEMPPRODB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[设备智维数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[ZBZSJDB]]></id>
+
+    <category><![CDATA[ZBZSJDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[招标正式机数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[BDKSHDB]]></id>
+
+    <category><![CDATA[BDKSHDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[北斗交通可视化数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[XZLGYL]]></id>
+
+    <category><![CDATA[XZLGYL]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[鑫智链供应链系统]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[JHIOT]]></id>
+
+    <category><![CDATA[JHIOT]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[JHIOT]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[TESTMOD]]></id>
+
+    <category><![CDATA[TESTMOD]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[测试模块]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[DGC_EQP]]></id>
+
+    <category><![CDATA[DGC_EQP]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[大数据平台设备领域]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[YQSYS]]></id>
+
+    <category><![CDATA[YQSYS]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[南钢疫情系统]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[CGYTHDB]]></id>
+
+    <category><![CDATA[CGYTHDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[采购一体化数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[JHOASYS]]></id>
+
+    <category><![CDATA[JHOASYS]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[金九OA平台]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[PRODJHOASYS]]></id>
+
+    <category><![CDATA[PRODJHOASYS]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[金九正式机]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[NGEJSYS]]></id>
+
+    <category><![CDATA[NGEJSYS]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[南钢e家系统]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[ZHMTSYS]]></id>
+
+    <category><![CDATA[ZHMTSYS]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[智慧码头系统]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[ZGDB]]></id>
+
+    <category><![CDATA[ZGDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[中钢数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[NGZHSTSYS]]></id>
+
+    <category><![CDATA[NGZHSTSYS]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[南钢智慧食堂系统]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[NGMTTS]]></id>
+
+    <category><![CDATA[NGMTTS]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[南钢码头提升系统]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[SPMS]]></id>
+
+    <category><![CDATA[SPMS]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[物流中心船运管理系统]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[TCJYDB]]></id>
+
+    <category><![CDATA[TCJYDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[台车加油数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[ZQZLDB]]></id>
+
+    <category><![CDATA[ZQZLDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[造球整粒数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[TYRLKSYS]]></id>
+
+    <category><![CDATA[TYRLKSYS]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[南钢统一人脸库系统]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[ZHLCDDSYS]]></id>
+
+    <category><![CDATA[ZHLCDDSYS]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[智慧料场调度系统]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[TGLIWXGLSYS]]></id>
+
+    <category><![CDATA[TGLIWXGLSYS]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[特钢事业部连铸数字化管控平台]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[DORISDB]]></id>
+
+    <category><![CDATA[DORISDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[华为Doris]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[SCRAPSTEELHALL]]></id>
+
+    <category><![CDATA[SCRAPSTEELHALL]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[废钢大厅一体化]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[GNXKSYS]]></id>
+
+    <category><![CDATA[GNXKSYS]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[港南新库项目]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[ZHJJDB]]></id>
+
+    <category><![CDATA[ZHJJDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[智慧纪检数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[ZLEJSHLDB]]></id>
+
+    <category><![CDATA[ZLEJSHLDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[转炉二级三号炉数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[ZLEJEHLDB]]></id>
+
+    <category><![CDATA[ZLEJEHLDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[转炉二级二号炉数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[TCDB]]></id>
+
+    <category><![CDATA[TCDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[铁次数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[ZLEJYHLDB]]></id>
+
+    <category><![CDATA[ZLEJYHLDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[转炉二级一号炉数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[TGMESZBDB]]></id>
+
+    <category><![CDATA[TGMESZBDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[特钢MES灾备数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[TYSFRZSYS]]></id>
+
+    <category><![CDATA[TYSFRZSYS]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[统一身份认证系统]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[YXSJZLDB]]></id>
+
+    <category><![CDATA[YXSJZLDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[智慧营销数据治理]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[HJZDQYSYS]]></id>
+
+    <category><![CDATA[HJZDQYSYS]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[合金自动取样系统]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[DGCSALDB]]></id>
+
+    <category><![CDATA[DGCSALDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[DGCSAL数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[WMS]]></id>
+
+    <category><![CDATA[WMS]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[金恒-WMS服务]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[ZGEJMX]]></id>
+
+    <category><![CDATA[ZGEJMX]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[轧钢二级模型]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[CWSJ]]></id>
+
+    <category><![CDATA[CWSJ]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[财务税金系统]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[NGNYYTH]]></id>
+
+    <category><![CDATA[NGNYYTH]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[南钢能源一体化系统]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[NYSJKDB]]></id>
+
+    <category><![CDATA[NYSJKDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[能源数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[BCMESZBDB]]></id>
+
+    <category><![CDATA[BCMESZBDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[板材mes灾备]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[ERPZBDB]]></id>
+
+    <category><![CDATA[ERPZBDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[erp灾备数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[SBGLERPDB]]></id>
+
+    <category><![CDATA[SBGLERPDB]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[设备管理ERP数据库]]></nickname>
+
+  </brobject>
+
+  <brobject>
+
+    <id><![CDATA[XCYDHRXDT]]></id>
+
+    <category><![CDATA[XCYDHRXDT]]></category>
+
+    <description/>
+
+    <nickname><![CDATA[新产业DHR系统]]></nickname>
+
+  </brobject>
+
+  <brobject>
+    <id>GzeqBof</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_岗位呈现_BOF实绩</description>
+    <nickname>GzeqBof</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqCarbonLossQuery</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_脱碳实际值查询</description>
+    <nickname>GzeqCarbonLossQuery</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqCc</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_岗位呈现_CC实绩</description>
+    <nickname>GzeqCc</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqCheckNum</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_特带_检废量</description>
+    <nickname>GzeqCheckNum</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqCurrentInfo</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_岗位呈现_当前信息</description>
+    <nickname>GzeqCurrentInfo</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqEaf</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_岗位呈现_电炉实绩</description>
+    <nickname>GzeqEaf</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqEafInsertMaterial</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_岗位呈现_电炉加料值</description>
+    <nickname>GzeqEafInsertMaterial</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqFindLocation</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_特带_查询厂房位置接口</description>
+    <nickname>GzeqFindLocation</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqGaMax</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_岗位呈现_电炉GA_Max</description>
+    <nickname>GzeqGaMax</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqGaMin</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_岗位呈现_电炉GA_Min</description>
+    <nickname>GzeqGaMin</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqGeMax</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_岗位呈现_电炉GE_Max</description>
+    <nickname>GzeqGeMax</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqGeMin</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_岗位呈现_电炉GE_Min</description>
+    <nickname>GzeqGeMin</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqGkMax</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_岗位呈现_电炉GK_Max</description>
+    <nickname>GzeqGkMax</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqGkMin</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_岗位呈现_电炉GK_Min</description>
+    <nickname>GzeqGkMin</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqGyWarning</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_高线_工艺报警</description>
+    <nickname>GzeqGyWarning</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqGyWarningDesc</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_高线_工艺报警_明细</description>
+    <nickname>GzeqGyWarningDesc</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqHotRate</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_特带_热装率</description>
+    <nickname>GzeqHotRate</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqHotRateDesc</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_特带_热装率明细</description>
+    <nickname>GzeqHotRateDesc</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqIngredient</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_岗位呈现_电炉成分实际值</description>
+    <nickname>GzeqIngredient</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqIngredientDict</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_岗位呈现_电炉成分字典</description>
+    <nickname>GzeqIngredientDict</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqKind</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_特带_品种指标</description>
+    <nickname>GzeqKind</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqKindMonth</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_特带_品种指标月</description>
+    <nickname>GzeqKindMonth</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqLastInfo</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_岗位呈现_上一炉信息</description>
+    <nickname>GzeqLastInfo</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqLf</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_岗位呈现_LF实绩</description>
+    <nickname>GzeqLf</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqLossNum</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_特带_损失量</description>
+    <nickname>GzeqLossNum</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqMaking</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_特带_在制品</description>
+    <nickname>GzeqMaking</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqMakingDesc</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_特带_在制品明细</description>
+    <nickname>GzeqMakingDesc</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqParamByFlowBranch</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_中棒_按流支号传参</description>
+    <nickname>GzeqParamByFlowBranch</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqPf</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_高线_PF线</description>
+    <nickname>GzeqPf</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqProduction</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_特带_产量</description>
+    <nickname>GzeqProduction</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqSearchInfo</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_岗位呈现_搜索信息</description>
+    <nickname>GzeqSearchInfo</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqSpan</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_特带_每个跨货位数以及吨位</description>
+    <nickname>GzeqSpan</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqSpec</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_特带_钢种大类</description>
+    <nickname>GzeqSpec</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqSpecQty</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_特带_按钢种大类统计重量</description>
+    <nickname>GzeqSpecQty</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqStandard</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_高线_工艺规范</description>
+    <nickname>GzeqStandard</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqStay</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_特带_质量压地</description>
+    <nickname>GzeqStay</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqStayDesc</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_特带_质量压地明细</description>
+    <nickname>GzeqStayDesc</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqStorePlace</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_高线_存货地点</description>
+    <nickname>GzeqStorePlace</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqStoreVisualization</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_北科_特带_原料库区可视化</description>
+    <nickname>GzeqStoreVisualization</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqVd</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_岗位呈现_VD实绩</description>
+    <nickname>GzeqVd</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqWasteNum</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_特带_中废量</description>
+    <nickname>GzeqWasteNum</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqWasteRate</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_特带_中废率</description>
+    <nickname>GzeqWasteRate</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqwhiteOrder</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_特带_白皮订单收得率</description>
+    <nickname>GzeqwhiteOrder</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqYield</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_特带_成材率</description>
+    <nickname>GzeqYield</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqZfTotal</id>
+    <category>TGMESDB</category>
+    <description>智慧质量_特带_中废总量</description>
+    <nickname>GzeqZfTotal</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqActualInventoryQuantity</id>
+    <category>ERPZSDB</category>
+    <description>智慧质量_中棒_实际库存量</description>
+    <nickname>GzeqActualInventoryQuantity</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqBuyQty</id>
+    <category>ERPZSDB</category>
+    <description>智慧质量_高线_买断量</description>
+    <nickname>GzeqBuyQty</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqDailyInboundQty</id>
+    <category>ERPZSDB</category>
+    <description>智慧质量_高线_今日入库量</description>
+    <nickname>GzeqDailyInboundQty</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqDailyOutboundQty</id>
+    <category>ERPZSDB</category>
+    <description>智慧质量_高线_今日出库量</description>
+    <nickname>GzeqDailyOutboundQty</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqFinishedZoneNew</id>
+    <category>ERPZSDB</category>
+    <description>智慧质量_大棒_成品区新增</description>
+    <nickname>GzeqFinishedZoneNew</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqInventoryTimeGraphPopup</id>
+    <category>ERPZSDB</category>
+    <description>智慧质量_特带_在库时间统计图点击下弹内容</description>
+    <nickname>GzeqInventoryTimeGraphPopup</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqJfClass</id>
+    <category>ERPZSDB</category>
+    <description>智慧质量_特带_检废_按班组</description>
+    <nickname>GzeqJfClass</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqJfClassDesc</id>
+    <category>ERPZSDB</category>
+    <description>智慧质量_特带_检废_按班组明细</description>
+    <nickname>GzeqJfClassDesc</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqJfTotal</id>
+    <category>ERPZSDB</category>
+    <description>智慧质量_特带_检废总量</description>
+    <nickname>GzeqJfTotal</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqJfTotalDesc</id>
+    <category>ERPZSDB</category>
+    <description>智慧质量_特带_检废总量明细</description>
+    <nickname>GzeqJfTotalDesc</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqLocationColor</id>
+    <category>ERPZSDB</category>
+    <description>智慧质量_特带_有库存的垛位</description>
+    <nickname>GzeqLocationColor</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqLocationColorRed</id>
+    <category>ERPZSDB</category>
+    <description>智慧质量_特带_查询的垛位</description>
+    <nickname>GzeqLocationColorRed</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqLocationDesc</id>
+    <category>ERPZSDB</category>
+    <description>智慧质量_特带_垛位明细</description>
+    <nickname>GzeqLocationDesc</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqLocationUtilizationStatus</id>
+    <category>ERPZSDB</category>
+    <description>智慧质量_高线_货位使用情况</description>
+    <nickname>GzeqLocationUtilizationStatus</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqMonthlyInboundQty</id>
+    <category>ERPZSDB</category>
+    <description>智慧质量_高线_按月计算入库量</description>
+    <nickname>GzeqMonthlyInboundQty</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqProductInboundStatistics</id>
+    <category>ERPZSDB</category>
+    <description>智慧质量_特带_产品入库情况统计</description>
+    <nickname>GzeqProductInboundStatistics</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqProductOutboundStatistics</id>
+    <category>ERPZSDB</category>
+    <description>智慧质量_特带_产品出库情况统计</description>
+    <nickname>GzeqProductOutboundStatistics</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqSteelCoilStorageDurationColumn</id>
+    <category>ERPZSDB</category>
+    <description>智慧质量_特带_钢卷在库时间一栏</description>
+    <nickname>GzeqSteelCoilStorageDurationColumn</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqSteelRollStateOverviewChart</id>
+    <category>ERPZSDB</category>
+    <description>智慧质量_特带_库存钢卷状态一览统计图</description>
+    <nickname>GzeqSteelRollStateOverviewChart</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqStockTimeStats</id>
+    <category>ERPZSDB</category>
+    <description>智慧质量_中棒_在库时间统计</description>
+    <nickname>GzeqStockTimeStats</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqStore</id>
+    <category>ERPZSDB</category>
+    <description>智慧质量_高线_存货</description>
+    <nickname>GzeqStore</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqStoreDesc</id>
+    <category>ERPZSDB</category>
+    <description>智慧质量_高线_存货明细</description>
+    <nickname>GzeqStoreDesc</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqStoreOut</id>
+    <category>ERPZSDB</category>
+    <description>智慧质量_高线_出库</description>
+    <nickname>GzeqStoreOut</nickname>
+  </brobject>
+  <brobject>
+    <id>GzeqStoreTotal</id>
+    <category>ERPZSDB</category>
+    <description>智慧质量_特带_存货总量</description>
+    <nickname>GzeqStoreTotal</nickname>
+  </brobject>
+  <brobject>
+    <id>ERPZSDB_GzeqDailyInboundQty</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_高线_今日入库量</description>
+    <nickname>ERPZSDB_GzeqDailyInboundQty</nickname>
+  </brobject>
+  <brobject>
+    <id>ERPZSDB_GzeqMonthlyInboundQty</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_高线_按月计算入库量</description>
+    <nickname>ERPZSDB_GzeqMonthlyInboundQty</nickname>
+  </brobject>
+  <brobject>
+    <id>ERPZSDB_GzeqDailyOutboundQty</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_高线_今日出库量</description>
+    <nickname>ERPZSDB_GzeqDailyOutboundQty</nickname>
+  </brobject>
+  <brobject>
+    <id>ERPZSDB_GzeqLocationUtilizationStatus</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_高线_货位使用情况</description>
+    <nickname>ERPZSDB_GzeqLocationUtilizationStatus</nickname>
+  </brobject>
+  <brobject>
+    <id>ERPZSDB_GzeqBuyQty</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_高线_买断量</description>
+    <nickname>ERPZSDB_GzeqBuyQty</nickname>
+  </brobject>
+  <brobject>
+    <id>ERPZSDB_GzeqStore</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_高线_存货</description>
+    <nickname>ERPZSDB_GzeqStore</nickname>
+  </brobject>
+  <brobject>
+    <id>ERPZSDB_GzeqStoreDesc</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_高线_存货明细</description>
+    <nickname>ERPZSDB_GzeqStoreDesc</nickname>
+  </brobject>
+  <brobject>
+    <id>ERPZSDB_GzeqStoreOut</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_高线_出库</description>
+    <nickname>ERPZSDB_GzeqStoreOut</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqGyWarning</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_高线_工艺报警</description>
+    <nickname>TGMESDB_GzeqGyWarning</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqGyWarningDesc</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_高线_工艺报警_明细</description>
+    <nickname>TGMESDB_GzeqGyWarningDesc</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqPf</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_高线_PF线</description>
+    <nickname>TGMESDB_GzeqPf</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqStandard</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_高线_工艺规范</description>
+    <nickname>TGMESDB_GzeqStandard</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqStorePlace</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_高线_存货地点</description>
+    <nickname>TGMESDB_GzeqStorePlace</nickname>
+  </brobject>
+  <brobject>
+    <id>ERPZSDB_GzeqLocationColor</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_特带_有库存的垛位</description>
+    <nickname>ERPZSDB_GzeqLocationColor</nickname>
+  </brobject>
+  <brobject>
+    <id>ERPZSDB_GzeqLocationColorRed</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_特带_查询的垛位</description>
+    <nickname>ERPZSDB_GzeqLocationColorRed</nickname>
+  </brobject>
+  <brobject>
+    <id>ERPZSDB_GzeqLocationDesc</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_特带_垛位明细</description>
+    <nickname>ERPZSDB_GzeqLocationDesc</nickname>
+  </brobject>
+  <brobject>
+    <id>ERPZSDB_GzeqJfClass</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_特带_检废_按班组</description>
+    <nickname>ERPZSDB_GzeqJfClass</nickname>
+  </brobject>
+  <brobject>
+    <id>ERPZSDB_GzeqJfClassDesc</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_特带_检废_按班组明细</description>
+    <nickname>ERPZSDB_GzeqJfClassDesc</nickname>
+  </brobject>
+  <brobject>
+    <id>ERPZSDB_GzeqJfTotal</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_特带_检废总量</description>
+    <nickname>ERPZSDB_GzeqJfTotal</nickname>
+  </brobject>
+  <brobject>
+    <id>ERPZSDB_GzeqJfTotalDesc</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_特带_检废总量明细</description>
+    <nickname>ERPZSDB_GzeqJfTotalDesc</nickname>
+  </brobject>
+  <brobject>
+    <id>ERPZSDB_GzeqStoreTotal</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_特带_存货总量</description>
+    <nickname>ERPZSDB_GzeqStoreTotal</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqFindLocation</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_特带_查询厂房位置接口</description>
+    <nickname>TGMESDB_GzeqFindLocation</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqStoreVisualization</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_北科_特带_原料库区可视化</description>
+    <nickname>TGMESDB_GzeqStoreVisualization</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqCheckNum</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_特带_检废量</description>
+    <nickname>TGMESDB_GzeqCheckNum</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqHotRate</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_特带_热装率</description>
+    <nickname>TGMESDB_GzeqHotRate</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqHotRateDesc</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_特带_热装率明细</description>
+    <nickname>TGMESDB_GzeqHotRateDesc</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqKind</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_特带_品种指标</description>
+    <nickname>TGMESDB_GzeqKind</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqKindMonth</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_特带_品种指标月</description>
+    <nickname>TGMESDB_GzeqKindMonth</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqLossNum</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_特带_损失量</description>
+    <nickname>TGMESDB_GzeqLossNum</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqMaking</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_特带_在制品</description>
+    <nickname>TGMESDB_GzeqMaking</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqMakingDesc</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_特带_在制品明细</description>
+    <nickname>TGMESDB_GzeqMakingDesc</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqProduction</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_特带_产量</description>
+    <nickname>TGMESDB_GzeqProduction</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqSpan</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_特带_每个跨货位数以及吨位</description>
+    <nickname>TGMESDB_GzeqSpan</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqSpec</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_特带_钢种大类</description>
+    <nickname>TGMESDB_GzeqSpec</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqSpecQty</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_特带_按钢种大类统计重量</description>
+    <nickname>TGMESDB_GzeqSpecQty</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqStay</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_特带_质量压地</description>
+    <nickname>TGMESDB_GzeqStay</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqStayDesc</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_特带_质量压地明细</description>
+    <nickname>TGMESDB_GzeqStayDesc</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqWasteNum</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_特带_中废量</description>
+    <nickname>TGMESDB_GzeqWasteNum</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqWasteRate</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_特带_中废率</description>
+    <nickname>TGMESDB_GzeqWasteRate</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqwhiteOrder</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_特带_白皮订单收得率</description>
+    <nickname>TGMESDB_GzeqwhiteOrder</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqYield</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_特带_成材率</description>
+    <nickname>TGMESDB_GzeqYield</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqZfTotal</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_特带_中废总量</description>
+    <nickname>TGMESDB_GzeqZfTotal</nickname>
+  </brobject>
+  <brobject>
+    <id>ERPZSDB_GzeqActualInventoryQuantity</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_中棒_实际库存量</description>
+    <nickname>ERPZSDB_GzeqActualInventoryQuantity</nickname>
+  </brobject>
+  <brobject>
+    <id>ERPZSDB_GzeqStockTimeStats</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_中棒_在库时间统计</description>
+    <nickname>ERPZSDB_GzeqStockTimeStats</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqCurrentInfo</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_岗位呈现_当前信息</description>
+    <nickname>TGMESDB_GzeqCurrentInfo</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqCc</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_岗位呈现_CC实绩</description>
+    <nickname>TGMESDB_GzeqCc</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqEaf</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_岗位呈现_电炉实绩</description>
+    <nickname>TGMESDB_GzeqEaf</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqGaMax</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_岗位呈现_电炉GA_Max</description>
+    <nickname>TGMESDB_GzeqGaMax</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqGaMin</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_岗位呈现_电炉GA_Min</description>
+    <nickname>TGMESDB_GzeqGaMin</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqGeMax</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_岗位呈现_电炉GE_Max</description>
+    <nickname>TGMESDB_GzeqGeMax</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqGeMin</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_岗位呈现_电炉GE_Min</description>
+    <nickname>TGMESDB_GzeqGeMin</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqGkMax</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_岗位呈现_电炉GK_Max</description>
+    <nickname>TGMESDB_GzeqGkMax</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqGkMin</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_岗位呈现_电炉GK_Min</description>
+    <nickname>TGMESDB_GzeqGkMin</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqIngredient</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_岗位呈现_电炉成分实际值</description>
+    <nickname>TGMESDB_GzeqIngredient</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqIngredientDict</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_岗位呈现_电炉成分字典</description>
+    <nickname>TGMESDB_GzeqIngredientDict</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqEafInsertMaterial</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_岗位呈现_电炉加料值</description>
+    <nickname>TGMESDB_GzeqEafInsertMaterial</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqLf</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_岗位呈现_LF实绩</description>
+    <nickname>TGMESDB_GzeqLf</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqVd</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_岗位呈现_VD实绩</description>
+    <nickname>TGMESDB_GzeqVd</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqLastInfo</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_岗位呈现_上一炉信息</description>
+    <nickname>TGMESDB_GzeqLastInfo</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqSearchInfo</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_岗位呈现_搜索信息</description>
+    <nickname>TGMESDB_GzeqSearchInfo</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqBof</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_岗位呈现_BOF实绩</description>
+    <nickname>TGMESDB_GzeqBof</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqParamByFlowBranch</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_中棒_按流支号传参</description>
+    <nickname>TGMESDB_GzeqParamByFlowBranch</nickname>
+  </brobject>
+  <brobject>
+    <id>ERPZSDB_GzeqFinishedZoneNew</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_大棒_成品区新增</description>
+    <nickname>ERPZSDB_GzeqFinishedZoneNew</nickname>
+  </brobject>
+  <brobject>
+    <id>TGMESDB_GzeqCarbonLossQuery</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_脱碳实际值查询</description>
+    <nickname>TGMESDB_GzeqCarbonLossQuery</nickname>
+  </brobject>
+  <brobject>
+    <id>ERPZSDB_GzeqSteelCoilStorageDurationColumn</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_特带_钢卷在库时间一栏</description>
+    <nickname>ERPZSDB_GzeqSteelCoilStorageDurationColumn</nickname>
+  </brobject>
+  <brobject>
+    <id>ERPZSDB_GzeqInventoryTimeGraphPopup</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_特带_在库时间统计图点击下弹内容</description>
+    <nickname>ERPZSDB_GzeqInventoryTimeGraphPopup</nickname>
+  </brobject>
+  <brobject>
+    <id>ERPZSDB_GzeqSteelRollStateOverviewChart</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_特带_库存钢卷状态一览统计图</description>
+    <nickname>ERPZSDB_GzeqSteelRollStateOverviewChart</nickname>
+  </brobject>
+  <brobject>
+    <id>ERPZSDB_GzeqProductInboundStatistics</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_特带_产品入库情况统计</description>
+    <nickname>ERPZSDB_GzeqProductInboundStatistics</nickname>
+  </brobject>
+  <brobject>
+    <id>ERPZSDB_GzeqProductOutboundStatistics</id>
+    <category>DEFAULT</category>
+    <description>智慧质量_特带_产品出库情况统计</description>
+    <nickname>ERPZSDB_GzeqProductOutboundStatistics</nickname>
+  </brobject>
+</root>

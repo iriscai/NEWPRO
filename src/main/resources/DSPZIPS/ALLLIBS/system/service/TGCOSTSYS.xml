@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>TGCOSTSYS</serviceSystemName>
+		<serviceSystemDesc>特钢智慧成本项目</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+				</protocols>
+		
+		<params>
+				</params>
+		<services>
+				</services>
+	</servicesystem>
+</servicesystems>

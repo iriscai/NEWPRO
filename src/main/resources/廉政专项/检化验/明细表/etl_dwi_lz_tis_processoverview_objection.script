@@ -1,0 +1,11 @@
+{
+	"configuration":{},
+	"connectionName":"MRS_Spark_Agent",
+	"content":"-- ******************************************************************** --\n-- author: jh_caiyi\n-- create time: 2025-07-15\n-- descr: 检化验系统专线-异议数据明细\n-- tis_processoverview_objection\n-- ******************************************************************** --\n-- DROP TABLE IF EXISTS dwi_qlt.dwi_qlt_lz_tis_processoverview_objection;\n-- CREATE TABLE\n--     dwi_qlt.dwi_qlt_lz_tis_processoverview_objection (\n-- \t\tquality_no varchar(60) COMMENT '申请单号',\n-- \t\tcheck_no varchar(60) COMMENT '检验批号',\n-- \t\tmtrl_no varchar(30) COMMENT '物料代码',\n-- \t\tcontract_no varchar(60) COMMENT '合同号',\n-- \t\tcompany_id varchar(30) COMMENT '供应商代码',\n-- \t\tretest_kind varchar(60) COMMENT '复检类型A(不合格复检)，B(质保书复检)',\n-- \t\tretest_function varchar(60) COMMENT '复检方式',\n-- \t\ttrack_flag varchar(6) COMMENT '跟踪',\n-- \t\tband_sample_flag varchar(6) COMMENT '带样',\n-- \t\tretest_item varchar(210) COMMENT '复检项目',\n-- \t\tins_date varchar(30) COMMENT '新增日期',\n-- \t\tins_time varchar(30) COMMENT '新增时间',\n-- \t\tsmp_type varchar(30),\n-- \t\tetl_date DATE COMMENT 'ETL时间'\n--     )\n-- COMMENT '廉政八项-检化验系统专线-异议数据明细'\n-- PARTITIONED BY (mt STRING COMMENT '分区月份')\n-- STORED AS ORC;\nINSERT OVERWRITE TABLE\n\tdwi_qlt.dwi_qlt_lz_tis_processoverview_objection PARTITION (mt = '202507')\nSELECT \n    quality_no,             -- 申请单号\n    check_no,               -- 检验批号\n    mtrl_no,                -- 物料代码\n    contract_no,            -- 合同号\n    company_id,             -- 供应商代码\n    retest_kind,            -- 复检类型A(不合格复检)，B(质保书复检)\n    retest_function,        -- 复检方式\n    track_flag,             -- 跟踪\n    band_sample_flag,       -- 带样\n    retest_item,            -- 复检项目\n    ins_date,               -- 新增日期\n    ins_time,               -- 新增时间\n    smp_type,               -- 样品类型\n    CURRENT_DATE()            -- 当前日期\nFROM \n    dwi_qlt.dwi_qlt_tx_quality_objection_lz -- 表名\n    LIMIT 10\n    -- WHERE \n    ; -- 表名\n",
+	"currentDatabase":"dwi_qlt",
+	"description":"",
+	"directory":"/廉政专项/检化验/明细表",
+	"name":"etl_dwi_lz_tis_processoverview_objection",
+	"templateVersion":"1.0",
+	"type":"SparkSQL"
+}

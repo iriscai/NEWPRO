@@ -1,0 +1,1710 @@
+[
+  {
+    "key": "employee_id_id",
+    "label": "人员ID",
+    "field": [
+      "employee",
+      "id"
+    ],
+    "hide": true,
+    "sequence": 10,
+    "fixed": true
+  },
+  {
+    "label": "员工编号",
+    "key": "employee_number",
+    "sequence": 20,
+    "field": [
+      "employee",
+      "number"
+    ],
+    "fixed": true
+  },
+  {
+    "key": "dept_qc_id",
+    "label": "组织全称",
+    "field": [
+      "depart_info",
+      "name_full"
+    ],
+    "hide": false,
+    "sequence": 30,
+    "fixed": true
+  },
+  {
+    "label": "姓名",
+    "key": "employee_id",
+    "field": [
+      "employee",
+      "name"
+    ],
+    "data_type": "integer",
+    "object": "Employee",
+    "align": "left",
+    "width": 160,
+    "sequence": 40,
+    "fieldFunc": null,
+    "format": null,
+    "state": null,
+    "is_blur": true,
+    "fixed": true,
+    "func": "=SCOPE.empInfoClick"
+  },
+  {
+    "key": "dept_level1",
+    "label": "二级部门",
+    "field": [
+      "depart_info",
+      "dept_level2"
+    ],
+    "hide": false,
+    "sequence": 50,
+    "fixed": false,
+    "width": 100
+  },
+  {
+    "key": "dept_level3",
+    "label": "三级部门",
+    "field": [
+      "depart_info",
+      "dept_level3"
+    ],
+    "hide": false,
+    "sequence": 60,
+    "fixed": false,
+    "width": 100
+  },
+  {
+    "key": "dept_id_id",
+    "label": "组织ID",
+    "field": [
+      "depart",
+      "id"
+    ],
+    "hide": true,
+    "sequence": 70,
+    "fixed": false
+  },
+  {
+    "key": "employee_id_number",
+    "label": "编码",
+    "field": [
+      "employee",
+      "number"
+    ],
+    "sequence": 80,
+    "fixed": false,
+    "hide": true
+  },
+  {
+    "label": "考勤组织",
+    "key": "depart_id",
+    "field": [
+      "depart_info",
+      "name"
+    ],
+    "data_type": "integer",
+    "object": "Department",
+    "align": "left",
+    "width": 160,
+    "sequence": 90,
+    "fieldFunc": null,
+    "format": null,
+    "state": null,
+    "is_blur": false,
+    "fixed": false,
+    "hide": true
+  },
+  {
+    "label": "考勤职位",
+    "key": "position_id",
+    "field": [
+      "position_info",
+      "name"
+    ],
+    "data_type": "integer",
+    "object": "OrgPosition",
+    "align": "left",
+    "width": 160,
+    "sequence": 100,
+    "fieldFunc": null,
+    "format": null,
+    "state": null,
+    "is_blur": false,
+    "hide": true
+  },
+  {
+    "label": "考勤方案",
+    "key": "program_id",
+    "field": [
+      "program",
+      "name"
+    ],
+    "data_type": "integer",
+    "object": "AttendProgram",
+    "align": "left",
+    "width": 160,
+    "sequence": 110,
+    "fieldFunc": null,
+    "format": null,
+    "state": null,
+    "is_blur": false,
+    "hide": true
+  },
+  {
+    "label": "生效时间",
+    "key": "begin_date",
+    "field": [
+      "begin_date"
+    ],
+    "data_type": "string",
+    "object": null,
+    "align": "left",
+    "width": 80,
+    "sequence": 120,
+    "fieldFunc": null,
+    "format": null,
+    "state": null,
+    "is_blur": false,
+    "hide": true
+  },
+  {
+    "label": "同步/修改时间",
+    "key": "operate_time",
+    "field": [
+      "operate_time"
+    ],
+    "data_type": "datetime",
+    "object": null,
+    "align": "left",
+    "width": 100,
+    "sequence": 130,
+    "fieldFunc": null,
+    "format": null,
+    "state": null,
+    "is_blur": false,
+    "hide": true
+  },
+  {
+    "label": "失效时间",
+    "key": "end_date",
+    "field": [
+      "end_date"
+    ],
+    "data_type": "string",
+    "object": null,
+    "align": "left",
+    "width": 80,
+    "sequence": 140,
+    "fieldFunc": null,
+    "format": null,
+    "state": null,
+    "is_blur": false,
+    "hide": true
+  },
+  {
+    "label": "来源ID",
+    "key": "source_id",
+    "field": [
+      "source_id"
+    ],
+    "data_type": "integer",
+    "object": null,
+    "align": "right",
+    "width": 100,
+    "sequence": 150,
+    "fieldFunc": null,
+    "format": null,
+    "state": null,
+    "is_blur": false,
+    "hide": true
+  },
+  {
+    "label": "来源类型",
+    "key": "source_type",
+    "field": [
+      "source_type"
+    ],
+    "data_type": "integer",
+    "object": null,
+    "align": "center",
+    "width": 100,
+    "sequence": 160,
+    "fieldFunc": null,
+    "format": null,
+    "state": null,
+    "is_blur": false,
+    "mask": {
+      "1": "主任职",
+      "2": "兼职",
+      "3": "借调",
+      "4": "挂职",
+      "9": "手动新增",
+      "10": "考勤组添加"
+    },
+    "hide": true
+  },
+  {
+    "key": "modify_date",
+    "sequence": 170
+  },
+  {
+    "key": "updater_id",
+    "sequence": 180,
+    "hide": true,
+    "label": "最后修改人",
+    "width": 160
+  },
+  {
+    "key": "statistic_data_work_onjob_days",
+    "label": "出勤天数",
+    "field": [
+      "statistic_data_work_onjob_days",
+      "duration_unit"
+    ],
+    "align": "center",
+    "sequence": 190,
+    "width": 80,
+    "is_blur": false,
+    "hide": true
+  },
+  {
+    "key": "employee_id_common_id",
+    "label": "id",
+    "field": [
+      "employee",
+      "id"
+    ],
+    "hide": true,
+    "sequence": 200,
+    "fixed": false
+  },
+  {
+    "key": "statistic_data_work_outjob_days",
+    "label": "缺勤天数",
+    "field": [
+      "statistic_data_work_outjob_days",
+      "duration_unit"
+    ],
+    "align": "center",
+    "sequence": 210,
+    "width": 80,
+    "is_blur": false,
+    "hide": true
+  },
+  {
+    "key": "statistic_data_work_late_days",
+    "label": "迟到天数",
+    "field": [
+      "statistic_data_work_late_days",
+      "duration_unit"
+    ],
+    "align": "center",
+    "sequence": 220,
+    "width": 80,
+    "is_blur": false,
+    "hide": true
+  },
+  {
+    "label": "1\n四",
+    "key": "month_data_1",
+    "field": [
+      "month_data_1",
+      "result_item",
+      "desc"
+    ],
+    "align": "center",
+    "width": 80,
+    "sequence": 230,
+    "sortable": false,
+    "func": "=SCOPE.empDateClick",
+    "fieldFunc": "=SCOPE.fieldShow"
+  },
+  {
+    "key": "statistic_data_work_early_days",
+    "label": "早退天数",
+    "field": [
+      "statistic_data_work_early_days",
+      "duration_unit"
+    ],
+    "align": "center",
+    "sequence": 240,
+    "width": 80,
+    "is_blur": false,
+    "hide": true
+  },
+  {
+    "key": "statistic_data_work_absence_days",
+    "label": "旷工天数",
+    "field": [
+      "statistic_data_work_absence_days",
+      "duration_unit"
+    ],
+    "align": "center",
+    "sequence": 250,
+    "width": 80,
+    "is_blur": false,
+    "hide": true
+  },
+  {
+    "label": "2\n五",
+    "key": "month_data_2",
+    "field": [
+      "month_data_2",
+      "result_item",
+      "desc"
+    ],
+    "align": "center",
+    "width": 80,
+    "sequence": 260,
+    "sortable": false,
+    "func": "=SCOPE.empDateClick",
+    "fieldFunc": "=SCOPE.fieldShow"
+  },
+  {
+    "key": "statistic_data_schedule_days",
+    "label": "排班天数(不包括排休)",
+    "field": [
+      "statistic_data_schedule_days",
+      "duration_unit"
+    ],
+    "align": "center",
+    "sequence": 270,
+    "width": 80,
+    "is_blur": false,
+    "hide": true
+  },
+  {
+    "key": "statistic_data_schedule_days_include_rest",
+    "label": "排班天数(包括排休)",
+    "field": [
+      "statistic_data_schedule_days_include_rest",
+      "duration_unit"
+    ],
+    "align": "center",
+    "sequence": 280,
+    "width": 80,
+    "is_blur": false,
+    "hide": true
+  },
+  {
+    "label": "3\n六",
+    "key": "month_data_3",
+    "field": [
+      "month_data_3",
+      "result_item",
+      "desc"
+    ],
+    "align": "center",
+    "width": 80,
+    "sequence": 290,
+    "sortable": false,
+    "func": "=SCOPE.empDateClick",
+    "fieldFunc": "=SCOPE.fieldShow"
+  },
+  {
+    "key": "statistic_data_schedule_times",
+    "label": "排班工时",
+    "field": [
+      "statistic_data_schedule_times",
+      "duration_unit"
+    ],
+    "align": "center",
+    "sequence": 300,
+    "width": 80,
+    "is_blur": false,
+    "hide": true
+  },
+  {
+    "label": "4\n日",
+    "key": "month_data_4",
+    "field": [
+      "month_data_4",
+      "result_item",
+      "desc"
+    ],
+    "align": "center",
+    "width": 80,
+    "sequence": 310,
+    "sortable": false,
+    "func": "=SCOPE.empDateClick",
+    "fieldFunc": "=SCOPE.fieldShow"
+  },
+  {
+    "label": "5\n一",
+    "key": "month_data_5",
+    "field": [
+      "month_data_5",
+      "result_item",
+      "desc"
+    ],
+    "align": "center",
+    "width": 80,
+    "sequence": 320,
+    "sortable": false,
+    "func": "=SCOPE.empDateClick",
+    "fieldFunc": "=SCOPE.fieldShow"
+  },
+  {
+    "label": "6\n二",
+    "key": "month_data_6",
+    "field": [
+      "month_data_6",
+      "result_item",
+      "desc"
+    ],
+    "align": "center",
+    "width": 80,
+    "sequence": 330,
+    "sortable": false,
+    "func": "=SCOPE.empDateClick",
+    "fieldFunc": "=SCOPE.fieldShow"
+  },
+  {
+    "label": "7\n三",
+    "key": "month_data_7",
+    "field": [
+      "month_data_7",
+      "result_item",
+      "desc"
+    ],
+    "align": "center",
+    "width": 80,
+    "sequence": 340,
+    "sortable": false,
+    "func": "=SCOPE.empDateClick",
+    "fieldFunc": "=SCOPE.fieldShow"
+  },
+  {
+    "label": "8\n四",
+    "key": "month_data_8",
+    "field": [
+      "month_data_8",
+      "result_item",
+      "desc"
+    ],
+    "align": "center",
+    "width": 80,
+    "sequence": 350,
+    "sortable": false,
+    "func": "=SCOPE.empDateClick",
+    "fieldFunc": "=SCOPE.fieldShow"
+  },
+  {
+    "label": "9\n五",
+    "key": "month_data_9",
+    "field": [
+      "month_data_9",
+      "result_item",
+      "desc"
+    ],
+    "align": "center",
+    "width": 80,
+    "sequence": 360,
+    "sortable": false,
+    "func": "=SCOPE.empDateClick",
+    "fieldFunc": "=SCOPE.fieldShow"
+  },
+  {
+    "label": "10\n六",
+    "key": "month_data_10",
+    "field": [
+      "month_data_10",
+      "result_item",
+      "desc"
+    ],
+    "align": "center",
+    "width": 80,
+    "sequence": 370,
+    "sortable": false,
+    "func": "=SCOPE.empDateClick",
+    "fieldFunc": "=SCOPE.fieldShow"
+  },
+  {
+    "label": "11\n日",
+    "key": "month_data_11",
+    "field": [
+      "month_data_11",
+      "result_item",
+      "desc"
+    ],
+    "align": "center",
+    "width": 80,
+    "sequence": 380,
+    "sortable": false,
+    "func": "=SCOPE.empDateClick",
+    "fieldFunc": "=SCOPE.fieldShow"
+  },
+  {
+    "label": "12\n一",
+    "key": "month_data_12",
+    "field": [
+      "month_data_12",
+      "result_item",
+      "desc"
+    ],
+    "align": "center",
+    "width": 80,
+    "sequence": 390,
+    "sortable": false,
+    "func": "=SCOPE.empDateClick",
+    "fieldFunc": "=SCOPE.fieldShow"
+  },
+  {
+    "label": "13\n二",
+    "key": "month_data_13",
+    "field": [
+      "month_data_13",
+      "result_item",
+      "desc"
+    ],
+    "align": "center",
+    "width": 80,
+    "sequence": 400,
+    "sortable": false,
+    "func": "=SCOPE.empDateClick",
+    "fieldFunc": "=SCOPE.fieldShow"
+  },
+  {
+    "label": "14\n三",
+    "key": "month_data_14",
+    "field": [
+      "month_data_14",
+      "result_item",
+      "desc"
+    ],
+    "align": "center",
+    "width": 80,
+    "sequence": 410,
+    "sortable": false,
+    "func": "=SCOPE.empDateClick",
+    "fieldFunc": "=SCOPE.fieldShow"
+  },
+  {
+    "label": "15\n四",
+    "key": "month_data_15",
+    "field": [
+      "month_data_15",
+      "result_item",
+      "desc"
+    ],
+    "align": "center",
+    "width": 80,
+    "sequence": 420,
+    "sortable": false,
+    "func": "=SCOPE.empDateClick",
+    "fieldFunc": "=SCOPE.fieldShow"
+  },
+  {
+    "label": "16\n五",
+    "key": "month_data_16",
+    "field": [
+      "month_data_16",
+      "result_item",
+      "desc"
+    ],
+    "align": "center",
+    "width": 80,
+    "sequence": 430,
+    "sortable": false,
+    "func": "=SCOPE.empDateClick",
+    "fieldFunc": "=SCOPE.fieldShow"
+  },
+  {
+    "label": "17\n六",
+    "key": "month_data_17",
+    "field": [
+      "month_data_17",
+      "result_item",
+      "desc"
+    ],
+    "align": "center",
+    "width": 80,
+    "sequence": 440,
+    "sortable": false,
+    "func": "=SCOPE.empDateClick",
+    "fieldFunc": "=SCOPE.fieldShow"
+  },
+  {
+    "label": "18\n日",
+    "key": "month_data_18",
+    "field": [
+      "month_data_18",
+      "result_item",
+      "desc"
+    ],
+    "align": "center",
+    "width": 80,
+    "sequence": 450,
+    "sortable": false,
+    "func": "=SCOPE.empDateClick",
+    "fieldFunc": "=SCOPE.fieldShow"
+  },
+  {
+    "label": "19\n一",
+    "key": "month_data_19",
+    "field": [
+      "month_data_19",
+      "result_item",
+      "desc"
+    ],
+    "align": "center",
+    "width": 80,
+    "sequence": 460,
+    "sortable": false,
+    "func": "=SCOPE.empDateClick",
+    "fieldFunc": "=SCOPE.fieldShow"
+  },
+  {
+    "label": "20\n二",
+    "key": "month_data_20",
+    "field": [
+      "month_data_20",
+      "result_item",
+      "desc"
+    ],
+    "align": "center",
+    "width": 80,
+    "sequence": 470,
+    "sortable": false,
+    "func": "=SCOPE.empDateClick",
+    "fieldFunc": "=SCOPE.fieldShow"
+  },
+  {
+    "key": "month_data_2021-12-01",
+    "label": "01\n三",
+    "width": 80,
+    "sequence": 480
+  },
+  {
+    "key": "month_data_2022-01-01",
+    "label": "01\n六",
+    "width": 80,
+    "sequence": 490
+  },
+  {
+    "label": "21\n三",
+    "key": "month_data_21",
+    "field": [
+      "month_data_21",
+      "result_item",
+      "desc"
+    ],
+    "align": "center",
+    "width": 80,
+    "sequence": 500,
+    "sortable": false,
+    "func": "=SCOPE.empDateClick",
+    "fieldFunc": "=SCOPE.fieldShow"
+  },
+  {
+    "label": "22\n四",
+    "key": "month_data_22",
+    "field": [
+      "month_data_22",
+      "result_item",
+      "desc"
+    ],
+    "align": "center",
+    "width": 80,
+    "sequence": 510,
+    "sortable": false,
+    "func": "=SCOPE.empDateClick",
+    "fieldFunc": "=SCOPE.fieldShow"
+  },
+  {
+    "label": "23\n五",
+    "key": "month_data_23",
+    "field": [
+      "month_data_23",
+      "result_item",
+      "desc"
+    ],
+    "align": "center",
+    "width": 80,
+    "sequence": 520,
+    "sortable": false,
+    "func": "=SCOPE.empDateClick",
+    "fieldFunc": "=SCOPE.fieldShow"
+  },
+  {
+    "label": "24\n六",
+    "key": "month_data_24",
+    "field": [
+      "month_data_24",
+      "result_item",
+      "desc"
+    ],
+    "align": "center",
+    "width": 80,
+    "sequence": 530,
+    "sortable": false,
+    "func": "=SCOPE.empDateClick",
+    "fieldFunc": "=SCOPE.fieldShow"
+  },
+  {
+    "label": "25\n日",
+    "key": "month_data_25",
+    "field": [
+      "month_data_25",
+      "result_item",
+      "desc"
+    ],
+    "align": "center",
+    "width": 80,
+    "sequence": 540,
+    "sortable": false,
+    "func": "=SCOPE.empDateClick",
+    "fieldFunc": "=SCOPE.fieldShow"
+  },
+  {
+    "label": "26\n一",
+    "key": "month_data_26",
+    "field": [
+      "month_data_26",
+      "result_item",
+      "desc"
+    ],
+    "align": "center",
+    "width": 80,
+    "sequence": 550,
+    "sortable": false,
+    "func": "=SCOPE.empDateClick",
+    "fieldFunc": "=SCOPE.fieldShow"
+  },
+  {
+    "label": "27\n二",
+    "key": "month_data_27",
+    "field": [
+      "month_data_27",
+      "result_item",
+      "desc"
+    ],
+    "align": "center",
+    "width": 80,
+    "sequence": 560,
+    "sortable": false,
+    "func": "=SCOPE.empDateClick",
+    "fieldFunc": "=SCOPE.fieldShow"
+  },
+  {
+    "label": "28\n三",
+    "key": "month_data_28",
+    "field": [
+      "month_data_28",
+      "result_item",
+      "desc"
+    ],
+    "align": "center",
+    "width": 80,
+    "sequence": 570,
+    "sortable": false,
+    "func": "=SCOPE.empDateClick",
+    "fieldFunc": "=SCOPE.fieldShow"
+  },
+  {
+    "label": "29\n四",
+    "key": "month_data_29",
+    "field": [
+      "month_data_29",
+      "result_item",
+      "desc"
+    ],
+    "align": "center",
+    "width": 80,
+    "sequence": 580,
+    "sortable": false,
+    "func": "=SCOPE.empDateClick",
+    "fieldFunc": "=SCOPE.fieldShow",
+    "hide": true
+  },
+  {
+    "label": "30\n五",
+    "key": "month_data_30",
+    "field": [
+      "month_data_30",
+      "result_item",
+      "desc"
+    ],
+    "align": "center",
+    "width": 80,
+    "sequence": 590,
+    "sortable": false,
+    "func": "=SCOPE.empDateClick",
+    "fieldFunc": "=SCOPE.fieldShow",
+    "hide": true
+  },
+  {
+    "key": "month_data_2021-12-02",
+    "label": "02\n四",
+    "width": 80,
+    "sequence": 600
+  },
+  {
+    "key": "month_data_2022-01-02",
+    "label": "02\n日",
+    "width": 80,
+    "sequence": 610
+  },
+  {
+    "label": "31\n四",
+    "key": "month_data_31",
+    "field": [
+      "month_data_31",
+      "result_item",
+      "desc"
+    ],
+    "align": "center",
+    "width": 80,
+    "sequence": 620,
+    "sortable": false,
+    "func": "=SCOPE.empDateClick",
+    "fieldFunc": "=SCOPE.fieldShow",
+    "hide": true
+  },
+  {
+    "key": "month_data_2021-12-03",
+    "label": "03\n五",
+    "width": 80,
+    "sequence": 630
+  },
+  {
+    "key": "month_data_2022-01-03",
+    "label": "03\n一",
+    "width": 80,
+    "sequence": 640
+  },
+  {
+    "key": "month_data_2021-12-04",
+    "label": "04\n六",
+    "width": 80,
+    "sequence": 650
+  },
+  {
+    "key": "month_data_2022-01-04",
+    "label": "04\n二",
+    "width": 80,
+    "sequence": 660
+  },
+  {
+    "key": "month_data_2021-12-05",
+    "label": "05\n日",
+    "width": 80,
+    "sequence": 670
+  },
+  {
+    "key": "month_data_2022-01-05",
+    "label": "05\n三",
+    "width": 80,
+    "sequence": 680
+  },
+  {
+    "key": "month_data_2021-12-06",
+    "label": "06\n一",
+    "width": 80,
+    "sequence": 690
+  },
+  {
+    "key": "month_data_2022-01-06",
+    "label": "06\n四",
+    "width": 80,
+    "sequence": 700
+  },
+  {
+    "key": "month_data_2021-12-07",
+    "label": "07\n二",
+    "width": 80,
+    "sequence": 710
+  },
+  {
+    "key": "month_data_2022-01-07",
+    "label": "07\n五",
+    "width": 80,
+    "sequence": 720
+  },
+  {
+    "key": "month_data_2021-12-08",
+    "label": "08\n三",
+    "width": 80,
+    "sequence": 730
+  },
+  {
+    "key": "month_data_2022-01-08",
+    "label": "08\n六",
+    "width": 80,
+    "sequence": 740
+  },
+  {
+    "key": "month_data_2021-12-09",
+    "label": "09\n四",
+    "width": 80,
+    "sequence": 750
+  },
+  {
+    "key": "month_data_2022-01-09",
+    "label": "09\n日",
+    "width": 80,
+    "sequence": 760
+  },
+  {
+    "key": "month_data_2021-12-10",
+    "label": "10\n五",
+    "width": 80,
+    "sequence": 770
+  },
+  {
+    "key": "month_data_2022-01-10",
+    "label": "10\n一",
+    "width": 80,
+    "sequence": 780
+  },
+  {
+    "key": "month_data_2021-12-11",
+    "label": "11\n六",
+    "width": 80,
+    "sequence": 790
+  },
+  {
+    "key": "month_data_2022-01-11",
+    "label": "11\n二",
+    "width": 80,
+    "sequence": 800
+  },
+  {
+    "key": "month_data_2021-12-12",
+    "label": "12\n日",
+    "width": 80,
+    "sequence": 810
+  },
+  {
+    "key": "month_data_2022-01-12",
+    "label": "12\n三",
+    "width": 80,
+    "sequence": 820
+  },
+  {
+    "key": "month_data_2021-12-13",
+    "label": "13\n一",
+    "width": 80,
+    "sequence": 830
+  },
+  {
+    "key": "month_data_2022-01-13",
+    "label": "13\n四",
+    "width": 80,
+    "sequence": 840
+  },
+  {
+    "key": "month_data_2021-12-14",
+    "label": "14\n二",
+    "width": 80,
+    "sequence": 850
+  },
+  {
+    "key": "month_data_2022-01-14",
+    "label": "14\n五",
+    "width": 80,
+    "sequence": 860
+  },
+  {
+    "key": "month_data_2021-12-15",
+    "label": "15\n三",
+    "width": 80,
+    "sequence": 870
+  },
+  {
+    "key": "month_data_2022-01-15",
+    "label": "15\n六",
+    "width": 80,
+    "sequence": 880
+  },
+  {
+    "key": "month_data_2021-12-16",
+    "label": "16\n四",
+    "width": 80,
+    "sequence": 890
+  },
+  {
+    "key": "month_data_2022-01-16",
+    "label": "16\n日",
+    "width": 80,
+    "sequence": 900
+  },
+  {
+    "key": "month_data_2021-12-17",
+    "label": "17\n五",
+    "width": 80,
+    "sequence": 910
+  },
+  {
+    "key": "month_data_2022-01-17",
+    "label": "17\n一",
+    "width": 80,
+    "sequence": 920
+  },
+  {
+    "key": "month_data_2021-12-18",
+    "label": "18\n六",
+    "width": 80,
+    "sequence": 930
+  },
+  {
+    "key": "month_data_2022-01-18",
+    "label": "18\n二",
+    "width": 80,
+    "sequence": 940
+  },
+  {
+    "key": "month_data_2021-12-19",
+    "label": "19\n日",
+    "width": 80,
+    "sequence": 950
+  },
+  {
+    "key": "month_data_2022-01-19",
+    "label": "19\n三",
+    "width": 80,
+    "sequence": 960
+  },
+  {
+    "key": "month_data_2021-12-20",
+    "label": "20\n一",
+    "width": 80,
+    "sequence": 970
+  },
+  {
+    "key": "month_data_2022-01-20",
+    "label": "20\n四",
+    "width": 80,
+    "sequence": 980
+  },
+  {
+    "key": "month_data_2021-12-21",
+    "label": "21\n二",
+    "width": 80,
+    "sequence": 990
+  },
+  {
+    "key": "month_data_2022-01-21",
+    "label": "21\n五",
+    "width": 80,
+    "sequence": 1000
+  },
+  {
+    "key": "month_data_2021-12-22",
+    "label": "22\n三",
+    "width": 80,
+    "sequence": 1010
+  },
+  {
+    "key": "month_data_2022-01-22",
+    "label": "22\n六",
+    "width": 80,
+    "sequence": 1020
+  },
+  {
+    "key": "month_data_2021-12-23",
+    "label": "23\n四",
+    "width": 80,
+    "sequence": 1030
+  },
+  {
+    "key": "month_data_2022-01-23",
+    "label": "23\n日",
+    "width": 80,
+    "sequence": 1040
+  },
+  {
+    "key": "month_data_2021-12-24",
+    "label": "24\n五",
+    "width": 80,
+    "sequence": 1050
+  },
+  {
+    "key": "month_data_2022-01-24",
+    "label": "24\n一",
+    "width": 80,
+    "sequence": 1060
+  },
+  {
+    "key": "month_data_2021-12-25",
+    "label": "25\n六",
+    "width": 80,
+    "sequence": 1070
+  },
+  {
+    "key": "month_data_2022-01-25",
+    "label": "25\n二",
+    "width": 80,
+    "sequence": 1080
+  },
+  {
+    "key": "month_data_2021-12-26",
+    "label": "26\n日",
+    "width": 80,
+    "sequence": 1090
+  },
+  {
+    "key": "month_data_2022-01-26",
+    "label": "26\n三",
+    "width": 80,
+    "sequence": 1100
+  },
+  {
+    "key": "month_data_2021-12-27",
+    "label": "27\n一",
+    "width": 80,
+    "sequence": 1110
+  },
+  {
+    "key": "month_data_2022-01-27",
+    "label": "27\n四",
+    "width": 80,
+    "sequence": 1120
+  },
+  {
+    "key": "month_data_2021-12-28",
+    "label": "28\n二",
+    "width": 80,
+    "sequence": 1130
+  },
+  {
+    "key": "month_data_2022-01-28",
+    "label": "28\n五",
+    "width": 80,
+    "sequence": 1140
+  },
+  {
+    "key": "month_data_2021-12-29",
+    "label": "29\n三",
+    "width": 80,
+    "sequence": 1150
+  },
+  {
+    "key": "month_data_2022-01-29",
+    "label": "29\n六",
+    "width": 80,
+    "sequence": 1160
+  },
+  {
+    "key": "month_data_2021-12-30",
+    "label": "30\n四",
+    "width": 80,
+    "sequence": 1170
+  },
+  {
+    "key": "month_data_2022-01-30",
+    "label": "30\n日",
+    "width": 80,
+    "sequence": 1180
+  },
+  {
+    "key": "month_data_2021-12-31",
+    "label": "31\n五",
+    "width": 80,
+    "sequence": 1190
+  },
+  {
+    "key": "month_data_2022-01-31",
+    "label": "31\n一",
+    "width": 80,
+    "sequence": 1200
+  },
+  {
+    "key": "statistic_data_user_define_chidao",
+    "label": "迟到时数",
+    "width": 80,
+    "sequence": 1210
+  },
+  {
+    "key": "statistic_data_user_define_zaotui",
+    "label": "早退时数",
+    "width": 80,
+    "sequence": 1220
+  },
+  {
+    "key": "statistic_data_user_define_xxx",
+    "label": "轮班小夜班",
+    "width": 80,
+    "sequence": 1230
+  },
+  {
+    "key": "statistic_data_user_define_cbbdyb",
+    "label": "轮班大夜班",
+    "width": 80,
+    "sequence": 1240
+  },
+  {
+    "key": "statistic_data_user_define_dgjynn",
+    "label": "一年内待工假",
+    "width": 80,
+    "sequence": 1250
+  },
+  {
+    "key": "statistic_data_user_define_dgjynw",
+    "label": "一年外待工假",
+    "width": 80,
+    "sequence": 1260
+  },
+  {
+    "key": "statistic_data_user_define_lgynbj",
+    "label": "六个月内病假",
+    "width": 80,
+    "sequence": 1270
+  },
+  {
+    "key": "statistic_data_user_define_lgywbj",
+    "label": "六个月外病假",
+    "width": 80,
+    "sequence": 1280
+  },
+  {
+    "key": "statistic_data_user_define_lbjb",
+    "label": "轮班加班",
+    "width": 80,
+    "sequence": 1290
+  },
+  {
+    "key": "statistic_data_work_onjob",
+    "label": "出勤",
+    "width": 80,
+    "sequence": 1300,
+    "hide": false
+  },
+  {
+    "key": "statistic_data_work_rest",
+    "label": "休息",
+    "width": 80,
+    "sequence": 1310,
+    "hide": false
+  },
+  {
+    "key": "statistic_data_work_outjob",
+    "label": "缺勤",
+    "width": 80,
+    "sequence": 1320,
+    "hide": false
+  },
+  {
+    "key": "statistic_data_work_late",
+    "label": "迟到",
+    "width": 80,
+    "sequence": 1330,
+    "hide": false
+  },
+  {
+    "key": "statistic_data_work_early",
+    "label": "早退",
+    "width": 80,
+    "sequence": 1340,
+    "hide": false
+  },
+  {
+    "key": "statistic_data_work_absence",
+    "label": "旷工",
+    "width": 80,
+    "sequence": 1350,
+    "hide": false
+  },
+  {
+    "key": "statistic_data_leave_normal",
+    "label": "事假",
+    "width": 80,
+    "sequence": 1360,
+    "hide": false
+  },
+  {
+    "key": "statistic_data_leave_annual",
+    "label": "年休假",
+    "width": 80,
+    "sequence": 1370,
+    "hide": false
+  },
+  {
+    "key": "statistic_data_leave_sick",
+    "label": "病假",
+    "width": 80,
+    "sequence": 1380,
+    "hide": false
+  },
+  {
+    "key": "statistic_data_leave_maternity",
+    "label": "产假",
+    "width": 80,
+    "sequence": 1390,
+    "hide": false
+  },
+  {
+    "key": "statistic_data_leave_antenatal",
+    "label": "孕检假",
+    "width": 80,
+    "sequence": 1400,
+    "hide": false
+  },
+  {
+    "key": "statistic_data_leave_care",
+    "label": "护理假",
+    "width": 80,
+    "sequence": 1410,
+    "hide": false
+  },
+  {
+    "key": "statistic_data_leave_funeral",
+    "label": "丧假",
+    "width": 80,
+    "sequence": 1420,
+    "hide": false
+  },
+  {
+    "key": "statistic_data_leave_home",
+    "label": "探亲假",
+    "width": 80,
+    "sequence": 1430,
+    "hide": false
+  },
+  {
+    "key": "statistic_data_leave_injury",
+    "label": "工伤假",
+    "width": 80,
+    "sequence": 1440,
+    "hide": false
+  },
+  {
+    "key": "statistic_data_leave_feeding",
+    "label": "哺乳假",
+    "width": 80,
+    "sequence": 1450,
+    "hide": false
+  },
+  {
+    "key": "statistic_data_leave_marital",
+    "label": "婚假",
+    "width": 80,
+    "sequence": 1460,
+    "hide": false
+  },
+  {
+    "key": "statistic_data_leave_shift",
+    "label": "补休假",
+    "width": 80,
+    "sequence": 1470,
+    "hide": false
+  },
+  {
+    "key": "statistic_data_overtime_normal",
+    "label": "平加",
+    "width": 80,
+    "sequence": 1480,
+    "hide": false
+  },
+  {
+    "key": "statistic_data_overtime_rest",
+    "label": "休加",
+    "width": 80,
+    "sequence": 1490,
+    "hide": false
+  },
+  {
+    "key": "statistic_data_overtime_holiday",
+    "label": "假加",
+    "width": 80,
+    "sequence": 1500,
+    "hide": false
+  },
+  {
+    "key": "statistic_data_trip_normal",
+    "label": "外出",
+    "width": 80,
+    "sequence": 1510,
+    "hide": false
+  },
+  {
+    "key": "statistic_data_trip_business",
+    "label": "出差",
+    "width": 80,
+    "sequence": 1520,
+    "hide": false
+  },
+  {
+    "key": "statistic_data_leave_gestation",
+    "label": "护理父母假",
+    "width": 80,
+    "hide": false,
+    "sequence": 1530
+  },
+  {
+    "key": "statistic_data_leave_familyplan",
+    "label": "倒班假",
+    "width": 80,
+    "sequence": 1540,
+    "hide": false
+  },
+  {
+    "key": "statistic_data_leave_abortion",
+    "label": "流产假",
+    "width": 80,
+    "hide": true,
+    "sequence": 1550
+  },
+  {
+    "key": "statistic_data_leave_pregnancy",
+    "label": "妊娠假",
+    "width": 80,
+    "hide": true,
+    "sequence": 1560
+  },
+  {
+    "key": "statistic_data_leave_paternity",
+    "label": "幼儿看护假",
+    "width": 80,
+    "hide": false,
+    "sequence": 1570
+  },
+  {
+    "key": "statistic_data_leave_nursing",
+    "label": "倒班节日增修假",
+    "width": 80,
+    "sequence": 1580,
+    "hide": false
+  },
+  {
+    "key": "statistic_data_leave_statutory",
+    "label": "公假",
+    "width": 80,
+    "sequence": 1590,
+    "hide": false
+  },
+  {
+    "key": "statistic_data_overtime_oncall",
+    "label": "值班",
+    "width": 80,
+    "hide": false,
+    "sequence": 1600
+  },
+  {
+    "key": "statistic_data_leave_childcare",
+    "label": "待工假",
+    "width": 80,
+    "sequence": 1610,
+    "hide": false
+  },
+  {
+    "key": "statistic_data_leave_pre_maternity",
+    "label": "产前假",
+    "width": 80,
+    "hide": true,
+    "sequence": 1620
+  },
+  {
+    "key": "statistic_data_trip_abroad",
+    "label": "国外出差",
+    "width": 80,
+    "sequence": 1630,
+    "hide": false
+  },
+  {
+    "key": "statistic_data_trip_user_defined1",
+    "label": "自定义出差1",
+    "width": 80,
+    "hide": true,
+    "sequence": 1640
+  },
+  {
+    "key": "statistic_data_trip_user_defined2",
+    "label": "自定义出差2",
+    "width": 80,
+    "hide": true,
+    "sequence": 1650
+  },
+  {
+    "key": "statistic_data_leave_user_defined",
+    "label": "癌症、精神病（医疗期内）",
+    "width": 80,
+    "sequence": 1660,
+    "hide": false
+  },
+  {
+    "key": "statistic_data_leave_user_defined1",
+    "label": "癌症、精神病（医疗期满）",
+    "width": 80,
+    "sequence": 1670,
+    "hide": false
+  },
+  {
+    "key": "statistic_data_leave_user_defined2",
+    "label": "工伤康复治疗假",
+    "width": 80,
+    "sequence": 1680,
+    "hide": false
+  },
+  {
+    "key": "statistic_data_leave_user_defined4",
+    "label": "工伤申报假",
+    "width": 80,
+    "sequence": 1685,
+    "hide": false
+  },
+  {
+    "key": "statistic_data_trip_user_defined3",
+    "label": "自定义出差3",
+    "hide": true,
+    "width": 80,
+    "sequence": 1690
+  },
+  {
+    "key": "statistic_data_trip_user_defined4",
+    "label": "自定义出差4",
+    "hide": true,
+    "width": 80,
+    "sequence": 1700
+  },
+  {
+    "key": "statistic_data_trip_user_defined5",
+    "label": "自定义出差5",
+    "hide": true,
+    "width": 80,
+    "sequence": 1710
+  },
+  {
+    "key": "statistic_data_trip_user_defined6",
+    "label": "自定义出差6",
+    "hide": true,
+    "width": 80,
+    "sequence": 1720
+  },
+  {
+    "key": "statistic_data_trip_user_defined7",
+    "label": "自定义出差7",
+    "hide": true,
+    "width": 80,
+    "sequence": 1730
+  },
+  {
+    "key": "statistic_data_user_define_kgsc",
+    "label": "真实旷工时长",
+    "width": 80,
+    "sequence": 1740
+  },
+  {
+    "key": "statistic_data_user_define_zsjb",
+    "label": "真实加班",
+    "width": 80,
+    "sequence": 1750
+  },
+  {
+    "key": "origin_employee_id",
+    "label": "人员id",
+    "field": [
+      "employee_id"
+    ],
+    "hide": true,
+    "sequence": 1760
+  },
+  {
+    "key": "origin_depart_id",
+    "label": "组织id",
+    "field": [
+      "depart_id"
+    ],
+    "hide": true,
+    "sequence": 1770
+  },
+  {
+    "key": "origin_position_id",
+    "label": "岗位id",
+    "field": [
+      "position_id"
+    ],
+    "hide": true,
+    "sequence": 1780
+  },
+  {
+    "key": "origin_program_id",
+    "label": "方案id",
+    "field": [
+      "program_id"
+    ],
+    "hide": true,
+    "sequence": 1790
+  },
+  {
+    "key": "statistic_data_leave_user_defined3",
+    "label": "自定义休假3",
+    "hide": true,
+    "width": 80,
+    "sequence": 1800
+  },
+  {
+    "key": "statistic_data_leave_user_defined5",
+    "label": "自定义休假5",
+    "hide": true,
+    "width": 80,
+    "sequence": 1820
+  },
+  {
+    "key": "statistic_data_leave_user_defined6",
+    "label": "自定义休假6",
+    "hide": true,
+    "width": 80,
+    "sequence": 1830
+  },
+  {
+    "key": "statistic_data_leave_user_defined7",
+    "label": "自定义休假7",
+    "hide": true,
+    "width": 80,
+    "sequence": 1840
+  },
+  {
+    "key": "statistic_data_leave_user_defined8",
+    "label": "自定义休假8",
+    "hide": true,
+    "width": 80,
+    "sequence": 1850
+  },
+  {
+    "key": "statistic_data_leave_user_defined9",
+    "label": "自定义休假9",
+    "hide": true,
+    "width": 80,
+    "sequence": 1860
+  },
+  {
+    "key": "statistic_data_leave_user_defined10",
+    "label": "自定义休假10",
+    "hide": true,
+    "width": 80,
+    "sequence": 1870
+  },
+  {
+    "key": "statistic_data_leave_user_defined11",
+    "label": "自定义休假11",
+    "hide": true,
+    "width": 80,
+    "sequence": 1880
+  },
+  {
+    "key": "statistic_data_leave_user_defined12",
+    "label": "自定义休假12",
+    "hide": true,
+    "width": 80,
+    "sequence": 1890
+  },
+  {
+    "label": "考勤组",
+    "key": "group_id",
+    "field": [
+      "group",
+      "name"
+    ],
+    "data_type": "integer",
+    "object": "AttendGroup",
+    "align": "left",
+    "width": 160,
+    "sequence": null,
+    "fieldFunc": null,
+    "format": null,
+    "state": null,
+    "is_blur": false
+  }
+]

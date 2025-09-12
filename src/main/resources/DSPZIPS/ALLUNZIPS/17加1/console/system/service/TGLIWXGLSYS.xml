@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>TGLIWXGLSYS</serviceSystemName>
+		<serviceSystemDesc>特钢事业部连铸数字化管控平台</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>TGLIWXGLSYS_MaEqSwitchfindAllQuery</protocol>
+						<protocol>TGLIWXGLSYS_MaEqSwitchfindNotUseByEq</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>MaEqSwitchfindAllQuery</serivcename>
+			<protocol>TGLIWXGLSYS_MaEqSwitchfindAllQuery</protocol>
+			</service>
+						<service>
+			<serivcename>MaEqSwitchfindNotUseByEqQuery</serivcename>
+			<protocol>TGLIWXGLSYS_MaEqSwitchfindNotUseByEq</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

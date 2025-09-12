@@ -1,0 +1,11 @@
+{
+	"configuration":{},
+	"connectionName":"MRS_Spark_Agent",
+	"content":"-- ******************************************************************** --\n-- author: jh_caiyi\n-- create time: 2025-07-15\n-- descr: DHR-人员出差数据\n-- dhr_personnelflow_businesstrip\n-- ******************************************************************** --\n-- DROP TABLE IF EXISTS dwi_hrm.dwi_hrm_lz_dhr_personnelflow_businesstrip;\n-- CREATE TABLE\n--     dwi_hrm.dwi_hrm_lz_dhr_personnelflow_businesstrip (\n--         id BIGINT COMMENT 'id',\n--     company_id BIGINT COMMENT '公司别',\n--     employee_id BIGINT COMMENT '职员',\n--     attend_item_id BIGINT COMMENT '出差项目',\n--     start_time STRING COMMENT '开始时间',\n--     end_time STRING COMMENT '结束时间',\n--     source BIGINT COMMENT '来源',\n--     department_id BIGINT COMMENT '组织',\n--     state BIGINT COMMENT '状态',\n--     approve_state BIGINT COMMENT '审批状态, 0-暂存, 1-审批中, 2-审批通过, 3-审批拒绝, 4-撤销',\n--     address STRING COMMENT '出差地点',\n--     reason STRING COMMENT '申请原因',\n--     create_time STRING COMMENT '创建时间',\n--     creator_id BIGINT COMMENT '创建人员',\n--     operate_time STRING COMMENT '发生时间',\n--     operator_id BIGINT COMMENT '操作人',\n-- \t\tetl_date DATE COMMENT 'ETL时间'\n--     )\n-- COMMENT '廉政八项-DHR-人员出差数据'\n-- PARTITIONED BY (mt STRING COMMENT '分区月份')\n-- STORED AS ORC;\nINSERT OVERWRITE TABLE\n\tdwi_hrm.dwi_hrm_lz_dhr_personnelflow_businesstrip  PARTITION (mt = '202507')\nSELECT \n    id -- id\n    , company_id -- 公司别\n    , employee_id -- 职员\n    , attend_item_id -- 出差项目\n    , start_time -- 开始时间\n    , end_time -- 结束时间\n    , source -- 来源\n    , department_id -- 组织\n    , state -- 状态\n    , approve_state -- 审批状态\n    , address -- 出差地点\n    , reason -- 申请原因\n    , create_time -- 创建时间\n    , creator_id -- 创建人员\n    , operate_time -- 发生时间\n    , operator_id -- 操作人\n    ,CURRENT_DATE()                 -- 当前日期\nFROM \n    dwi_hrm.dwi_hrm_time_business_trip_data\n  -- 表名\n    LIMIT 10;      -- 表名\n",
+	"currentDatabase":"dwi_hrm",
+	"description":"",
+	"directory":"/廉政专项/DHR/明细表",
+	"name":"etl_dwi_lz_dhr_personnelflow_businesstrip",
+	"templateVersion":"1.0",
+	"type":"SparkSQL"
+}

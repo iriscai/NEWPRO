@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project id="NGESB">
+    <buildInfo>
+        <version>null</version>
+        <compileDate>2025-8-28 16:21:14</compileDate>
+        <compileUser>Administrator</compileUser>
+        <buildDate>2025-8-28 16:21:14</buildDate>
+        <buildUser>Administrator</buildUser>
+    </buildInfo>
+    <components>
+        <component type="business">
+            <category id="DGCNGDB" path="/DGCNGDB">
+                <item id="GzeqPaperPfReason" location="2" path="\dev\services\business\DGCNGDB\GzeqPaperPfReason.biz"/>
+            </category>
+            <category id="ERPZSDB" path="/ERPZSDB">
+                <item id="GzeqDefectReason" location="2" path="\dev\services\business\ERPZSDB\GzeqDefectReason.biz"/>
+                <item id="GzeqPaperStayYesterday" location="2" path="\dev\services\business\ERPZSDB\GzeqPaperStayYesterday.biz"/>
+                <item id="GzeqPaperStayYesterdayDesc" location="2" path="\dev\services\business\ERPZSDB\GzeqPaperStayYesterdayDesc.biz"/>
+            </category>
+            <category id="TGMESDB" path="/TGMESDB">
+                <item id="GzeqPaperBtDescDb" location="2" path="\dev\services\business\TGMESDB\GzeqPaperBtDescDb.biz"/>
+                <item id="GzeqPaperBtDescZb" location="2" path="\dev\services\business\TGMESDB\GzeqPaperBtDescZb.biz"/>
+                <item id="GzeqPaperBtRate" location="2" path="\dev\services\business\TGMESDB\GzeqPaperBtRate.biz"/>
+                <item id="GzeqPaperBtRateDl" location="2" path="\dev\services\business\TGMESDB\GzeqPaperBtRateDl.biz"/>
+                <item id="GzeqPaperBtRateLg" location="2" path="\dev\services\business\TGMESDB\GzeqPaperBtRateLg.biz"/>
+                <item id="GzeqPaperBtRateZl" location="2" path="\dev\services\business\TGMESDB\GzeqPaperBtRateZl.biz"/>
+                <item id="GzeqPaperIndicator" location="2" path="\dev\services\business\TGMESDB\GzeqPaperIndicator.biz"/>
+                <item id="GzeqPaperIndicatorException" location="2" path="\dev\services\business\TGMESDB\GzeqPaperIndicatorException.biz"/>
+                <item id="GzeqPaperMixed" location="2" path="\dev\services\business\TGMESDB\GzeqPaperMixed.biz"/>
+                <item id="GzeqPaperTsBhg" location="2" path="\dev\services\business\TGMESDB\GzeqPaperTsBhg.biz"/>
+                <item id="GzeqPaperTsRate" location="2" path="\dev\services\business\TGMESDB\GzeqPaperTsRate.biz"/>
+                <item id="GzeqPaperWarn" location="2" path="\dev\services\business\TGMESDB\GzeqPaperWarn.biz"/>
+                <item id="GzeqPaperXnFirst" location="2" path="\dev\services\business\TGMESDB\GzeqPaperXnFirst.biz"/>
+                <item id="GzeqPitCoolingPitNumberQuery" location="2" path="\dev\services\business\TGMESDB\GzeqPitCoolingPitNumberQuery.biz"/>
+            </category>
+        </component>
+        <component type="lib">
+            <category id="DEFAULT" path="/DEFAULT">
+                <item id="project.jar" location="2" path="\lib\project.jar"/>
+            </category>
+        </component>
+        <component type="channelservicesystem.serivce">
+            <category id="DEFAULT" path="/DEFAULT">
+                <item id="服务系统" location="2" path="\dev\cssystem\service\servicesystem.xml"/>
+            </category>
+        </component>
+        <component type="protocol_client">
+            <category id="NGESB" path="/DEFAULT">
+                <item id="DGCNGDB_GzeqPaperPfReason" location="2" path="\dev\protocol\client\DGCNGDB_GzeqPaperPfReason.HTTPServiceConnector"/>
+                <item id="ERPZS_GzeqDefectReason" location="2" path="\dev\protocol\client\ERPZS_GzeqDefectReason.HTTPServiceConnector"/>
+                <item id="ERPZS_GzeqPaperStayYesterday" location="2" path="\dev\protocol\client\ERPZS_GzeqPaperStayYesterday.HTTPServiceConnector"/>
+                <item id="ERPZS_GzeqPaperStayYesterdayDesc" location="2" path="\dev\protocol\client\ERPZS_GzeqPaperStayYesterdayDesc.HTTPServiceConnector"/>
+                <item id="TGMESDB_GzeqPaperBtDescDb" location="2" path="\dev\protocol\client\TGMESDB_GzeqPaperBtDescDb.HTTPServiceConnector"/>
+                <item id="TGMESDB_GzeqPaperBtDescZb" location="2" path="\dev\protocol\client\TGMESDB_GzeqPaperBtDescZb.HTTPServiceConnector"/>
+                <item id="TGMESDB_GzeqPaperBtRate" location="2" path="\dev\protocol\client\TGMESDB_GzeqPaperBtRate.HTTPServiceConnector"/>
+                <item id="TGMESDB_GzeqPaperBtRateDl" location="2" path="\dev\protocol\client\TGMESDB_GzeqPaperBtRateDl.HTTPServiceConnector"/>
+                <item id="TGMESDB_GzeqPaperBtRateLg" location="2" path="\dev\protocol\client\TGMESDB_GzeqPaperBtRateLg.HTTPServiceConnector"/>
+                <item id="TGMESDB_GzeqPaperBtRateZl" location="2" path="\dev\protocol\client\TGMESDB_GzeqPaperBtRateZl.HTTPServiceConnector"/>
+                <item id="TGMESDB_GzeqPaperIndicator" location="2" path="\dev\protocol\client\TGMESDB_GzeqPaperIndicator.HTTPServiceConnector"/>
+                <item id="TGMESDB_GzeqPaperIndicatorException" location="2" path="\dev\protocol\client\TGMESDB_GzeqPaperIndicatorException.HTTPServiceConnector"/>
+                <item id="TGMESDB_GzeqPaperMixed" location="2" path="\dev\protocol\client\TGMESDB_GzeqPaperMixed.HTTPServiceConnector"/>
+                <item id="TGMESDB_GzeqPaperTsBhg" location="2" path="\dev\protocol\client\TGMESDB_GzeqPaperTsBhg.HTTPServiceConnector"/>
+                <item id="TGMESDB_GzeqPaperTsRate" location="2" path="\dev\protocol\client\TGMESDB_GzeqPaperTsRate.HTTPServiceConnector"/>
+                <item id="TGMESDB_GzeqPaperWarn" location="2" path="\dev\protocol\client\TGMESDB_GzeqPaperWarn.HTTPServiceConnector"/>
+                <item id="TGMESDB_GzeqPaperXnFirst" location="2" path="\dev\protocol\client\TGMESDB_GzeqPaperXnFirst.HTTPServiceConnector"/>
+            </category>
+        </component>
+    </components>
+    <resources>
+        <resource path="\resources\configs\in_conf\protocol\protocolMapping.xml"/>
+        <resource path="\resources\configs\out_conf\protocol\protocolMapping.xml"/>
+        <resource path="\resources\configs\in_conf\serviceMgt\contribution.xml"/>
+        <resource path="\resources\configs\out_conf\serviceMgt\contribution.xml"/>
+        <resource path="\resources\relationship\relation.xml"/>
+        <resource path="\SmartBranch.cat"/>
+        <resource path="\SmartBranch.brc"/>
+        <resource path="\host.properties"/>
+    </resources>
+</project>

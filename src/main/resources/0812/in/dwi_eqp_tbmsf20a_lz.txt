@@ -1,0 +1,35 @@
+CREATE TABLE dwi_eqp.dwi_eqp_tbmsf20a_lz
+             (
+                          MAMV5ID STRING
+                        , MAMV4ID STRING
+                        , MAMV4NO STRING
+                        , MAMV4NAME STRING
+                        , UNIT STRING
+                        , ISCHECK STRING
+                        , UPLIMIT     DECIMAL
+                        , UPALERT     DECIMAL
+                        , FACTVALUE   DECIMAL
+                        , VENDORVALUE DECIMAL
+                        , MEMO STRING
+                        , STUS STRING
+                        , CHKDATE STRING
+                        , CREATETIME STRING
+                        , MODIFYTIME STRING
+                        , LOWALERT DECIMAL
+                        , LOWLIMIT DECIMAL
+                        , STANDARD DECIMAL
+                        , PREVALUE DECIMAL
+                        , VALIDATE STRING
+                        , CHECKRLST STRING
+                        , CREATEEMP STRING
+                        , CREATEDATE STRING
+                        , MODIFYEMP STRING
+                        , MODIFYDATE STRING
+                        , READYA STRING
+                        , READYB STRING
+                        , READYC STRING
+                        , READYD STRING
+                        , ALARM STRING
+             )
+             COMMENT '廉政八项-设备智维_tbmsf20a' STORED AS ORC
+;

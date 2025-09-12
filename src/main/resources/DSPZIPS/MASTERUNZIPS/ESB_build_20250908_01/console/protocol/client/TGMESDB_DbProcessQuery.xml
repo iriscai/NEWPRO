@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><protocol.http id="TGMESDB_DbProcessQuery" ioDirection="DataIn/DataOut" mode="synchronous" protocolName="HTTPServiceConnector" side="client">
+   <common serverType="jetty" uri="http://DPS:6003/api/dynamic/TGMESDB/TGMESDB/DbProcessQuery"/>
+   <request action="toBytes" connectTimeout="10000" encoding="UTF-8" method="get">
+ 	   </request>
+   <response action="toBytes" encoding="UTF-8" readTimeout="10000"/>
+	<security bidirectional="true" protocol="SSL">
+      <keyStore keyMainPass="" keyPass="" path="" type=""/>
+      <trustStore keyPass="" path="" type=""/>
+   </security>
+	<advanced connPerHostCount="200" connectionTimeout="10000" maxConnCount="2000" readBufferSize="2048" readTimeout="58000" reuseAddress="true" soLinger="0" tcpNoDelay="true" threadCount="50" threshold="524288" writeBufferSize="2048"/>	
+</protocol.http>

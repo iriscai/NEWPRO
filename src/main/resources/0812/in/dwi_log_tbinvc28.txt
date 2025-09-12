@@ -1,0 +1,33 @@
+CREATE TABLE
+	`dwi_log_tbinvc28` (
+		`compid` string COMMENT '公司别',
+		`yearmo` string COMMENT '库存年月',
+		`matrlno` string COMMENT '料号',
+		`matrlgrade` string COMMENT '品级',
+		`lotno` string COMMENT '批号',
+		`locno` string COMMENT '储位',
+		`inventorytype` string COMMENT '品别',
+		`routeqty` double COMMENT '在途量',
+		`routeamt` double COMMENT '在途量金额',
+		`endqty` double COMMENT '期末库存量',
+		`endamt` double COMMENT '期末库存金额',
+		`yrbeginqty` double COMMENT '年初库存量',
+		`yrbeginamt` double COMMENT '年初库存金额',
+		`yraccurecvqty` double COMMENT '年累积入库量',
+		`yraccurecvamt` double COMMENT '年累积入库金额',
+		`yraccuissuqty` double COMMENT '年累积出库量',
+		`yraccuissuamt` double COMMENT '年累积出库金额',
+		`mobeginqty` double COMMENT '月初库存量',
+		`mobeginamt` double COMMENT '月初库存金额',
+		`moaccurecvqty` double COMMENT '月累积入库量',
+		`moaccurecvamt` double COMMENT '月累积入库金额',
+		`moaccuissuqty` double COMMENT '月累积出库量',
+		`moaccuissuamt` double COMMENT '月累积出库金额',
+		`acctcode` string COMMENT '会计科目',
+		`ext_etl_dt` timestamp COMMENT 'ETL时间',
+		`ext_src_sys_id` string COMMENT '源系统'
+	) COMMENT '记录料号的交易信息表，对象是备件、辅材，按照公司别、年月、料号、费用属性、批次汇总，内容包含收发量和收发金额' ROW FORMAT SERDE 'org.apache.hadoop.hive.ql.io.orc.OrcSerde' STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.orc.OrcInputFormat' OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat' LOCATION 'hdfs://hacluster/user/hive/warehouse/dwi_log.db/dwi_log_tbinvc28' TBLPROPERTIES (
+		'bucketing_version' = '2',
+		'orc.compress' = 'ZLIB',
+		'transient_lastDdlTime' = '1682414405'
+	)

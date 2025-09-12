@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>HWSYS</serviceSystemName>
+		<serviceSystemDesc>华为平台系统</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>HWSYS_HwsysTicketsQuery</protocol>
+						<protocol>HWSYS_HwsysTokensQuery</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>HwsysTicketsQuery</serivcename>
+			<protocol>HWSYS_HwsysTicketsQuery</protocol>
+			</service>
+						<service>
+			<serivcename>HwsysTokensQuery</serivcename>
+			<protocol>HWSYS_HwsysTokensQuery</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

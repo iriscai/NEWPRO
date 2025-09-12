@@ -1,0 +1,12 @@
+{
+	"configuration":{},
+	"connectionName":"MRS_Spark_Agent",
+	"content":"-- ******************************************************************** --\n-- author: jh_caiyi\n-- create time: 2025-07-15\n-- descr:智慧物流系统专线-物流退换货分析_tbilnj031\n-- sls_returnanalysis_tbilnj031\n-- ******************************************************************** --\n-- DROP TABLE IF EXISTS dwi_log.dwi_log_lz_sls_returnanalysis_tbilnj031;\n-- CREATE TABLE\n-- dwi_log.dwi_log_lz_sls_returnanalysis_tbilnj031 (\n-- compid string COMMENT '公司别,',\n-- rtnno string COMMENT '退货单号,',\n-- labelno string COMMENT '存货标签编号,',\n-- displistno string COMMENT '发货通知单号,',\n-- loadno string COMMENT '装车作业单号,',\n-- shiporderno string COMMENT '出货明细单号,',\n-- orderno string COMMENT '订单编号,',\n-- orderitem string COMMENT '订单项次,',\n-- rtnqty double COMMENT '退货数量,',\n-- rtnwgt double COMMENT '退货重量,',\n-- locno string COMMENT '储位,',\n-- newlabelno string COMMENT '退货后所产生新的存货编号,',\n-- saleclassno string COMMENT '产品型态,',\n-- prodspecno string COMMENT '牌号,',\n-- orderprice double COMMENT '订单单价,',\n-- price double COMMENT '提单单价,',\n-- etl_date DATE COMMENT 'ETL时间'\n-- )\n-- COMMENT '廉政八项-智慧物流系统专线-物流退换货分析_tbilnj031'\n-- STORED AS ORC;\n\nINSERT OVERWRITE TABLE\ndwi_log.dwi_log_lz_sls_returnanalysis_tbilnj031\nSELECT \n    compid,\n    rtnno,\n    labelno,\n    displistno,\n    loadno,\n    shiporderno,\n    orderno,\n    orderitem,\n    rtnqty,\n    rtnwgt,\n    locno,\n    newlabelno,\n    saleclassno,\n    prodspecno,\n    orderprice,\n    price,\n    CURRENT_DATE() AS etl_date\nFROM \n    dwi_log.dwi_log_tbilnj031;\n-- SELECT * FROM dwi_log.dwi_log_lz_sls_returnanalysis_tbilnj031;",
+	"currentDatabase":"dwi_log",
+	"description":"",
+	"directory":"/廉政专项/智慧物流/明细表",
+	"encrypt":false,
+	"name":"etl_dwi_lz_sls_returnanalysis_tbilnj031",
+	"templateVersion":"1.0",
+	"type":"SparkSQL"
+}

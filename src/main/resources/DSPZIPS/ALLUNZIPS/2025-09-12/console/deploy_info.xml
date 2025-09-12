@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<objs>
+      
+  <obj>
+            
+    <objType>protocol.client</objType>
+            
+    <items>
+      <item cmd="add">TGMESDB_DbProcessQuery</item>
+      <item cmd="add">XCYDHRXT_SmartParkHaiKangEventBlackSearch</item>
+    </items>
+        
+  </obj>
+      
+  <obj>
+            
+    <objType>service.buss</objType>
+            
+    <items>
+      <item cmd="add">DbProcessQuery</item>
+      <item cmd="add">SmartParkHaiKangEventBlackSearch</item>
+    </items>
+        
+  </obj>
+      
+  <obj>
+            
+    <objType>service.definition</objType>
+            
+    <items/>
+        
+  </obj>
+      
+  <global>
+            
+    <obj>
+                  
+      <objType>service.definition</objType>
+                  
+      <items>
+        <item cmd="add">DbProcessQuery</item>
+        <item>console/service/definition/service_DbProcessQuery.xml</item>
+        <item cmd="add">SmartParkHaiKangEventBlackSearch</item>
+        <item>console/service/definition/service_SmartParkHaiKangEventBlackSearch.xml</item>
+      </items>
+              
+    </obj>
+        
+  </global>
+      
+  <obj>
+            
+    <objType>system.service</objType>
+            
+    <items>
+                  
+      <item cmd="add">MES</item>
+                  
+      <item cmd="add">ERP</item>
+                  
+      <item cmd="add">BCERP</item>
+                  
+      <item cmd="add">GPDB</item>
+                  
+      <item cmd="add">YJPTDB</item>
+                  
+      <item cmd="add">ERPZSDB</item>
+                  
+      <item cmd="add">DSPDB</item>
+                  
+      <item cmd="add">BIGPURCHASESYS</item>
+                  
+      <item cmd="add">SD</item>
+                  
+      <item cmd="add">ESB</item>
+                  
+      <item cmd="add">TGMESDB</item>
+                  
+      <item cmd="add">BCMESDB</item>
+                  
+      <item cmd="add">ELT</item>
+                  
+      <item cmd="add">C2MSYS</item>
+                  
+      <item cmd="add">MYSTEELSYS</item>
+                  
+      <item cmd="add">ROMASYS</item>
+                  
+      <item cmd="add">ZABW</item>
+                  
+      <item cmd="add">NGEMSDB</item>
+                  
+      <item cmd="add">JLSYS</item>
+                  
+      <item cmd="add">XYSCSYS</item>
+                  
+      <item cmd="add">XERP</item>
+                  
+      <item cmd="add">CLMJ</item>
+                  
+      <item cmd="add">OADB</item>
+                  
+      <item cmd="add">DGCNGDB</item>
+                  
+      <item cmd="add">ENTRANCE</item>
+                  
+      <item cmd="add">SEC</item>
+                  
+      <item cmd="add">JSDHMS</item>
+                  
+      <item cmd="add">NC</item>
+                  
+      <item cmd="add">DWSDB</item>
+                  
+      <item cmd="add">JHYDB</item>
+                  
+      <item cmd="add">FGQLCDB</item>
+                  
+      <item cmd="add">ZHYWDB</item>
+                  
+      <item cmd="add">XCYSYS</item>
+                  
+      <item cmd="add">TQMESZBDB</item>
+                  
+      <item cmd="add">JLDB</item>
+                  
+      <item cmd="add">ICENTER</item>
+                  
+      <item cmd="add">NGDGDB</item>
+                  
+      <item cmd="add">RLMJDB</item>
+                  
+      <item cmd="add">ZHYQYQDB</item>
+                  
+      <item cmd="add">TQMESDB</item>
+                  
+      <item cmd="add">YLGDGEJDB</item>
+                  
+      <item cmd="add">CLMJDB</item>
+                  
+      <item cmd="add">BCYXDB</item>
+                  
+      <item cmd="add">GYLJR</item>
+                  
+      <item cmd="add">XZLZBD</item>
+                  
+      <item cmd="add">XZLSDK</item>
+                  
+      <item cmd="add">XZLZT</item>
+                  
+      <item cmd="add">ZHYYDB</item>
+                  
+      <item cmd="add">LJSDB</item>
+                  
+      <item cmd="add">CCWLSYS</item>
+                  
+      <item cmd="add">ZHYYIOCSYS</item>
+                  
+      <item cmd="add">ZHYY</item>
+                  
+      <item cmd="add">CENTERIOTSYS</item>
+                  
+      <item cmd="add">XBWGSYS</item>
+                  
+      <item cmd="add">ZHLZ</item>
+                  
+      <item cmd="add">DSPTZSDB</item>
+                  
+      <item cmd="add">OA</item>
+                  
+      <item cmd="add">MJSYS</item>
+                  
+      <item cmd="add">NISCOSMS</item>
+                  
+      <item cmd="add">BCSJH</item>
+                  
+      <item cmd="add">ZHHBSYS</item>
+                  
+      <item cmd="add">SAFEDB</item>
+                  
+      <item cmd="add">TGSYS</item>
+                  
+      <item cmd="add">BTZJPT</item>
+                  
+      <item cmd="add">MDM</item>
+                  
+      <item cmd="add">HKPT</item>
+                  
+      <item cmd="add">IEMPPRODB</item>
+                  
+      <item cmd="add">ZBZSJDB</item>
+                  
+      <item cmd="add">BDKSHDB</item>
+                  
+      <item cmd="add">JHIOT</item>
+                  
+      <item cmd="add">XZLGYL</item>
+                  
+      <item cmd="add">TESTMOD</item>
+                  
+      <item cmd="add">DGC_EQP</item>
+                  
+      <item cmd="add">YQSYS</item>
+                  
+      <item cmd="add">CGYTHDB</item>
+                  
+      <item cmd="add">JHOASYS</item>
+                  
+      <item cmd="add">PRODJHOASYS</item>
+                  
+      <item cmd="add">NGEJSYS</item>
+                  
+      <item cmd="add">ZHMT</item>
+                  
+      <item cmd="add">ZGDB</item>
+                  
+      <item cmd="add">NGZHSTSYS</item>
+                  
+      <item cmd="add">NGMTTS</item>
+                  
+      <item cmd="add">SPMS</item>
+                  
+      <item cmd="add">TCJYDB</item>
+                  
+      <item cmd="add">ZQZLDB</item>
+                  
+      <item cmd="add">TYRLKSYS</item>
+                  
+      <item cmd="add">TGLIWXGLSYS</item>
+                  
+      <item cmd="add">ZHLCDDSYS</item>
+                  
+      <item cmd="add">DORISDB</item>
+                  
+      <item cmd="add">SCRAPSTEELHALL</item>
+                  
+      <item cmd="add">GNXKSYS</item>
+                  
+      <item cmd="add">ZHJJDB</item>
+                  
+      <item cmd="add">TGMESZBDB</item>
+                  
+      <item cmd="add">TCDB</item>
+                  
+      <item cmd="add">TYSFRZSYS</item>
+                  
+      <item cmd="add">YXSJZLDB</item>
+                  
+      <item cmd="add">HJZDQYSYS</item>
+                  
+      <item cmd="add">ZLEJEHLDB</item>
+                  
+      <item cmd="add">ZLEJSHLDB</item>
+                  
+      <item cmd="add">ZLEJYHLDB</item>
+                  
+      <item cmd="add">DGCSALDB</item>
+                  
+      <item cmd="add">WMS</item>
+                  
+      <item cmd="add">ZGEJMX</item>
+                  
+      <item cmd="add">CWSJ</item>
+                  
+      <item cmd="add">NGNYYTH</item>
+                  
+      <item cmd="add">NYSJKDB</item>
+                  
+      <item cmd="add">BCMESZBDB</item>
+                  
+      <item cmd="add">ERPZBDB</item>
+                  
+      <item cmd="add">SBGLERPDB</item>
+                  
+      <item cmd="add">XDYSYS</item>
+                  
+      <item cmd="add">JYJXKB</item>
+                  
+      <item cmd="add">ZHFWDB</item>
+                  
+      <item cmd="add">NGSBZYSYS</item>
+                  
+      <item cmd="add">HCXT</item>
+                  
+      <item cmd="add">NDIOTSYS</item>
+                  
+      <item cmd="add">TGCOSTSYS</item>
+                  
+      <item cmd="add">DHRSYS</item>
+                  
+      <item cmd="add">ZHYYDWSDB</item>
+                  
+      <item cmd="add">QMSDORISDB</item>
+                  
+      <item cmd="add">TGGZJKSYS</item>
+                  
+      <item cmd="add">DGCQMSDORISDB</item>
+                  
+      <item cmd="add">CWGX</item>
+                  
+      <item cmd="add">TGSZGCWYQY</item>
+                  
+      <item cmd="add">CXJHHD</item>
+                  
+      <item cmd="add">ZHYYDORISDB</item>
+                  
+      <item cmd="add">TJXXHSYS</item>
+                  
+      <item cmd="add">TGIOTSYS</item>
+                  
+      <item cmd="add">BCIOTSYS</item>
+                  
+      <item cmd="add">DXYZJSYS</item>
+                  
+      <item cmd="add">SRMDIGITALSYS</item>
+                  
+      <item cmd="add">XCYDHRXT</item>
+                  
+      <item cmd="add">ZHAQSYS</item>
+                  
+      <item cmd="add">XCYTWOSYS</item>
+                  
+      <item cmd="add">BWDZDT</item>
+                  
+      <item cmd="add">AQSCJCSYS</item>
+                  
+      <item cmd="add">GMICRMT</item>
+                  
+      <item cmd="add">JHHBCBGL</item>
+                  
+      <item cmd="add">NGITYWGLPT</item>
+                  
+      <item cmd="add">FGQLCSYS</item>
+                  
+      <item cmd="add">HWSYS</item>
+                  
+      <item cmd="add">JLQJSYS</item>
+                  
+      <item cmd="add">XFKSHSYS</item>
+                  
+      <item cmd="add">XYY</item>
+                  
+      <item cmd="add">BYTTER</item>
+                  
+      <item cmd="add">ZXJTCGXT</item>
+                  
+      <item cmd="add">DLAQSYS</item>
+                  
+      <item cmd="add">ZHZL</item>
+                  
+      <item cmd="add">YTLZ</item>
+                  
+      <item cmd="add">XNFZZL</item>
+              
+    </items>
+        
+  </obj>
+  
+</objs>

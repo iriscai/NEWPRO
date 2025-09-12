@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>SEC</serviceSystemName>
+		<serviceSystemDesc>保卫</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>DGCNGDB_ActualYieldQuery</protocol>
+						<protocol>DGCNGDB_SEC_CallPoliceNumQuery</protocol>
+						<protocol>DGCNGDB_SEC_CarInDoorNumQuery</protocol>
+						<protocol>DGCNGDB_SEC_CarOutDoorNumQuery</protocol>
+						<protocol>DGCNGDB_SEC_OccupyCountQuery</protocol>
+						<protocol>DGCNGDB_SEC_PersonInDoorNumQuery</protocol>
+						<protocol>DGCNGDB_SEC_PersonInrecordHourQuery</protocol>
+						<protocol>DGCNGDB_SEC_PersonOutDoorNumQuery</protocol>
+						<protocol>DGCNGDB_SEC_TrafficViolationCntQuery</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>ActualYieldQuery</serivcename>
+			<protocol>DGCNGDB_ActualYieldQuery</protocol>
+			</service>
+						<service>
+			<serivcename>CallPoliceNumQuery</serivcename>
+			<protocol>DGCNGDB_SEC_CallPoliceNumQuery</protocol>
+			</service>
+						<service>
+			<serivcename>CarInDoorNumQuery</serivcename>
+			<protocol>DGCNGDB_SEC_CarInDoorNumQuery</protocol>
+			</service>
+						<service>
+			<serivcename>CarOutDoorNumQuery</serivcename>
+			<protocol>DGCNGDB_SEC_CarOutDoorNumQuery</protocol>
+			</service>
+						<service>
+			<serivcename>OccupyCountQuery</serivcename>
+			<protocol>DGCNGDB_SEC_OccupyCountQuery</protocol>
+			</service>
+						<service>
+			<serivcename>PersonInDoorNumQuery</serivcename>
+			<protocol>DGCNGDB_SEC_PersonInDoorNumQuery</protocol>
+			</service>
+						<service>
+			<serivcename>PersonInrecordHourQuery</serivcename>
+			<protocol>DGCNGDB_SEC_PersonInrecordHourQuery</protocol>
+			</service>
+						<service>
+			<serivcename>PersonOutDoorNumQuery</serivcename>
+			<protocol>DGCNGDB_SEC_PersonOutDoorNumQuery</protocol>
+			</service>
+						<service>
+			<serivcename>TrafficViolationCntQuery</serivcename>
+			<protocol>DGCNGDB_SEC_TrafficViolationCntQuery</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

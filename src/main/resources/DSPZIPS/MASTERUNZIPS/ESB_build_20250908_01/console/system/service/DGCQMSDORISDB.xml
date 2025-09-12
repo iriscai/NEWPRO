@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>DGCQMSDORISDB</serviceSystemName>
+		<serviceSystemDesc>特钢钢轧实时数仓</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>DGCQMSDORISDB_TgMesSteelMakTecQuery</protocol>
+						<protocol>DGCQMSDORISDB_TgMesSteelRollTecQuery</protocol>
+						<protocol>DGCQMSDORISDB_TgMesWisdomQualityAllOutputQuery</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>TgMesSteelMakTecQuery</serivcename>
+			<protocol>DGCQMSDORISDB_TgMesSteelMakTecQuery</protocol>
+			</service>
+						<service>
+			<serivcename>TgMesSteelRollTecQuery</serivcename>
+			<protocol>DGCQMSDORISDB_TgMesSteelRollTecQuery</protocol>
+			</service>
+						<service>
+			<serivcename>TgMesWisdomQualityAllOutputQuery</serivcename>
+			<protocol>DGCQMSDORISDB_TgMesWisdomQualityAllOutputQuery</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

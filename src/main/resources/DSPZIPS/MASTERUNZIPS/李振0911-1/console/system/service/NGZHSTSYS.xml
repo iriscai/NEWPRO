@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>NGZHSTSYS</serviceSystemName>
+		<serviceSystemDesc>南钢智慧食堂系统</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>NGZHSTSYS_ZhstGetFailureResultByJobNo</protocol>
+						<protocol>NGZHSTSYS_ZhstGetFeatureValueByUrl</protocol>
+						<protocol>NGZHSTSYS_ZhstGetNoticePersonInfoToUpdate</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>ZhstGetFailureResultByJobNo</serivcename>
+			<protocol>NGZHSTSYS_ZhstGetFailureResultByJobNo</protocol>
+			</service>
+						<service>
+			<serivcename>ZhstGetFeatureValueByUrl</serivcename>
+			<protocol>NGZHSTSYS_ZhstGetFeatureValueByUrl</protocol>
+			</service>
+						<service>
+			<serivcename>ZhstGetNoticePersonInfoToUpdate</serivcename>
+			<protocol>NGZHSTSYS_ZhstGetNoticePersonInfoToUpdate</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

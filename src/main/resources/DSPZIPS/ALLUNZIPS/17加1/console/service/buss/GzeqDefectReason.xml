@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<id>GzeqDefectReason</id>
+	<type>business</type>
+	<nickName>GzeqDefectReason</nickName>
+	<category>ERPZSDB</category>
+	<lastModified>1752463159574</lastModified>
+	<description><![CDATA[钢轧二期_简报_缺陷原因]]></description>
+	<impl>com.dc.esb.container.service.DefaultBusinessService</impl>
+	<passThrough>true</passThrough>
+	<contribution></contribution>
+	<servicesystem></servicesystem>
+	<adapterFlow>
+		<ref>ServiceThrouthAdaptor</ref>
+	</adapterFlow>
+	<protocols>
+		<slaprotocol>
+		</slaprotocol>
+		<olaprotocol>
+		</olaprotocol>
+	</protocols>
+</root>

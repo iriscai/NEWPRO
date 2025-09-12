@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>ZHLCDDSYS</serviceSystemName>
+		<serviceSystemDesc>智慧料场调度系统</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>ZHLCDDSYS_ZhlcScheduleBeltElectricQuery</protocol>
+						<protocol>ZHLCDDSYS_ZhlcScheduleBeltWarning</protocol>
+						<protocol>ZHLCDDSYS_ZhlcScheduleBlastFurnacePelletBeltlnfo</protocol>
+						<protocol>ZHLCDDSYS_ZhlcScheduleBlastFurnacePelletlnfo</protocol>
+						<protocol>ZHLCDDSYS_ZhlcScheduleEquipWarning</protocol>
+						<protocol>ZHLCDDSYS_ZhlcScheduleFurnace</protocol>
+						<protocol>ZHLCDDSYS_ZhlcScheduleSinterHeight</protocol>
+						<protocol>ZHLCDDSYS_ZhlcScraperRateQuery</protocol>
+						<protocol>ZHLC_ListDockRelativeInfo</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>ListAllDockRelativeInfo</serivcename>
+			<protocol>ZHLC_ListDockRelativeInfo</protocol>
+			</service>
+						<service>
+			<serivcename>ZhlcScheduleBeltElectricQuery</serivcename>
+			<protocol>ZHLCDDSYS_ZhlcScheduleBeltElectricQuery</protocol>
+			</service>
+						<service>
+			<serivcename>ZhlcScheduleBeltWarning</serivcename>
+			<protocol>ZHLCDDSYS_ZhlcScheduleBeltWarning</protocol>
+			</service>
+						<service>
+			<serivcename>ZhlcScheduleBlastFurnacePelletBeltlnfo</serivcename>
+			<protocol>ZHLCDDSYS_ZhlcScheduleBlastFurnacePelletBeltlnfo</protocol>
+			</service>
+						<service>
+			<serivcename>ZhlcScheduleBlastFurnacePelletlnfo</serivcename>
+			<protocol>ZHLCDDSYS_ZhlcScheduleBlastFurnacePelletlnfo</protocol>
+			</service>
+						<service>
+			<serivcename>ZhlcScheduleEquipWarning</serivcename>
+			<protocol>ZHLCDDSYS_ZhlcScheduleEquipWarning</protocol>
+			</service>
+						<service>
+			<serivcename>ZhlcScheduleFurnace</serivcename>
+			<protocol>ZHLCDDSYS_ZhlcScheduleFurnace</protocol>
+			</service>
+						<service>
+			<serivcename>ZhlcScheduleSinterHeight</serivcename>
+			<protocol>ZHLCDDSYS_ZhlcScheduleSinterHeight</protocol>
+			</service>
+						<service>
+			<serivcename>ZhlcScraperRateQuery</serivcename>
+			<protocol>ZHLCDDSYS_ZhlcScraperRateQuery</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

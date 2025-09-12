@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>ESB</serviceSystemName>
+		<serviceSystemDesc>数据服务系统</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>ESB_ESBOriginGCPQuery</protocol>
+						<protocol>ESB_ESBOriginMonitorQuery</protocol>
+						<protocol>ESB_ESBSystemServiceQuery</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>ESBOriginGCPQuery</serivcename>
+			<protocol>ESB_ESBOriginGCPQuery</protocol>
+			</service>
+						<service>
+			<serivcename>ESBOriginMonitorQuery</serivcename>
+			<protocol>ESB_ESBOriginMonitorQuery</protocol>
+			</service>
+						<service>
+			<serivcename>ESBSystemServiceQuery</serivcename>
+			<protocol>ESB_ESBSystemServiceQuery</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<id>SmartParkHaiKangEventBlackSearch</id>
+	<type>business</type>
+	<nickName>SmartParkHaiKangEventBlackSearch</nickName>
+	<category>XCYDHRXDT</category>
+	<lastModified>1757410210065</lastModified>
+	<description><![CDATA[智慧园区海康考勤系统_考勤_获取海康平台无感考勤数据接口]]></description>
+	<impl>com.dc.esb.container.service.DefaultBusinessService</impl>
+	<passThrough>true</passThrough>
+	<contribution></contribution>
+	<servicesystem></servicesystem>
+	<adapterFlow>
+		<ref>ServiceThrouthAdaptor</ref>
+	</adapterFlow>
+	<protocols>
+		<slaprotocol>
+		</slaprotocol>
+		<olaprotocol>
+		</olaprotocol>
+	</protocols>
+</root>

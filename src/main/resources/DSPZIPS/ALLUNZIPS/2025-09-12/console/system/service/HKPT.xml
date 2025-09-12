@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>HKPT</serviceSystemName>
+		<serviceSystemDesc>海康平台</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>HKPT_EventsQuery</protocol>
+						<protocol>HKPT_PersonAdd</protocol>
+						<protocol>HKPT_PersonDelete</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>EventsQuery</serivcename>
+			<protocol>HKPT_EventsQuery</protocol>
+			</service>
+						<service>
+			<serivcename>PersonAdd</serivcename>
+			<protocol>HKPT_PersonAdd</protocol>
+			</service>
+						<service>
+			<serivcename>PersonDelete</serivcename>
+			<protocol>HKPT_PersonDelete</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

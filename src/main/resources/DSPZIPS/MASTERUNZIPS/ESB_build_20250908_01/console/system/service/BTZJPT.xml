@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>BTZJPT</serviceSystemName>
+		<serviceSystemDesc>拜特资金平台</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>BTZJPT_PayBillServiceQuery</protocol>
+						<protocol>BTZJPT_PayBillServiceTestQuery</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>PayBillServiceQuery</serivcename>
+			<protocol>BTZJPT_PayBillServiceQuery</protocol>
+			</service>
+						<service>
+			<serivcename>PayBillServiceTestQuery</serivcename>
+			<protocol>BTZJPT_PayBillServiceTestQuery</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

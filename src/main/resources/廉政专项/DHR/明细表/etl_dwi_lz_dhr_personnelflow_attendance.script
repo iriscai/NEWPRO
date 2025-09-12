@@ -1,0 +1,11 @@
+{
+	"configuration":{},
+	"connectionName":"MRS_Spark_Agent",
+	"content":"-- ******************************************************************** --\n-- author: jh_caiyi\n-- create time: 2025-07-15\n-- descr: DHR-人员出勤情况数据\n-- dhr_personnelflow_attendance\n-- ******************************************************************** --\n-- DROP TABLE IF EXISTS dwi_hrm.dwi_hrm_lz_dhr_personnelflow_attendance;\n-- CREATE TABLE\n--     dwi_hrm.dwi_hrm_lz_dhr_personnelflow_attendance (\n--         id BIGINT COMMENT 'id',\n--     company_id BIGINT COMMENT '公司ID',\n--     employee_id BIGINT COMMENT '人员ID',\n--     depart_id BIGINT COMMENT '部门ID',\n--     position_id BIGINT COMMENT '岗位ID',\n--     date STRING COMMENT '日期',\n--     shift_id BIGINT COMMENT '班次ID',\n--     work_onjob BIGINT COMMENT '在岗时间',\n--     work_actual BIGINT COMMENT '实际出勤时间',\n--     work_rest BIGINT COMMENT '休息时间',\n--     work_outjob BIGINT COMMENT '外出时间',\n--     work_absence BIGINT COMMENT '缺勤时间',\n--     work_late BIGINT COMMENT '迟到时间',\n--     work_early BIGINT COMMENT '早退时间',\n--     overtime_holiday BIGINT COMMENT '节假日加班时间',\n-- \t\tetl_date DATE COMMENT 'ETL时间'\n--     )\n-- COMMENT '廉政八项-DHR-人员出勤情况数据'\n-- PARTITIONED BY (mt STRING COMMENT '分区月份')\n-- STORED AS ORC;\nINSERT OVERWRITE TABLE\n\tdwi_hrm.dwi_hrm_lz_dhr_personnelflow_attendance  PARTITION (mt = '202507')\nSELECT \n    id -- id\n    , company_id -- 公司ID\n    , employee_id -- 人员ID\n    , depart_id -- 部门ID\n    , position_id -- 岗位ID\n    , date -- 日期\n    , shift_id -- 班次ID\n    , work_onjob -- 在岗时间\n    , work_actual -- 实际出勤时间\n    , work_rest -- 休息时间\n    , work_outjob -- 外出时间\n    , work_absence -- 缺勤时间\n    , work_late -- 迟到时间\n    , work_early -- 早退时间\n    , overtime_holiday -- 节假日加班时间\n    ,CURRENT_DATE()                 -- 当前日期\nFROM \n    dwi_hrm.dwi_hrm_time_attend_data\n  -- 表名\n    LIMIT 10;      -- 表名\n",
+	"currentDatabase":"dwi_hrm",
+	"description":"",
+	"directory":"/廉政专项/DHR/明细表",
+	"name":"etl_dwi_lz_dhr_personnelflow_attendance",
+	"templateVersion":"1.0",
+	"type":"SparkSQL"
+}

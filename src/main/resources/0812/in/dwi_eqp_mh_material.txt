@@ -1,0 +1,32 @@
+CREATE TABLE
+	`dwi_eqp_mh_material` (
+		`id` string COMMENT '主键ID',
+		`is_forbidden` string COMMENT '是否禁用，Y禁用，N未禁用',
+		`material_no` string COMMENT '物料料号',
+		`material_name` string COMMENT '物料名称',
+		`model` string COMMENT '型号规格',
+		`technical_req` string COMMENT '技术要求',
+		`brand` string COMMENT '品牌',
+		`supplier` string COMMENT '建议厂商',
+		`unit` string COMMENT '计量单位',
+		`price` decimal(22, 0) COMMENT '前期单价',
+		`use_life` decimal(22, 0) COMMENT '使用寿命',
+		`purchase_cycle` string COMMENT '采购周期',
+		`pic_no` string COMMENT '图号',
+		`create_user_no` string COMMENT '创建人',
+		`create_date_time` string COMMENT '创建时间',
+		`update_user_no` string COMMENT '修改人',
+		`update_date_time` string COMMENT '修改时间',
+		`company_id` string COMMENT '公司ID',
+		`i_level` string COMMENT '优先级',
+		`status` decimal(22, 0) COMMENT '状态  0可用，1不可用',
+		`texture` string COMMENT '材质',
+		`supply_scope` string COMMENT '供货范围',
+		`type_one` string COMMENT '备件、材料',
+		`type_two` string COMMENT 'ABC分类',
+		`ext_etl_dt` timestamp COMMENT 'ETL时间',
+		`ext_src_sys_id` string COMMENT '源系统'
+	) COMMENT '物料基本信息数据，包含物料名称，物料号，型号规格，技术要求等，通过用户在智维平台批处理同步ERP的物料数据，用于存档料号基础信息，作为备件管理的基础信息支撑' ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.columnar.ColumnarSerDe' STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.RCFileInputFormat' OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.RCFileOutputFormat' LOCATION 'hdfs://hacluster/user/hive/warehouse/dwi_eqp.db/dwi_eqp_mh_material' TBLPROPERTIES (
+		'bucketing_version' = '2',
+		'transient_lastDdlTime' = '1756919303'
+	)

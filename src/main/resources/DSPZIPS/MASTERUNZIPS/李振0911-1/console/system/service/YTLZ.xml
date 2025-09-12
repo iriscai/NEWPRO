@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>YTLZ</serviceSystemName>
+		<serviceSystemDesc>一图连铸</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>YTLZ_TgMesDbFlowCc5Daily</protocol>
+						<protocol>YTLZ_TgMesDbProductionCc5Daily</protocol>
+						<protocol>YTLZ_TgMesDbProductionCc5Months</protocol>
+						<protocol>YTLZ_TgMesDbSuperheatCc5Daily</protocol>
+						<protocol>YTLZ_TgMesDbWasteBilletsCc5Daily</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>TgMesDbFlowCc5Daily</serivcename>
+			<protocol>YTLZ_TgMesDbFlowCc5Daily</protocol>
+			</service>
+						<service>
+			<serivcename>TgMesDbProductionCc5Daily</serivcename>
+			<protocol>YTLZ_TgMesDbProductionCc5Daily</protocol>
+			</service>
+						<service>
+			<serivcename>TgMesDbProductionCc5Months</serivcename>
+			<protocol>YTLZ_TgMesDbProductionCc5Months</protocol>
+			</service>
+						<service>
+			<serivcename>TgMesDbSuperheatCc5Daily</serivcename>
+			<protocol>YTLZ_TgMesDbSuperheatCc5Daily</protocol>
+			</service>
+						<service>
+			<serivcename>TgMesDbWasteBilletsCc5Daily</serivcename>
+			<protocol>YTLZ_TgMesDbWasteBilletsCc5Daily</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

@@ -1,0 +1,28 @@
+CREATE TABLE
+	`dwi_eqp_mc_eq_stop` (
+		`id` string COMMENT '系统索引值',
+		`eq_stop_no` string COMMENT '设备停机记录编号',
+		`eq_id` string COMMENT '设备ID',
+		`factory_id` string COMMENT '生产厂ID',
+		`flow_request_id` string COMMENT '工作流ID',
+		`resp_dept_id` string COMMENT '责任部门',
+		`resp_user_id` string COMMENT '责任人',
+		`stop_beg_time` string COMMENT '停机开始时间',
+		`stop_end_time` string COMMENT '停机结束时间',
+		`stop_hour` decimal(8, 0) COMMENT '停机时长',
+		`stop_reason` string COMMENT '停机原因',
+		`stop_stus` string COMMENT '停机记录状态',
+		`remark` string COMMENT '备注',
+		`create_user_no` string COMMENT '创建人',
+		`create_date_time` string COMMENT '创建时间',
+		`update_user_no` string COMMENT '修改人',
+		`update_date_time` string COMMENT '修改时间',
+		`company_id` string COMMENT '公司别',
+		`status` decimal(1, 0) COMMENT '状态',
+		`i_level` string COMMENT '排序',
+		`ext_etl_dt` timestamp COMMENT 'ETL时间',
+		`ext_src_sys_id` string COMMENT '源系统'
+	) COMMENT '存放设备延误停机记录数据，包含设备停机开始时间、结束时间、时长、责任单位等；数据源于在系统中人工录入的设备停机信息，数据用于记录设备实际停机情况。' ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.columnar.ColumnarSerDe' STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.RCFileInputFormat' OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.RCFileOutputFormat' LOCATION 'hdfs://hacluster/user/hive/warehouse/dwi_eqp.db/dwi_eqp_mc_eq_stop' TBLPROPERTIES (
+		'bucketing_version' = '2',
+		'transient_lastDdlTime' = '1756919320'
+	)

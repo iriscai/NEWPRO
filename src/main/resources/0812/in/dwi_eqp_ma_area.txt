@@ -1,0 +1,35 @@
+CREATE TABLE
+	`dwi_eqp_ma_area` (
+		`id` string COMMENT '主键',
+		`region_no` string COMMENT '位置编码',
+		`region_name` string COMMENT '位置名称',
+		`regioin_number` string COMMENT '序号',
+		`parent_id` string COMMENT '父级ID',
+		`is_end_node` string COMMENT '是否叶子节点',
+		`node_level` string COMMENT '层级',
+		`org_struct_id` string COMMENT '组织结构代码',
+		`region_charge_id` string COMMENT '区域负责人',
+		`create_user_no` string COMMENT '创建人工号',
+		`create_date_time` string COMMENT '创建日期',
+		`update_user_no` string COMMENT '修改人工号',
+		`update_date_time` string COMMENT '修改日期',
+		`company_id` string COMMENT '公司ID',
+		`i_level` string COMMENT '等级',
+		`status` decimal(1, 0) COMMENT '状态',
+		`longitude` string COMMENT '经度',
+		`dimension` string COMMENT '纬度',
+		`parent_region_no` string COMMENT '父级编码',
+		`node_type` string COMMENT '节点类型',
+		`area_category_id` string COMMENT '电气室区域分类',
+		`ups_host` string COMMENT '为UPS主机区域',
+		`ups_battery` string COMMENT '为UPS电池区域',
+		`dc_screen` string COMMENT '为直流屏区域',
+		`transformer` string COMMENT '变压器',
+		`hvc` string COMMENT '高压柜',
+		`ext_etl_dt` timestamp COMMENT 'ETL时间',
+		`ext_src_sys_id` string COMMENT '源系统'
+	) COMMENT '由设备中心制定编码规则，各事业部分厂导入，存放公司、事业部、生产厂等区域位置信息，包含区域名称、父区域、所属单位等，建立好区域编码后才可在其下建立设备编码' ROW FORMAT SERDE 'org.apache.hadoop.hive.ql.io.orc.OrcSerde' STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.orc.OrcInputFormat' OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat' LOCATION 'hdfs://hacluster/user/hive/warehouse/dwi_eqp.db/dwi_eqp_ma_area' TBLPROPERTIES (
+		'bucketing_version' = '2',
+		'orc.compress' = 'ZLIB',
+		'transient_lastDdlTime' = '1710139222'
+	)

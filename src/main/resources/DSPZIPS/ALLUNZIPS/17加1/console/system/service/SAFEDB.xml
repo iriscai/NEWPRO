@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>SAFEDB</serviceSystemName>
+		<serviceSystemDesc>智慧运营安全数据库</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>SAFEDB_EnergyDangerousOperationDetailQuery</protocol>
+						<protocol>SAFEDB_EnergyDangerousOperationSumQuery</protocol>
+						<protocol>SAFEDB_ZhyySafZbDangerousOpnQuery</protocol>
+						<protocol>SAFEDB_ZhyySafZbKeyWorkAndOthersQuery</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>EnergyDangerousOperationDetailQuery</serivcename>
+			<protocol>SAFEDB_EnergyDangerousOperationDetailQuery</protocol>
+			</service>
+						<service>
+			<serivcename>EnergyDangerousOperationSumQuery</serivcename>
+			<protocol>SAFEDB_EnergyDangerousOperationSumQuery</protocol>
+			</service>
+						<service>
+			<serivcename>ZhyySafZbDangerousOpnQuery</serivcename>
+			<protocol>SAFEDB_ZhyySafZbDangerousOpnQuery</protocol>
+			</service>
+						<service>
+			<serivcename>ZhyySafZbKeyWorkAndOthersQuery</serivcename>
+			<protocol>SAFEDB_ZhyySafZbKeyWorkAndOthersQuery</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

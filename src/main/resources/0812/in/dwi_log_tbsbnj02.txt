@@ -1,0 +1,48 @@
+CREATE TABLE
+	`dwi_log_tbsbnj02` (
+		`compid` string,
+		`displistno` string,
+		`orderno` string,
+		`orderitem` string,
+		`plandeliqty` double,
+		`realdeliqty` double,
+		`plandeliwet` double,
+		`realdeliwet` double,
+		`cardeliqty` double,
+		`cardeliwet` double,
+		`unitprice` double,
+		`transunitprice` double,
+		`prodamt` double,
+		`transamt` double,
+		`planamt` double,
+		`realamt` double,
+		`lastshippdate` string,
+		`uptempno` string,
+		`uptdate` string,
+		`status` string,
+		`orginitem` string,
+		`pricever` string,
+		`otherprice` double,
+		`otherpricex` double,
+		`addpricereasonx` string,
+		`rateprice` double,
+		`rateamt` double,
+		`transprice` double,
+		`djprice` double,
+		`stockprice` double,
+		`isfd` string,
+		`sizetype` string,
+		`ext_etl_dt` string,
+		`ext_src_sys_id` string
+	) COMMENT '发货通知单项次档' ROW FORMAT SERDE 'org.apache.hadoop.hive.ql.io.orc.OrcSerde'
+WITH
+	SERDEPROPERTIES (
+		'path' = 'hdfs://hacluster/user/hive/warehouse/dwi_log.db/dwi_log_tbsbnj02'
+	) STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.orc.OrcInputFormat' OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat' LOCATION 'hdfs://hacluster/user/hive/warehouse/dwi_log.db/dwi_log_tbsbnj02' TBLPROPERTIES (
+		'bucketing_version' = '2',
+		'spark.sql.create.version' = '3.1.1-h0.cbu.mrs.320.r33',
+		'spark.sql.sources.provider' = 'orc',
+		'spark.sql.sources.schema.numParts' = '1',
+		'spark.sql.sources.schema.part.0' = '{"type":"struct","fields":[{"name":"compid","type":"string","nullable":true,"metadata":{}},{"name":"displistno","type":"string","nullable":true,"metadata":{}},{"name":"orderno","type":"string","nullable":true,"metadata":{}},{"name":"orderitem","type":"string","nullable":true,"metadata":{}},{"name":"plandeliqty","type":"double","nullable":true,"metadata":{}},{"name":"realdeliqty","type":"double","nullable":true,"metadata":{}},{"name":"plandeliwet","type":"double","nullable":true,"metadata":{}},{"name":"realdeliwet","type":"double","nullable":true,"metadata":{}},{"name":"cardeliqty","type":"double","nullable":true,"metadata":{}},{"name":"cardeliwet","type":"double","nullable":true,"metadata":{}},{"name":"unitprice","type":"double","nullable":true,"metadata":{}},{"name":"transunitprice","type":"double","nullable":true,"metadata":{}},{"name":"prodamt","type":"double","nullable":true,"metadata":{}},{"name":"transamt","type":"double","nullable":true,"metadata":{}},{"name":"planamt","type":"double","nullable":true,"metadata":{}},{"name":"realamt","type":"double","nullable":true,"metadata":{}},{"name":"lastshippdate","type":"string","nullable":true,"metadata":{}},{"name":"uptempno","type":"string","nullable":true,"metadata":{}},{"name":"uptdate","type":"string","nullable":true,"metadata":{}},{"name":"status","type":"string","nullable":true,"metadata":{}},{"name":"orginitem","type":"string","nullable":true,"metadata":{}},{"name":"pricever","type":"string","nullable":true,"metadata":{}},{"name":"otherprice","type":"double","nullable":true,"metadata":{}},{"name":"otherpricex","type":"double","nullable":true,"metadata":{}},{"name":"addpricereasonx","type":"string","nullable":true,"metadata":{}},{"name":"rateprice","type":"double","nullable":true,"metadata":{}},{"name":"rateamt","type":"double","nullable":true,"metadata":{}},{"name":"transprice","type":"double","nullable":true,"metadata":{}},{"name":"djprice","type":"double","nullable":true,"metadata":{}},{"name":"stockprice","type":"double","nullable":true,"metadata":{}},{"name":"isfd","type":"string","nullable":true,"metadata":{}},{"name":"sizetype","type":"string","nullable":true,"metadata":{}},{"name":"ext_etl_dt","type":"string","nullable":true,"metadata":{}},{"name":"ext_src_sys_id","type":"string","nullable":true,"metadata":{}}]}',
+		'transient_lastDdlTime' = '1684142419'
+	)

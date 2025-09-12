@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>XZLSDK</serviceSystemName>
+		<serviceSystemDesc>鑫智链交易平台SDK</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>XZLSDK_ApplyDecryQRCode</protocol>
+						<protocol>XZLSDK_ApplyEncryQRCode</protocol>
+						<protocol>XZLSDK_Assurance</protocol>
+						<protocol>XZLSDK_Assurancee</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>ApplyDecryQRCode</serivcename>
+			<protocol>XZLSDK_ApplyDecryQRCode</protocol>
+			</service>
+						<service>
+			<serivcename>ApplyEncryQRCode</serivcename>
+			<protocol>XZLSDK_ApplyEncryQRCode</protocol>
+			</service>
+						<service>
+			<serivcename>Assurance</serivcename>
+			<protocol>XZLSDK_Assurance</protocol>
+			</service>
+						<service>
+			<serivcename>Assurancee</serivcename>
+			<protocol>XZLSDK_Assurancee</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>JLDB</serviceSystemName>
+		<serviceSystemDesc>计量数据库</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>JLDB_HdgcDailyPro12IronDataQuery</protocol>
+						<protocol>JLDB_JlDbElgCarDataQuery</protocol>
+						<protocol>JLDB_PmStraprealTimeQuery</protocol>
+						<protocol>JLDB_ZhyyJlGetPdcRateYearQuery</protocol>
+						<protocol>JLDB_ZhyyPdcQuery</protocol>
+						<protocol>JLDB_ZhyyProDailySiftingQuaTrendQuery</protocol>
+						<protocol>JLDB_ZhyyProDailySiftingQuaV2Query</protocol>
+						<protocol>JLDB_ZhyyProPelletizingPantOutputQuery</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>HdgcDailyPro12IronDataQuery</serivcename>
+			<protocol>JLDB_HdgcDailyPro12IronDataQuery</protocol>
+			</service>
+						<service>
+			<serivcename>JlDbElgCarDataQuery</serivcename>
+			<protocol>JLDB_JlDbElgCarDataQuery</protocol>
+			</service>
+						<service>
+			<serivcename>PmStraprealTimeQuery</serivcename>
+			<protocol>JLDB_PmStraprealTimeQuery</protocol>
+			</service>
+						<service>
+			<serivcename>ZhyyJlGetPdcRateYearQuery</serivcename>
+			<protocol>JLDB_ZhyyJlGetPdcRateYearQuery</protocol>
+			</service>
+						<service>
+			<serivcename>ZhyyPdcQuery</serivcename>
+			<protocol>JLDB_ZhyyPdcQuery</protocol>
+			</service>
+						<service>
+			<serivcename>ZhyyProDailySiftingQuaTrendQuery</serivcename>
+			<protocol>JLDB_ZhyyProDailySiftingQuaTrendQuery</protocol>
+			</service>
+						<service>
+			<serivcename>ZhyyProDailySiftingQuaV2Query</serivcename>
+			<protocol>JLDB_ZhyyProDailySiftingQuaV2Query</protocol>
+			</service>
+						<service>
+			<serivcename>ZhyyProPelletizingPantOutputQuery</serivcename>
+			<protocol>JLDB_ZhyyProPelletizingPantOutputQuery</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

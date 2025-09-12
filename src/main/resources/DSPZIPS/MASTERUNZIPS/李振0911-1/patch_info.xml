@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project id="NGESB">
+    <buildInfo>
+        <version>build_20250909_01</version>
+        <compileDate>2025-9-9 17:43:58</compileDate>
+        <compileUser>Administrator</compileUser>
+        <buildDate>2025-9-9 17:43:58</buildDate>
+        <buildUser>Administrator</buildUser>
+    </buildInfo>
+    <components>
+        <component type="business">
+            <category id="XCYDHRXDT" path="/XCYDHRXDT">
+                <item id="SmartParkHaiKangEventBlackSearch" location="2" path="\dev\services\business\XCYDHRXDT\SmartParkHaiKangEventBlackSearch.biz"/>
+            </category>
+        </component>
+        <component type="protocol_client">
+            <category id="NGESB" path="/DEFAULT">
+                <item id="XCYDHRXT_SmartParkHaiKangEventBlackSearch" location="2" path="\dev\protocol\client\XCYDHRXT_SmartParkHaiKangEventBlackSearch.HTTPServiceConnector"/>
+            </category>
+        </component>
+    </components>
+    <resources>
+        <resource path="\SmartBranch.brc"/>
+        <resource path="\SmartBranch.cat"/>
+        <resource path="\host.properties"/>
+        <resource path="\resources\configs\in_conf\protocol\protocolMapping.xml"/>
+        <resource path="\resources\configs\in_conf\serviceMgt\contribution.xml"/>
+        <resource path="\resources\configs\out_conf\protocol\protocolMapping.xml"/>
+        <resource path="\resources\configs\out_conf\serviceMgt\contribution.xml"/>
+        <resource path="\resources\relationship\relation.xml"/>
+    </resources>
+</project>

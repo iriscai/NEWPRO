@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>ICENTER</serviceSystemName>
+		<serviceSystemDesc>智慧中心看板</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>ICENTER_GetUserInfoByPmCode</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>IcenterGetUserNoByPmCode</serivcename>
+			<protocol>ICENTER_GetUserInfoByPmCode</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

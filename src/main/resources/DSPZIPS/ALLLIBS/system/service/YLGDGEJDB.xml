@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>YLGDGEJDB</serviceSystemName>
+		<serviceSystemDesc>一炼钢倒罐二级数据库</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>YLGDGEJDB_ZhyyTdYlgdgQuery</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>ZhyyTdYlgdgQuery</serivcename>
+			<protocol>YLGDGEJDB_ZhyyTdYlgdgQuery</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<relations> 
+  <relation interfaceid="NISCOSMS" isStand="N" interfacetype="1" sysid="NISCOSMS" serviceid="MsgSend"/>  
+  <relation interfaceid="NISCOSMS" isStand="N" interfacetype="1" sysid="NISCOSMS" serviceid="MsgSendNew"/>  
+  <relation interfaceid="OA" isStand="N" interfacetype="0" sysid="OA" serviceid="MsgSendNew"/> 
+</relations>

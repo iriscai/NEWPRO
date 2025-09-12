@@ -1,0 +1,3209 @@
+-- File: dwr_eqp_ma_area_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_ma_area_jc_f
+--**描述：设备区域位置表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_ma_area_jc_f( 
+   region_no   VARCHAR(20) ,
+   i_level   VARCHAR(20) ,
+   ups_host   VARCHAR(500) ,
+   node_level   VARCHAR(10) ,
+   regioin_number   VARCHAR(10) ,
+   ext_src_sys_id   VARCHAR(20) ,
+   transformer   VARCHAR(500) ,
+   dc_screen   VARCHAR(500) ,
+   create_date_time   VARCHAR(20) ,
+   node_type   VARCHAR(10) ,
+   hvc   VARCHAR(500) ,
+   parent_region_no   VARCHAR(20) ,
+   region_name   VARCHAR(100) ,
+   id   VARCHAR(20)  NOT NULL,
+   is_end_node   VARCHAR(2) ,
+   dimension   VARCHAR(100) ,
+   update_date_time   VARCHAR(20) ,
+   create_user_no   VARCHAR(64) ,
+   longitude   VARCHAR(100) ,
+   company_id   VARCHAR(64) ,
+   ext_etl_dt   TIMESTAMP ,
+   org_struct_id   VARCHAR(10) ,
+   region_charge_id   VARCHAR(10) ,
+   ups_battery   VARCHAR(500) ,
+   update_user_no   VARCHAR(64) ,
+   parent_id   VARCHAR(20) ,
+   status   DECIMAL(32,6) ,
+   area_category_id   VARCHAR(500) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_ma_area_jc_f IS '设备区域位置表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_area_jc_f.region_no IS '位置编码';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_area_jc_f.i_level IS '等级';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_area_jc_f.ups_host IS '为UPS主机区域';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_area_jc_f.node_level IS '层级';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_area_jc_f.regioin_number IS '序号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_area_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_area_jc_f.transformer IS '变压器';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_area_jc_f.dc_screen IS '为直流屏区域';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_area_jc_f.create_date_time IS '创建日期';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_area_jc_f.node_type IS '节点类型';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_area_jc_f.hvc IS '高压柜';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_area_jc_f.parent_region_no IS '父级编码';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_area_jc_f.region_name IS '位置名称';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_area_jc_f.id IS '主键';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_area_jc_f.is_end_node IS '是否叶子节点';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_area_jc_f.dimension IS '纬度';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_area_jc_f.update_date_time IS '修改日期';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_area_jc_f.create_user_no IS '创建人工号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_area_jc_f.longitude IS '经度';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_area_jc_f.company_id IS '公司ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_area_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_area_jc_f.org_struct_id IS '组织结构代码';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_area_jc_f.region_charge_id IS '区域负责人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_area_jc_f.ups_battery IS '为UPS电池区域';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_area_jc_f.update_user_no IS '修改人工号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_area_jc_f.parent_id IS '父级ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_area_jc_f.status IS '状态';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_area_jc_f.area_category_id IS '电气室区域分类';
+
+-- ------------------------
+
+-- File: dwr_eqp_ma_eq_check_repair_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_ma_eq_check_repair_jc_f
+--**描述：建(构)筑物检测记录表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_ma_eq_check_repair_jc_f( 
+   i_level   VARCHAR(500) ,
+   check_parts   VARCHAR(500) ,
+   company_id   VARCHAR(500) ,
+   check_reason   VARCHAR(500) ,
+   ext_etl_dt   TIMESTAMP ,
+   check_repair_beg_time   VARCHAR(500) ,
+   ext_src_sys_id   VARCHAR(500) ,
+   eq_id   VARCHAR(500) ,
+   check_repair_end_time   VARCHAR(500) ,
+   create_date_time   VARCHAR(500) ,
+   update_user_no   VARCHAR(500) ,
+   contract_cost   VARCHAR(500) ,
+   check_contract   VARCHAR(500) ,
+   id   VARCHAR(500)  NOT NULL,
+   update_date_time   VARCHAR(500) ,
+   create_user_no   VARCHAR(500) ,
+   status   DECIMAL(32,6) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_ma_eq_check_repair_jc_f IS '建(构)筑物检测记录表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_check_repair_jc_f.i_level IS '排序';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_check_repair_jc_f.check_parts IS '检修部位';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_check_repair_jc_f.company_id IS '公司别';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_check_repair_jc_f.check_reason IS '检测原因';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_check_repair_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_check_repair_jc_f.check_repair_beg_time IS '开始时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_check_repair_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_check_repair_jc_f.eq_id IS '设备ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_check_repair_jc_f.check_repair_end_time IS '结束时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_check_repair_jc_f.create_date_time IS '创建日期';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_check_repair_jc_f.update_user_no IS '修改人工号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_check_repair_jc_f.contract_cost IS '合同费用';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_check_repair_jc_f.check_contract IS '检测合同号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_check_repair_jc_f.id IS '主键';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_check_repair_jc_f.update_date_time IS '修改日期';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_check_repair_jc_f.create_user_no IS '创建人工号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_check_repair_jc_f.status IS '状态';
+
+-- ------------------------
+
+-- File: dwr_eqp_ma_eq_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_ma_eq_jc_f
+--**描述：设备基础资料表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_ma_eq_jc_f( 
+   eq_category_id   VARCHAR(12) ,
+   i_level   VARCHAR(20) ,
+   bussiness_id   VARCHAR(30) ,
+   ext_src_sys_id   VARCHAR(500) ,
+   extras_file   VARCHAR(200) ,
+   area_id   VARCHAR(30) ,
+   node_type   VARCHAR(10) ,
+   factory_no   VARCHAR(20) ,
+   eq_non_production_line   VARCHAR(500) ,
+   parent_region_no   VARCHAR(30) ,
+   id   VARCHAR(20)  NOT NULL,
+   work_status   VARCHAR(10) ,
+   create_user_no   VARCHAR(64) ,
+   maintain_user_id   VARCHAR(50) ,
+   use_dept_id   VARCHAR(50) ,
+   ext_etl_dt   TIMESTAMP ,
+   eq_major   VARCHAR(1) ,
+   eq_name   VARCHAR(300) ,
+   eq_belong_level   VARCHAR(10) ,
+   land_num   VARCHAR(500) ,
+   area_no   VARCHAR(20) ,
+   unit   VARCHAR(500) ,
+   cost_center   VARCHAR(20) ,
+   parent_id   VARCHAR(20) ,
+   producer   VARCHAR(300) ,
+   estate_num   VARCHAR(500) ,
+   building_level   VARCHAR(500) ,
+   status   DECIMAL(32,6) ,
+   eq_facility   VARCHAR(500) ,
+   node_level   VARCHAR(10) ,
+   approve_status   VARCHAR(10) ,
+   maintain_dept_id   VARCHAR(50) ,
+   spec_type   VARCHAR(2) ,
+   create_date_time   VARCHAR(20) ,
+   type_spec   VARCHAR(2000) ,
+   design_unit   VARCHAR(300) ,
+   update_date_time   VARCHAR(20) ,
+   structural_style   VARCHAR(500) ,
+   quantity   VARCHAR(500) ,
+   company_id   VARCHAR(64) ,
+   eq_import_level   VARCHAR(2) ,
+   building_classific   VARCHAR(500) ,
+   eq_no   VARCHAR(20) ,
+   own_dept_id   VARCHAR(50) ,
+   factory_id   VARCHAR(30) ,
+   update_user_no   VARCHAR(64) ,
+   technical_para   VARCHAR(2000) ,
+   object_no   VARCHAR(20) ,
+   bussiness_no   VARCHAR(20) ,
+   use_date   VARCHAR(30) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_ma_eq_jc_f IS '设备基础资料表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.eq_category_id IS '设备类别ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.i_level IS '等级';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.bussiness_id IS '事业部ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.extras_file IS '附件';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.area_id IS '区域Id';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.node_type IS '节点类型';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.factory_no IS '生产厂编号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.eq_non_production_line IS '非生产线设备分类';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.parent_region_no IS '所属上一层级No';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.id IS '主键';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.work_status IS '设备运行状态';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.create_user_no IS '创建人工号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.maintain_user_id IS '维护人员';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.use_dept_id IS '使用单位';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.eq_major IS '设备专业';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.eq_name IS '名称';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.eq_belong_level IS '设备所属层级';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.land_num IS '土地证号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.area_no IS '区域编号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.unit IS '单位';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.cost_center IS '成本中心';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.parent_id IS '所属上一层级ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.producer IS '制造厂商';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.estate_num IS '不动产证号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.building_level IS '建筑物级别';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.status IS '状态';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.eq_facility IS '设备设施分类';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.node_level IS '导入excel错误信息';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.approve_status IS '设备审批状态';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.maintain_dept_id IS '维护单位';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.spec_type IS '设备专项类型';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.create_date_time IS '创建日期';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.type_spec IS '规格型号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.design_unit IS '设计单位';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.update_date_time IS '修改日期';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.structural_style IS '结构形式';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.quantity IS '数量';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.company_id IS '公司ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.eq_import_level IS '设备级别';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.building_classific IS '建筑物分类';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.eq_no IS '编号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.own_dept_id IS '产权单位';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.factory_id IS '生产厂ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.update_user_no IS '修改人工号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.technical_para IS '技术参数';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.object_no IS '实物编码';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.bussiness_no IS '事业部编号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_jc_f.use_date IS '投用日期';
+
+-- ------------------------
+
+-- File: dwr_eqp_ma_eq_mtrl_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_ma_eq_mtrl_jc_f
+--**描述：设备备件料包表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_ma_eq_mtrl_jc_f( 
+   mtrl_have_num   VARCHAR(20) ,
+   i_level   VARCHAR(20) ,
+   company_id   VARCHAR(64) ,
+   ext_etl_dt   TIMESTAMP ,
+   ext_src_sys_id   VARCHAR(20) ,
+   memo   VARCHAR(20) ,
+   eq_id   VARCHAR(20) ,
+   mtrl_id   VARCHAR(20) ,
+   create_date_time   VARCHAR(20) ,
+   update_user_no   VARCHAR(64) ,
+   id   VARCHAR(20)  NOT NULL,
+   update_date_time   VARCHAR(20) ,
+   create_user_no   VARCHAR(64) ,
+   status   DECIMAL(32,6) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_ma_eq_mtrl_jc_f IS '设备备件料包表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_mtrl_jc_f.mtrl_have_num IS '设备拥有物料数量';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_mtrl_jc_f.i_level IS '等级';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_mtrl_jc_f.company_id IS '公司ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_mtrl_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_mtrl_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_mtrl_jc_f.memo IS '备用字段';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_mtrl_jc_f.eq_id IS '设备ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_mtrl_jc_f.mtrl_id IS '物料ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_mtrl_jc_f.create_date_time IS '创建时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_mtrl_jc_f.update_user_no IS '修改人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_mtrl_jc_f.id IS '系统索引值';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_mtrl_jc_f.update_date_time IS '修改时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_mtrl_jc_f.create_user_no IS '创建人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_mtrl_jc_f.status IS '状态';
+
+-- ------------------------
+
+-- File: dwr_eqp_ma_eq_recondition_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_ma_eq_recondition_jc_f
+--**描述：建(构)筑物维修记录表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_ma_eq_recondition_jc_f( 
+   contract_no   VARCHAR(500) ,
+   i_level   VARCHAR(500) ,
+   company_id   VARCHAR(500) ,
+   ext_etl_dt   TIMESTAMP ,
+   check_repair_beg_time   VARCHAR(500) ,
+   ext_src_sys_id   VARCHAR(500) ,
+   recondition_plan_result   VARCHAR(500) ,
+   eq_id   VARCHAR(500) ,
+   plan_name   VARCHAR(500) ,
+   check_repair_end_time   VARCHAR(500) ,
+   create_date_time   VARCHAR(500) ,
+   update_user_no   VARCHAR(500) ,
+   contract_cost   VARCHAR(500) ,
+   recondition_area   VARCHAR(500) ,
+   plan_no   VARCHAR(500) ,
+   recondition_parts   VARCHAR(500) ,
+   recondition_reason   VARCHAR(500) ,
+   id   VARCHAR(500)  NOT NULL,
+   update_date_time   VARCHAR(500) ,
+   create_user_no   VARCHAR(500) ,
+   status   DECIMAL(32,6) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_ma_eq_recondition_jc_f IS '建(构)筑物维修记录表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_recondition_jc_f.contract_no IS '立项号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_recondition_jc_f.i_level IS '等级';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_recondition_jc_f.company_id IS '公司ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_recondition_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_recondition_jc_f.check_repair_beg_time IS '开始时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_recondition_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_recondition_jc_f.recondition_plan_result IS '维修方案及效果';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_recondition_jc_f.eq_id IS '设备ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_recondition_jc_f.plan_name IS '项目名称';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_recondition_jc_f.check_repair_end_time IS '结束时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_recondition_jc_f.create_date_time IS '创建日期';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_recondition_jc_f.update_user_no IS '修改人工号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_recondition_jc_f.contract_cost IS '立项费用';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_recondition_jc_f.recondition_area IS '维修面积';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_recondition_jc_f.plan_no IS '项目计划号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_recondition_jc_f.recondition_parts IS '维修部位';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_recondition_jc_f.recondition_reason IS '维修理由';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_recondition_jc_f.id IS '主键';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_recondition_jc_f.update_date_time IS '修改日期';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_recondition_jc_f.create_user_no IS '创建人工号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_eq_recondition_jc_f.status IS '状态';
+
+-- ------------------------
+
+-- File: dwr_eqp_ma_picture_database_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_ma_picture_database_jc_f
+--**描述：设备图纸库表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_ma_picture_database_jc_f( 
+   relative_id   VARCHAR(50) ,
+   file_url   VARCHAR(1000) ,
+   str_path   VARCHAR(200) ,
+   i_level   VARCHAR(20) ,
+   company_id   VARCHAR(64) ,
+   ext_etl_dt   TIMESTAMP ,
+   file_name   VARCHAR(200) ,
+   ext_src_sys_id   VARCHAR(20) ,
+   relative_type   VARCHAR(100) ,
+   doc_type   VARCHAR(50) ,
+   file_size   VARCHAR(1000) ,
+   eq_no   VARCHAR(14) ,
+   create_date_time   VARCHAR(20) ,
+   update_user_no   VARCHAR(64) ,
+   file_ext   VARCHAR(20) ,
+   str_desc   VARCHAR(2000) ,
+   preview_url   VARCHAR(1000) ,
+   id   VARCHAR(32)  NOT NULL,
+   update_date_time   VARCHAR(20) ,
+   create_user_no   VARCHAR(64) ,
+   status   DECIMAL(32,6) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_ma_picture_database_jc_f IS '设备图纸库表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_picture_database_jc_f.relative_id IS '关联ID(图纸关联ID即为EQID)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_picture_database_jc_f.file_url IS '文件路径';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_picture_database_jc_f.str_path IS '路径';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_picture_database_jc_f.i_level IS '等级';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_picture_database_jc_f.company_id IS '公司ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_picture_database_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_picture_database_jc_f.file_name IS '文件名称';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_picture_database_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_picture_database_jc_f.relative_type IS '上传类型';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_picture_database_jc_f.doc_type IS '文件类型';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_picture_database_jc_f.file_size IS '文件大小';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_picture_database_jc_f.eq_no IS '设备-部件-零件编号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_picture_database_jc_f.create_date_time IS '创建时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_picture_database_jc_f.update_user_no IS '修改人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_picture_database_jc_f.file_ext IS '文件类型后缀';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_picture_database_jc_f.str_desc IS '描述_备注';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_picture_database_jc_f.preview_url IS '预览路径';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_picture_database_jc_f.id IS '主键';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_picture_database_jc_f.update_date_time IS '修改时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_picture_database_jc_f.create_user_no IS '创建人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_ma_picture_database_jc_f.status IS '状态';
+
+-- ------------------------
+
+-- File: dwr_eqp_mb_rep_plan_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_mb_rep_plan_jc_f
+--**描述：检修计划表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_mb_rep_plan_jc_f( 
+   plan_type   VARCHAR(500) ,
+   i_level   VARCHAR(500) ,
+   pro_cost   DECIMAL(32,6) ,
+   plan_stus   VARCHAR(500) ,
+   ext_src_sys_id   VARCHAR(500) ,
+   approve_status   VARCHAR(500) ,
+   other_cost   DECIMAL(32,6) ,
+   line_id   VARCHAR(500) ,
+   create_date_time   VARCHAR(500) ,
+   rep_plan_no   VARCHAR(500) ,
+   flow_id   VARCHAR(500) ,
+   id   VARCHAR(500)  NOT NULL,
+   overall_leader   VARCHAR(500) ,
+   real_beg_time   VARCHAR(500) ,
+   update_date_time   VARCHAR(500) ,
+   labor_cost   DECIMAL(32,6) ,
+   create_user_no   VARCHAR(500) ,
+   material_cost   DECIMAL(32,6) ,
+   plan_beg_time   VARCHAR(500) ,
+   real_end_time   VARCHAR(500) ,
+   company_id   VARCHAR(500) ,
+   ext_etl_dt   TIMESTAMP ,
+   plan_desc   VARCHAR(500) ,
+   plan_name   VARCHAR(500) ,
+   line_start_time   VARCHAR(500) ,
+   factory_id   VARCHAR(500) ,
+   update_user_no   VARCHAR(500) ,
+   pre_plan_id   VARCHAR(500) ,
+   contract_cost   DECIMAL(32,6) ,
+   summary_content   VARCHAR(500) ,
+   summary_time   VARCHAR(500) ,
+   approve_time   VARCHAR(500) ,
+   approver_list   VARCHAR(500) ,
+   summary_user   VARCHAR(500) ,
+   spare_cost   DECIMAL(32,6) ,
+   line_end_time   VARCHAR(500) ,
+   plan_end_time   VARCHAR(500) ,
+   status   DECIMAL(32,6) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_mb_rep_plan_jc_f IS '检修计划表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.plan_type IS '计划类型';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.i_level IS '排序';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.pro_cost IS '施工总费用(新增)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.plan_stus IS '计划状态';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.approve_status IS '审批状态';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.other_cost IS '其他总费用(新增)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.line_id IS '产线';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.create_date_time IS '创建时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.rep_plan_no IS '检修计划编号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.flow_id IS '审批流id';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.id IS '系统索引值';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.overall_leader IS '检修整体负责人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.real_beg_time IS '实际开始时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.update_date_time IS '修改时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.labor_cost IS '外委人工费(新增)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.create_user_no IS '创建人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.material_cost IS '材料总费用(新增)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.plan_beg_time IS '预计开始时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.real_end_time IS '实际结束时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.company_id IS '公司别';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.plan_desc IS '计划说明';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.plan_name IS '计划名称';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.line_start_time IS '产线开机时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.factory_id IS '生产厂';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.update_user_no IS '修改人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.pre_plan_id IS '检修预排计划id';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.contract_cost IS '外委合同价(新增)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.summary_content IS '总结内容';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.summary_time IS '总结时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.approve_time IS '审批时间(计划审批后或计划变更审批后)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.approver_list IS '审批群组';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.summary_user IS '总结人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.spare_cost IS '备件总费用(新增)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.line_end_time IS '产线停机时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.plan_end_time IS '预计结束时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_rep_plan_jc_f.status IS '状态';
+
+-- ------------------------
+
+-- File: dwr_eqp_mb_task_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_mb_task_jc_f
+--**描述：检修工单记录表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_mb_task_jc_f( 
+   reason   VARCHAR(500) ,
+   eq_nos   VARCHAR(500) ,
+   i_level   VARCHAR(500) ,
+   work_shop_id   VARCHAR(500) ,
+   ext_src_sys_id   VARCHAR(500) ,
+   real_user_num   VARCHAR(500) ,
+   is_over_time_unfinish   VARCHAR(500) ,
+   chk_time_business   VARCHAR(500) ,
+   apply_date   VARCHAR(500) ,
+   chk_desc   VARCHAR(500) ,
+   lock_node   VARCHAR(500) ,
+   is_schedule   VARCHAR(500) ,
+   id   VARCHAR(500)  NOT NULL,
+   resp_dept_id   VARCHAR(500) ,
+   chk_stus   VARCHAR(500) ,
+   is_pass   VARCHAR(500) ,
+   task_beg_time   VARCHAR(500) ,
+   create_user_no   VARCHAR(500) ,
+   sop_ids   VARCHAR(500) ,
+   time_length   VARCHAR(500) ,
+   chk_user_id_business_back   VARCHAR(500) ,
+   chk_user_id_company_back   VARCHAR(500) ,
+   is_important   VARCHAR(500) ,
+   chk_time_company   VARCHAR(500) ,
+   ext_etl_dt   TIMESTAMP ,
+   time_length_pre   VARCHAR(500) ,
+   eq_major   VARCHAR(500) ,
+   sop_id   VARCHAR(500) ,
+   major_danger   VARCHAR(500) ,
+   object_id   VARCHAR(500) ,
+   finish_time   VARCHAR(500) ,
+   rep_plan_id   VARCHAR(500) ,
+   task_pre_end_time   VARCHAR(500) ,
+   resp_user_id   VARCHAR(500) ,
+   finish_user_id   VARCHAR(500) ,
+   chk_user_id_business   VARCHAR(500) ,
+   chk_desc_business   VARCHAR(500) ,
+   apply_user_id   VARCHAR(500) ,
+   back_reason   VARCHAR(500) ,
+   order_id   VARCHAR(500) ,
+   confirm_user_no   VARCHAR(500) ,
+   status   DECIMAL(32,6) ,
+   job_cont   VARCHAR(500) ,
+   maint_dept_id   VARCHAR(500) ,
+   chk_level   VARCHAR(500) ,
+   is_consume   VARCHAR(500) ,
+   remark   VARCHAR(500) ,
+   line_id   VARCHAR(500) ,
+   chk_back_reason   VARCHAR(500) ,
+   create_date_time   VARCHAR(500) ,
+   danger_level   VARCHAR(500) ,
+   chk_user_id_back   VARCHAR(500) ,
+   chk_user_id   VARCHAR(500) ,
+   datum_ids   VARCHAR(500) ,
+   chk_user_id_company   VARCHAR(500) ,
+   update_date_time   VARCHAR(500) ,
+   safe_user_id   VARCHAR(500) ,
+   chk_desc_company   VARCHAR(500) ,
+   chk_time   VARCHAR(500) ,
+   maint_dept_out   VARCHAR(500) ,
+   task_no   VARCHAR(500) ,
+   work_date   VARCHAR(500) ,
+   company_id   VARCHAR(500) ,
+   fault   VARCHAR(500) ,
+   maint_user_id   VARCHAR(500) ,
+   finish_desc   VARCHAR(500) ,
+   is_accept   VARCHAR(500) ,
+   major_user_id   VARCHAR(500) ,
+   confirm_time   VARCHAR(500) ,
+   eq_no   VARCHAR(500) ,
+   task_stus   VARCHAR(500) ,
+   update_user_no   VARCHAR(500) ,
+   task_pre_beg_time   VARCHAR(500) ,
+   task_end_time   VARCHAR(500) ,
+   safe_mesu_name   VARCHAR(500) ,
+   major_danger_name   VARCHAR(500) ,
+   is_finish   VARCHAR(500) ,
+   task_type   VARCHAR(500) ,
+   apply_dept_id   VARCHAR(500) ,
+   safe_mesu   VARCHAR(500) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_mb_task_jc_f IS '检修工单记录表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.reason IS '逾期未处理原因';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.eq_nos IS '设备编号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.i_level IS '排序';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.work_shop_id IS '车间id';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.real_user_num IS '实际完工人数';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.is_over_time_unfinish IS '是否逾期未处理';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.chk_time_business IS '验收时间(事业部)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.apply_date IS '报修日期';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.chk_desc IS '验收意见';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.lock_node IS '上锁点';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.is_schedule IS '是否属于排程';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.id IS '系统索引值';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.resp_dept_id IS '负责单位(检修单位)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.chk_stus IS '验收状态(1第一步验收_2第二步验收_3第三步验收)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.is_pass IS '是否合格';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.task_beg_time IS '实际开始时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.create_user_no IS '创建人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.sop_ids IS '关联sop的ID字符串集(以分号分割)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.time_length IS '检修时长';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.chk_user_id_business_back IS '验收人员(事业部)(修改前)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.chk_user_id_company_back IS '验收人员(制造部)(修改前)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.is_important IS '是否重点项目';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.chk_time_company IS '验收时间(制造部)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.time_length_pre IS '预计检修时长';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.eq_major IS '专业';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.sop_id IS 'SOP';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.major_danger IS '主要危险';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.object_id IS '实物编码';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.finish_time IS '完工时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.rep_plan_id IS '检修计划id';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.task_pre_end_time IS '预计结束时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.resp_user_id IS '负责人员(检修单位)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.finish_user_id IS '完工人员';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.chk_user_id_business IS '验收人员(事业部)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.chk_desc_business IS '验收意见(事业部)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.apply_user_id IS '报修人员';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.back_reason IS '退回原因';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.order_id IS '出库id';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.confirm_user_no IS '确认人员';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.status IS '状态';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.job_cont IS '工作内容';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.maint_dept_id IS '检修单位';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.chk_level IS '验收级别(1一级验收_2二级验收_3三级验收)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.is_consume IS '是否备件消耗';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.remark IS '备注';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.line_id IS '产线id';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.chk_back_reason IS '验收退回原因(新增字段)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.create_date_time IS '创建时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.danger_level IS '危险作业等级';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.chk_user_id_back IS '验收人员(修改前)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.chk_user_id IS '验收人员';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.datum_ids IS '维修基准id';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.chk_user_id_company IS '验收人员(制造部)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.update_date_time IS '修改时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.safe_user_id IS '安全或监护人员';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.chk_desc_company IS '验收意见(制造部)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.chk_time IS '验收时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.maint_dept_out IS '协力单位';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.task_no IS '工单编号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.work_date IS '工作日期';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.company_id IS '公司别';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.fault IS '故障现象';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.maint_user_id IS '检修单位负责人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.finish_desc IS '完工意见';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.is_accept IS '是否接办';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.major_user_id IS '专业或技术人员';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.confirm_time IS '确认时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.eq_no IS '设备编码';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.task_stus IS '工单状态';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.update_user_no IS '修改人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.task_pre_beg_time IS '预计开始时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.task_end_time IS '实际结束时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.safe_mesu_name IS '安全措施(换行并加序号)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.major_danger_name IS '主要危险名称(换行并加序号)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.is_finish IS '是否完工';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.task_type IS '工单类型';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.apply_dept_id IS '报修单位';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_jc_f.safe_mesu IS '安全措施';
+
+-- ------------------------
+
+-- File: dwr_eqp_mb_task_mtrl_consume_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_mb_task_mtrl_consume_jc_f
+--**描述：检修工单物料明细消耗表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_mb_task_mtrl_consume_jc_f( 
+   mtrl_qty   DECIMAL(32,6) ,
+   i_level   VARCHAR(500) ,
+   batch_no   VARCHAR(500) ,
+   total_price   DECIMAL(32,6) ,
+   company_id   VARCHAR(500) ,
+   ext_etl_dt   TIMESTAMP ,
+   ext_src_sys_id   VARCHAR(500) ,
+   remark   VARCHAR(500) ,
+   mtrl_id   VARCHAR(500) ,
+   storage   VARCHAR(500) ,
+   create_date_time   VARCHAR(500) ,
+   update_user_no   VARCHAR(500) ,
+   price   DECIMAL(32,6) ,
+   supplier   VARCHAR(500) ,
+   side_stock_id   VARCHAR(500) ,
+   id   VARCHAR(500)  NOT NULL,
+   order_id   VARCHAR(500) ,
+   update_date_time   VARCHAR(500) ,
+   task_mtrl_id   VARCHAR(500) ,
+   create_user_no   VARCHAR(500) ,
+   status   DECIMAL(32,6) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_mb_task_mtrl_consume_jc_f IS '检修工单物料明细消耗表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_consume_jc_f.mtrl_qty IS '消耗的数量';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_consume_jc_f.i_level IS '排序';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_consume_jc_f.batch_no IS '批号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_consume_jc_f.total_price IS '总价';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_consume_jc_f.company_id IS '公司别';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_consume_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_consume_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_consume_jc_f.remark IS '备注';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_consume_jc_f.mtrl_id IS '物料id';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_consume_jc_f.storage IS '出库储位';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_consume_jc_f.create_date_time IS '创建时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_consume_jc_f.update_user_no IS '修改人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_consume_jc_f.price IS '单价';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_consume_jc_f.supplier IS '供应商';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_consume_jc_f.side_stock_id IS '机旁库库存id';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_consume_jc_f.id IS '系统索引值';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_consume_jc_f.order_id IS '出库单号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_consume_jc_f.update_date_time IS '修改时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_consume_jc_f.task_mtrl_id IS '工单物料id';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_consume_jc_f.create_user_no IS '创建人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_consume_jc_f.status IS '状态';
+
+-- ------------------------
+
+-- File: dwr_eqp_mb_task_mtrl_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_mb_task_mtrl_jc_f
+--**描述：检修工单物料表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_mb_task_mtrl_jc_f( 
+   mtrl_qty   DECIMAL(32,6) ,
+   i_level   VARCHAR(500) ,
+   ext_src_sys_id   VARCHAR(500) ,
+   sop_mtrl_id   VARCHAR(500) ,
+   consume_remark   VARCHAR(500) ,
+   task_id   VARCHAR(500) ,
+   remark   VARCHAR(500) ,
+   mtrl_id   VARCHAR(500) ,
+   storage   VARCHAR(500) ,
+   rv_qty   DECIMAL(32,6) ,
+   repair_qty   DECIMAL(32,6) ,
+   create_date_time   VARCHAR(500) ,
+   change_qty   DECIMAL(32,6) ,
+   price   DECIMAL(32,6) ,
+   supplier   VARCHAR(500) ,
+   offline_date   VARCHAR(500) ,
+   is_change   VARCHAR(500) ,
+   id   VARCHAR(500)  NOT NULL,
+   update_date_time   VARCHAR(500) ,
+   keep_qty   DECIMAL(32,6) ,
+   create_user_no   VARCHAR(500) ,
+   batch_no   VARCHAR(500) ,
+   total_price   DECIMAL(32,6) ,
+   company_id   VARCHAR(500) ,
+   ext_etl_dt   TIMESTAMP ,
+   finish_desc   VARCHAR(500) ,
+   on_place   VARCHAR(500) ,
+   off_place   VARCHAR(500) ,
+   eq_no   VARCHAR(500) ,
+   update_user_no   VARCHAR(500) ,
+   out_store_type   VARCHAR(500) ,
+   object_no   VARCHAR(500) ,
+   online_date   VARCHAR(500) ,
+   status   DECIMAL(32,6) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_mb_task_mtrl_jc_f IS '检修工单物料表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_jc_f.mtrl_qty IS '消耗的数量';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_jc_f.i_level IS '排序';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_jc_f.sop_mtrl_id IS '检修作业备件id';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_jc_f.consume_remark IS '消耗异常备注';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_jc_f.task_id IS '工单id';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_jc_f.remark IS '备注';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_jc_f.mtrl_id IS '物料id';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_jc_f.storage IS '出库储位';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_jc_f.rv_qty IS '备件报废数量';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_jc_f.repair_qty IS '备件修理数量';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_jc_f.create_date_time IS '创建时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_jc_f.change_qty IS '备件更换数量';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_jc_f.price IS '单价';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_jc_f.supplier IS '供应商';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_jc_f.offline_date IS '备件下线日期';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_jc_f.is_change IS '是否备件更换';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_jc_f.id IS '系统索引值';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_jc_f.update_date_time IS '修改时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_jc_f.keep_qty IS '备件保养数量';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_jc_f.create_user_no IS '创建人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_jc_f.batch_no IS '批号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_jc_f.total_price IS '总价';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_jc_f.company_id IS '公司别';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_jc_f.finish_desc IS '完工意见';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_jc_f.on_place IS '备件上线位置';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_jc_f.off_place IS '备件下线位置';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_jc_f.eq_no IS '设备编码';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_jc_f.update_user_no IS '修改人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_jc_f.out_store_type IS '出库方式';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_jc_f.object_no IS '实物编码';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_jc_f.online_date IS '备件上线日期';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mb_task_mtrl_jc_f.status IS '状态';
+
+-- ------------------------
+
+-- File: dwr_eqp_mc_delay_code_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_mc_delay_code_jc_f
+--**描述：延误原因代码表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_mc_delay_code_jc_f( 
+   i_level   VARCHAR(16) ,
+   company_id   VARCHAR(40) ,
+   ext_etl_dt   TIMESTAMP ,
+   delay_code   VARCHAR(20) ,
+   ext_src_sys_id   VARCHAR(20) ,
+   factory_ids   VARCHAR(500) ,
+   create_date_time   VARCHAR(20) ,
+   update_user_no   VARCHAR(40) ,
+   delay_name   VARCHAR(50) ,
+   parent_id   VARCHAR(40) ,
+   business_dept_id   VARCHAR(40) ,
+   factory_nos   VARCHAR(500) ,
+   id   VARCHAR(40)  NOT NULL,
+   str_level   VARCHAR(10) ,
+   business_dept_no   VARCHAR(40) ,
+   update_date_time   VARCHAR(20) ,
+   create_user_no   VARCHAR(40) ,
+   status   DECIMAL(32,6) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_mc_delay_code_jc_f IS '延误原因代码表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_code_jc_f.i_level IS '排序';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_code_jc_f.company_id IS '公司别';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_code_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_code_jc_f.delay_code IS '延误专业代码';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_code_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_code_jc_f.factory_ids IS '生产厂IDs';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_code_jc_f.create_date_time IS '创建时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_code_jc_f.update_user_no IS '修改人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_code_jc_f.delay_name IS '延误专业名称';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_code_jc_f.parent_id IS '父级节点';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_code_jc_f.business_dept_id IS '事业部ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_code_jc_f.factory_nos IS '生产厂NOs';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_code_jc_f.id IS '系统索引值';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_code_jc_f.str_level IS '层级';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_code_jc_f.business_dept_no IS '事业部NO';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_code_jc_f.update_date_time IS '修改时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_code_jc_f.create_user_no IS '创建人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_code_jc_f.status IS '状态';
+
+-- ------------------------
+
+-- File: dwr_eqp_mc_delay_record_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_mc_delay_record_jc_f
+--**描述：产线延误记录表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_mc_delay_record_jc_f( 
+   fault_sign_user_no   VARCHAR(40) ,
+   stop_beg_time   VARCHAR(20) ,
+   first_judge_user_no   VARCHAR(40) ,
+   i_level   VARCHAR(16) ,
+   user_stop_beg_time   VARCHAR(20) ,
+   is_plan   VARCHAR(40) ,
+   ext_src_sys_id   VARCHAR(500) ,
+   resp_line_id   VARCHAR(40) ,
+   flow_request_id   VARCHAR(40) ,
+   change_reason   VARCHAR(500) ,
+   fault_sign_date_time   VARCHAR(20) ,
+   id   VARCHAR(40)  NOT NULL,
+   resp_dept_id   VARCHAR(40) ,
+   fault_sign_reason   VARCHAR(500) ,
+   record_stop_type   DECIMAL(32,6) ,
+   create_user_no   VARCHAR(40) ,
+   product_delay_tag   VARCHAR(500) ,
+   line_stop_id   VARCHAR(20) ,
+   ext_etl_dt   TIMESTAMP ,
+   stop_hour   DECIMAL(32,6) ,
+   product_plan_id   VARCHAR(500) ,
+   stop_end_time   VARCHAR(20) ,
+   reject_reason   VARCHAR(500) ,
+   delay_stus   VARCHAR(2) ,
+   rep_plan_id   VARCHAR(40) ,
+   pre_plan_id   VARCHAR(500) ,
+   user_stop_end_time   VARCHAR(20) ,
+   back_reason   VARCHAR(200) ,
+   change_flow_id   VARCHAR(500) ,
+   is_delay   VARCHAR(500) ,
+   status   DECIMAL(32,6) ,
+   eq_id   VARCHAR(40) ,
+   remark   VARCHAR(500) ,
+   effect_level   VARCHAR(500) ,
+   communication_status   VARCHAR(20) ,
+   before_change_stus   VARCHAR(500) ,
+   line_id   VARCHAR(40) ,
+   final_judge_date_time   VARCHAR(20) ,
+   create_date_time   VARCHAR(20) ,
+   score_one   VARCHAR(500) ,
+   delay_no   VARCHAR(20) ,
+   first_judge_date_time   VARCHAR(20) ,
+   back_num   DECIMAL(32,6) ,
+   update_date_time   VARCHAR(20) ,
+   source_record_ids   VARCHAR(500) ,
+   company_id   VARCHAR(40) ,
+   final_reason   VARCHAR(20) ,
+   jh_flow_id   VARCHAR(500) ,
+   record_type   VARCHAR(20) ,
+   factory_id   VARCHAR(40) ,
+   update_user_no   VARCHAR(40) ,
+   delay_product_group   VARCHAR(500) ,
+   final_judge_user_no   VARCHAR(40) ,
+   score_two   VARCHAR(500) ,
+   first_reason   VARCHAR(20) ,
+   report_id   VARCHAR(20) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_mc_delay_record_jc_f IS '产线延误记录表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.fault_sign_user_no IS '误报人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.stop_beg_time IS '停机开始时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.first_judge_user_no IS '初判人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.i_level IS '排序';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.user_stop_beg_time IS '手动开始时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.is_plan IS '是否计划';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.resp_line_id IS '责任产线ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.flow_request_id IS '工作流ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.change_reason IS '变更原因';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.fault_sign_date_time IS '误报时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.id IS '系统索引值';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.resp_dept_id IS '责任部门ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.fault_sign_reason IS '误报原因';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.record_stop_type IS '停机类型(自动_手动)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.create_user_no IS '创建人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.product_delay_tag IS '生产延误标记';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.line_stop_id IS '开停机信号ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.stop_hour IS '停机时长';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.product_plan_id IS '停机申报对应id';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.stop_end_time IS '停机结束时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.reject_reason IS '驳回原因';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.delay_stus IS '延误记录状态';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.rep_plan_id IS '关联检修计划ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.pre_plan_id IS '检修预排id';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.user_stop_end_time IS '手动结束时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.back_reason IS '退回原因';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.change_flow_id IS '变更流程id';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.is_delay IS '是否延误(0停机_1延误)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.status IS '数据状态';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.eq_id IS '设备ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.remark IS '备注';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.effect_level IS '影响等级';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.communication_status IS '通讯状态';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.before_change_stus IS '变更前状态';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.line_id IS '产线ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.final_judge_date_time IS '终判时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.create_date_time IS '创建时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.score_one IS '调度初判分数';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.delay_no IS '延误记录编号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.first_judge_date_time IS '初判时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.back_num IS '退回次数';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.update_date_time IS '更新时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.source_record_ids IS '原始记录ID集';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.company_id IS '公司别';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.final_reason IS '延误终判原因';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.jh_flow_id IS '计划流程id';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.record_type IS '记录类型';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.factory_id IS '生产厂ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.update_user_no IS '更新人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.delay_product_group IS '生产延误归类';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.final_judge_user_no IS '终判人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.score_two IS '专业判定分数';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.first_reason IS '延误初判原因';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_record_jc_f.report_id IS '延误报告ID';
+
+-- ------------------------
+
+-- File: dwr_eqp_mc_delay_reform_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_mc_delay_reform_jc_f
+--**描述：延误整改措施表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_mc_delay_reform_jc_f( 
+   real_finish_time   VARCHAR(20) ,
+   i_level   VARCHAR(16) ,
+   check_user_id   VARCHAR(40) ,
+   company_id   VARCHAR(40) ,
+   ext_etl_dt   TIMESTAMP ,
+   ext_src_sys_id   VARCHAR(20) ,
+   reform_stus   VARCHAR(1) ,
+   flow_request_id   VARCHAR(20) ,
+   pre_finish_time   VARCHAR(20) ,
+   remark   VARCHAR(200) ,
+   reform_type   VARCHAR(1) ,
+   resp_user_id   VARCHAR(40) ,
+   reform_valid   VARCHAR(1) ,
+   create_date_time   VARCHAR(20) ,
+   update_user_no   VARCHAR(40) ,
+   deal_way   VARCHAR(500) ,
+   check_result   VARCHAR(500) ,
+   reform_content   VARCHAR(500) ,
+   id   VARCHAR(40)  NOT NULL,
+   delay_report_id   VARCHAR(40) ,
+   work_task_id   VARCHAR(40) ,
+   update_date_time   VARCHAR(20) ,
+   create_user_no   VARCHAR(40) ,
+   status   DECIMAL(32,6) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_mc_delay_reform_jc_f IS '延误整改措施表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_reform_jc_f.real_finish_time IS '实际完成时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_reform_jc_f.i_level IS '排序';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_reform_jc_f.check_user_id IS '验证人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_reform_jc_f.company_id IS '公司别';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_reform_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_reform_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_reform_jc_f.reform_stus IS '整改措施状态';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_reform_jc_f.flow_request_id IS '工作流ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_reform_jc_f.pre_finish_time IS '预计完成时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_reform_jc_f.remark IS '备注';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_reform_jc_f.reform_type IS '整改类型';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_reform_jc_f.resp_user_id IS '责任人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_reform_jc_f.reform_valid IS '措施是否有效';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_reform_jc_f.create_date_time IS '创建时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_reform_jc_f.update_user_no IS '修改人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_reform_jc_f.deal_way IS '措施处理方式';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_reform_jc_f.check_result IS '措施验证结果';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_reform_jc_f.reform_content IS '整改措施';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_reform_jc_f.id IS '主键索引值';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_reform_jc_f.delay_report_id IS '延误报告ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_reform_jc_f.work_task_id IS '工作任务单ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_reform_jc_f.update_date_time IS '修改时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_reform_jc_f.create_user_no IS '创建人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_reform_jc_f.status IS '状态';
+
+-- ------------------------
+
+-- File: dwr_eqp_mc_delay_report_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_mc_delay_report_jc_f
+--**描述：延误报告表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_mc_delay_report_jc_f( 
+   i_level   VARCHAR(16) ,
+   report_final_name   VARCHAR(200) ,
+   keywords   VARCHAR(500) ,
+   acd_reason_manage   VARCHAR(3000) ,
+   business_manager_user_no   VARCHAR(500) ,
+   ext_src_sys_id   VARCHAR(20) ,
+   other_cost   DECIMAL(32,6) ,
+   eq_stop_id   VARCHAR(40) ,
+   flow_request_id   VARCHAR(40) ,
+   rep_cost   DECIMAL(32,6) ,
+   delay_end_time   VARCHAR(20) ,
+   ishave_spotcheck_alarm   VARCHAR(500) ,
+   flow_end_date_time   VARCHAR(20) ,
+   resp_factory_id   VARCHAR(40) ,
+   id   VARCHAR(40)  NOT NULL,
+   resp_dept_id   VARCHAR(40) ,
+   resp_user_name   VARCHAR(40) ,
+   acd_reason_direct   VARCHAR(3000) ,
+   is_over_time   VARCHAR(3000) ,
+   create_user_no   VARCHAR(40) ,
+   produce_production_unit   VARCHAR(500) ,
+   delay_beg_time   VARCHAR(20) ,
+   spotcheck_user_no   VARCHAR(40) ,
+   ext_etl_dt   TIMESTAMP ,
+   redu_qty   DECIMAL(32,6) ,
+   report_stus   VARCHAR(1) ,
+   business_manager_user_name   VARCHAR(500) ,
+   man_cost   DECIMAL(32,6) ,
+   report_type   VARCHAR(20) ,
+   score_three   DECIMAL(32,6) ,
+   delay_reason   VARCHAR(3000) ,
+   redu_loss   DECIMAL(32,6) ,
+   resp_user_id   VARCHAR(40) ,
+   instance_id   VARCHAR(40) ,
+   produce_delay_name   VARCHAR(500) ,
+   part_cost   DECIMAL(32,6) ,
+   status   DECIMAL(32,6) ,
+   spotcheck_user_name   VARCHAR(40) ,
+   approve_status   VARCHAR(1) ,
+   eq_object_id   VARCHAR(40) ,
+   resp_user_no   VARCHAR(40) ,
+   eq_id   VARCHAR(40) ,
+   remark   VARCHAR(200) ,
+   mate_cost   DECIMAL(32,6) ,
+   line_id   VARCHAR(40) ,
+   factory_manager_user_name   VARCHAR(500) ,
+   total_loss   DECIMAL(32,6) ,
+   create_date_time   VARCHAR(20) ,
+   score_four   DECIMAL(32,6) ,
+   damage_range   VARCHAR(3000) ,
+   score_one   DECIMAL(32,6) ,
+   acd_reason   VARCHAR(1) ,
+   acd_process   VARCHAR(3000) ,
+   acd_lesson   VARCHAR(3000) ,
+   delay_level   VARCHAR(1) ,
+   apply_date_time   VARCHAR(20) ,
+   acd_analyze   VARCHAR(3000) ,
+   report_no   VARCHAR(100) ,
+   update_date_time   VARCHAR(20) ,
+   company_id   VARCHAR(40) ,
+   delay_report_no   VARCHAR(20) ,
+   report_group_type   VARCHAR(40) ,
+   suggestion   VARCHAR(500) ,
+   apply_user_no   VARCHAR(40) ,
+   factory_manager_user_no   VARCHAR(500) ,
+   eq_no   VARCHAR(40) ,
+   delay_hour   DECIMAL(32,6) ,
+   delay_id   VARCHAR(40) ,
+   update_user_no   VARCHAR(40) ,
+   score_two   DECIMAL(32,6) ,
+   acd_solve_way   VARCHAR(3000) ,
+   produce_production_loss   DECIMAL(32,6) ,
+   report_name   VARCHAR(200) ,
+   acd_reason_technique   VARCHAR(3000) ,
+   acd_process_solveway   VARCHAR(3000) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_mc_delay_report_jc_f IS '延误报告表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.i_level IS '排序';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.report_final_name IS '故障名称固定';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.keywords IS '关键字';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.acd_reason_manage IS '管理原因';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.business_manager_user_no IS '分管副总工号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.other_cost IS '其它费用';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.eq_stop_id IS '设备停机记录ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.flow_request_id IS '工作流ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.rep_cost IS '设备修复费';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.delay_end_time IS '延误结束时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.ishave_spotcheck_alarm IS '是否存在前五次点检异常(Y有点检异常_N无点检异常_NoData无点检数据_NoStd无点检基准)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.flow_end_date_time IS '审批完成时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.resp_factory_id IS '责任厂';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.id IS '系统索引值';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.resp_dept_id IS '责任单位';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.resp_user_name IS '专业主管姓名';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.acd_reason_direct IS '直接原因';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.is_over_time IS '是否超合理维修时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.create_user_no IS '创建人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.produce_production_unit IS '生产报告产量单位';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.delay_beg_time IS '延误开始时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.spotcheck_user_no IS '点检员工号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.redu_qty IS '减产数量';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.report_stus IS '报告状态';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.business_manager_user_name IS '分管副总姓名';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.man_cost IS '人工费用';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.report_type IS '报告类别';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.score_three IS '延误报告填写分数';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.delay_reason IS '延误原因概述';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.redu_loss IS '减产损失费';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.resp_user_id IS '责任人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.instance_id IS '审批流示例ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.produce_delay_name IS '生产报告延误名称';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.part_cost IS '备件费用';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.status IS '状态';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.spotcheck_user_name IS '点检员姓名';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.approve_status IS '报告流程状态';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.eq_object_id IS '设备实物编码';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.resp_user_no IS '专业主管工号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.eq_id IS '设备ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.remark IS '备注';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.mate_cost IS '材料费用';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.line_id IS '产线ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.factory_manager_user_name IS '分管厂长姓名';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.total_loss IS '事故总损失';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.create_date_time IS '创建时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.score_four IS '延误报告审批分数';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.damage_range IS '损坏情况及影响范围';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.score_one IS '初判分数';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.acd_reason IS '事故原因归类';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.acd_process IS '事故发生经过';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.acd_lesson IS '事故原因分析及事故教训';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.delay_level IS '延误级别';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.apply_date_time IS '发起时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.acd_analyze IS '故障原因分析(原事故原因分析及事故教训)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.report_no IS '故障编号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.update_date_time IS '修改时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.company_id IS '公司别';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.delay_report_no IS '延误报告编号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.report_group_type IS '报告大类';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.suggestion IS '处理意见';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.apply_user_no IS '发起人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.factory_manager_user_no IS '分管厂长工号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.eq_no IS '设备编码';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.delay_hour IS '延误时长';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.delay_id IS '延误记录ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.update_user_no IS '修改人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.score_two IS '终判分数';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.acd_solve_way IS '排除事故的技术措施及经过';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.produce_production_loss IS '生产报告产量损失';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.report_name IS '故障名称拆';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.acd_reason_technique IS '技术原因';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_delay_report_jc_f.acd_process_solveway IS '故障处置经过(原发生经过加上排除经过)';
+
+-- ------------------------
+
+-- File: dwr_eqp_mc_eq_stop_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_mc_eq_stop_jc_f
+--**描述：设备停机记录表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_mc_eq_stop_jc_f( 
+   stop_beg_time   VARCHAR(20) ,
+   i_level   VARCHAR(16) ,
+   company_id   VARCHAR(40) ,
+   ext_etl_dt   TIMESTAMP ,
+   stop_hour   DECIMAL(32,6) ,
+   eq_stop_no   VARCHAR(20) ,
+   ext_src_sys_id   VARCHAR(20) ,
+   flow_request_id   VARCHAR(40) ,
+   stop_reason   VARCHAR(500) ,
+   eq_id   VARCHAR(40) ,
+   stop_end_time   VARCHAR(20) ,
+   remark   VARCHAR(200) ,
+   resp_user_id   VARCHAR(40) ,
+   factory_id   VARCHAR(40) ,
+   create_date_time   VARCHAR(20) ,
+   update_user_no   VARCHAR(40) ,
+   stop_stus   VARCHAR(1) ,
+   id   VARCHAR(40)  NOT NULL,
+   resp_dept_id   VARCHAR(40) ,
+   update_date_time   VARCHAR(20) ,
+   create_user_no   VARCHAR(40) ,
+   status   DECIMAL(32,6) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_mc_eq_stop_jc_f IS '设备停机记录表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_eq_stop_jc_f.stop_beg_time IS '停机开始时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_eq_stop_jc_f.i_level IS '排序';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_eq_stop_jc_f.company_id IS '公司别';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_eq_stop_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_eq_stop_jc_f.stop_hour IS '停机时长';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_eq_stop_jc_f.eq_stop_no IS '设备停机记录编号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_eq_stop_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_eq_stop_jc_f.flow_request_id IS '工作流ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_eq_stop_jc_f.stop_reason IS '停机原因';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_eq_stop_jc_f.eq_id IS '设备ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_eq_stop_jc_f.stop_end_time IS '停机结束时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_eq_stop_jc_f.remark IS '备注';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_eq_stop_jc_f.resp_user_id IS '责任人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_eq_stop_jc_f.factory_id IS '生产厂ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_eq_stop_jc_f.create_date_time IS '创建时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_eq_stop_jc_f.update_user_no IS '修改人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_eq_stop_jc_f.stop_stus IS '停机记录状态';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_eq_stop_jc_f.id IS '系统索引值';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_eq_stop_jc_f.resp_dept_id IS '责任部门';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_eq_stop_jc_f.update_date_time IS '修改时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_eq_stop_jc_f.create_user_no IS '创建人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_eq_stop_jc_f.status IS '状态';
+
+-- ------------------------
+
+-- File: dwr_eqp_mc_line_list_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_mc_line_list_jc_f
+--**描述：产线信息表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_mc_line_list_jc_f( 
+   i_level   VARCHAR(16) ,
+   ext_src_sys_id   VARCHAR(20) ,
+   access_overwrite   VARCHAR(20) ,
+   line_name_abbreviation   VARCHAR(50) ,
+   line_status   VARCHAR(1) ,
+   remark   VARCHAR(200) ,
+   access_is_plan   VARCHAR(20) ,
+   create_date_time   VARCHAR(20) ,
+   last_time   VARCHAR(40) ,
+   line_type   VARCHAR(20) ,
+   line_name   VARCHAR(50) ,
+   id   VARCHAR(40)  NOT NULL,
+   update_date_time   VARCHAR(20) ,
+   create_user_no   VARCHAR(40) ,
+   company_id   VARCHAR(40) ,
+   ext_etl_dt   TIMESTAMP ,
+   line_no   VARCHAR(60) ,
+   access_statistic   VARCHAR(20) ,
+   region_id   VARCHAR(500) ,
+   access_plan_judge   VARCHAR(20) ,
+   resp_user_id   VARCHAR(40) ,
+   factory_id   VARCHAR(40) ,
+   update_user_no   VARCHAR(40) ,
+   major_resp_user   VARCHAR(40) ,
+   is_delay   VARCHAR(500) ,
+   safe_resp_user   VARCHAR(40) ,
+   status   DECIMAL(32,6) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_mc_line_list_jc_f IS '产线信息表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_line_list_jc_f.i_level IS '排序';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_line_list_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_line_list_jc_f.access_overwrite IS '是否覆盖推送';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_line_list_jc_f.line_name_abbreviation IS '产线名称简称';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_line_list_jc_f.line_status IS '产线状态';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_line_list_jc_f.remark IS '备注';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_line_list_jc_f.access_is_plan IS '计划停机类型';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_line_list_jc_f.create_date_time IS '创建时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_line_list_jc_f.last_time IS '上次状态发生时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_line_list_jc_f.line_type IS '产线类别';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_line_list_jc_f.line_name IS '产线名称';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_line_list_jc_f.id IS '系统索引值';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_line_list_jc_f.update_date_time IS '修改时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_line_list_jc_f.create_user_no IS '创建人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_line_list_jc_f.company_id IS '公司别';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_line_list_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_line_list_jc_f.line_no IS '产线编号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_line_list_jc_f.access_statistic IS '是否考核统计';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_line_list_jc_f.region_id IS '区域';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_line_list_jc_f.access_plan_judge IS '是否推送计划类记录';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_line_list_jc_f.resp_user_id IS '产线负责人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_line_list_jc_f.factory_id IS '生产厂';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_line_list_jc_f.update_user_no IS '修改人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_line_list_jc_f.major_resp_user IS '专业技术负责人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_line_list_jc_f.is_delay IS '是否延误(0停机_1延误)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_line_list_jc_f.safe_resp_user IS '安全负责人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mc_line_list_jc_f.status IS '状态';
+
+-- ------------------------
+
+-- File: dwr_eqp_mf_card_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_mf_card_jc_f
+--**描述：设备点检卡表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_mf_card_jc_f( 
+   workshop_id   VARCHAR(40) ,
+   i_level   VARCHAR(20) ,
+   company_id   VARCHAR(64) ,
+   ext_etl_dt   TIMESTAMP ,
+   ext_src_sys_id   VARCHAR(20) ,
+   eq_id   VARCHAR(40) ,
+   card_status   VARCHAR(1) ,
+   create_date_time   VARCHAR(20) ,
+   update_user_no   VARCHAR(64) ,
+   card_no   VARCHAR(20) ,
+   id   VARCHAR(40)  NOT NULL,
+   update_date_time   VARCHAR(20) ,
+   create_user_no   VARCHAR(64) ,
+   status   VARCHAR(1) ,
+) WITH (ORIENTATION = COLUMN);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_mf_card_jc_f IS '设备点检卡表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_card_jc_f.workshop_id IS '所属单位';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_card_jc_f.i_level IS '等级';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_card_jc_f.company_id IS '公司ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_card_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_card_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_card_jc_f.eq_id IS '所属设备';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_card_jc_f.card_status IS '点检卡状态';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_card_jc_f.create_date_time IS '创建时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_card_jc_f.update_user_no IS '修改人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_card_jc_f.card_no IS '点检卡号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_card_jc_f.id IS '系统索引值';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_card_jc_f.update_date_time IS '修改时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_card_jc_f.create_user_no IS '创建人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_card_jc_f.status IS '状态';
+
+-- ------------------------
+
+-- File: dwr_eqp_mf_cycle_detail_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_mf_cycle_detail_jc_f
+--**描述：设备点检周期明细表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_mf_cycle_detail_jc_f( 
+   i_level   VARCHAR(20) ,
+   company_id   VARCHAR(64) ,
+   ext_etl_dt   TIMESTAMP ,
+   ext_src_sys_id   VARCHAR(20) ,
+   end_time   VARCHAR(20) ,
+   month_of_year   VARCHAR(2) ,
+   cyc_id   VARCHAR(40) ,
+   day_of_month   VARCHAR(2) ,
+   create_date_time   VARCHAR(20) ,
+   update_user_no   VARCHAR(64) ,
+   beg_time   VARCHAR(20) ,
+   id   VARCHAR(40)  NOT NULL,
+   week_of_month   VARCHAR(2) ,
+   update_date_time   VARCHAR(20) ,
+   day_of_week   VARCHAR(2) ,
+   create_user_no   VARCHAR(64) ,
+   status   VARCHAR(1) ,
+    primary key (id,status)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id,status);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_mf_cycle_detail_jc_f IS '设备点检周期明细表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_cycle_detail_jc_f.i_level IS '等级';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_cycle_detail_jc_f.company_id IS '公司ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_cycle_detail_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_cycle_detail_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_cycle_detail_jc_f.end_time IS '当天点检结束时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_cycle_detail_jc_f.month_of_year IS '一年中的第几个月';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_cycle_detail_jc_f.cyc_id IS '点检周期ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_cycle_detail_jc_f.day_of_month IS '一月中的第几天';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_cycle_detail_jc_f.create_date_time IS '创建时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_cycle_detail_jc_f.update_user_no IS '修改人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_cycle_detail_jc_f.beg_time IS '当天点检开始时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_cycle_detail_jc_f.id IS '系统索引值';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_cycle_detail_jc_f.week_of_month IS '一月中的第几个星期';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_cycle_detail_jc_f.update_date_time IS '修改时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_cycle_detail_jc_f.day_of_week IS '一个星期中的第几天';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_cycle_detail_jc_f.create_user_no IS '创建人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_cycle_detail_jc_f.status IS '状态';
+
+-- ------------------------
+
+-- File: dwr_eqp_mf_cycle_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_mf_cycle_jc_f
+--**描述：设备点检周期表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_mf_cycle_jc_f( 
+   i_level   VARCHAR(20) ,
+   route_id   VARCHAR(40) ,
+   company_id   VARCHAR(64) ,
+   ext_etl_dt   TIMESTAMP ,
+   ext_src_sys_id   VARCHAR(20) ,
+   cyc_qty   VARCHAR(3) ,
+   chk_qty   VARCHAR(3) ,
+   cyc_unit   VARCHAR(5) ,
+   create_date_time   VARCHAR(20) ,
+   update_user_no   VARCHAR(64) ,
+   cyc_name   VARCHAR(50) ,
+   id   VARCHAR(40)  NOT NULL,
+   is_delay   VARCHAR(1) ,
+   std_beg_date   VARCHAR(20) ,
+   update_date_time   VARCHAR(20) ,
+   stander_id   VARCHAR(40) ,
+   create_user_no   VARCHAR(64) ,
+   status   VARCHAR(1) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_mf_cycle_jc_f IS '设备点检周期表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_cycle_jc_f.i_level IS '等级';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_cycle_jc_f.route_id IS '点检路线id';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_cycle_jc_f.company_id IS '公司ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_cycle_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_cycle_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_cycle_jc_f.cyc_qty IS '周期间隔数';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_cycle_jc_f.chk_qty IS '次数';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_cycle_jc_f.cyc_unit IS '周期单位';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_cycle_jc_f.create_date_time IS '创建时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_cycle_jc_f.update_user_no IS '修改人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_cycle_jc_f.cyc_name IS '周期名称';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_cycle_jc_f.id IS '系统索引值';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_cycle_jc_f.is_delay IS '是否可以延迟执行';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_cycle_jc_f.std_beg_date IS '初始排程时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_cycle_jc_f.update_date_time IS '修改时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_cycle_jc_f.stander_id IS '点检基准ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_cycle_jc_f.create_user_no IS '创建人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_cycle_jc_f.status IS '状态';
+
+-- ------------------------
+
+-- File: dwr_eqp_mf_danger_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_mf_danger_jc_f
+--**描述：设备点检异常表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_mf_danger_jc_f( 
+   dealtime   VARCHAR(20) ,
+   i_level   VARCHAR(20) ,
+   route_id   VARCHAR(40) ,
+   excchecker   VARCHAR(40) ,
+   chk_source   VARCHAR(1) ,
+   checkresult   VARCHAR(500) ,
+   ext_src_sys_id   VARCHAR(20) ,
+   jobtaskid   VARCHAR(40) ,
+   workdeptid   VARCHAR(40) ,
+   stus   VARCHAR(10) ,
+   checkstandard   VARCHAR(500) ,
+   remark   VARCHAR(2000) ,
+   actualvalue   DECIMAL(32,6) ,
+   exctype   VARCHAR(10) ,
+   lowerlimit   DECIMAL(32,6) ,
+   create_date_time   VARCHAR(20) ,
+   measureunit   VARCHAR(40) ,
+   exctime   VARCHAR(20) ,
+   sourcetype   VARCHAR(5) ,
+   id   VARCHAR(40)  NOT NULL,
+   dealuserid   VARCHAR(40) ,
+   update_date_time   VARCHAR(20) ,
+   dealtype   VARCHAR(10) ,
+   upperlimit   DECIMAL(32,6) ,
+   handleidea   VARCHAR(500) ,
+   create_user_no   VARCHAR(64) ,
+   applyuserid   VARCHAR(40) ,
+   dangerdesc   VARCHAR(1000) ,
+   company_id   VARCHAR(64) ,
+   ext_etl_dt   TIMESTAMP ,
+   dangerno   VARCHAR(40) ,
+   eqid   VARCHAR(40) ,
+   chktaskid   VARCHAR(100) ,
+   applytime   VARCHAR(20) ,
+   eqpartsid   VARCHAR(40) ,
+   update_user_no   VARCHAR(64) ,
+   sourcepoint   VARCHAR(40) ,
+   checkpart   VARCHAR(200) ,
+   mb_repitem_id   VARCHAR(40) ,
+   eqspareid   VARCHAR(40) ,
+   checkstandid   VARCHAR(40) ,
+   stadvalue   DECIMAL(32,6) ,
+   excclass   VARCHAR(20) ,
+   status   DECIMAL(32,6) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_mf_danger_jc_f IS '设备点检异常表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.dealtime IS '处理时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.i_level IS '等级';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.route_id IS '点检路线ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.excchecker IS '检查人员';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.chk_source IS '点检结果来源';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.checkresult IS '点检结果';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.jobtaskid IS '工作任务单ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.workdeptid IS '责任车间编码';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.stus IS '处理状态';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.checkstandard IS '点检标准(判断标准)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.remark IS '备注';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.actualvalue IS '实际值(采集值)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.exctype IS '报警类型';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.lowerlimit IS '下限值';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.create_date_time IS '创建时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.measureunit IS '单位';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.exctime IS '报警时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.sourcetype IS '来源类型';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.id IS '主键';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.dealuserid IS '处理人员';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.update_date_time IS '修改时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.dealtype IS '处理方式';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.upperlimit IS '上限值';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.handleidea IS '处理意见';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.create_user_no IS '创建人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.applyuserid IS '申报人员';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.dangerdesc IS '隐患内容';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.company_id IS '公司ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.dangerno IS '隐患单号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.eqid IS '设备ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.chktaskid IS '点检任务ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.applytime IS '申报时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.eqpartsid IS '部件ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.update_user_no IS '修改人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.sourcepoint IS '来源测点ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.checkpart IS '点检部位';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.mb_repitem_id IS '检修ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.eqspareid IS '零件ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.checkstandid IS '点检标准ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.stadvalue IS '标准值';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.excclass IS '报警等级';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_danger_jc_f.status IS '状态';
+
+-- ------------------------
+
+-- File: dwr_eqp_mf_route_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_mf_route_jc_f
+--**描述：设备点检路线表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_mf_route_jc_f( 
+   stop_beg_time   VARCHAR(20) ,
+   i_level   VARCHAR(20) ,
+   ext_src_sys_id   VARCHAR(20) ,
+   approve_status   VARCHAR(20) ,
+   stop_reason   VARCHAR(200) ,
+   memo   VARCHAR(500) ,
+   is_order   VARCHAR(1) ,
+   is_card   VARCHAR(2) ,
+   route_stus   VARCHAR(1) ,
+   create_date_time   VARCHAR(20) ,
+   resp_post_no   VARCHAR(50) ,
+   route_type   VARCHAR(2) ,
+   factory_no   VARCHAR(20) ,
+   id   VARCHAR(40)  NOT NULL,
+   chk_is_holiday   VARCHAR(10) ,
+   update_date_time   VARCHAR(20) ,
+   create_user_no   VARCHAR(64) ,
+   workshop_id   VARCHAR(40) ,
+   company_id   VARCHAR(64) ,
+   ext_etl_dt   TIMESTAMP ,
+   route_no   VARCHAR(20) ,
+   route_name   VARCHAR(50) ,
+   stop_end_time   VARCHAR(20) ,
+   last_plan_date   VARCHAR(20) ,
+   factory_id   VARCHAR(40) ,
+   update_user_no   VARCHAR(64) ,
+   resp_emp_no   VARCHAR(40) ,
+   check_role_id   VARCHAR(40) ,
+   status   VARCHAR(1) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_mf_route_jc_f IS '设备点检路线表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_route_jc_f.stop_beg_time IS '禁用开始时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_route_jc_f.i_level IS '等级';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_route_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_route_jc_f.approve_status IS '审批状态';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_route_jc_f.stop_reason IS '禁用原因';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_route_jc_f.memo IS '备注';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_route_jc_f.is_order IS '是否强制顺序';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_route_jc_f.is_card IS '是否采用点检卡检查(0启用点检卡-1禁用点检卡)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_route_jc_f.route_stus IS '点检路线状态';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_route_jc_f.create_date_time IS '创建时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_route_jc_f.resp_post_no IS '责任岗位';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_route_jc_f.route_type IS '点检路线类型(1操作点检类型-2维修点检类型)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_route_jc_f.factory_no IS '所属厂的区域位置编码NO';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_route_jc_f.id IS '系统索引值';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_route_jc_f.chk_is_holiday IS '节假日是否点检';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_route_jc_f.update_date_time IS '修改时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_route_jc_f.create_user_no IS '创建人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_route_jc_f.workshop_id IS '所属车间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_route_jc_f.company_id IS '公司ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_route_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_route_jc_f.route_no IS '点检路线编号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_route_jc_f.route_name IS '点检路线名称';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_route_jc_f.stop_end_time IS '禁用结束时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_route_jc_f.last_plan_date IS '上次排程时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_route_jc_f.factory_id IS '所属厂';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_route_jc_f.update_user_no IS '修改人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_route_jc_f.resp_emp_no IS '责任人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_route_jc_f.check_role_id IS '点检角色';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_route_jc_f.status IS '状态';
+
+-- ------------------------
+
+-- File: dwr_eqp_mf_standard_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_mf_standard_jc_f
+--**描述：设备点检基准表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_mf_standard_jc_f( 
+   chk_level   VARCHAR(2) ,
+   i_level   VARCHAR(20) ,
+   ext_src_sys_id   VARCHAR(20) ,
+   chk_cond   VARCHAR(1) ,
+   approve_status   VARCHAR(10) ,
+   maintain_dept_id   VARCHAR(40) ,
+   warn_up_value   VARCHAR(8) ,
+   memo   VARCHAR(500) ,
+   eq_id   VARCHAR(40) ,
+   auto_check   VARCHAR(255) ,
+   create_date_time   VARCHAR(20) ,
+   std_no   VARCHAR(30) ,
+   chk_memo   VARCHAR(1000) ,
+   alarm_type   VARCHAR(10) ,
+   judge_std   VARCHAR(500) ,
+   mf_std_status   VARCHAR(255) ,
+   std_type   VARCHAR(40) ,
+   id   VARCHAR(40)  NOT NULL,
+   update_date_time   VARCHAR(20) ,
+   create_user_no   VARCHAR(64) ,
+   warn_low_value   VARCHAR(8) ,
+   point_id   VARCHAR(100) ,
+   company_id   VARCHAR(64) ,
+   ext_etl_dt   TIMESTAMP ,
+   meas_type   VARCHAR(1) ,
+   std_value   VARCHAR(30) ,
+   std_cate   VARCHAR(1) ,
+   eq_no   VARCHAR(40) ,
+   unit   VARCHAR(30) ,
+   update_user_no   VARCHAR(64) ,
+   alarm_up_value   VARCHAR(8) ,
+   data_type   VARCHAR(1) ,
+   alarm_low_value   VARCHAR(8) ,
+   status   DECIMAL(32,6) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_mf_standard_jc_f IS '设备点检基准表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_standard_jc_f.chk_level IS '点检级别';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_standard_jc_f.i_level IS '等级';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_standard_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_standard_jc_f.chk_cond IS '点检条件';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_standard_jc_f.approve_status IS '审批状态';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_standard_jc_f.maintain_dept_id IS '维护单位';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_standard_jc_f.warn_up_value IS '预警上限值';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_standard_jc_f.memo IS '备注';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_standard_jc_f.eq_id IS '设备ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_standard_jc_f.auto_check IS '自动点检标识(1为自动监测-0为手动监测)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_standard_jc_f.create_date_time IS '创建时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_standard_jc_f.std_no IS '点检基准编号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_standard_jc_f.chk_memo IS '点检内容';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_standard_jc_f.alarm_type IS '报警类型';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_standard_jc_f.judge_std IS '判断标准';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_standard_jc_f.mf_std_status IS '点检基准状态';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_standard_jc_f.std_type IS '基准类型';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_standard_jc_f.id IS '系统索引值';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_standard_jc_f.update_date_time IS '修改时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_standard_jc_f.create_user_no IS '创建人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_standard_jc_f.warn_low_value IS '预警下限值';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_standard_jc_f.point_id IS '测点ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_standard_jc_f.company_id IS '公司ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_standard_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_standard_jc_f.meas_type IS '测量类型';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_standard_jc_f.std_value IS '标准值';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_standard_jc_f.std_cate IS '专业';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_standard_jc_f.eq_no IS '设备编码';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_standard_jc_f.unit IS '计量单位';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_standard_jc_f.update_user_no IS '修改人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_standard_jc_f.alarm_up_value IS '报警上限值';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_standard_jc_f.data_type IS '数据类别';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_standard_jc_f.alarm_low_value IS '报警下限值';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_standard_jc_f.status IS '状态';
+
+-- ------------------------
+
+-- File: dwr_eqp_mf_task_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_mf_task_jc_f
+--**描述：设备点检任务表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_mf_task_jc_f( 
+   i_level   VARCHAR(20) ,
+   route_id   VARCHAR(40) ,
+   chk_source   VARCHAR(1) ,
+   ext_src_sys_id   VARCHAR(20) ,
+   memo   VARCHAR(500) ,
+   eq_id   VARCHAR(40) ,
+   alarm_level   VARCHAR(1) ,
+   factory_name   VARCHAR(500) ,
+   dt   VARCHAR(500) ,
+   zone_id   VARCHAR(40) ,
+   create_date_time   VARCHAR(20) ,
+   monitor_vaule   VARCHAR(20) ,
+   chk_type   VARCHAR(10) ,
+   factory_no   VARCHAR(500) ,
+   chk_user_id   VARCHAR(40) ,
+   id   VARCHAR(40)  NOT NULL,
+   update_date_time   VARCHAR(20) ,
+   create_user_no   VARCHAR(64) ,
+   business_name   VARCHAR(500) ,
+   plan_beg_time   VARCHAR(20) ,
+   chk_time   VARCHAR(20) ,
+   task_no   VARCHAR(40) ,
+   company_id   VARCHAR(64) ,
+   ext_etl_dt   TIMESTAMP ,
+   pay_card_time   VARCHAR(255) ,
+   is_pitfall   VARCHAR(255) ,
+   business_no   VARCHAR(500) ,
+   chk_value   VARCHAR(20) ,
+   update_user_no   VARCHAR(64) ,
+   std_id   VARCHAR(40) ,
+   plan_end_time   VARCHAR(20) ,
+   is_chk   VARCHAR(1) ,
+   status   DECIMAL(32,6) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_mf_task_jc_f IS '设备点检任务表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_task_jc_f.i_level IS '等级';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_task_jc_f.route_id IS '点检路线ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_task_jc_f.chk_source IS '点检结果来源';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_task_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_task_jc_f.memo IS '备注';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_task_jc_f.eq_id IS '设备编号ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_task_jc_f.alarm_level IS '报警级别';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_task_jc_f.factory_name IS '厂名称';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_task_jc_f.dt IS '月分区';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_task_jc_f.zone_id IS '点检区域ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_task_jc_f.create_date_time IS '创建时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_task_jc_f.monitor_vaule IS '设备状态监测值';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_task_jc_f.chk_type IS '点检类型';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_task_jc_f.factory_no IS '厂编号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_task_jc_f.chk_user_id IS '检测人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_task_jc_f.id IS '系统索引值';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_task_jc_f.update_date_time IS '修改时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_task_jc_f.create_user_no IS '创建人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_task_jc_f.business_name IS '事业部名称';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_task_jc_f.plan_beg_time IS '计划开始时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_task_jc_f.chk_time IS '实际检测时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_task_jc_f.task_no IS '点检任务编号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_task_jc_f.company_id IS '公司ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_task_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_task_jc_f.pay_card_time IS '点检员刷卡时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_task_jc_f.is_pitfall IS '是否转隐患';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_task_jc_f.business_no IS '事业部编号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_task_jc_f.chk_value IS '检测值';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_task_jc_f.update_user_no IS '修改人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_task_jc_f.std_id IS '点检基准ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_task_jc_f.plan_end_time IS '计划结束时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_task_jc_f.is_chk IS '是否完成';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_task_jc_f.status IS '状态';
+
+-- ------------------------
+
+-- File: dwr_eqp_mf_zone_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_mf_zone_jc_f
+--**描述：设备点检区域表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_mf_zone_jc_f( 
+   workshop_id   VARCHAR(40) ,
+   i_level   VARCHAR(20) ,
+   company_id   VARCHAR(64) ,
+   ext_etl_dt   TIMESTAMP ,
+   ext_src_sys_id   VARCHAR(20) ,
+   zone_name   VARCHAR(200) ,
+   zone_no   VARCHAR(30) ,
+   card_id   VARCHAR(1) ,
+   factory_id   VARCHAR(40) ,
+   create_date_time   VARCHAR(20) ,
+   update_user_no   VARCHAR(64) ,
+   id   VARCHAR(40)  NOT NULL,
+   update_date_time   VARCHAR(20) ,
+   create_user_no   VARCHAR(64) ,
+   status   VARCHAR(1) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_mf_zone_jc_f IS '设备点检区域表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_zone_jc_f.workshop_id IS '所属单位';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_zone_jc_f.i_level IS '等级';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_zone_jc_f.company_id IS '公司ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_zone_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_zone_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_zone_jc_f.zone_name IS '区域名称';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_zone_jc_f.zone_no IS '区域号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_zone_jc_f.card_id IS '绑定的点检卡ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_zone_jc_f.factory_id IS '生产厂id';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_zone_jc_f.create_date_time IS '创建时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_zone_jc_f.update_user_no IS '修改人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_zone_jc_f.id IS '系统索引值';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_zone_jc_f.update_date_time IS '修改时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_zone_jc_f.create_user_no IS '创建人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mf_zone_jc_f.status IS '状态';
+
+-- ------------------------
+
+-- File: dwr_eqp_mh_allot_detail_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_mh_allot_detail_jc_f
+--**描述：备材调拨单明细表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_mh_allot_detail_jc_f( 
+   i_level   VARCHAR(30) ,
+   create_user_dept   VARCHAR(255) ,
+   batch_no   VARCHAR(30) ,
+   allot_id   VARCHAR(32) ,
+   allot_quantity   DECIMAL(32,6) ,
+   company_id   VARCHAR(64) ,
+   ext_etl_dt   TIMESTAMP ,
+   examine_status   VARCHAR(30) ,
+   ext_src_sys_id   VARCHAR(20) ,
+   side_old   VARCHAR(64) ,
+   storage_new   VARCHAR(64) ,
+   allot_time   VARCHAR(30) ,
+   side_new   VARCHAR(64) ,
+   material_no   VARCHAR(32) ,
+   storage_old   VARCHAR(64) ,
+   allot_status   VARCHAR(30) ,
+   create_date_time   VARCHAR(30) ,
+   update_user_no   VARCHAR(64) ,
+   create_user_factory   VARCHAR(255) ,
+   id   VARCHAR(32)  NOT NULL,
+   material_name   VARCHAR(255) ,
+   update_date_time   VARCHAR(30) ,
+   create_user_no   VARCHAR(64) ,
+   status   DECIMAL(32,6) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_mh_allot_detail_jc_f IS '备材调拨单明细表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_detail_jc_f.i_level IS '优先级';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_detail_jc_f.create_user_dept IS '创建者部门';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_detail_jc_f.batch_no IS '批号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_detail_jc_f.allot_id IS '调拨单ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_detail_jc_f.allot_quantity IS '交易量';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_detail_jc_f.company_id IS '公司ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_detail_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_detail_jc_f.examine_status IS '审核状态';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_detail_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_detail_jc_f.side_old IS '原库位';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_detail_jc_f.storage_new IS '新储位';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_detail_jc_f.allot_time IS '调拨时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_detail_jc_f.side_new IS '新库位';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_detail_jc_f.material_no IS '料号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_detail_jc_f.storage_old IS '原储位';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_detail_jc_f.allot_status IS '调拨状态';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_detail_jc_f.create_date_time IS '创建时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_detail_jc_f.update_user_no IS '修改人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_detail_jc_f.create_user_factory IS '创建者生产厂';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_detail_jc_f.id IS '主键';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_detail_jc_f.material_name IS '物料名称';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_detail_jc_f.update_date_time IS '修改时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_detail_jc_f.create_user_no IS '创建人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_detail_jc_f.status IS '状态(0可用_1不可用)';
+
+-- ------------------------
+
+-- File: dwr_eqp_mh_allot_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_mh_allot_jc_f
+--**描述：备材调拨单表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_mh_allot_jc_f( 
+   i_level   VARCHAR(30) ,
+   create_user_dept   VARCHAR(255) ,
+   company_id   VARCHAR(64) ,
+   ext_etl_dt   TIMESTAMP ,
+   ext_src_sys_id   VARCHAR(20) ,
+   allot_no   VARCHAR(30) ,
+   remark   VARCHAR(100) ,
+   create_date_time   VARCHAR(30) ,
+   update_user_no   VARCHAR(64) ,
+   create_user_factory   VARCHAR(255) ,
+   in_order_id   VARCHAR(32) ,
+   out_order_id   VARCHAR(32) ,
+   id   VARCHAR(32)  NOT NULL,
+   update_date_time   VARCHAR(30) ,
+   create_user_no   VARCHAR(64) ,
+   status   DECIMAL(32,6) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_mh_allot_jc_f IS '备材调拨单表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_jc_f.i_level IS '优先级';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_jc_f.create_user_dept IS '创建者部门';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_jc_f.company_id IS '公司ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_jc_f.allot_no IS '调拨单号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_jc_f.remark IS '备注';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_jc_f.create_date_time IS '创建时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_jc_f.update_user_no IS '修改人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_jc_f.create_user_factory IS '创建者生产厂';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_jc_f.in_order_id IS '入库单ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_jc_f.out_order_id IS '出库单ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_jc_f.id IS '主键';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_jc_f.update_date_time IS '修改时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_jc_f.create_user_no IS '创建人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_allot_jc_f.status IS '状态(0可用_1不可用)';
+
+-- ------------------------
+
+-- File: dwr_eqp_mh_demand_apply_detail_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_mh_demand_apply_detail_jc_f
+--**描述：备件需求申报明细表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f( 
+   i_level   VARCHAR(30) ,
+   is_zero   DECIMAL(32,6) ,
+   ct_device_person   VARCHAR(255) ,
+   buy_type   VARCHAR(100) ,
+   ext_src_sys_id   VARCHAR(20) ,
+   send_check_time   VARCHAR(255) ,
+   ref_no_b   VARCHAR(255) ,
+   ref_no_c   VARCHAR(255) ,
+   accuracy   VARCHAR(500) ,
+   ref_no_d   VARCHAR(255) ,
+   notificate_no   VARCHAR(255) ,
+   is_place_order   DECIMAL(32,6) ,
+   material_no   VARCHAR(64) ,
+   is_special   VARCHAR(255) ,
+   flow_id   VARCHAR(64) ,
+   ref_no_a   VARCHAR(255) ,
+   is_d_s_mro   DECIMAL(32,6) ,
+   plan_no   VARCHAR(500) ,
+   sku_name   VARCHAR(500) ,
+   id   VARCHAR(64)  NOT NULL,
+   create_user_no   VARCHAR(64) ,
+   seq_no   VARCHAR(500) ,
+   update_type   VARCHAR(30) ,
+   diff_erp_dept   VARCHAR(255) ,
+   device_id   VARCHAR(4000) ,
+   ext_etl_dt   TIMESTAMP ,
+   purchaser   VARCHAR(500) ,
+   apply_quantity   DECIMAL(32,6) ,
+   use_life   DECIMAL(32,6) ,
+   three_year_use   VARCHAR(255) ,
+   is_zzb_first   DECIMAL(32,6) ,
+   demand_plan_no   VARCHAR(255) ,
+   mro_type   VARCHAR(30) ,
+   plan_category_sec   VARCHAR(64) ,
+   delivery_date   VARCHAR(500) ,
+   cost_center   VARCHAR(500) ,
+   plan_category   VARCHAR(64) ,
+   parent_id   VARCHAR(64) ,
+   update_vesion   VARCHAR(30) ,
+   old_id   VARCHAR(64) ,
+   is_ct_device   VARCHAR(255) ,
+   status   DECIMAL(32,6) ,
+   create_user_dept   VARCHAR(64) ,
+   is_print_qrcode   DECIMAL(32,6) ,
+   purpose   VARCHAR(64) ,
+   erp_plan_no   VARCHAR(255) ,
+   estimate_price   DECIMAL(32,6) ,
+   range   VARCHAR(500) ,
+   side_new_quantity   DECIMAL(32,6) ,
+   is_clzz   DECIMAL(32,6) ,
+   total_store_quantity   DECIMAL(32,6) ,
+   plan_date   VARCHAR(30) ,
+   suggest_quantity   DECIMAL(32,6) ,
+   matl_category   VARCHAR(255) ,
+   measure_req   VARCHAR(500) ,
+   create_date_time   VARCHAR(30) ,
+   type_one   VARCHAR(255) ,
+   spare_apply_no   VARCHAR(64) ,
+   provider_name   VARCHAR(255) ,
+   update_date_time   VARCHAR(30) ,
+   provider_no   VARCHAR(255) ,
+   last_month_quantity   DECIMAL(32,6) ,
+   diff_comp_id   VARCHAR(255) ,
+   erp_err_info   VARCHAR(600) ,
+   arrival_time   VARCHAR(500) ,
+   use_dept   VARCHAR(64) ,
+   company_id   VARCHAR(64) ,
+   side_repare_quantity   DECIMAL(32,6) ,
+   flow_node   VARCHAR(255) ,
+   demand_type   VARCHAR(100) ,
+   third_sku_id   VARCHAR(500) ,
+   flow_name   VARCHAR(255) ,
+   no_contract_quantity   DECIMAL(32,6) ,
+   apply_status   VARCHAR(30) ,
+   mro_id   VARCHAR(500) ,
+   requirement   VARCHAR(2000) ,
+   is_need_qrcode   DECIMAL(32,6) ,
+   is_batch_qrcode   DECIMAL(32,6) ,
+   update_user_no   VARCHAR(64) ,
+   type_two   VARCHAR(255) ,
+   create_user_factory   VARCHAR(255) ,
+   proj_no   VARCHAR(255) ,
+   extra_info   VARCHAR(255) ,
+   diff_dept   VARCHAR(255) ,
+   on_way_quantity   DECIMAL(32,6) ,
+   demand_plan_id   VARCHAR(64) ,
+   is_mro   DECIMAL(32,6) ,
+   contacts   VARCHAR(500) ,
+   use_date   VARCHAR(30) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f IS '备件需求申报明细表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.i_level IS '优先级';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.is_zero IS '是否零库存(0否_1是)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.ct_device_person IS '成套设备验收人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.buy_type IS '采购类型';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.send_check_time IS '送审时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.ref_no_b IS '工程立项号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.ref_no_c IS '工程合约号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.accuracy IS '准确度';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.ref_no_d IS '厂商编号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.notificate_no IS '中标文号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.is_place_order IS '是否已下单(0否_1是)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.material_no IS '料号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.is_special IS '是否特种设备';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.flow_id IS '流程ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.ref_no_a IS '记账编号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.is_d_s_mro IS '是否电商mro(0否1是)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.plan_no IS '电商预订单单号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.sku_name IS '第三方商品名称(电商mro)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.id IS '主键';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.create_user_no IS '创建人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.seq_no IS '零库存或mro标识id';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.update_type IS '修改类型';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.diff_erp_dept IS '跨厂申报ERP部门';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.device_id IS '所属设备_数组';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.purchaser IS '采购员';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.apply_quantity IS '申请数量';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.use_life IS '使用寿命';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.three_year_use IS '三年使用量';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.is_zzb_first IS '是否制造部首检(0否1是)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.demand_plan_no IS '需求计划号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.mro_type IS 'mro拆分后类型(老计划-零库存)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.plan_category_sec IS '计划细类';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.delivery_date IS '交货日期';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.cost_center IS '成本中心';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.plan_category IS '计划类别';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.parent_id IS '父ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.update_vesion IS '版本';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.old_id IS 'mro拆分前id';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.is_ct_device IS '是否成套设备';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.status IS '状态(0可用_1不可用)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.create_user_dept IS '创建者部门';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.is_print_qrcode IS '是否需要打印二维码';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.purpose IS '用途别';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.erp_plan_no IS 'ERP需求计划号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.estimate_price IS '预估价格';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.range IS '量程';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.side_new_quantity IS '机旁数量(新品)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.is_clzz IS '是否测量装置(0否1是)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.total_store_quantity IS '库存数量(总库)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.plan_date IS '计划年月';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.suggest_quantity IS '建议申报量';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.matl_category IS '材料类别';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.measure_req IS '测量要求';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.create_date_time IS '创建时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.type_one IS '类型一(备件-材料)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.spare_apply_no IS '申报单号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.provider_name IS '供应商名称';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.update_date_time IS '修改时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.provider_no IS '供应商编码';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.last_month_quantity IS '上月领用量';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.diff_comp_id IS '调整的公司别';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.erp_err_info IS '提交ERP错误提示';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.arrival_time IS '到货时间(格式yyyymmdd)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.use_dept IS '用料单位';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.company_id IS '公司ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.side_repare_quantity IS '机旁数量(维修)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.flow_node IS '节点状态';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.demand_type IS '需求计划类型';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.third_sku_id IS '第三方商品编码(电商mro)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.flow_name IS '模板名称';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.no_contract_quantity IS '未形成合同量';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.apply_status IS '申报状态';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.mro_id IS 'id(mro计划特定字段)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.requirement IS '采购要求';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.is_need_qrcode IS '是否需要二维码(0否1是)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.is_batch_qrcode IS '是否产生批二维码';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.update_user_no IS '修改人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.type_two IS '类型二(ABC分类)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.create_user_factory IS '创建者生产厂';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.proj_no IS '项目号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.extra_info IS '退回原因';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.diff_dept IS '跨厂申报部门';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.on_way_quantity IS '在途量';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.demand_plan_id IS '需求计划ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.is_mro IS '是否mro(0否_1是)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.contacts IS '现场联系人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_demand_apply_detail_jc_f.use_date IS '使用日期';
+
+-- ------------------------
+
+-- File: dwr_eqp_mh_inventory_detail_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_mh_inventory_detail_jc_f
+--**描述：备材盘库单明细表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_mh_inventory_detail_jc_f( 
+   reason   VARCHAR(400) ,
+   i_level   VARCHAR(30) ,
+   create_user_dept   VARCHAR(255) ,
+   batch_no   VARCHAR(255) ,
+   company_id   VARCHAR(64) ,
+   total_price   VARCHAR(20) ,
+   surplus   DECIMAL(32,6) ,
+   ext_etl_dt   TIMESTAMP ,
+   inventory_id   VARCHAR(255) ,
+   ext_src_sys_id   VARCHAR(20) ,
+   stock_type   VARCHAR(30) ,
+   material_no   VARCHAR(255) ,
+   loss   DECIMAL(32,6) ,
+   create_date_time   VARCHAR(30) ,
+   update_user_no   VARCHAR(64) ,
+   create_user_factory   VARCHAR(255) ,
+   actual_quantity   DECIMAL(32,6) ,
+   price   VARCHAR(20) ,
+   storage_id   VARCHAR(255) ,
+   book_quantity   DECIMAL(32,6) ,
+   id   VARCHAR(32)  NOT NULL,
+   update_date_time   VARCHAR(30) ,
+   status   DECIMAL(32,6) ,
+   create_user_no   VARCHAR(64) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_mh_inventory_detail_jc_f IS '备材盘库单明细表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_detail_jc_f.reason IS '原因分析';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_detail_jc_f.i_level IS '优先级';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_detail_jc_f.create_user_dept IS '创建者部门';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_detail_jc_f.batch_no IS '批号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_detail_jc_f.company_id IS '公司ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_detail_jc_f.total_price IS '总金额';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_detail_jc_f.surplus IS '盘盈(加)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_detail_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_detail_jc_f.inventory_id IS '盘库单ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_detail_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_detail_jc_f.stock_type IS '库存类型';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_detail_jc_f.material_no IS '料号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_detail_jc_f.loss IS '盘亏(减)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_detail_jc_f.create_date_time IS '创建时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_detail_jc_f.update_user_no IS '修改人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_detail_jc_f.create_user_factory IS '创建者生产厂';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_detail_jc_f.actual_quantity IS '实物数';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_detail_jc_f.price IS '单价';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_detail_jc_f.storage_id IS '储位信息';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_detail_jc_f.book_quantity IS '账面数';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_detail_jc_f.id IS '主键';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_detail_jc_f.update_date_time IS '修改时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_detail_jc_f.status IS '状态(0可用_1不可用)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_detail_jc_f.create_user_no IS '创建人';
+
+-- ------------------------
+
+-- File: dwr_eqp_mh_inventory_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_mh_inventory_jc_f
+--**描述：备材盘库单表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_mh_inventory_jc_f( 
+   i_level   VARCHAR(30) ,
+   create_user_dept   VARCHAR(255) ,
+   company_id   VARCHAR(64) ,
+   ext_etl_dt   TIMESTAMP ,
+   ext_src_sys_id   VARCHAR(20) ,
+   side_id   VARCHAR(255) ,
+   inventory_person   VARCHAR(255) ,
+   remark   VARCHAR(100) ,
+   inventory_name   VARCHAR(30) ,
+   inventory_status   VARCHAR(30) ,
+   total   DECIMAL(32,6) ,
+   create_date_time   VARCHAR(30) ,
+   update_user_no   VARCHAR(64) ,
+   create_user_factory   VARCHAR(255) ,
+   in_order_id   VARCHAR(255) ,
+   inventory_dept   VARCHAR(255) ,
+   out_order_id   VARCHAR(255) ,
+   id   VARCHAR(32)  NOT NULL,
+   update_date_time   VARCHAR(30) ,
+   create_user_no   VARCHAR(64) ,
+   status   DECIMAL(32,6) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_mh_inventory_jc_f IS '备材盘库单表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_jc_f.i_level IS '优先级';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_jc_f.create_user_dept IS '创建者部门';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_jc_f.company_id IS '公司ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_jc_f.side_id IS '机旁库位';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_jc_f.inventory_person IS '盘点人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_jc_f.remark IS '备注';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_jc_f.inventory_name IS '单据名称';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_jc_f.inventory_status IS '状态';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_jc_f.total IS '盘库总额';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_jc_f.create_date_time IS '创建时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_jc_f.update_user_no IS '修改人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_jc_f.create_user_factory IS '创建者生产厂';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_jc_f.in_order_id IS '入库单ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_jc_f.inventory_dept IS '盘点部门';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_jc_f.out_order_id IS '出库单ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_jc_f.id IS '主键';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_jc_f.update_date_time IS '修改时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_jc_f.create_user_no IS '创建人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_inventory_jc_f.status IS '状态(0可用_1不可用)';
+
+-- ------------------------
+
+-- File: dwr_eqp_mh_material_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_mh_material_jc_f
+--**描述：备材物料表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_mh_material_jc_f( 
+   pic_no   VARCHAR(255) ,
+   i_level   VARCHAR(30) ,
+   ext_src_sys_id   VARCHAR(20) ,
+   material_no   VARCHAR(32) ,
+   technical_req   VARCHAR(800) ,
+   supply_scope   VARCHAR(255) ,
+   create_date_time   VARCHAR(30) ,
+   type_one   VARCHAR(255) ,
+   price   DECIMAL(32,6) ,
+   supplier   VARCHAR(255) ,
+   purchase_cycle   VARCHAR(255) ,
+   model   VARCHAR(255) ,
+   id   VARCHAR(64)  NOT NULL,
+   is_forbidden   VARCHAR(10) ,
+   material_name   VARCHAR(255) ,
+   brand   VARCHAR(255) ,
+   update_date_time   VARCHAR(30) ,
+   create_user_no   VARCHAR(64) ,
+   company_id   VARCHAR(64) ,
+   ext_etl_dt   TIMESTAMP ,
+   texture   VARCHAR(100) ,
+   use_life   DECIMAL(32,6) ,
+   unit   VARCHAR(30) ,
+   update_user_no   VARCHAR(64) ,
+   type_two   VARCHAR(255) ,
+   status   DECIMAL(32,6) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_mh_material_jc_f IS '备材物料表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_material_jc_f.pic_no IS '图号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_material_jc_f.i_level IS '优先级';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_material_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_material_jc_f.material_no IS '物料料号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_material_jc_f.technical_req IS '技术要求';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_material_jc_f.supply_scope IS '供货范围';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_material_jc_f.create_date_time IS '创建时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_material_jc_f.type_one IS '备件_材料';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_material_jc_f.price IS '前期单价';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_material_jc_f.supplier IS '建议厂商';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_material_jc_f.purchase_cycle IS '采购周期';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_material_jc_f.model IS '型号规格';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_material_jc_f.id IS '主键';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_material_jc_f.is_forbidden IS '是否禁用(Y禁用_N未禁用)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_material_jc_f.material_name IS '物料名称';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_material_jc_f.brand IS '品牌';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_material_jc_f.update_date_time IS '修改时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_material_jc_f.create_user_no IS '创建人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_material_jc_f.company_id IS '公司ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_material_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_material_jc_f.texture IS '材质';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_material_jc_f.use_life IS '使用寿命';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_material_jc_f.unit IS '计量单位';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_material_jc_f.update_user_no IS '修改人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_material_jc_f.type_two IS 'ABC分类';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_material_jc_f.status IS '状态(0可用_1不可用)';
+
+-- ------------------------
+
+-- File: dwr_eqp_mh_quality_dissent_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_mh_quality_dissent_jc_f
+--**描述：质量异议表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f( 
+   apply_dept_name   VARCHAR(500) ,
+   i_level   VARCHAR(500) ,
+   ext_src_sys_id   VARCHAR(500) ,
+   approve_status   VARCHAR(500) ,
+   happen_date   VARCHAR(500) ,
+   material_no   VARCHAR(500) ,
+   applicant_tel   VARCHAR(500) ,
+   apply_business_no   VARCHAR(500) ,
+   supply_name   VARCHAR(500) ,
+   create_date_time   VARCHAR(500) ,
+   apply_dept_no   VARCHAR(500) ,
+   problem   VARCHAR(500) ,
+   ssb_approver   VARCHAR(500) ,
+   flow_id   VARCHAR(500) ,
+   file_ids   VARCHAR(500) ,
+   id   VARCHAR(500)  NOT NULL,
+   is_interrupt   VARCHAR(500) ,
+   purchase_name   VARCHAR(500) ,
+   material_name   VARCHAR(500) ,
+   update_date_time   VARCHAR(500) ,
+   create_user_no   VARCHAR(500) ,
+   po_no   VARCHAR(500) ,
+   severity   VARCHAR(500) ,
+   qual_no   VARCHAR(500) ,
+   company_id   VARCHAR(500) ,
+   is_honest   VARCHAR(500) ,
+   ext_etl_dt   TIMESTAMP ,
+   purchaser   VARCHAR(500) ,
+   sbzw_type   VARCHAR(500) ,
+   source_type   VARCHAR(500) ,
+   suspend_time   VARCHAR(500) ,
+   comp_id   VARCHAR(500) ,
+   apply_user_name   VARCHAR(500) ,
+   apply_user_no   VARCHAR(500) ,
+   problem_num   DECIMAL(32,6) ,
+   var_category   VARCHAR(500) ,
+   update_user_no   VARCHAR(500) ,
+   report_id   VARCHAR(500) ,
+   approver_list   VARCHAR(500) ,
+   supply_no   VARCHAR(500) ,
+   is_unqualified   VARCHAR(500) ,
+   status   VARCHAR(500) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f IS '质量异议表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.apply_dept_name IS '申请部门名称';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.i_level IS '优先级';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.approve_status IS '审批状态';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.happen_date IS '发生日期';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.material_no IS '采购料号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.applicant_tel IS '申请人联系方式';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.apply_business_no IS '申请事业部编码';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.supply_name IS '厂商名称';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.create_date_time IS '创建时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.apply_dept_no IS '申请部门编码';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.problem IS '质量问题情况描述分析';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.ssb_approver IS '事业部核准人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.flow_id IS '流程ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.file_ids IS 'ERP附件ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.id IS '主键ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.is_interrupt IS '是否造成生产中断(1是_0否)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.purchase_name IS '采购名称';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.material_name IS '采购料名';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.update_date_time IS '修改时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.create_user_no IS '创建人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.po_no IS '合同号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.severity IS '质量严重程度';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.qual_no IS '质量问题单号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.company_id IS '公司ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.is_honest IS '是否存在不诚信行为(1是_0否)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.purchaser IS '采购员';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.sbzw_type IS '问题阶段(A安装过程_B使用过程)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.source_type IS '来源类型';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.suspend_time IS '生产中断时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.comp_id IS '公司别';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.apply_user_name IS '申请人姓名';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.apply_user_no IS '申请人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.problem_num IS '质量问题发生数量';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.var_category IS '品种类别';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.update_user_no IS '修改人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.report_id IS '延误报告id';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.approver_list IS '申请人列表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.supply_no IS '厂商编号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.is_unqualified IS '造成不合格产品(1是_0否)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_quality_dissent_jc_f.status IS '质量异议状态';
+
+-- ------------------------
+
+-- File: dwr_eqp_mh_side_io_detail_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_mh_side_io_detail_jc_f
+--**描述：机旁库出入库单物料明细表_机旁库出库
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_mh_side_io_detail_jc_f( 
+   i_level   VARCHAR(30) ,
+   create_user_dept   VARCHAR(255) ,
+   batch_no   VARCHAR(32) ,
+   company_id   VARCHAR(64) ,
+   ext_etl_dt   TIMESTAMP ,
+   ext_src_sys_id   VARCHAR(20) ,
+   io_total_price   DECIMAL(32,6) ,
+   material_no   VARCHAR(32) ,
+   order_status   VARCHAR(255) ,
+   create_date_time   VARCHAR(30) ,
+   update_user_no   VARCHAR(64) ,
+   create_user_factory   VARCHAR(255) ,
+   storage_id   VARCHAR(32) ,
+   io_quantity   DECIMAL(32,6) ,
+   supplier   VARCHAR(255) ,
+   io_order_id   VARCHAR(32) ,
+   id   VARCHAR(32)  NOT NULL,
+   io_price   DECIMAL(32,6) ,
+   material_name   VARCHAR(255) ,
+   update_date_time   VARCHAR(30) ,
+   create_user_no   VARCHAR(64) ,
+   status   DECIMAL(32,6) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_mh_side_io_detail_jc_f IS '机旁库出入库单物料明细表_机旁库出库';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_detail_jc_f.i_level IS '优先级';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_detail_jc_f.create_user_dept IS '创建者部门';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_detail_jc_f.batch_no IS '批号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_detail_jc_f.company_id IS '公司ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_detail_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_detail_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_detail_jc_f.io_total_price IS '交易总价';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_detail_jc_f.material_no IS '料号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_detail_jc_f.order_status IS '申请中-已入库-已出库';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_detail_jc_f.create_date_time IS '创建时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_detail_jc_f.update_user_no IS '修改人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_detail_jc_f.create_user_factory IS '创建者生产厂';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_detail_jc_f.storage_id IS '仓库储位ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_detail_jc_f.io_quantity IS '交易数量';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_detail_jc_f.supplier IS '供应商';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_detail_jc_f.io_order_id IS '交易单ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_detail_jc_f.id IS '主键';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_detail_jc_f.io_price IS '单价';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_detail_jc_f.material_name IS '物料名称';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_detail_jc_f.update_date_time IS '修改时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_detail_jc_f.create_user_no IS '创建人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_detail_jc_f.status IS '状态(0可用_1不可用)';
+
+-- ------------------------
+
+-- File: dwr_eqp_mh_side_io_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_mh_side_io_jc_f
+--**描述：机旁库出入库单表_机旁库入库
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_mh_side_io_jc_f( 
+   order_no   VARCHAR(32) ,
+   i_level   VARCHAR(30) ,
+   create_user_dept   VARCHAR(255) ,
+   ext_src_sys_id   VARCHAR(20) ,
+   side_id   VARCHAR(32) ,
+   remark   VARCHAR(100) ,
+   io_time   VARCHAR(30) ,
+   order_status   VARCHAR(100) ,
+   create_date_time   VARCHAR(30) ,
+   io_persion   VARCHAR(30) ,
+   id   VARCHAR(32)  NOT NULL,
+   update_date_time   VARCHAR(30) ,
+   apply_persion   VARCHAR(30) ,
+   create_user_no   VARCHAR(64) ,
+   company_id   VARCHAR(64) ,
+   ext_etl_dt   TIMESTAMP ,
+   io_type_detail   VARCHAR(30) ,
+   update_user_no   VARCHAR(64) ,
+   create_user_factory   VARCHAR(255) ,
+   name   VARCHAR(30) ,
+   io_type   VARCHAR(30) ,
+   apply_dept   VARCHAR(30) ,
+   rela_order_no   VARCHAR(255) ,
+   io_dept   VARCHAR(30) ,
+   status   DECIMAL(32,6) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_mh_side_io_jc_f IS '机旁库出入库单表_机旁库入库';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_jc_f.order_no IS '单号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_jc_f.i_level IS '优先级';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_jc_f.create_user_dept IS '创建者部门';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_jc_f.side_id IS '机旁库位ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_jc_f.remark IS '备注';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_jc_f.io_time IS '交易时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_jc_f.order_status IS '单据状态(申请中-已入库-已出库)';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_jc_f.create_date_time IS '创建时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_jc_f.io_persion IS '交易人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_jc_f.id IS '主键';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_jc_f.update_date_time IS '修改时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_jc_f.apply_persion IS '申请人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_jc_f.create_user_no IS '创建人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_jc_f.company_id IS '公司ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_jc_f.io_type_detail IS '出入库类型细项';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_jc_f.update_user_no IS '修改人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_jc_f.create_user_factory IS '创建者生产厂';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_jc_f.name IS '单据名称';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_jc_f.io_type IS '交易类型';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_jc_f.apply_dept IS '申请单位';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_jc_f.rela_order_no IS '关联单号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_jc_f.io_dept IS '交易部门';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_io_jc_f.status IS '状态(0可用_1不可用)';
+
+-- ------------------------
+
+-- File: dwr_eqp_mh_side_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_mh_side_jc_f
+--**描述：机旁库库位表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_mh_side_jc_f( 
+   factory   VARCHAR(64) ,
+   i_level   VARCHAR(30) ,
+   create_user_dept   VARCHAR(255) ,
+   side_no   VARCHAR(64) ,
+   side_name   VARCHAR(64) ,
+   company_id   VARCHAR(64) ,
+   ext_etl_dt   TIMESTAMP ,
+   workshop   VARCHAR(64) ,
+   ext_src_sys_id   VARCHAR(20) ,
+   manage_person   VARCHAR(64) ,
+   remark   VARCHAR(300) ,
+   create_date_time   VARCHAR(30) ,
+   update_user_no   VARCHAR(64) ,
+   create_user_factory   VARCHAR(255) ,
+   parent_id   VARCHAR(64) ,
+   id   VARCHAR(64)  NOT NULL,
+   maint_dept   VARCHAR(64) ,
+   update_date_time   VARCHAR(30) ,
+   create_user_no   VARCHAR(64) ,
+   status   DECIMAL(32,6) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_mh_side_jc_f IS '机旁库库位表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_jc_f.factory IS '所属厂';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_jc_f.i_level IS '优先级';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_jc_f.create_user_dept IS '创建者部门';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_jc_f.side_no IS '库位编号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_jc_f.side_name IS '名称';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_jc_f.company_id IS '公司ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_jc_f.workshop IS '所属车间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_jc_f.manage_person IS '仓库管理员';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_jc_f.remark IS '备注';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_jc_f.create_date_time IS '创建时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_jc_f.update_user_no IS '修改人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_jc_f.create_user_factory IS '创建者生产厂';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_jc_f.parent_id IS '父ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_jc_f.id IS '主键';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_jc_f.maint_dept IS '责任单位';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_jc_f.update_date_time IS '修改时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_jc_f.create_user_no IS '创建人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_jc_f.status IS '状态(0可用_1不可用)';
+
+-- ------------------------
+
+-- File: dwr_eqp_mh_side_stock_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_mh_side_stock_jc_f
+--**描述：机旁库库存表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_mh_side_stock_jc_f( 
+   amount   DECIMAL(32,6) ,
+   i_level   VARCHAR(30) ,
+   create_user_dept   VARCHAR(255) ,
+   batch_no   VARCHAR(30) ,
+   quantity   DECIMAL(32,6) ,
+   company_id   VARCHAR(64) ,
+   ext_etl_dt   TIMESTAMP ,
+   ext_src_sys_id   VARCHAR(20) ,
+   remark   VARCHAR(100) ,
+   material_no   VARCHAR(32) ,
+   material_type   VARCHAR(30) ,
+   stock_type   VARCHAR(30) ,
+   unit   VARCHAR(30) ,
+   create_date_time   VARCHAR(30) ,
+   update_user_no   VARCHAR(64) ,
+   create_user_factory   VARCHAR(255) ,
+   storage_id   VARCHAR(32) ,
+   model   VARCHAR(255) ,
+   id   VARCHAR(32)  NOT NULL,
+   material_name   VARCHAR(255) ,
+   update_date_time   VARCHAR(30) ,
+   create_user_no   VARCHAR(64) ,
+   status   DECIMAL(32,6) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_mh_side_stock_jc_f IS '机旁库库存表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_stock_jc_f.amount IS '总价';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_stock_jc_f.i_level IS '优先级';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_stock_jc_f.create_user_dept IS '创建者部门';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_stock_jc_f.batch_no IS '批号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_stock_jc_f.quantity IS '数量';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_stock_jc_f.company_id IS '公司ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_stock_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_stock_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_stock_jc_f.remark IS '备注';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_stock_jc_f.material_no IS '料号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_stock_jc_f.material_type IS '物料类型';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_stock_jc_f.stock_type IS '库存类型';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_stock_jc_f.unit IS '计量单位';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_stock_jc_f.create_date_time IS '创建时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_stock_jc_f.update_user_no IS '修改人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_stock_jc_f.create_user_factory IS '创建者生产厂';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_stock_jc_f.storage_id IS '储位ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_stock_jc_f.model IS '型号规格';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_stock_jc_f.id IS '主键';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_stock_jc_f.material_name IS '物料名称';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_stock_jc_f.update_date_time IS '修改时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_stock_jc_f.create_user_no IS '创建人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_stock_jc_f.status IS '状态(0可用_1不可用)';
+
+-- ------------------------
+
+-- File: dwr_eqp_mh_side_storage_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_mh_side_storage_jc_f
+--**描述：机旁库储位表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_mh_side_storage_jc_f( 
+   locat_no   VARCHAR(64) ,
+   i_level   VARCHAR(30) ,
+   create_user_dept   VARCHAR(255) ,
+   company_id   VARCHAR(64) ,
+   ext_etl_dt   TIMESTAMP ,
+   ext_src_sys_id   VARCHAR(20) ,
+   side_id   VARCHAR(64) ,
+   remark   VARCHAR(100) ,
+   manage_person   VARCHAR(64) ,
+   locat_name   VARCHAR(100) ,
+   create_date_time   VARCHAR(30) ,
+   update_user_no   VARCHAR(64) ,
+   create_user_factory   VARCHAR(255) ,
+   parent_id   VARCHAR(64) ,
+   id   VARCHAR(64)  NOT NULL,
+   maint_dept   VARCHAR(64) ,
+   update_date_time   VARCHAR(30) ,
+   create_user_no   VARCHAR(64) ,
+   status   DECIMAL(32,6) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_mh_side_storage_jc_f IS '机旁库储位表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_storage_jc_f.locat_no IS '位置编号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_storage_jc_f.i_level IS '优先级';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_storage_jc_f.create_user_dept IS '创建者部门';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_storage_jc_f.company_id IS '公司ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_storage_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_storage_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_storage_jc_f.side_id IS '机旁库ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_storage_jc_f.remark IS '备注';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_storage_jc_f.manage_person IS '仓库管理员';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_storage_jc_f.locat_name IS '位置名称';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_storage_jc_f.create_date_time IS '创建时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_storage_jc_f.update_user_no IS '修改人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_storage_jc_f.create_user_factory IS '创建者生产厂';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_storage_jc_f.parent_id IS '父ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_storage_jc_f.id IS '主键';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_storage_jc_f.maint_dept IS '责任单位';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_storage_jc_f.update_date_time IS '修改时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_storage_jc_f.create_user_no IS '创建人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mh_side_storage_jc_f.status IS '状态(0可用_1不可用)';
+
+-- ------------------------
+
+-- File: dwr_eqp_mj_rule_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_mj_rule_jc_f
+--**描述：设备报警规则表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_mj_rule_jc_f( 
+   i_level   VARCHAR(2) ,
+   RULE_STATUS   VARCHAR(2) ,
+   company_id   VARCHAR(40) ,
+   task_no   VARCHAR(40) ,
+   ext_etl_dt   TIMESTAMP ,
+   rule_name   VARCHAR(200) ,
+   ext_src_sys_id   VARCHAR(20) ,
+   eqid_or_lineno   VARCHAR(32) ,
+   eqline_type   VARCHAR(2) ,
+   create_date_time   VARCHAR(40) ,
+   update_user_no   VARCHAR(40) ,
+   system   VARCHAR(2) ,
+   rule_desc   VARCHAR(500) ,
+   alarm_type   VARCHAR(2) ,
+   id   VARCHAR(40)  NOT NULL,
+   update_date_time   VARCHAR(40) ,
+   create_user_no   VARCHAR(40) ,
+   status   DECIMAL(32,6) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_mj_rule_jc_f IS '设备报警规则表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mj_rule_jc_f.i_level IS '优先级';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mj_rule_jc_f.RULE_STATUS IS '规则状态';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mj_rule_jc_f.company_id IS '公司ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mj_rule_jc_f.task_no IS '规则引擎系统规则任务对应的编号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mj_rule_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mj_rule_jc_f.rule_name IS '规则名称';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mj_rule_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mj_rule_jc_f.eqid_or_lineno IS '设备或产线编号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mj_rule_jc_f.eqline_type IS '产线和设备类型';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mj_rule_jc_f.create_date_time IS '创建时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mj_rule_jc_f.update_user_no IS '修改人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mj_rule_jc_f.system IS '报警系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mj_rule_jc_f.rule_desc IS '规则描述';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mj_rule_jc_f.alarm_type IS '报警类型';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mj_rule_jc_f.id IS '主键ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mj_rule_jc_f.update_date_time IS '修改时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mj_rule_jc_f.create_user_no IS '创建人';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mj_rule_jc_f.status IS '状态';
+
+-- ------------------------
+
+-- File: dwr_eqp_mo_oil_box_list_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_mo_oil_box_list_jc_f
+--**描述：油箱清单表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f( 
+   i_level   VARCHAR(500) ,
+   period_unit   VARCHAR(500) ,
+   eq_component_id   VARCHAR(500) ,
+   ext_src_sys_id   VARCHAR(500) ,
+   capacity_unit   VARCHAR(500) ,
+   approve_status   VARCHAR(500) ,
+   capacity_volume2   VARCHAR(500) ,
+   eq_id   VARCHAR(500) ,
+   remark   VARCHAR(500) ,
+   oil_id   VARCHAR(500) ,
+   check_first_date   VARCHAR(500) ,
+   check_dept_no   VARCHAR(500) ,
+   eq_spare_id   VARCHAR(500) ,
+   create_date_time   VARCHAR(500) ,
+   check_dept_id   VARCHAR(500) ,
+   check_supplier   VARCHAR(500) ,
+   is_schedule   VARCHAR(500) ,
+   id   VARCHAR(500)  NOT NULL,
+   check_content   VARCHAR(500) ,
+   capacity_volume   VARCHAR(500) ,
+   update_date_time   VARCHAR(500) ,
+   create_user_no   VARCHAR(500) ,
+   use_dept_id   VARCHAR(500) ,
+   oil_box_name   VARCHAR(500) ,
+   check_last_result   VARCHAR(500) ,
+   company_id   VARCHAR(500) ,
+   ext_etl_dt   TIMESTAMP ,
+   oil_box_no   VARCHAR(500) ,
+   eq_parts_id   VARCHAR(500) ,
+   in_or_out_check   VARCHAR(500) ,
+   oil_check_cycle   VARCHAR(500) ,
+   last_check_date   VARCHAR(500) ,
+   fixed_asset_no   VARCHAR(500) ,
+   expect_check_date   VARCHAR(500) ,
+   update_user_no   VARCHAR(500) ,
+   is_check   VARCHAR(500) ,
+   use_standard   VARCHAR(500) ,
+   use_dept_no   VARCHAR(500) ,
+   use_date   VARCHAR(500) ,
+   status   VARCHAR(500) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f IS '油箱清单表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.i_level IS '等级';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.period_unit IS '检测周期单位';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.eq_component_id IS '组件id';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.capacity_unit IS '容量单位';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.approve_status IS '油箱状态';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.capacity_volume2 IS '容量2';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.eq_id IS '设备ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.remark IS '备注';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.oil_id IS '油品ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.check_first_date IS '上次检查时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.check_dept_no IS '检测部门编号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.eq_spare_id IS '零件id';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.create_date_time IS '创建日期';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.check_dept_id IS '检测部门';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.check_supplier IS '检验厂商';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.is_schedule IS '是否属于排程';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.id IS '主键';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.check_content IS '检验内容';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.capacity_volume IS '容量';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.update_date_time IS '修改日期';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.create_user_no IS '创建人工号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.use_dept_id IS '使用部门id';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.oil_box_name IS '油箱名称';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.check_last_result IS '上次检测结果';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.company_id IS '公司ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.oil_box_no IS '油箱编号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.eq_parts_id IS '部件id';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.in_or_out_check IS '内检或外检';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.oil_check_cycle IS '检测周期';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.last_check_date IS '下次检查时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.fixed_asset_no IS '固资财务编码';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.expect_check_date IS '预计检测日期';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.update_user_no IS '修改人工号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.is_check IS '是否检查';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.use_standard IS '使用标准';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.use_dept_no IS '使用部门';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.use_date IS '使用日期';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_box_list_jc_f.status IS '状态';
+
+-- ------------------------
+
+-- File: dwr_eqp_mo_oil_check_item_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_mo_oil_check_item_jc_f
+--**描述：油品检测明细表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_mo_oil_check_item_jc_f( 
+   i_level   VARCHAR(500) ,
+   check_value   VARCHAR(500) ,
+   company_id   VARCHAR(500) ,
+   ext_etl_dt   TIMESTAMP ,
+   oil_check_plan_id   VARCHAR(500) ,
+   ext_src_sys_id   VARCHAR(500) ,
+   remark   VARCHAR(500) ,
+   oil_check_std_id   VARCHAR(500) ,
+   re_check_value   VARCHAR(500) ,
+   oil_upper_alarm   VARCHAR(500) ,
+   create_date_time   VARCHAR(500) ,
+   update_user_no   VARCHAR(500) ,
+   oil_upper_limit   VARCHAR(500) ,
+   oil_lower_alarm   VARCHAR(500) ,
+   id   VARCHAR(500)  NOT NULL,
+   is_check   VARCHAR(500) ,
+   is_pass   VARCHAR(500) ,
+   oil_lower_limit   VARCHAR(500) ,
+   standard_value   VARCHAR(500) ,
+   update_date_time   VARCHAR(500) ,
+   create_user_no   VARCHAR(500) ,
+   status   VARCHAR(500) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_mo_oil_check_item_jc_f IS '油品检测明细表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_item_jc_f.i_level IS '等级';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_item_jc_f.check_value IS '检测值';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_item_jc_f.company_id IS '公司ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_item_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_item_jc_f.oil_check_plan_id IS '油箱检测计划ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_item_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_item_jc_f.remark IS '备注';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_item_jc_f.oil_check_std_id IS '油箱检验项目ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_item_jc_f.re_check_value IS '上次检测值';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_item_jc_f.oil_upper_alarm IS '上限警戒值';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_item_jc_f.create_date_time IS '创建日期';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_item_jc_f.update_user_no IS '修改人工号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_item_jc_f.oil_upper_limit IS '上限值';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_item_jc_f.oil_lower_alarm IS '下限警戒值';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_item_jc_f.id IS '主键';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_item_jc_f.is_check IS '是否检查';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_item_jc_f.is_pass IS '是否合格';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_item_jc_f.oil_lower_limit IS '下限值';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_item_jc_f.standard_value IS '标准值';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_item_jc_f.update_date_time IS '修改日期';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_item_jc_f.create_user_no IS '创建人工号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_item_jc_f.status IS '状态';
+
+-- ------------------------
+
+-- File: dwr_eqp_mo_oil_check_plan_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_mo_oil_check_plan_jc_f
+--**描述：油箱检测信息表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_mo_oil_check_plan_jc_f( 
+   exp_samp_date_time   VARCHAR(500) ,
+   i_level   VARCHAR(500) ,
+   oil_check_status   VARCHAR(500) ,
+   ext_src_sys_id   VARCHAR(500) ,
+   remark   VARCHAR(500) ,
+   used   VARCHAR(500) ,
+   oil_check_type   VARCHAR(500) ,
+   create_date_time   VARCHAR(500) ,
+   oil_check_result   VARCHAR(500) ,
+   id   VARCHAR(500)  NOT NULL,
+   schedule_years   VARCHAR(500) ,
+   act_fin_date_time   VARCHAR(500) ,
+   update_date_time   VARCHAR(500) ,
+   create_user_no   VARCHAR(500) ,
+   check_user_no   VARCHAR(500) ,
+   check_user_name   VARCHAR(500) ,
+   company_id   VARCHAR(500) ,
+   ext_etl_dt   TIMESTAMP ,
+   deal_type   VARCHAR(500) ,
+   old_plan_id   VARCHAR(500) ,
+   receive_time   VARCHAR(500) ,
+   deal_idea   VARCHAR(500) ,
+   over_reason   VARCHAR(500) ,
+   update_user_no   VARCHAR(500) ,
+   send_time   VARCHAR(500) ,
+   schedule_time   VARCHAR(500) ,
+   back_reason   VARCHAR(500) ,
+   oil_check_plan_no   VARCHAR(500) ,
+   is_no_send_over_due   VARCHAR(500) ,
+   oil_box_id   VARCHAR(500) ,
+   status   VARCHAR(500) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_mo_oil_check_plan_jc_f IS '油箱检测信息表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_plan_jc_f.exp_samp_date_time IS '预计检测日期';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_plan_jc_f.i_level IS '等级';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_plan_jc_f.oil_check_status IS '检测计划状态';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_plan_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_plan_jc_f.remark IS '备注';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_plan_jc_f.used IS '用量';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_plan_jc_f.oil_check_type IS '油品检测计划来源';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_plan_jc_f.create_date_time IS '创建日期';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_plan_jc_f.oil_check_result IS '检测结果';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_plan_jc_f.id IS '主键';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_plan_jc_f.schedule_years IS '排程年月';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_plan_jc_f.act_fin_date_time IS '实际检测日期';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_plan_jc_f.update_date_time IS '修改日期';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_plan_jc_f.create_user_no IS '创建人工号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_plan_jc_f.check_user_no IS '检测人工号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_plan_jc_f.check_user_name IS '检测人名';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_plan_jc_f.company_id IS '公司ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_plan_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_plan_jc_f.deal_type IS '处理方式';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_plan_jc_f.old_plan_id IS '旧检验计划id';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_plan_jc_f.receive_time IS '接收时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_plan_jc_f.deal_idea IS '处理意见';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_plan_jc_f.over_reason IS '逾期未检原因';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_plan_jc_f.update_user_no IS '修改人工号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_plan_jc_f.send_time IS '送审时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_plan_jc_f.schedule_time IS '排程时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_plan_jc_f.back_reason IS '退回原因';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_plan_jc_f.oil_check_plan_no IS '油品检验计划编号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_plan_jc_f.is_no_send_over_due IS '是否逾期未检';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_plan_jc_f.oil_box_id IS '油箱ID';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_mo_oil_check_plan_jc_f.status IS '状态';
+
+-- ------------------------
+
+-- File: dwr_eqp_support_factory_info_jc_f_jc_f.script
+--*************************************--
+--**主题: dwr_eqp_support_factory_info_jc_f
+--**描述：事业部生产厂维度表
+--**创建者：jh_caiyi
+--**创建时间：2025-06-04 16:31:57
+--**修改内容：
+--**修改内容：别瞎删喔~~！！ ！！
+--**修改时间：
+--**修改者：
+--*************************************--
+CREATE TABLE IF NOT EXISTS dwr_eqp.dwr_eqp_support_factory_info_jc_f( 
+   business_name   VARCHAR(500) ,
+   i_level   VARCHAR(500) ,
+   company_id   VARCHAR(500) ,
+   ext_etl_dt   TIMESTAMP ,
+   ext_src_sys_id   VARCHAR(500) ,
+   business_no   VARCHAR(500) ,
+   factory_name   VARCHAR(500) ,
+   remark   VARCHAR(500) ,
+   factory_id   VARCHAR(500) ,
+   create_date_time   VARCHAR(500) ,
+   update_user_no   VARCHAR(500) ,
+   device_charger_num   VARCHAR(500) ,
+   factory_no   VARCHAR(500) ,
+   spared   VARCHAR(500) ,
+   sparec   VARCHAR(500) ,
+   id   VARCHAR(500)  NOT NULL,
+   meta_code   VARCHAR(500) ,
+   sparee   VARCHAR(500) ,
+   business_id   VARCHAR(500) ,
+   spareb   VARCHAR(500) ,
+   update_date_time   VARCHAR(500) ,
+   sparea   VARCHAR(500) ,
+   create_user_no   VARCHAR(500) ,
+   status   DECIMAL(32,6) ,
+    primary key (id)
+) WITH (ORIENTATION = COLUMN) distribute by hash(id);
+COMMENT ON TABLE dwr_eqp.dwr_eqp_support_factory_info_jc_f IS '事业部生产厂维度表';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_support_factory_info_jc_f.business_name IS '事业部名称';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_support_factory_info_jc_f.i_level IS '排序';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_support_factory_info_jc_f.company_id IS '公司别';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_support_factory_info_jc_f.ext_etl_dt IS 'ETL时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_support_factory_info_jc_f.ext_src_sys_id IS '源系统';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_support_factory_info_jc_f.business_no IS '事业部编号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_support_factory_info_jc_f.factory_name IS '生产厂名称';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_support_factory_info_jc_f.remark IS '备注';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_support_factory_info_jc_f.factory_id IS '生产厂id';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_support_factory_info_jc_f.create_date_time IS '创建时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_support_factory_info_jc_f.update_user_no IS '修改人工号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_support_factory_info_jc_f.device_charger_num IS '设备员数量';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_support_factory_info_jc_f.factory_no IS '生产厂编号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_support_factory_info_jc_f.spared IS '类别d';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_support_factory_info_jc_f.sparec IS '类别c';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_support_factory_info_jc_f.id IS '主键';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_support_factory_info_jc_f.meta_code IS '推送taos报警编号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_support_factory_info_jc_f.sparee IS '类别e';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_support_factory_info_jc_f.business_id IS '事业部id';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_support_factory_info_jc_f.spareb IS '类别b';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_support_factory_info_jc_f.update_date_time IS '修改时间';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_support_factory_info_jc_f.sparea IS '类别a';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_support_factory_info_jc_f.create_user_no IS '创建人工号';
+COMMENT ON COLUMN dwr_eqp.dwr_eqp_support_factory_info_jc_f.status IS '状态';
+
+-- ------------------------
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>OA</serviceSystemName>
+		<serviceSystemDesc>OA系统</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>OA_DocService</protocol>
+						<protocol>OA_OAWorkflowServiceCS</protocol>
+						<protocol>OA_ReceiveRequestInfoByJsonQuery</protocol>
+						<protocol>OA_UserRequestInfoByJsonDelete</protocol>
+						<protocol>OA_WorkflowService</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>DocService</serivcename>
+			<protocol>OA_DocService</protocol>
+			</service>
+						<service>
+			<serivcename>OAWorkflowServiceCS</serivcename>
+			<protocol>OA_OAWorkflowServiceCS</protocol>
+			</service>
+						<service>
+			<serivcename>ReceiveRequestInfoByJsonQuery</serivcename>
+			<protocol>OA_ReceiveRequestInfoByJsonQuery</protocol>
+			</service>
+						<service>
+			<serivcename>UserRequestInfoByJsonDelete</serivcename>
+			<protocol>OA_UserRequestInfoByJsonDelete</protocol>
+			</service>
+						<service>
+			<serivcename>WorkflowService</serivcename>
+			<protocol>OA_WorkflowService</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

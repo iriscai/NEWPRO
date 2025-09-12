@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<protocol.http protocolName="HTTPServiceConnector" id="ERPZS_GzeqPaperStayYesterdayDesc"
+               ioDirection="DataIn/DataOut"
+               mode="synchronous"
+               side="client">
+   <common uri="http://172.28.98.74:9000/ds/erp/paper/stayYesterdayDesc" serverType="jetty"/>
+   <request method="get" encoding="UTF-8" connectTimeout="10000" action="toBytes">
+ 	   </request>
+   <response  readTimeout="10000" encoding="UTF-8" action="toBytes"/>
+	<security protocol="SSL" bidirectional="true">
+      <keyStore path=""
+      			keyMainPass=""
+                keyPass=""
+                type=""/>
+      <trustStore path=""
+                  keyPass=""
+                  type=""/>
+   </security>
+	<advanced	 		threadCount="50" 	connPerHostCount="200" 	readTimeout="58000" 	maxConnCount="2000" 	soLinger="0" 	writeBufferSize="2048" 	reuseAddress="true" 	connectionTimeout="10000" 	readBufferSize="2048" 	tcpNoDelay="true" 	threshold="524288"   	 />	
+</protocol.http>

@@ -1,0 +1,11 @@
+{
+	"configuration":{},
+	"connectionName":"MRS_Spark_Agent",
+	"content":"-- ******************************************************************** --\n-- author: jh_caiyi\n-- create time: 2025-07-15\n-- descr: （1）智慧运营中心部分数据概览-采购数据明细-废钢合同\n-- soc_businessanalysis_procurement_scrapsteel\n-- subm_contract\n-- scrapsteel_contract\n-- crudefuel_contract\n-- ******************************************************************** --\n-- DROP TABLE IF EXISTS dwi_prc.dwi_prc_lz_soc_businessanalysis_procurement_scrapsteel;\n-- CREATE TABLE\n--     dwi_prc.dwi_prc_lz_soc_businessanalysis_procurement_scrapsteel (\n-- \t\tcompid string,\n-- \t\tpono string,\n-- \t\tpover string,\n-- \t\tpocode string,\n-- \t\tpotype string,\n-- \t\tpurmode string,\n-- \t\tponame string,\n-- \t\tmatrlno string,\n-- \t\tname string,\n-- \t\tstartdate string,\n-- \t\tenddate string,\n-- \t\tvendorno string,\n-- \t\tvendorname string,\n-- \t\tvendorcodename string,\n-- \t\ttotalamt string,\n-- \t\tamt string,\n-- \t\tinspamt string,\n-- \t\trespemplname string,\n-- \t\tpaymentterm string,\n-- \t\tmodel3 string,\n-- \t\tetl_date DATE COMMENT 'ETL时间'\n--     )\n-- COMMENT '廉政八项-智慧运营中心-采购数据明细-废钢合同'\n-- PARTITIONED BY (mt STRING COMMENT '分区月份')\n-- STORED AS ORC;\nINSERT OVERWRITE TABLE\n\tdwi_prc.dwi_prc_lz_soc_businessanalysis_procurement_scrapsteel PARTITION (mt = '202507')\nSELECT\n\t\tcompid,\n\t\tpono,\n\t\tpover,\n\t\tpocode,\n\t\tpotype,\n\t\tpurmode,\n\t\tponame,\n\t\tmatrlno,\n\t\tname,\n\t\tstartdate,\n\t\tenddate,\n\t\tvendorno,\n\t\tvendorname,\n\t\tvendorcodename,\n\t\ttotalamt,\n\t\tamt,\n\t\tinspamt,\n\t\trespemplname,\n\t\tpaymentterm,\n\t\tmodel3,\tCURRENT_DATE()                -- 当前日期\n\t\tfrom dwi_prc.dwi_prc_scrapsteel_contract_execution;",
+	"currentDatabase":"dwi_log",
+	"description":"",
+	"directory":"/廉政专项/智慧运营/明细表",
+	"name":"etl_dwi_lz_soc_businessanalysis_scrapsteel",
+	"templateVersion":"1.0",
+	"type":"SparkSQL"
+}

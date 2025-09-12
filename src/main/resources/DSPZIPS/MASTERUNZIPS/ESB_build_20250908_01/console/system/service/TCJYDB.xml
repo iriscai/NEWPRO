@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>TCJYDB</serviceSystemName>
+		<serviceSystemDesc>台车加油数据库</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>TCJYDB_getTcjyAlarmDatas</protocol>
+						<protocol>TCJYDB_getTcjyDatas</protocol>
+						<protocol>TCJYDB_getTcjyOneAlarmDatas</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>getTcjyAlarmDatas</serivcename>
+			<protocol>TCJYDB_getTcjyAlarmDatas</protocol>
+			</service>
+						<service>
+			<serivcename>getTcjyDatas</serivcename>
+			<protocol>TCJYDB_getTcjyDatas</protocol>
+			</service>
+						<service>
+			<serivcename>getTcjyOneAlarmDatas</serivcename>
+			<protocol>TCJYDB_getTcjyOneAlarmDatas</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

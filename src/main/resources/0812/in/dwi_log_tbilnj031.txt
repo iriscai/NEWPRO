@@ -1,0 +1,24 @@
+CREATE TABLE
+	`dwi_log_tbilnj031` (
+		`compid` string COMMENT '公司别',
+		`rtnno` string COMMENT '退货单号',
+		`labelno` string COMMENT '存货标签编号',
+		`displistno` string COMMENT '发货通知单号',
+		`loadno` string COMMENT '装车作业单号',
+		`shiporderno` string COMMENT '出货明细单号',
+		`orderno` string COMMENT '订单编号',
+		`orderitem` string COMMENT '订单项次',
+		`rtnqty` double COMMENT '退货数量',
+		`rtnwgt` double COMMENT '退货重量',
+		`locno` string COMMENT '储位',
+		`newlabelno` string COMMENT '退货后所产生新的存货编号',
+		`saleclassno` string COMMENT '产品型态',
+		`prodspecno` string COMMENT '牌号',
+		`orderprice` double COMMENT '订单单价',
+		`price` double COMMENT '提单单价',
+		`ext_etl_dt` timestamp COMMENT 'ETL时间',
+		`ext_src_sys_id` string COMMENT '源系统'
+	) COMMENT '记录客户需退货的存货明细数据，包含订单编号、退货数量、退货重量、储位等信息' ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.columnar.ColumnarSerDe' STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.RCFileInputFormat' OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.RCFileOutputFormat' LOCATION 'hdfs://hacluster/user/hive/warehouse/dwi_log.db/dwi_log_tbilnj031' TBLPROPERTIES (
+		'bucketing_version' = '2',
+		'transient_lastDdlTime' = '1755029384'
+	)

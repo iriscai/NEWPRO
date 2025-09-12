@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<id>GzeqPitCoolingPitNumberQuery</id>
+	<type>business</type>
+	<nickName>GzeqPitCoolingPitNumberQuery</nickName>
+	<category>TGMESDB</category>
+	<lastModified>1756284608462</lastModified>
+	<description><![CDATA[智慧质量_大棒_缓冷坑按坑号查询]]></description>
+	<impl>com.dc.esb.container.service.DefaultBusinessService</impl>
+	<passThrough>true</passThrough>
+	<contribution></contribution>
+	<servicesystem></servicesystem>
+	<adapterFlow>
+		<ref>ServiceThrouthAdaptor</ref>
+	</adapterFlow>
+	<protocols>
+		<slaprotocol>
+		</slaprotocol>
+		<olaprotocol>
+		</olaprotocol>
+	</protocols>
+</root>

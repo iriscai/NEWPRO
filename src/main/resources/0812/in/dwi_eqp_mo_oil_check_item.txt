@@ -1,0 +1,29 @@
+CREATE TABLE
+	`dwi_eqp_mo_oil_check_item` (
+		`id` string COMMENT '主键',
+		`oil_check_plan_id` string COMMENT '油箱检测计划ID',
+		`oil_check_std_id` string COMMENT '油箱检验项目ID',
+		`check_value` string COMMENT '检测值',
+		`re_check_value` string COMMENT '上次检测值',
+		`is_check` string COMMENT '是否检查',
+		`is_pass` string COMMENT '是否合格',
+		`oil_upper_limit` string COMMENT '上限值',
+		`oil_lower_limit` string COMMENT '下限值',
+		`standard_value` string COMMENT '标准值',
+		`remark` string COMMENT '备注',
+		`create_user_no` string COMMENT '创建人工号',
+		`create_date_time` string COMMENT '创建日期',
+		`update_user_no` string COMMENT '修改人工号',
+		`update_date_time` string COMMENT '修改日期',
+		`company_id` string COMMENT '公司ID',
+		`status` string COMMENT '状态',
+		`i_level` string COMMENT '等级',
+		`oil_upper_alarm` string COMMENT '上限警戒值',
+		`oil_lower_alarm` string COMMENT '下限警戒值',
+		`ext_etl_dt` timestamp COMMENT 'ETL时间',
+		`ext_src_sys_id` string COMMENT '源系统'
+	) COMMENT '为油品检测明细表，包含上下限值，上下限警戒值，检测值，上次检测值，是否检查等，线下人员现场检测后进行数据录入。' ROW FORMAT SERDE 'org.apache.hadoop.hive.ql.io.orc.OrcSerde' STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.orc.OrcInputFormat' OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat' LOCATION 'hdfs://hacluster/user/hive/warehouse/dwi_eqp.db/dwi_eqp_mo_oil_check_item' TBLPROPERTIES (
+		'bucketing_version' = '2',
+		'orc.compress' = 'ZLIB',
+		'transient_lastDdlTime' = '1709793105'
+	)

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>ZGDB</serviceSystemName>
+		<serviceSystemDesc>中钢数据库</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>ZGDB_HdgcPelletMaterialtTwolevelDBQuery</protocol>
+						<protocol>ZGDB_ZgDatasToHdgcQuery</protocol>
+						<protocol>ZGDB_ZhlcQtyplccnlzxxQuery</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>HdgcPelletMaterialtTwolevelDBQuery</serivcename>
+			<protocol>ZGDB_HdgcPelletMaterialtTwolevelDBQuery</protocol>
+			</service>
+						<service>
+			<serivcename>ZgDatasToHdgcQuery</serivcename>
+			<protocol>ZGDB_ZgDatasToHdgcQuery</protocol>
+			</service>
+						<service>
+			<serivcename>ZhlcQtyplccnlzxxQuery</serivcename>
+			<protocol>ZGDB_ZhlcQtyplccnlzxxQuery</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

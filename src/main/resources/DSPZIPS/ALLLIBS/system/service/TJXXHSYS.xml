@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>TJXXHSYS</serviceSystemName>
+		<serviceSystemDesc>统计信息化</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>TJXXHDB_SteelOutputQuery</protocol>
+						<protocol>TJXXHSYS_LongMaterialOutputDetailQuery</protocol>
+						<protocol>TJXXHSYS_LongMaterialOutputTotalQuery</protocol>
+						<protocol>TJXXHSYS_SteelOutputTotalQuery</protocol>
+						<protocol>TJXXHSYS_SteelmakingPlantOutput</protocol>
+						<protocol>TJXXHSYS_getTjxxhDbBloomLongProduction</protocol>
+						<protocol>TJXXHSYS_getTjxxhDbLongProduction</protocol>
+						<protocol>TJXXHSYS_getTjxxhZbLongProduction</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>getTjxxhDbBloomLongProduction</serivcename>
+			<protocol>TJXXHSYS_getTjxxhDbBloomLongProduction</protocol>
+			</service>
+						<service>
+			<serivcename>getTjxxhDbLongProduction</serivcename>
+			<protocol>TJXXHSYS_getTjxxhDbLongProduction</protocol>
+			</service>
+						<service>
+			<serivcename>getTjxxhZbLongProduction</serivcename>
+			<protocol>TJXXHSYS_getTjxxhZbLongProduction</protocol>
+			</service>
+						<service>
+			<serivcename>LongMaterialOutputDetailQuery</serivcename>
+			<protocol>TJXXHSYS_LongMaterialOutputDetailQuery</protocol>
+			</service>
+						<service>
+			<serivcename>LongMaterialOutputTotalQuery</serivcename>
+			<protocol>TJXXHSYS_LongMaterialOutputTotalQuery</protocol>
+			</service>
+						<service>
+			<serivcename>SteelmakingPlantOutput</serivcename>
+			<protocol>TJXXHSYS_SteelmakingPlantOutput</protocol>
+			</service>
+						<service>
+			<serivcename>SteelOutputQuery</serivcename>
+			<protocol>TJXXHDB_SteelOutputQuery</protocol>
+			</service>
+						<service>
+			<serivcename>SteelOutputTotalQuery</serivcename>
+			<protocol>TJXXHSYS_SteelOutputTotalQuery</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

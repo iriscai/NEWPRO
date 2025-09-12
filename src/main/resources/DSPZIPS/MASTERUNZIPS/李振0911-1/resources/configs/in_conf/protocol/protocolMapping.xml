@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mappings xmlns="http://com/dc/esb/xmlbean/protocol/mapping">  
+  <channelMapping> 
+    <id>DefaultT</id>  
+    <file>httpIn6001.xml</file> 
+  </channelMapping>  
+  <channelMapping> 
+    <id>DefaultP</id>  
+    <file>httpIn6002.xml</file> 
+  </channelMapping>  
+  <channelMapping> 
+    <id>DetectChannel_esb</id>  
+    <file>detectIn6066.xml</file> 
+  </channelMapping>  
+  <channelMapping> 
+    <id>ZHCG</id>  
+    <file>httpIn6005.xml</file> 
+  </channelMapping>  
+  <channelMapping>
+    <id>DefaultTNIP</id>
+    <file>httpln6004.xml</file>
+  </channelMapping>
+</mappings>

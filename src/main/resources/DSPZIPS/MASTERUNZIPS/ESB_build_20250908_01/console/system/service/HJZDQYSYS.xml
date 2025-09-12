@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>HJZDQYSYS</serviceSystemName>
+		<serviceSystemDesc>合金自动取样系统</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>HJZDCYSY_GetInfo82</protocol>
+						<protocol>HJZDCYSY_GetInfo83</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>GetInfo82</serivcename>
+			<protocol>HJZDCYSY_GetInfo82</protocol>
+			</service>
+						<service>
+			<serivcename>GetInfo83</serivcename>
+			<protocol>HJZDCYSY_GetInfo83</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

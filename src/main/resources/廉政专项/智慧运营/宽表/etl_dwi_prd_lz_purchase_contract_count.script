@@ -1,0 +1,11 @@
+{
+	"configuration":{},
+	"connectionName":"MRS_Spark_Agent",
+	"content":"-- ******************************************************************** --\n-- author: jh_caiyi\n-- create time: 2025-07-15\n-- descr: 廉政八项-智慧运营中心-采购合同数\n-- ******************************************************************** --\n-- DROP TABLE IF EXISTS dwi_prd.dwi_prd_lz_purchase_contract_count;\n-- CREATE TABLE\n--     dwi_prd.dwi_prd_lz_purchase_contract_count (\n--     material_code VARCHAR(500) COMMENT '物料代码',\n--     material_name VARCHAR(500) COMMENT '品名',\n--     supplier_code VARCHAR(500) COMMENT '供应商代码',\n--     supplier_name VARCHAR(500) COMMENT '供应商',\n--     inspection_batch_no VARCHAR(500) COMMENT '检验批号',\n--     unqualified_items VARCHAR(500) COMMENT '检验不合格项目',\n--     etl_time VARCHAR(500) COMMENT 'ETL时间',\n--     data_date VARCHAR(500) COMMENT '数据日期'\n--     )\n-- COMMENT '廉政八项-智慧运营中心-采购合同数'\n-- PARTITIONED BY (mt STRING COMMENT '分区月份')\n-- STORED AS ORC;\nINSERT OVERWRITE TABLE\n\tdwi_prd.dwi_prd_lz_purchase_contract_count PARTITION (mt = '202507')\nSELECT \n    A.MTRL_NO AS `物料代码`,\n    m.mtrlname AS `品名`,\n    COALESCE(A.SHIPPING_COMPANY, A.PROVID_NO) AS `供应商代码`,\n    '' AS `供应商`,\n    COALESCE(A.CHECKNO, A.SMP_NO) AS `检验批号`,\n    -- Hive中使用collect_list和concat_ws替代LISTAGG\n    (SELECT concat_ws(',', collect_list(cast(B.SMP_ITEM as string)))\n     FROM dwi_qlt.dwi_qlt_tx_analyresult_lz B\n     WHERE B.SMP_NO = A.SMP_NO\n       AND B.SMP_TYPE = A.SMP_TYPE\n       AND B.MAT_STD IN ('不合格', '级外')) AS `检验不合格项目`\n  FROM dwi_qlt.dwi_qlt_tx_sampinfo_lz A\n  LEFT JOIN dim.dim_material m ON m.mtrlno = A.MTRL_NO\n  WHERE A.JUDG_DAY = date_format(current_date, 'yyyyMMdd')\n    AND A.JUDG_RST IN ('不合格', '级外')\n    AND A.INFO_SOURCE = '0'\n    AND A.INSPEMPL_NO IN ('1', '3')\n    AND A.MTRL_NO != 'A0002';",
+	"currentDatabase":"dwi_eqp",
+	"description":"",
+	"directory":"/廉政专项/智慧运营/宽表",
+	"name":"etl_dwi_prd_lz_purchase_contract_count",
+	"templateVersion":"1.0",
+	"type":"SparkSQL"
+}

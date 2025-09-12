@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<id>ERPZS_GzeqPaperStayYesterdayDesc</id>
+	<nickName>ERPZS_GzeqPaperStayYesterdayDesc</nickName>
+	<type>protocol_server</type>
+	<subType>HTTPServiceConnector</subType>
+	<category>DEFAULT</category>
+	<communicateType>synchronous</communicateType>
+	<connectMode></connectMode>
+	<ioDirection>DataIn/DataOut</ioDirection>
+	<serviceSystem></serviceSystem>
+	<lastModified></lastModified>
+	<description><![CDATA[钢轧二期_简报_生产暂留明细]]></description>
+	<resources>
+			</resources>
+</root>

@@ -1,0 +1,11 @@
+{
+	"configuration":{},
+	"connectionName":"MRS_Spark_Agent",
+	"content":"-- ******************************************************************** --\n-- author: jh_caiyi\n-- create time: 2025-07-15\n-- descr: 南北系统专线-采购量数据明细\n-- ns_bulkpurchase_volume\n-- ******************************************************************** --\n-- DROP TABLE IF EXISTS dwi_sal.dwi_sal_lz_ns_bulkpurchase_volume;\n-- CREATE TABLE\n--     dwi_sal.dwi_sal_lz_ns_bulkpurchase_volume (\n-- \t\tetl_date DATE COMMENT 'ETL时间'\n--     )\n-- COMMENT '廉政八项-南北系统专线-采购量数据明细'\n-- PARTITIONED BY (mt STRING COMMENT '分区月份')\n-- STORED AS ORC;\nINSERT OVERWRITE TABLE\n\tdwi_sal.dwi_sal_lz_ns_bulkpurchase_volume PARTITION (mt = '202507')\nSELECT \n    ,CURRENT_DATE()                 -- 当前日期\nFROM \n    dwi_sal.dwi_sal_salorder_n9  -- 表名\n    LIMIT 10;      -- 表名\n",
+	"currentDatabase":"dwi_prc",
+	"description":"",
+	"directory":"/廉政专项/南北系统/明细表",
+	"name":"etl_dwi_lz_ns_bulkpurchase_volume",
+	"templateVersion":"1.0",
+	"type":"SparkSQL"
+}

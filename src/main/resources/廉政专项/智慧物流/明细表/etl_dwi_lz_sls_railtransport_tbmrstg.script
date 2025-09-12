@@ -1,0 +1,12 @@
+{
+	"configuration":{},
+	"connectionName":"MRS_Spark_Agent",
+	"content":"-- ******************************************************************** --\n-- author: jh_caiyi\n-- create time: 2025-07-15\n-- descr:智慧物流系统专线-铁路运输分析_tbmrstg\n-- sls_railtransport_tbmrstg\n-- ******************************************************************** --\n-- DROP TABLE IF EXISTS dwi_log.dwi_log_lz_sls_railtransport_tbmrstg;\n-- CREATE TABLE\n-- dwi_log.dwi_log_lz_sls_railtransport_tbmrstg (\n-- compid string COMMENT '公司别,',\n-- mtrlno string COMMENT '原料料号,',\n-- stgno string COMMENT '储位代码,',\n-- stgdesc string COMMENT '储位说明,',\n-- addrs string COMMENT '储位起址,',\n-- addre string COMMENT '储位迄址,',\n-- maxnum double COMMENT '最大存量,',\n-- cc string COMMENT '成本中储位迄址,',\n-- ownerdept string COMMENT '保管单位,',\n-- ownercompid string COMMENT '物权公司,',\n-- lastacptdate string COMMENT '最近一次进料日期,',\n-- lastacptchkno string COMMENT '最近一次进料批号,',\n-- onhdnum double COMMENT '目前库存数量,',\n-- cratno string COMMENT '数据建立人,',\n-- cratdate string COMMENT '数据建立日期,',\n-- lastrevsno string COMMENT '上次资料更动人,',\n-- lastrevsdate string COMMENT '上次数据更动日期,',\n-- porttype string COMMENT '港口类型,',\n-- sparea string COMMENT '集群点位,',\n-- spareb string COMMENT '是否启用,',\n-- etl_date DATE COMMENT 'ETL时间'\n-- )\n-- COMMENT '廉政八项-智慧物流系统专线-铁路运输分析_tbmrstg'\n-- STORED AS ORC;\n\nINSERT OVERWRITE TABLE\ndwi_log.dwi_log_lz_sls_railtransport_tbmrstg\nSELECT \n    compid,\n    mtrlno,\n    stgno,\n    stgdesc,\n    addrs,\n    addre,\n    maxnum,\n    cc,\n    ownerdept,\n    ownercompid,\n    lastacptdate,\n    lastacptchkno,\n    onhdnum,\n    cratno,\n    cratdate,\n    lastrevsno,\n    lastrevsdate,\n    porttype,\n    sparea,\n    spareb,\n    CURRENT_DATE() AS etl_date\nFROM \n    dwi_log.dwi_log_tbmrstg;\n",
+	"currentDatabase":"dwi_log",
+	"description":"",
+	"directory":"/廉政专项/智慧物流/明细表",
+	"encrypt":false,
+	"name":"etl_dwi_lz_sls_railtransport_tbmrstg",
+	"templateVersion":"1.0",
+	"type":"SparkSQL"
+}

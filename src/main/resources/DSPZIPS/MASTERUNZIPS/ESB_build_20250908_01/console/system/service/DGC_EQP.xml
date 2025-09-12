@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>DGC_EQP</serviceSystemName>
+		<serviceSystemDesc>大数据平台设备领域</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>BCQLCHETU_HoCuttingSumWeightQuery</protocol>
+						<protocol>DGC_EQP_CheckAbnormalNumQuery</protocol>
+						<protocol>DGC_EQP_CheckAbnormalUntreatedNumQuery</protocol>
+						<protocol>DGC_EQP_CheckJobMissedNumQuery</protocol>
+						<protocol>DGC_EQP_PmTruckmeasureCarNumberQuery</protocol>
+						<protocol>DGC_EQP_PmTruckmeasureSinteringOreQuery</protocol>
+						<protocol>DGC_EQP_PmTruckmeasureSinteringReturnOreQuery</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>CheckAbnormalNumQuery</serivcename>
+			<protocol>DGC_EQP_CheckAbnormalNumQuery</protocol>
+			</service>
+						<service>
+			<serivcename>CheckAbnormalUntreatedNumQuery</serivcename>
+			<protocol>DGC_EQP_CheckAbnormalUntreatedNumQuery</protocol>
+			</service>
+						<service>
+			<serivcename>CheckJobMissedNumQuery</serivcename>
+			<protocol>DGC_EQP_CheckJobMissedNumQuery</protocol>
+			</service>
+						<service>
+			<serivcename>HoCuttingSumWeightQuery</serivcename>
+			<protocol>BCQLCHETU_HoCuttingSumWeightQuery</protocol>
+			</service>
+						<service>
+			<serivcename>PmTruckmeasureCarNumberQuery</serivcename>
+			<protocol>DGC_EQP_PmTruckmeasureCarNumberQuery</protocol>
+			</service>
+						<service>
+			<serivcename>PmTruckmeasureSinteringOreQuery</serivcename>
+			<protocol>DGC_EQP_PmTruckmeasureSinteringOreQuery</protocol>
+			</service>
+						<service>
+			<serivcename>PmTruckmeasureSinteringReturnOreQuery</serivcename>
+			<protocol>DGC_EQP_PmTruckmeasureSinteringReturnOreQuery</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

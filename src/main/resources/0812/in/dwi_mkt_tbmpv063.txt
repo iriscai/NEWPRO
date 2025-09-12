@@ -1,0 +1,34 @@
+CREATE TABLE
+	`dwi_mkt_tbmpv063` (
+		`compid` string COMMENT '公司别',
+		`inspno` string COMMENT '交付异议单号',
+		`pono` string COMMENT '合同号',
+		`poitemno` string COMMENT '合同项次',
+		`matrlno` string COMMENT '料号',
+		`name` string COMMENT '品名',
+		`unitprice` double COMMENT '单价',
+		`qty` double COMMENT '合同约定量',
+		`dlvydueqty` double COMMENT '已入库量',
+		`rangeqty` double COMMENT '缺货_超货数量',
+		`dlvyduedate` string COMMENT '预计交货期限',
+		`qtyrate` double COMMENT '缺货比例',
+		`delayday` string COMMENT '延期天数',
+		`memo1` string COMMENT '合同版本号',
+		`memo2` string COMMENT '备用字段2',
+		`memo3` string COMMENT '备用字段3',
+		`memo4` string COMMENT '备用字段4',
+		`memd1` double COMMENT '项次扣款金额',
+		`memd2` double COMMENT '项次约定总金额10百分比',
+		`crtemplno` string COMMENT '资料建立人员',
+		`crtdate` string COMMENT '资料异动日期',
+		`crttime` string COMMENT '资料异动时间',
+		`updemplno` string COMMENT '资料异动人员',
+		`upddate` string COMMENT '资料异动日期2',
+		`updtime` string COMMENT '资料异动时间2',
+		`ext_etl_dt` timestamp COMMENT 'ETL时间',
+		`ext_src_sys_id` string COMMENT '源系统'
+	) COMMENT '交付异议单明细档' ROW FORMAT SERDE 'org.apache.hadoop.hive.ql.io.orc.OrcSerde' STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.orc.OrcInputFormat' OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat' LOCATION 'hdfs://hacluster/user/hive/warehouse/dwi_mkt.db/dwi_mkt_tbmpv063' TBLPROPERTIES (
+		'bucketing_version' = '2',
+		'orc.compress' = 'ZLIB',
+		'transient_lastDdlTime' = '1687141234'
+	)

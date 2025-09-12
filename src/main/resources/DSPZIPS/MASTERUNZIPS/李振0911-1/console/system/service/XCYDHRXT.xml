@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servicesystems>
+    	
+  
+  <servicesystem>
+        		
+    
+    <serviceSystemName>XCYDHRXT</serviceSystemName>
+        		
+    
+    <serviceSystemDesc>新产业DHR系统</serviceSystemDesc>
+        		
+    
+    <hostName/>
+        		
+    
+    <hostIp/>
+        		
+    
+    <status>add</status>
+        		
+		
+    
+    <protocols>
+            								
+      
+      <protocol>XCYDHRXT_SmartParkHaiKangAttendDataAddition</protocol>
+            						
+      
+      <protocol>XCYDHRXT_SmartParkHaiKangAttendDoorEvents</protocol>
+            						
+      
+      <protocol>XCYDHRXT_SmartParkHaiKangAttendDoorSearch</protocol>
+            						
+      
+      <protocol>XCYDHRXT_SmartParkHaiKangAttendDownloadTaskprogress</protocol>
+            						
+      
+      <protocol>XCYDHRXT_SmartParkHaiKangAttendListSearch</protocol>
+            						
+      
+      <protocol>XCYDHRXT_SmartParkHaiKangAttendPersonDetailSearch</protocol>
+            						
+      
+      <protocol>XCYDHRXT_SmartParkHaiKangAttendTaskAddition</protocol>
+            						
+      
+      <protocol>XCYDHRXT_SmartParkHaiKangAttendTaskStart</protocol>
+            						
+      
+      <protocol>XCYDHRXT_SmartParkHaiKangAttendV3DoorEvents</protocol>
+            						
+      
+      <protocol>XCYDHRXT_SmartParkHaiKangAuthDownloadTask</protocol>
+            						
+      
+      <protocol>XCYDHRXT_SmartParkHaiKangInformationGetPerson</protocol>
+            						
+      
+      <protocol>XCYDHRXT_SmartParkHaiKangInformationPersonList</protocol>
+            						
+      
+      <protocol>XCYDHRXT_SmartParkHaiKangOneCardConfigAdd</protocol>
+            						
+      
+      <protocol>XCYDHRXT_SmartParkHaiKangOrgInformationOrgList</protocol>
+            						
+      
+      <protocol>XCYDHRXT_SmartParkHaiKangOrgOrgList</protocol>
+            						
+      
+      <protocol>XCYDHRXT_SmartParkHaiKangRecourseInformationList</protocol>
+            							
+      
+      <protocol>XCYDHRXT_SmartParkHaiKangEventBlackSearch</protocol>
+          
+    </protocols>
+        		
+		
+    
+    <params>
+				</params>
+        		
+    
+    <services>
+            								
+      
+      <service>
+                			
+        
+        <serivcename>SmartParkHaiKangAttendDataAddition</serivcename>
+                			
+        
+        <protocol>XCYDHRXT_SmartParkHaiKangAttendDataAddition</protocol>
+                			
+      
+      </service>
+            						
+      
+      <service>
+                			
+        
+        <serivcename>SmartParkHaiKangAttendDoorEvents</serivcename>
+                			
+        
+        <protocol>XCYDHRXT_SmartParkHaiKangAttendDoorEvents</protocol>
+                			
+      
+      </service>
+            						
+      
+      <service>
+                			
+        
+        <serivcename>SmartParkHaiKangAttendDoorSearch</serivcename>
+                			
+        
+        <protocol>XCYDHRXT_SmartParkHaiKangAttendDoorSearch</protocol>
+                			
+      
+      </service>
+            						
+      
+      <service>
+                			
+        
+        <serivcename>SmartParkHaiKangAttendDownloadTaskprogress</serivcename>
+                			
+        
+        <protocol>XCYDHRXT_SmartParkHaiKangAttendDownloadTaskprogress</protocol>
+                			
+      
+      </service>
+            						
+      
+      <service>
+                			
+        
+        <serivcename>SmartParkHaiKangAttendListSearch</serivcename>
+                			
+        
+        <protocol>XCYDHRXT_SmartParkHaiKangAttendListSearch</protocol>
+                			
+      
+      </service>
+            						
+      
+      <service>
+                			
+        
+        <serivcename>SmartParkHaiKangAttendPersonDetailSearch</serivcename>
+                			
+        
+        <protocol>XCYDHRXT_SmartParkHaiKangAttendPersonDetailSearch</protocol>
+                			
+      
+      </service>
+            						
+      
+      <service>
+                			
+        
+        <serivcename>SmartParkHaiKangAttendTaskAddition</serivcename>
+                			
+        
+        <protocol>XCYDHRXT_SmartParkHaiKangAttendTaskAddition</protocol>
+                			
+      
+      </service>
+            						
+      
+      <service>
+                			
+        
+        <serivcename>SmartParkHaiKangAttendTaskStart</serivcename>
+                			
+        
+        <protocol>XCYDHRXT_SmartParkHaiKangAttendTaskStart</protocol>
+                			
+      
+      </service>
+            						
+      
+      <service>
+                			
+        
+        <serivcename>SmartParkHaiKangAttendV3DoorEvents</serivcename>
+                			
+        
+        <protocol>XCYDHRXT_SmartParkHaiKangAttendV3DoorEvents</protocol>
+                			
+      
+      </service>
+            						
+      
+      <service>
+                			
+        
+        <serivcename>SmartParkHaiKangAuthDownloadTask</serivcename>
+                			
+        
+        <protocol>XCYDHRXT_SmartParkHaiKangAuthDownloadTask</protocol>
+                			
+      
+      </service>
+            						
+      
+      <service>
+                			
+        
+        <serivcename>SmartParkHaiKangInformationGetPerson</serivcename>
+                			
+        
+        <protocol>XCYDHRXT_SmartParkHaiKangInformationGetPerson</protocol>
+                			
+      
+      </service>
+            						
+      
+      <service>
+                			
+        
+        <serivcename>SmartParkHaiKangInformationPersonList</serivcename>
+                			
+        
+        <protocol>XCYDHRXT_SmartParkHaiKangInformationPersonList</protocol>
+                			
+      
+      </service>
+            						
+      
+      <service>
+                			
+        
+        <serivcename>SmartParkHaiKangOneCardConfigAdd</serivcename>
+                			
+        
+        <protocol>XCYDHRXT_SmartParkHaiKangOneCardConfigAdd</protocol>
+                			
+      
+      </service>
+            						
+      
+      <service>
+                			
+        
+        <serivcename>SmartParkHaiKangOrgInformationOrgList</serivcename>
+                			
+        
+        <protocol>XCYDHRXT_SmartParkHaiKangOrgInformationOrgList</protocol>
+                			
+      
+      </service>
+            						
+      
+      <service>
+                			
+        
+        <serivcename>SmartParkHaiKangOrgOrgList</serivcename>
+                			
+        
+        <protocol>XCYDHRXT_SmartParkHaiKangOrgOrgList</protocol>
+                			
+      
+      </service>
+            						
+      
+      <service>
+                			
+        
+        <serivcename>SmartParkHaiKangRecourseInformationList</serivcename>
+                			
+        
+        <protocol>XCYDHRXT_SmartParkHaiKangRecourseInformationList</protocol>
+                			
+      
+      </service>
+            							
+      
+      <service>
+                
+        <serivcename>SmartParkHaiKangEventBlackSearch</serivcename>
+                
+        <protocol>XCYDHRXT_SmartParkHaiKangEventBlackSearch</protocol>
+              
+      </service>
+          
+    </services>
+        	
+  
+  </servicesystem>
+    
+
+</servicesystems>

@@ -1,0 +1,36 @@
+CREATE TABLE
+	`dwi_qlt_tbmrif` (
+		`checkpeo` string COMMENT '审核人',
+		`chkno` string COMMENT '检验批号',
+		`comment` string COMMENT '备注',
+		`compid` string COMMENT '公司别',
+		`cratdate` string COMMENT '数据建立日期',
+		`cratno` string COMMENT '数据建立人',
+		`ctrtno` string COMMENT '合同号',
+		`factorybatchnum` string COMMENT '生产厂批次信息',
+		`factoryid` string COMMENT '供应商代码',
+		`fromdate` string COMMENT '取样日期',
+		`fromname` string COMMENT '取样地点',
+		`fromtime` string COMMENT '取样时间',
+		`impurityweight` decimal(15, 3) COMMENT '扣杂质',
+		`ismasacpt` string COMMENT '是否已重量验收',
+		`isqtyacpt` string COMMENT '是否已品质验收',
+		`lastrevsdate` string COMMENT '上次数据更动日期',
+		`lastrevsno` string COMMENT '上次资料更动人',
+		`manualchkno` string COMMENT '手工批号',
+		`mjtester` string COMMENT '主检人',
+		`mtrlno` string COMMENT '原料料号',
+		`qtyover` string COMMENT '品质检验结果',
+		`sendstation` string COMMENT '发站',
+		`sendstationdesc` string COMMENT '发站说明',
+		`supplyname` string COMMENT '供应商',
+		`testdate` string COMMENT '检验日期',
+		`tester` string COMMENT '检验人',
+		`testroom` string COMMENT '化验室',
+		`type` string COMMENT '类别',
+		`ext_etl_dt` timestamp COMMENT 'ETL时间',
+		`ext_src_sys_id` string COMMENT '源系统'
+	) COMMENT '检验批次主档' ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.columnar.ColumnarSerDe' STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.RCFileInputFormat' OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.RCFileOutputFormat' LOCATION 'hdfs://hacluster/user/hive/warehouse/dwi_qlt.db/dwi_qlt_tbmrif' TBLPROPERTIES (
+		'bucketing_version' = '2',
+		'transient_lastDdlTime' = '1755454105'
+	)

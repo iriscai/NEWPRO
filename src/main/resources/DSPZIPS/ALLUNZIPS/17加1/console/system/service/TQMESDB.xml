@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>TQMESDB</serviceSystemName>
+		<serviceSystemDesc>铁区MES正式机数据库</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>TQMESDB_NgUseCoalPlanQuery</protocol>
+						<protocol>TQMESDB_NgUseCokeCoalDailyQuery</protocol>
+						<protocol>TQMESDB_NgUseCokePlanQuery</protocol>
+						<protocol>TQMESDB_TqMesCarbonEmissionDailyQuery</protocol>
+						<protocol>TQMESDB_TsgGbCountQuery</protocol>
+						<protocol>TQMESDB_ZhyyTyMonitorQuery</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>NgUseCoalPlanQuery</serivcename>
+			<protocol>TQMESDB_NgUseCoalPlanQuery</protocol>
+			</service>
+						<service>
+			<serivcename>NgUseCokeCoalDailyQuery</serivcename>
+			<protocol>TQMESDB_NgUseCokeCoalDailyQuery</protocol>
+			</service>
+						<service>
+			<serivcename>NgUseCokePlanQuery</serivcename>
+			<protocol>TQMESDB_NgUseCokePlanQuery</protocol>
+			</service>
+						<service>
+			<serivcename>TqMesCarbonEmissionDailyQuery</serivcename>
+			<protocol>TQMESDB_TqMesCarbonEmissionDailyQuery</protocol>
+			</service>
+						<service>
+			<serivcename>TsgGbCountQuery</serivcename>
+			<protocol>TQMESDB_TsgGbCountQuery</protocol>
+			</service>
+						<service>
+			<serivcename>ZhyyTyMonitorQuery</serivcename>
+			<protocol>TQMESDB_ZhyyTyMonitorQuery</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

@@ -1,0 +1,29 @@
+CREATE TABLE
+	`dwi_eqp_mh_side_stock` (
+		`id` string COMMENT '主键ID',
+		`material_name` string COMMENT '物料名称',
+		`model` string COMMENT '型号规格',
+		`material_no` string COMMENT '料号',
+		`storage_id` string COMMENT '储位ID',
+		`batch_no` string COMMENT '批号',
+		`material_type` string COMMENT '物料类型',
+		`quantity` decimal(22, 0) COMMENT '数量',
+		`unit` string COMMENT '计量单位',
+		`amount` decimal(22, 0) COMMENT '总价',
+		`stock_type` string COMMENT '库存类型',
+		`remark` string COMMENT '备注',
+		`create_user_no` string COMMENT '创建人',
+		`create_date_time` string COMMENT '创建时间',
+		`update_user_no` string COMMENT '修改人',
+		`update_date_time` string COMMENT '修改时间',
+		`company_id` string COMMENT '公司ID',
+		`i_level` string COMMENT '优先级',
+		`status` decimal(22, 0) COMMENT '状态  0可用，1不可用',
+		`create_user_dept` string COMMENT '创建者部门',
+		`create_user_factory` string COMMENT '创建者生产厂',
+		`ext_etl_dt` timestamp COMMENT 'ETL时间',
+		`ext_src_sys_id` string COMMENT '源系统'
+	) COMMENT '机旁库库存数据信息，包含库存数量、计量单位、库存类型等，通过用户在智维平台数据导入或者机旁库入库产生，用于记录厂车间下的实时备件库存信息' ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.columnar.ColumnarSerDe' STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.RCFileInputFormat' OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.RCFileOutputFormat' LOCATION 'hdfs://hacluster/user/hive/warehouse/dwi_eqp.db/dwi_eqp_mh_side_stock' TBLPROPERTIES (
+		'bucketing_version' = '2',
+		'transient_lastDdlTime' = '1756919148'
+	)

@@ -1,0 +1,30 @@
+#Meta 
+------------------------------
+project	 :  ct 合同管理系统
+table    :  db.TBCTYJ
+package  :  com.icsc.ct.dao
+entity   :  ctjctbyjVO
+class    :  ctjctbyjDAO
+author   :  002140
+descript :  签约依据
+version  :  1.0
+
+#Field
+#name	dataType	isKey?(y/n)	description	field width (db)	format	default
+-------------------------------------------------------------------------------------------
+yjNo	String	Y	依据编号	20	String	""
+yjType	String	N	依据类型	10	String	""
+yjName	String	N	依据名称	40	String	""
+yjSource	String	N	依据来源	10	String	""
+yjFile	String	N	依据文件	10	String	""
+refnoa	String	N	预留1	50	String	""
+refnob	String	N	预留2	50	String	""
+refnoc	String	N	预留3	50	String	""
+refnod	String	N	预留4	50	String	""
+refnoe	String	N	预留5	50	String	""
+crtEmplNo	String	N	资料建立人员	10	String	""
+crtDate	String	N	资料异动日期	10	String	""
+crtTime	String	N	资料异动时间	10	String	""
+updEmplNo	String	N	资料异动人员	10	String	""
+updDate	String	N	资料异动日期	10	String	""
+updTime	String	N	资料异动时间	10	String	""

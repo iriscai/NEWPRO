@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>TESTMOD</serviceSystemName>
+		<serviceSystemDesc>测试模块</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>TESTMOD_IotInterface</protocol>
+						<protocol>TESTMOD_LogInterface</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>IotInterface</serivcename>
+			<protocol>TESTMOD_IotInterface</protocol>
+			</service>
+						<service>
+			<serivcename>LogInterface</serivcename>
+			<protocol>TESTMOD_LogInterface</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

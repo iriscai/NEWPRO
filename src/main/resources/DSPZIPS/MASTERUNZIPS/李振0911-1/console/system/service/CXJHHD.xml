@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>CXJHHD</serviceSystemName>
+		<serviceSystemDesc>行畅江海航道微服务API服务平台</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>CXJHHD_CxjhhdGetMyOwnWaterById</protocol>
+						<protocol>CXJHHD_CxjhhdGetMyOwnWaterList</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>CxjhhdGetMyOwnWaterById</serivcename>
+			<protocol>CXJHHD_CxjhhdGetMyOwnWaterById</protocol>
+			</service>
+						<service>
+			<serivcename>CxjhhdGetMyOwnWaterList</serivcename>
+			<protocol>CXJHHD_CxjhhdGetMyOwnWaterList</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

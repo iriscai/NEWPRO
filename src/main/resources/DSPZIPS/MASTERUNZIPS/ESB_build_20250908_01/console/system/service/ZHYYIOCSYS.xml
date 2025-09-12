@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>ZHYYIOCSYS</serviceSystemName>
+		<serviceSystemDesc>智慧运营PC端系统</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>ZHYYIOCSYS_ZhyyMobileJqmsAuthQuery</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>ZhyyMobileJqmsAuthQuery</serivcename>
+			<protocol>ZHYYIOCSYS_ZhyyMobileJqmsAuthQuery</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

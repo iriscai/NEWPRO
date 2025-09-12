@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>BYTTER</serviceSystemName>
+		<serviceSystemDesc>深圳市拜特科技股份有限公司</serviceSystemDesc>
+		<hostName/>
+		<hostIp/>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>BYTTER_YqzlfwQuery</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>YqzlfwQuery</serivcename>
+			<protocol>BYTTER_YqzlfwQuery</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

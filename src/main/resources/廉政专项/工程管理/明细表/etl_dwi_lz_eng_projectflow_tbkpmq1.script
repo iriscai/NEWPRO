@@ -1,0 +1,12 @@
+{
+	"configuration":{},
+	"connectionName":"MRS_Spark_Agent",
+	"content":"-- ******************************************************************** --\n-- author: jh_caiyi\n-- create time: 2025-07-15\n-- descr:工程系统专线-工程系统专线明细_tbkpmq1\n-- eng_projectflow_tbkpmq1\n-- ******************************************************************** --\n-- DROP TABLE IF EXISTS dwi_eqp.dwi_eqp_lz_eng_projectflow_tbkpmq1;\n-- CREATE TABLE dwi_eqp.dwi_eqp_lz_eng_projectflow_tbkpmq1 (\n--     kpaq1id string,\n--     compid string,\n--     questionnob string,\n--     questionno string,\n--     questionname string,\n--     kpmc1no string,\n--     contractname string,\n--     cimp1no string,\n--     qualityissuescontent string,\n--     qualityissuestype string,\n--     deduction DECIMAL(32,6),\n--     indemnity DECIMAL(32,6),\n--     respondept string,\n--     responemp string,\n--     rectifyplandate string,\n--     hopeclosedate string,\n--     actclosedate string,\n--     status string,\n--     kpmm1no string,\n--     createquestionnaires string,\n--     createdept string,\n--     responsiblepro string,\n--     createemp string,\n--     createdate string,\n--     createtime string,\n--     updemp string,\n--     upddate string,\n--     updtime string,\n--     creditscore string,\n--     q1status string,\n--     workflow_log_id string,\n--     division string,\n--     currentveremp string,\n--     etl_date DATE COMMENT 'ETL时间'\n-- )\n-- COMMENT '廉政八项-工程系统专线-工程系统专线明细_tbkpmq1'\n-- STORED AS ORC;\n\nINSERT OVERWRITE TABLE dwi_eqp.dwi_eqp_lz_eng_projectflow_tbkpmq1\nSELECT \n    kpaq1id,\n    compid,\n    questionnob,\n    questionno,\n    questionname,\n    kpmc1no,\n    contractname,\n    cimp1no,\n    qualityissuescontent,\n    qualityissuestype,\n    deduction,\n    indemnity,\n    respondept,\n    responemp,\n    rectifyplandate,\n    hopeclosedate,\n    actclosedate,\n    status,\n    kpmm1no,\n    createquestionnaires,\n    createdept,\n    responsiblepro,\n    createemp,\n    createdate,\n    createtime,\n    updemp,\n    upddate,\n    updtime,\n    creditscore,\n    q1status,\n    workflow_log_id,\n    division,\n    currentveremp,\n    CURRENT_DATE() AS etl_date\nFROM \n    dwi_eqp.dwi_eqp_tbkpmq1_lz;\n",
+	"currentDatabase":"dwi_eqp",
+	"description":"",
+	"directory":"/廉政专项/工程管理/明细表",
+	"encrypt":false,
+	"name":"etl_dwi_lz_eng_projectflow_tbkpmq1",
+	"templateVersion":"1.0",
+	"type":"SparkSQL"
+}

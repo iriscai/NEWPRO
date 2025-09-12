@@ -1,0 +1,11 @@
+{
+	"configuration":{},
+	"connectionName":"MRS_Spark_Agent",
+	"content":"-- ******************************************************************** --\n-- author: jh_caiyi\n-- create time: 2025-07-15\n-- descr: 廉政八项-南北系统专线-出国管理分析\n-- ******************************************************************** --\n-- DROP TABLE IF EXISTS dwi_sal.dwi_sal_lz_business_trip_reimbursement;\n-- CREATE TABLE\n--     dwi_sal.dwi_sal_lz_business_trip_reimbursement (\n--     id INT,\n--     source VARCHAR(50) COMMENT '统计来源，如OA/财务报销',\n--     trip_type VARCHAR(20) COMMENT '出差类型，如因公/因私',\n--     traveler VARCHAR(50) COMMENT '出差人姓名',\n--     traveler_id VARCHAR(20) COMMENT '出差人工号',\n--     department VARCHAR(100) COMMENT '所属部门',\n--     departure_date DATE COMMENT '启程日期',\n--     return_date DATE COMMENT '返程日期',\n--     destination VARCHAR(50) COMMENT '前往国家',\n--     purpose VARCHAR(50) COMMENT '处境事由',\n--     reimbursement_type VARCHAR(50) COMMENT '报销类型<机票>',\n--     amount DECIMAL(10, 2) COMMENT '报销金额',\n--     create_time TIMESTAMP COMMENT '创建时间',\n--     update_time TIMESTAMP COMMENT '更新时间'\n--     )\n-- COMMENT '廉政八项-南北系统专线-出国管理分析'\n-- PARTITIONED BY (mt STRING COMMENT '分区月份')\n-- STORED AS ORC;\n \n-- INSERT OVERWRITE TABLE dwi_sal.dwi_sal_lz_business_trip_reimbursement PARTITION (mt='2025-07')",
+	"currentDatabase":"dwi_sal",
+	"description":"",
+	"directory":"/廉政专项/南北系统/宽表",
+	"name":"etl_dwi_sal_lz_business_trip_reimbursement",
+	"templateVersion":"1.0",
+	"type":"SparkSQL"
+}
