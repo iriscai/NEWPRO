@@ -1198,6 +1198,63 @@ public class XmlExcelAggregator {
         return existingItems;
     }
 
+//    private static void updateServiceXmlFiles(String allUnzipsDir, String excelFilePath) throws Exception {
+//        // 获取当前日期文件夹路径，例如 ALLUNZIPS/YYYY-MM-DD
+//        String dateFolderName = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
+//        Path dateFolderPath = Paths.get(allUnzipsDir, dateFolderName);
+//        if (!Files.exists(dateFolderPath)) {
+//            System.err.println("日期文件夹不存在：" + dateFolderPath);
+//            return;
+//        }
+//
+//        // 目标目录：ALLUNZIPS/YYYY-MM-DD/console/system/service
+//        Path serviceDirPath = dateFolderPath.resolve("console/system/service");
+//        if (!Files.exists(serviceDirPath)) {
+//            System.err.println("服务目录不存在：" + serviceDirPath);
+//            return;
+//        }
+//        System.out.println("开始更新服务目录下的XML文件：" + serviceDirPath);
+//
+//        // 读取 Category Sheet 页数据
+//        List<Map<String, String>> categoryData = readCategorySheet(excelFilePath);
+//        if (categoryData.isEmpty()) {
+//            System.out.println("未从 Category Sheet 页读取到数据。");
+//            return;
+//        }
+//        System.out.println("从 Category Sheet 页读取到 " + categoryData.size() + " 条数据。");
+//
+//        // 按 channelId 分组 categoryData
+//        Map<String, List<Map<String, String>>> groupedData = categoryData.stream()
+//                .collect(Collectors.groupingBy(data -> data.get("channelId")));
+//
+//        // 遍历服务目录下的所有 XML 文件
+//        Files.walkFileTree(serviceDirPath, new SimpleFileVisitor<Path>() {
+//            @Override
+//            public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
+//                if (file.toString().toLowerCase().endsWith(".xml")) {
+//                    String fileName = file.getFileName().toString();
+//                    String channelId = fileName.substring(0, fileName.lastIndexOf(".xml"));
+//                    System.out.println("处理XML文件：" + fileName + "，对应的渠道ID：" + channelId);
+//
+//                    // 检查是否有对应渠道ID的数据
+//                    List<Map<String, String>> systemData = groupedData.get(channelId);
+//                    if (systemData != null && !systemData.isEmpty()) {
+//                        try {
+//                            updateSingleServiceXml(file.toString(), systemData);
+//                        } catch (Exception e) {
+//                            System.err.println("更新XML文件失败：" + fileName + "，错误信息：" + e.getMessage());
+//                            e.printStackTrace();
+//                        }
+//                    } else {
+//                        System.out.println("未找到对应渠道ID的数据，跳过文件：" + fileName);
+//                    }
+//                }
+//                return FileVisitResult.CONTINUE;
+//            }
+//        });
+//
+//        System.out.println("服务目录下的XML文件更新完成：" + serviceDirPath);
+//    }
     private static void updateServiceXmlFiles(String allUnzipsDir, String excelFilePath) throws Exception {
         // 获取当前日期文件夹路径，例如 ALLUNZIPS/YYYY-MM-DD
         String dateFolderName = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
@@ -1227,31 +1284,31 @@ public class XmlExcelAggregator {
         Map<String, List<Map<String, String>>> groupedData = categoryData.stream()
                 .collect(Collectors.groupingBy(data -> data.get("channelId")));
 
-        // 遍历服务目录下的所有 XML 文件
-        Files.walkFileTree(serviceDirPath, new SimpleFileVisitor<Path>() {
-            @Override
-            public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
-                if (file.toString().toLowerCase().endsWith(".xml")) {
-                    String fileName = file.getFileName().toString();
-                    String channelId = fileName.substring(0, fileName.lastIndexOf(".xml"));
-                    System.out.println("处理XML文件：" + fileName + "，对应的渠道ID：" + channelId);
+        // 遍历所有渠道 ID，为每个渠道确保有一个 XML 文件（如果不存在则创建）
+        for (Map.Entry<String, List<Map<String, String>>> entry : groupedData.entrySet()) {
+            String channelId = entry.getKey();
+            List<Map<String, String>> systemData = entry.getValue();
 
-                    // 检查是否有对应渠道ID的数据
-                    List<Map<String, String>> systemData = groupedData.get(channelId);
-                    if (systemData != null && !systemData.isEmpty()) {
-                        try {
-                            updateSingleServiceXml(file.toString(), systemData);
-                        } catch (Exception e) {
-                            System.err.println("更新XML文件失败：" + fileName + "，错误信息：" + e.getMessage());
-                            e.printStackTrace();
-                        }
-                    } else {
-                        System.out.println("未找到对应渠道ID的数据，跳过文件：" + fileName);
-                    }
-                }
-                return FileVisitResult.CONTINUE;
+            if (systemData == null || systemData.isEmpty()) {
+                System.out.println("跳过渠道：" + channelId + "，无数据");
+                continue;
             }
-        });
+
+            // 构造 XML 文件路径：渠道ID.xml
+            String xmlFileName = channelId + ".xml";
+            Path xmlFilePath = serviceDirPath.resolve(xmlFileName);
+            String xmlFilePathStr = xmlFilePath.toString();
+
+            System.out.println("处理渠道：" + channelId + "，文件路径：" + xmlFilePathStr);
+
+            // 调用 updateSingleServiceXml 来更新或创建文件
+            try {
+                updateSingleServiceXml(xmlFilePathStr, systemData);
+            } catch (Exception e) {
+                System.err.println("更新或创建XML文件失败：" + xmlFileName + "，错误信息：" + e.getMessage());
+                e.printStackTrace();
+            }
+        }
 
         System.out.println("服务目录下的XML文件更新完成：" + serviceDirPath);
     }
